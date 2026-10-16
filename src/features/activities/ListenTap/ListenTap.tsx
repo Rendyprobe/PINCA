@@ -16,9 +16,9 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState<LetterItem[]>([]);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [shakeId, setShakeId] = useState<string | null>(null);
+  const [wrongIds, setWrongIds] = useState<string[]>([]);
 
   const startTimeRef = useRef(Date.now());
   const attemptsRef = useRef<Record<string, number>>({});
@@ -42,9 +42,9 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
       () => 0.5 - Math.random(),
     );
     setOptions(merged);
-    setSelectedId(null);
     setIsCorrect(null);
     setShakeId(null);
+    setWrongIds([]);
 
     // TTS membacakan instruksi
     const promptText = `Dengarkan ya... Mana huruf ${currentItem.soundTts}?`;
@@ -60,7 +60,9 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
     sfx.playClick();
     const itemId = currentItem.id;
     hintsUsedRef.current[itemId] = (hintsUsedRef.current[itemId] ?? 0) + 1;
-    void tts.speak(`Huruf ${currentItem.soundTts}`, { rate: 0.7 });
+    void tts.speak(currentItem.ttsText ?? currentItem.soundTts, {
+      audioSrc: currentItem.audioSrc,
+    });
   };
 
   const handleSelect = (chosen: LetterItem) => {
@@ -68,14 +70,13 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
 
     const itemId = currentItem.id;
     attemptsRef.current[itemId] = (attemptsRef.current[itemId] ?? 0) + 1;
-    setSelectedId(chosen.id);
 
     if (chosen.id === currentItem.id) {
       // Benar!
       setIsCorrect(true);
       sfx.playSuccessDing();
       const praise = getRandomPraise();
-      void tts.speak(`${praise} Ini huruf ${currentItem.upper}!`);
+      void tts.speak(praise);
 
       const totalAttempts = attemptsRef.current[itemId] ?? 1;
       const totalHints = hintsUsedRef.current[itemId] ?? 0;
@@ -107,6 +108,9 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
       sfx.playClick();
       setShakeId(chosen.id);
       setTimeout(() => setShakeId(null), 400);
+      setWrongIds((prev) =>
+        prev.includes(chosen.id) ? prev : [...prev, chosen.id],
+      );
       const hint = getRandomHint();
       void tts.speak(`Hampir! ${hint}. Coba lagi ya!`);
     }
@@ -132,13 +136,21 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
 
       <div className={styles.grid}>
         {options.map((opt) => {
-          const isSelected = selectedId === opt.id;
-          const isCardCorrect = isSelected && isCorrect;
+          const isTarget = opt.id === currentItem.id;
+          const isCardCorrect = isTarget && isCorrect;
           const isCardShaking = shakeId === opt.id;
+          const isWrong = wrongIds.includes(opt.id);
+          const showHint =
+            isTarget &&
+            !isCorrect &&
+            (wrongIds.length > 0 ||
+              (hintsUsedRef.current[currentItem.id] ?? 0) > 0);
 
           const cardClass = [
             styles.card,
             isCardCorrect ? styles.cardCorrect : '',
+            showHint ? styles.cardHint : '',
+            isWrong && !isCardCorrect ? styles.cardWrong : '',
             isCardShaking ? styles.cardShake : '',
           ]
             .filter(Boolean)
@@ -159,6 +171,12 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
                 }
               }}
             >
+              {isCardCorrect && (
+                <span className={styles.correctBadge}>✓ Benar!</span>
+              )}
+              {showHint && !isCardCorrect && (
+                <span className={styles.hintBadge}>⭐ Ini dia!</span>
+              )}
               <span className={styles.letterDisplay}>
                 {opt.upper} {opt.lower}
               </span>

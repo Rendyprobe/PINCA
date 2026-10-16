@@ -9,7 +9,6 @@ export type MascotMood =
   | 'mendengar'
   | 'merayakan'
   | 'istirahat';
-
 export interface MascotProps {
   mood?: MascotMood;
   speechBubble?: string;
@@ -18,6 +17,7 @@ export interface MascotProps {
   onClick?: () => void;
 }
 
+/** Bu Delia: a gentle owl teacher with a book and expressive, readable eyes. */
 export const Mascot: React.FC<MascotProps> = ({
   mood = 'idle',
   speechBubble,
@@ -25,15 +25,20 @@ export const Mascot: React.FC<MascotProps> = ({
   className,
   onClick,
 }) => {
+  const happy = mood === 'senang' || mood === 'merayakan';
+  const resting = mood === 'istirahat';
+  const celebrating = mood === 'merayakan';
+  const pupilOffset = mood === 'berpikir' ? 4 : 0;
   return (
     <div
       className={`${styles.mascotWrapper} ${className ?? ''}`}
       onClick={onClick}
       role={onClick ? 'button' : undefined}
       tabIndex={onClick ? 0 : undefined}
-      onKeyDown={(e) => {
-        if (onClick && (e.key === 'Enter' || e.key === ' ')) {
-          e.preventDefault();
+      aria-label={onClick ? 'Dengarkan Bu Delia' : undefined}
+      onKeyDown={(event) => {
+        if (onClick && (event.key === 'Enter' || event.key === ' ')) {
+          event.preventDefault();
           onClick();
         }
       }}
@@ -44,211 +49,154 @@ export const Mascot: React.FC<MascotProps> = ({
         </div>
       )}
       <svg
-        className={styles.mascotSvg}
+        className={`${styles.mascotSvg} ${celebrating ? styles.celebrating : ''}`}
         style={{ width: size, height: size }}
-        viewBox="0 0 160 160"
+        width={size}
+        height={size}
+        viewBox="0 0 180 180"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
-        aria-label={`Maskot Bu Hantu sedang ${mood}`}
+        aria-label={`Maskot Bu Delia sedang ${mood}`}
       >
-        {/* Head Feather Tufts / Ears */}
+        <ellipse cx="90" cy="167" rx="48" ry="6" fill="#E9DFCE" />
         <path
-          d="M 40 45 L 30 18 L 60 35 Z"
-          fill="#4DABF7"
-          stroke="#339AF0"
+          d="M43 56Q30 29 45 24L68 40M137 56Q150 29 135 24L112 40"
+          fill="#A98ACB"
+          stroke="#71538E"
           strokeWidth="3"
           strokeLinejoin="round"
         />
         <path
-          d="M 120 45 L 130 18 L 100 35 Z"
-          fill="#4DABF7"
-          stroke="#339AF0"
+          d="M35 87C30 40 57 30 90 34C123 30 150 40 145 87L143 120C141 151 121 165 90 165C59 165 39 151 37 120Z"
+          fill="#B69AD5"
+          stroke="#71538E"
+          strokeWidth="3"
+        />
+        <path
+          d="M45 81C41 51 69 42 90 60C111 42 139 51 135 81C135 107 110 119 90 123C70 119 45 107 45 81Z"
+          fill="#FFF6E5"
+        />
+        <ellipse cx="90" cy="131" rx="35" ry="27" fill="#FFF6E5" />
+        <path
+          d="M77 123L82 128L87 123M93 123L98 128L103 123"
+          stroke="#D7C3A4"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <ellipse cx="67" cy="162" rx="10" ry="5" fill="#E9AE58" />
+        <ellipse cx="113" cy="162" rx="10" ry="5" fill="#E9AE58" />
+        <g stroke="#71538E" strokeWidth="3">
+          <circle cx="65" cy="78" r="21" fill="#FFFEFA" />
+          <circle cx="115" cy="78" r="21" fill="#FFFEFA" />
+          <path
+            d="M86 77Q90 73 94 77M40 72L44 73M136 73L140 72"
+            strokeLinecap="round"
+          />
+        </g>
+        {happy || resting ? (
+          <g stroke="#493C59" strokeWidth="3.5" strokeLinecap="round">
+            <path d={resting ? 'M55 79Q65 86 75 79' : 'M55 81Q65 69 75 81'} />
+            <path
+              d={resting ? 'M105 79Q115 86 125 79' : 'M105 81Q115 69 125 81'}
+            />
+          </g>
+        ) : (
+          <g>
+            <ellipse
+              cx={65 + pupilOffset}
+              cy={mood === 'berpikir' ? 74 : 79}
+              rx="8"
+              ry={mood === 'mendengar' ? 10 : 9}
+              fill="#493C59"
+            />
+            <ellipse
+              cx={115 + pupilOffset}
+              cy={mood === 'berpikir' ? 74 : 79}
+              rx="8"
+              ry={mood === 'mendengar' ? 10 : 9}
+              fill="#493C59"
+            />
+            <circle
+              cx={68 + pupilOffset}
+              cy={mood === 'berpikir' ? 71 : 76}
+              r="3"
+              fill="#FFF"
+            />
+            <circle
+              cx={118 + pupilOffset}
+              cy={mood === 'berpikir' ? 71 : 76}
+              r="3"
+              fill="#FFF"
+            />
+          </g>
+        )}
+        <ellipse cx="45" cy="99" rx="7" ry="4" fill="#F5D69A" />
+        <ellipse cx="135" cy="99" rx="7" ry="4" fill="#F5D69A" />
+        <path
+          d="M83 94Q90 89 97 94L90 104Z"
+          fill="#E9AE58"
+          stroke="#C78B36"
+          strokeWidth="2"
+          strokeLinejoin="round"
+        />
+        {resting ? (
+          <ellipse cx="90" cy="112" rx="4" ry="5" fill="#71538E" />
+        ) : (
+          <path
+            d="M84 109Q90 114 96 109"
+            stroke="#71538E"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        )}
+        <path
+          d="M90 141Q73 129 56 136L58 158Q76 151 90 162Q104 151 122 158L124 136Q107 129 90 141Z"
+          fill="#BFE1D6"
+          stroke="#4D8375"
+          strokeWidth="2.5"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M90 142V160M65 142L80 145M100 145L115 142"
+          stroke="#6D9F90"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <path
+          d={
+            celebrating || mood === 'semangat'
+              ? 'M39 99C23 96 13 71 23 65C35 65 45 83 43 99Z'
+              : 'M37 104C24 115 29 141 43 145Q52 126 43 106Z'
+          }
+          fill="#9675B6"
+          stroke="#71538E"
           strokeWidth="3"
           strokeLinejoin="round"
         />
-
-        {/* Main Body */}
-        <ellipse
-          cx="80"
-          cy="92"
-          rx="54"
-          ry="58"
-          fill="#74C0FC"
-          stroke="#339AF0"
-          strokeWidth="3.5"
-        />
-
-        {/* Belly */}
-        <ellipse cx="80" cy="102" rx="38" ry="40" fill="#FFF8E7" />
-        {/* Belly feather marks */}
         <path
-          d="M 70 95 Q 80 102 90 95"
-          stroke="#FFA94D"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          fill="none"
+          d={
+            celebrating
+              ? 'M141 99C157 96 167 71 157 65C145 65 135 83 137 99Z'
+              : 'M143 104C156 115 151 141 137 145Q128 126 137 106Z'
+          }
+          fill="#9675B6"
+          stroke="#71538E"
+          strokeWidth="3"
+          strokeLinejoin="round"
         />
-        <path
-          d="M 68 110 Q 80 117 92 110"
-          stroke="#FFA94D"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          fill="none"
-        />
-
-        {/* Wings */}
-        {mood === 'merayakan' || mood === 'semangat' ? (
-          <>
-            <path
-              d="M 28 85 C 10 70 8 50 20 42 C 32 48 38 70 34 85 Z"
-              fill="#4DABF7"
-              stroke="#339AF0"
-              strokeWidth="3"
-            />
-            <path
-              d="M 132 85 C 150 70 152 50 140 42 C 128 48 122 70 126 85 Z"
-              fill="#4DABF7"
-              stroke="#339AF0"
-              strokeWidth="3"
-            />
-          </>
-        ) : (
-          <>
-            <path
-              d="M 28 85 C 20 95 20 115 32 122 C 36 112 36 96 34 85 Z"
-              fill="#4DABF7"
-              stroke="#339AF0"
-              strokeWidth="3"
-            />
-            <path
-              d="M 132 85 C 140 95 140 115 128 122 C 124 112 124 96 126 85 Z"
-              fill="#4DABF7"
-              stroke="#339AF0"
-              strokeWidth="3"
-            />
-          </>
+        {mood === 'mendengar' && (
+          <g stroke="#4D8375" strokeWidth="3" strokeLinecap="round">
+            <path d="M28 59Q19 75 28 91M17 55Q5 75 17 95M152 59Q161 75 152 91" />
+          </g>
         )}
-
-        {/* Eyes Rings (Big friendly owl spectacles) */}
-        <circle
-          cx="58"
-          cy="68"
-          r="22"
-          fill="#FFFFFF"
-          stroke="#FFA94D"
-          strokeWidth="3.5"
-        />
-        <circle
-          cx="102"
-          cy="68"
-          r="22"
-          fill="#FFFFFF"
-          stroke="#FFA94D"
-          strokeWidth="3.5"
-        />
-
-        {/* Eye Pupils based on Mood */}
-        {mood === 'senang' || mood === 'merayakan' ? (
-          <>
-            {/* Happy curved eyes ^^ */}
-            <path
-              d="M 48 70 Q 58 60 68 70"
-              stroke="#2B2B3A"
-              strokeWidth="4"
-              strokeLinecap="round"
-              fill="none"
-            />
-            <path
-              d="M 92 70 Q 102 60 112 70"
-              stroke="#2B2B3A"
-              strokeWidth="4"
-              strokeLinecap="round"
-              fill="none"
-            />
-          </>
-        ) : mood === 'istirahat' ? (
-          <>
-            {/* Sleeping eyes - - */}
-            <path
-              d="M 48 68 Q 58 74 68 68"
-              stroke="#2B2B3A"
-              strokeWidth="3.5"
-              strokeLinecap="round"
-              fill="none"
-            />
-            <path
-              d="M 92 68 Q 102 74 112 68"
-              stroke="#2B2B3A"
-              strokeWidth="3.5"
-              strokeLinecap="round"
-              fill="none"
-            />
-          </>
-        ) : mood === 'berpikir' ? (
-          <>
-            {/* Thinking eyes looking up-right */}
-            <circle cx="62" cy="62" r="9" fill="#2B2B3A" />
-            <circle cx="65" cy="59" r="3" fill="#FFFFFF" />
-            <circle cx="106" cy="62" r="9" fill="#2B2B3A" />
-            <circle cx="109" cy="59" r="3" fill="#FFFFFF" />
-          </>
-        ) : mood === 'mendengar' ? (
-          <>
-            {/* Listening attentive eyes */}
-            <circle cx="58" cy="68" r="10" fill="#2B2B3A" />
-            <circle cx="61" cy="65" r="3.5" fill="#FFFFFF" />
-            <circle cx="102" cy="68" r="10" fill="#2B2B3A" />
-            <circle cx="105" cy="65" r="3.5" fill="#FFFFFF" />
-            {/* Headphone / ear mic indicator */}
-            <circle
-              cx="28"
-              cy="68"
-              r="7"
-              fill="#FFD43B"
-              stroke="#FFA94D"
-              strokeWidth="2"
-            />
-            <circle
-              cx="132"
-              cy="68"
-              r="7"
-              fill="#FFD43B"
-              stroke="#FFA94D"
-              strokeWidth="2"
-            />
-            <path
-              d="M 28 62 C 28 35 132 35 132 62"
-              stroke="#FFA94D"
-              strokeWidth="3"
-              fill="none"
-            />
-          </>
-        ) : (
-          <>
-            {/* Idle / Semangat: big sparkling eyes */}
-            <circle cx="58" cy="68" r="9" fill="#2B2B3A" />
-            <circle cx="61" cy="65" r="3.5" fill="#FFFFFF" />
-            <circle cx="102" cy="68" r="9" fill="#2B2B3A" />
-            <circle cx="105" cy="65" r="3.5" fill="#FFFFFF" />
-          </>
+        {celebrating && (
+          <g fill="#E9AE58">
+            <path d="M18 35L21 42L28 45L21 48L18 55L15 48L8 45L15 42Z" />
+            <path d="M155 23L158 30L165 33L158 36L155 43L152 36L145 33L152 30Z" />
+          </g>
         )}
-
-        {/* Cheeks */}
-        <ellipse cx="42" cy="80" rx="6" ry="4" fill="#FFD43B" opacity="0.6" />
-        <ellipse cx="118" cy="80" rx="6" ry="4" fill="#FFD43B" opacity="0.6" />
-
-        {/* Beak */}
-        <polygon
-          points="80,72 87,83 73,83"
-          fill="#FFA94D"
-          stroke="#FF922B"
-          strokeWidth="1.5"
-        />
-
-        {/* Feet */}
-        <ellipse cx="66" cy="148" rx="8" ry="4" fill="#FFA94D" />
-        <ellipse cx="94" cy="148" rx="8" ry="4" fill="#FFA94D" />
       </svg>
     </div>
   );

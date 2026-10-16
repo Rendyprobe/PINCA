@@ -73,4 +73,85 @@ Dokumen ini mencatat keputusan arsitektur dan teknis penting proyek sesuai GEMIN
   3. Nilai penguasaan (*mastery*) dihitung menggunakan rata-rata terbobot eksponensial dari maksimal 10 riwayat percobaan terbaru.
   4. Anak selalu mendapatkan minimal 1 bintang saat menyelesaikan pelajaran (prinsip zero-failure).
 
+---
 
+## ADR 005: Aktivitas Interaktif Zona 2–3 & Aksesibilitas Drag-and-Drop (Milestone 2)
+
+* **Tanggal**: 2026-10-16
+* **Status**: Diterima
+* **Konteks**:
+  Penyusunan suku kata menjadi kata membutuhkan interaksi geser-tarik (drag-and-drop). Namun motorik halus anak usia 5–6 tahun sering kali kesulitan menahan jari sambil menggeser di layar sentuh perangkat mobile.
+* **Keputusan**:
+  1. Implementasi aktivitas **Susun Suku Kata** mendukung *Pointer Events* untuk drag-and-drop dan **fallback ketuk-pilih (tap-to-place)** secara bersamaan. Anak dapat mengetuk kartu suku kata untuk langsung memasukkannya ke slot target yang kosong.
+  2. Pemisahan suku kata kata diambil eksplisit dari data JSON (`syllables: ["bo", "la"]`) dan bukan ditebak saat runtime.
+  3. Pembagian zona otomatis terbuka jika rata-rata penguasaan zona sebelumnya mencapai $\ge 80\%$, disertai sakelar pembuka manual bagi orang tua/guru.
+
+---
+
+## ADR 006: Pengenalan Suara (Web Speech API), State Machine, & Privasi (Milestone 3)
+
+* **Tanggal**: 2026-10-16
+* **Status**: Diterima
+* **Konteks**:
+  Fitur inti "Baca & Cek" mengecek bacaan suara anak secara langsung. Pengenalan suara peramban memiliki keterbatasan akurasi untuk suara anak dan suku kata/huruf tunggal, serta variasi dukungan antar peramban (Chrome vs Safari/Firefox).
+* **Keputusan**:
+  1. **Privasi Penuh & Nol Perekaman Audio**: Tidak ada rekaman suara atau transkrip audio mentah yang disimpan secara persisten atau dikirim ke server pihak ketiga. Hanya transkrip teks sementara dari browser Web Speech API yang diproses di memori klien.
+  2. **Abstraksi Recognizer Mockable (`ISpeechRecognizer`)**: Mengisolasi Web Speech API di balik antarmuka yang memungkinkan simulasi deterministik pada tes otomatis headless/CI.
+  3. **Pencocokan Fuzzy & Fonetik Multi-Sinyal**: Menggabungkan jarak edit Levenshtein, penyetaraan fonetik khas Indonesia (`phoneticKey`), alias terdaftar di JSON (`acceptedAliases`), dan strategi multi-opsi untuk huruf tunggal (menerima bunyi huruf, nama huruf, atau kata contohnya).
+  4. **Pewarnaan Monoton Bertahap**: Menghitung `commonPrefixFuzzy` dari hasil interim secara monoton; huruf/suku kata yang sudah berstatus `done` tidak pernah berkedip mundur ke `pending`.
+  5. **Koordinasi Audio Guard**: Mikrofon dilarang aktif saat TTS masih berbunyi; diselipkan jeda 300ms setelah pengucapan TTS selesai sebelum rekognisi dimulai.
+  6. **Ketahanan & Zero-Failure**:
+     - Jika recognizer tidak didukung atau izin mic ditolak: otomatis beralih ke **Mode Ketuk** tanpa menghentikan anak.
+     - Jika anak mencoba hingga 3 kali belum tepat: otomatis beralih ke mode **Baca Bersama (Assisted)** dengan pemandu TTS dan tetap memberikan 1 bintang keberhasilan.
+
+
+
+
+
+### 2026-10-17 - Guide audio and speech capture coordination
+
+- Prioritize curriculum `audioSrc` MP3 recordings, cache up to 128 audio elements per session, and settle playback promises on completion or cancellation. The existing Google Translate stream remains a synthesized fallback; it is not a human recording or a guaranteed service. No human recordings are currently bundled.
+- Browser fallback prefers Indonesian Natural/Neural voices, fixes pitch at 1 and rate at 0.85, and splits long prompts into bounded phrases. Playback errors/timeouts release the queue.
+- Block new guide audio and effects while requesting/listening; wait for current guide completion followed by 400 ms silence before recognition. Cancel pending starts and ignore retired recognition callbacks on stop, item changes, and unmount.
+- Use transposition-aware edit distance, accent normalization, Indonesian phonetic variants, five recognition alternatives, and base pass thresholds 0.45/0.55/0.65 for letters/syllables/words. Assistance starts after two attempts, including empty sessions.
+- The optional microphone meter computes live RMS amplitude with Web Audio, never stores audio, and stops all tracks on cleanup. Recognition still works when meter capture is unavailable.
+- Badges use normal card flow, reading cards wrap within a 600 px container, microphone diameter is 96 px, and mascot size is 100 px.
+- Automated validation: content validation, typecheck, lint, production build, and 61 tests passed. Browser UI inspection was unavailable because the connected browser inventory was empty. Real child speech, perceived voice warmth, mobile layout, and network/offline playback still require device testing.
+
+
+### 2026-10-17 - Local AI motherly voice and focused reading UI
+
+- User clarified that natural AI speech is acceptable and selected a warm motherly voice. Added 973 local Gadis Neural MP3 clips (19.22 MiB), a text-to-asset manifest, and an optional build-time generator. No application dependency, backend, or runtime TTS API credential was added.
+- Guide audio now prefers local neural assets; removed the undocumented Google Translate streaming URL. Unknown text falls back to the best Indonesian browser voice. Fixed public map greeting avoids transmitting profile names to a voice provider.
+- Success feedback is concise and uses the generated praise bank. Reading and activity prompts resolve to local clips; explicit item audioSrc overrides remain supported.
+- Reworked the learning map into zone choices, progress summary, and native lesson buttons. Reading uses a central card, reserved badge space, a circular 96 px microphone, and a small mascot footer. Reduced nested mobile padding and improved button text contrast.
+- Native microphone status now follows recognition onstart; abort detaches retired callbacks and closes sessions even after error. Item keys reset repeated texts. Interim matched characters can light up within a syllable.
+- See docs/guide-voice.md for asset regeneration and verification limits. Connected browser inventory was empty, so visual mobile inspection and perceptual listening remain manual checks.
+
+
+### 2026-10-17 - Page scrolling and render responsiveness
+
+- User reported intermittent scroll freezing on the learning map. No wheel/touch cancellation or document scroll lock exists in the current map source. Connected browser inventory was empty, so the map symptom could not be reproduced live.
+- Explicit native document vertical scrolling and non-shrinking page/main flex sizing keep long content in document flow. The profile overlay now scrolls independently and remains reachable on short screens.
+- Separately found and fixed a definite render loop in SoundGuess: getWordById returns a fresh parsed object, which retriggered an effect that sets state on every render. Memoized the lookup by exampleWordId.
+- Added regression checks for stable sound-activity initialization and switching map zones without repeated profile loading. Real wheel/touch scrolling remains a manual verification item; jsdom cannot validate layout scrolling.
+
+
+### 2026-10-17 - Bu Delia, explicit reading correction, and navigation layout
+
+- User renamed the guide Bu Delia. Updated active copy, accessibility labels, content feedback, guide metadata, specification name, and regenerated changed voice lines. The active pack is still Gadis Neural, now 978 manifest entries; a warmer premium voice has not been generated.
+- Added a standard-library-only ElevenLabs audition generator and a three-sample dry-run plan. The API key and Indonesian voice IDs are required to generate actual auditions. No paid provider request was made. Plugin discovery returned no ElevenLabs plugin; API access remains the missing input.
+- Short units preserve vowels during fuzzy matching. Changed vowels in longer word candidates cannot receive a passing score unless explicitly accepted as an alias. Sentence matching now uses ordered alignment and penalizes extra words. Interim progress no longer treats an unrelated leading substring or a changed vowel as fully read.
+- Tap fallback and assisted completion report assisted results, never a fabricated exact recognition score. Added separate verified/assisted completion copy, re-example after retries, no-speech messaging, retry microphone action, micEnabled handling, and visibility cleanup.
+- Lesson speech checking enables microphone use by default, but capture begins only from the child tapping the control. Explicit mic-disabled settings remain respected.
+- Replaced the placeholder owl with a rounded lavender-and-cream teacher carrying a book, seven distinct expressions, and reduced-motion support. Rendered and visually inspected a standalone SVG preview of all seven states.
+- Navigation buttons no longer allow arbitrary letter wrapping or flex shrinking. The lesson header reserves columns for back/stage controls and moves long titles to their own row at smaller widths.
+- Browser inventory was empty, so interactive desktop/mobile layout and real child speech remain unverified on device. SVG preview and automated regression checks provide limited verification, not perceptual voice validation.
+
+### 2026-10-17 - Preserve recognition results and require explicit assisted practice
+
+- User reported speaking the correct word with microphone permission enabled but receiving no recognition. Found concrete lifecycle defects: reading deadlines aborted instead of requesting final results, the listening indicator relied on service startup, and syllable mode rejected an exact whole-word reading. These fixes do not establish the cause on the user's device.
+- Capture now starts the reading deadline; graceful stop allows a bounded two-second final-result window. Combine result segments, preserve interim text for diagnostics, and distinguish missing final text from actual mismatches and technical errors.
+- Empty results never increment mismatch retries. No retry count automatically enters assisted mode. The user chooses practice without assessment; its completion remains assisted. Updated the specification to reflect this explicit user direction.
+- Removed automatic concurrent amplitude capture during recognition. A separate opt-in microphone check and collapsed stage diagnostics help distinguish device input, detected speech, and returned text without recording or storing audio.
+- Added regression cases for delayed final results, startup timeout, final/interim segments, whole-word acceptance during syllable reading, repeated empty sessions, and absence of concurrent getUserMedia during ASR. Automated suite: 91 tests pass; lint and content validation pass. Hardware capture and provider transcription remain a manual check.

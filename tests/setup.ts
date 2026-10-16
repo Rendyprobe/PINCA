@@ -59,4 +59,17 @@ if (typeof window !== 'undefined') {
     writable: true,
     configurable: true,
   });
+
+  window.Audio = class {
+    src = '';
+    onended: (() => void) | null = null;
+    onerror: (() => void) | null = null;
+    play() {
+      setTimeout(() => {
+        this.onended?.();
+      }, 10);
+      return Promise.resolve();
+    }
+    pause() {}
+  } as unknown as typeof Audio;
 }

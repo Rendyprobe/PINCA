@@ -1,0 +1,3920 @@
+{
+  "voice": "id-ID-GadisNeural",
+  "rate": "-12%",
+  "pitch": "+0Hz",
+  "volume": "-5%",
+  "entries": {
+    "a": {
+      "text": "a",
+      "src": "audio/ibu/ca978112ca1bbdcafac2.mp3"
+    },
+    "aa": {
+      "text": "aa",
+      "src": "audio/ibu/961b6dd3ede3cb8ecbaa.mp3"
+    },
+    "aku belum mendengar dengan jelas coba lagi ya": {
+      "text": "Aku belum mendengar dengan jelas. Coba lagi, ya.",
+      "src": "audio/ibu/f34d6333da3277551cee.mp3"
+    },
+    "apel": {
+      "text": "apel",
+      "src": "audio/ibu/904d7c7fcb34a744ca88.mp3"
+    },
+    "ayo baca aa": {
+      "text": "Ayo baca aa",
+      "src": "audio/ibu/77d3006c498910b0ade0.mp3"
+    },
+    "ayo baca apel": {
+      "text": "Ayo baca apel",
+      "src": "audio/ibu/ea2a4d2849b2fb3b3830.mp3"
+    },
+    "ayo baca baa": {
+      "text": "Ayo baca baa",
+      "src": "audio/ibu/e03222fbc2ad205c5c08.mp3"
+    },
+    "ayo baca bahu": {
+      "text": "Ayo baca bahu",
+      "src": "audio/ibu/cb28476acc0abda44022.mp3"
+    },
+    "ayo baca baju": {
+      "text": "Ayo baca baju",
+      "src": "audio/ibu/4a8664818f7235269b7d.mp3"
+    },
+    "ayo baca bapa": {
+      "text": "Ayo baca bapa",
+      "src": "audio/ibu/dcd51a1b33fa45776cdd.mp3"
+    },
+    "ayo baca batu": {
+      "text": "Ayo baca batu",
+      "src": "audio/ibu/cfa32a70c25efeabc945.mp3"
+    },
+    "ayo baca bee": {
+      "text": "Ayo baca bee",
+      "src": "audio/ibu/a998d50682fb5ab78832.mp3"
+    },
+    "ayo baca beh": {
+      "text": "Ayo baca beh",
+      "src": "audio/ibu/b5f8e238d55480ba4872.mp3"
+    },
+    "ayo baca bersama": {
+      "text": "Ayo baca bersama!",
+      "src": "audio/ibu/863689d2cee15d6d5672.mp3"
+    },
+    "ayo baca bibi": {
+      "text": "Ayo baca bibi",
+      "src": "audio/ibu/7cc6c96bb6f4ed27227b.mp3"
+    },
+    "ayo baca bii": {
+      "text": "Ayo baca bii",
+      "src": "audio/ibu/eec3646da795e07c9860.mp3"
+    },
+    "ayo baca biji": {
+      "text": "Ayo baca biji",
+      "src": "audio/ibu/db5f04fa1ead659e0839.mp3"
+    },
+    "ayo baca bola": {
+      "text": "Ayo baca bola",
+      "src": "audio/ibu/0cd9f81e2fdcb6460cfb.mp3"
+    },
+    "ayo baca boo": {
+      "text": "Ayo baca boo",
+      "src": "audio/ibu/0d72ebb0532be9e0aebc.mp3"
+    },
+    "ayo baca buku": {
+      "text": "Ayo baca buku",
+      "src": "audio/ibu/f36f74fb5eb08f92a5cd.mp3"
+    },
+    "ayo baca buu": {
+      "text": "Ayo baca buu",
+      "src": "audio/ibu/5f440a93b9b5a2806afd.mp3"
+    },
+    "ayo baca caa": {
+      "text": "Ayo baca caa",
+      "src": "audio/ibu/c8418d15ac4ad5ba6795.mp3"
+    },
+    "ayo baca cacing": {
+      "text": "Ayo baca cacing",
+      "src": "audio/ibu/dd29e7587d553f445f56.mp3"
+    },
+    "ayo baca cee": {
+      "text": "Ayo baca cee",
+      "src": "audio/ibu/dadb47ba64bd62c1ce19.mp3"
+    },
+    "ayo baca ceh": {
+      "text": "Ayo baca ceh",
+      "src": "audio/ibu/dea3f9befe2e48b897fa.mp3"
+    },
+    "ayo baca ceri": {
+      "text": "Ayo baca ceri",
+      "src": "audio/ibu/c2dfbfc81f9c0b822338.mp3"
+    },
+    "ayo baca cii": {
+      "text": "Ayo baca cii",
+      "src": "audio/ibu/b5faf9eaea05513f41b8.mp3"
+    },
+    "ayo baca coo": {
+      "text": "Ayo baca coo",
+      "src": "audio/ibu/9d1fb08644b17b3691e4.mp3"
+    },
+    "ayo baca cumi": {
+      "text": "Ayo baca cumi",
+      "src": "audio/ibu/b1f1105bc083aa7d7326.mp3"
+    },
+    "ayo baca cuu": {
+      "text": "Ayo baca cuu",
+      "src": "audio/ibu/3565ab3e6adcf6992960.mp3"
+    },
+    "ayo baca daa": {
+      "text": "Ayo baca daa",
+      "src": "audio/ibu/ebd2cfe1bcbb93704044.mp3"
+    },
+    "ayo baca dada": {
+      "text": "Ayo baca dada",
+      "src": "audio/ibu/fa7d094e0ff6345deb1c.mp3"
+    },
+    "ayo baca dadu": {
+      "text": "Ayo baca dadu",
+      "src": "audio/ibu/44c358c49cba5e648898.mp3"
+    },
+    "ayo baca daun": {
+      "text": "Ayo baca daun",
+      "src": "audio/ibu/b039452cd1d52dc2f622.mp3"
+    },
+    "ayo baca dee": {
+      "text": "Ayo baca dee",
+      "src": "audio/ibu/24b47eb80f01ec5ad942.mp3"
+    },
+    "ayo baca deh": {
+      "text": "Ayo baca deh",
+      "src": "audio/ibu/cc10916e63af5efc8998.mp3"
+    },
+    "ayo baca dii": {
+      "text": "Ayo baca dii",
+      "src": "audio/ibu/7ba529485f4605a41f78.mp3"
+    },
+    "ayo baca doo": {
+      "text": "Ayo baca doo",
+      "src": "audio/ibu/b0542aa47e7f9d8b9a3c.mp3"
+    },
+    "ayo baca duri": {
+      "text": "Ayo baca duri",
+      "src": "audio/ibu/6251ebb25ac591763903.mp3"
+    },
+    "ayo baca duu": {
+      "text": "Ayo baca duu",
+      "src": "audio/ibu/3aeb4dd5d525a6eb2131.mp3"
+    },
+    "ayo baca ee": {
+      "text": "Ayo baca ee",
+      "src": "audio/ibu/5585670a3d235831ac8d.mp3"
+    },
+    "ayo baca ef": {
+      "text": "Ayo baca ef",
+      "src": "audio/ibu/a237380dee16bbea0731.mp3"
+    },
+    "ayo baca eks": {
+      "text": "Ayo baca eks",
+      "src": "audio/ibu/83cf2e570b3fffd1a85f.mp3"
+    },
+    "ayo baca el": {
+      "text": "Ayo baca el",
+      "src": "audio/ibu/b7d6fcc66ff1c554cc6f.mp3"
+    },
+    "ayo baca elang": {
+      "text": "Ayo baca elang",
+      "src": "audio/ibu/e52937dafc54ccdd0bfe.mp3"
+    },
+    "ayo baca em": {
+      "text": "Ayo baca em",
+      "src": "audio/ibu/a6568c4276d6a3926b68.mp3"
+    },
+    "ayo baca en": {
+      "text": "Ayo baca en",
+      "src": "audio/ibu/5197474363e1b47910f5.mp3"
+    },
+    "ayo baca er": {
+      "text": "Ayo baca er",
+      "src": "audio/ibu/93766fa8e2bf6e2ff31b.mp3"
+    },
+    "ayo baca es": {
+      "text": "Ayo baca es",
+      "src": "audio/ibu/c1ddd0fc053bdf2ae76c.mp3"
+    },
+    "ayo baca fe": {
+      "text": "Ayo baca fe",
+      "src": "audio/ibu/d1dd8f9f669dc521249f.mp3"
+    },
+    "ayo baca foto": {
+      "text": "Ayo baca foto",
+      "src": "audio/ibu/31ebf86549d77ef2494e.mp3"
+    },
+    "ayo baca gaa": {
+      "text": "Ayo baca gaa",
+      "src": "audio/ibu/08961095cb819be59649.mp3"
+    },
+    "ayo baca gajah": {
+      "text": "Ayo baca gajah",
+      "src": "audio/ibu/f826f776f2f69793c5a1.mp3"
+    },
+    "ayo baca gee": {
+      "text": "Ayo baca gee",
+      "src": "audio/ibu/c73449a7a60c2af69b94.mp3"
+    },
+    "ayo baca geh": {
+      "text": "Ayo baca geh",
+      "src": "audio/ibu/e4315a93528e171af7d5.mp3"
+    },
+    "ayo baca gigi": {
+      "text": "Ayo baca gigi",
+      "src": "audio/ibu/c05c6667a9539173d595.mp3"
+    },
+    "ayo baca gii": {
+      "text": "Ayo baca gii",
+      "src": "audio/ibu/1840eef3db9e9af9e0f6.mp3"
+    },
+    "ayo baca goo": {
+      "text": "Ayo baca goo",
+      "src": "audio/ibu/7da3793bcd0ae32d2d04.mp3"
+    },
+    "ayo baca guu": {
+      "text": "Ayo baca guu",
+      "src": "audio/ibu/7f0d9099b401ff028529.mp3"
+    },
+    "ayo baca ha": {
+      "text": "Ayo baca ha",
+      "src": "audio/ibu/09832fd60b8cefab65ef.mp3"
+    },
+    "ayo baca haa": {
+      "text": "Ayo baca haa",
+      "src": "audio/ibu/ca67f0699348616accb2.mp3"
+    },
+    "ayo baca harimau": {
+      "text": "Ayo baca harimau",
+      "src": "audio/ibu/3ff8d759fa60c0d20001.mp3"
+    },
+    "ayo baca hee": {
+      "text": "Ayo baca hee",
+      "src": "audio/ibu/34462f99d9f3d200b84e.mp3"
+    },
+    "ayo baca hii": {
+      "text": "Ayo baca hii",
+      "src": "audio/ibu/e690d14cb5eca8a7fc5e.mp3"
+    },
+    "ayo baca hoo": {
+      "text": "Ayo baca hoo",
+      "src": "audio/ibu/544ec0cf64993a9f9e19.mp3"
+    },
+    "ayo baca huu": {
+      "text": "Ayo baca huu",
+      "src": "audio/ibu/fb24a1309b73ed118de5.mp3"
+    },
+    "ayo baca ibu": {
+      "text": "Ayo baca ibu",
+      "src": "audio/ibu/6aa8df09fe9638ff33ba.mp3"
+    },
+    "ayo baca ii": {
+      "text": "Ayo baca ii",
+      "src": "audio/ibu/bcb6b63f6cc05f5248ec.mp3"
+    },
+    "ayo baca ikan": {
+      "text": "Ayo baca ikan",
+      "src": "audio/ibu/104601d8cb872b5d49bb.mp3"
+    },
+    "ayo baca jaa": {
+      "text": "Ayo baca jaa",
+      "src": "audio/ibu/10a49f524774932d156b.mp3"
+    },
+    "ayo baca jee": {
+      "text": "Ayo baca jee",
+      "src": "audio/ibu/68d1e709db1e2e8bf703.mp3"
+    },
+    "ayo baca jeh": {
+      "text": "Ayo baca jeh",
+      "src": "audio/ibu/ff583cfb3f3b20f957e6.mp3"
+    },
+    "ayo baca jeruk": {
+      "text": "Ayo baca jeruk",
+      "src": "audio/ibu/26d336be232123209259.mp3"
+    },
+    "ayo baca jii": {
+      "text": "Ayo baca jii",
+      "src": "audio/ibu/892f686bf6345ea34670.mp3"
+    },
+    "ayo baca joo": {
+      "text": "Ayo baca joo",
+      "src": "audio/ibu/93897335e01f01b3c836.mp3"
+    },
+    "ayo baca juu": {
+      "text": "Ayo baca juu",
+      "src": "audio/ibu/3761b57eeae4fff1b899.mp3"
+    },
+    "ayo baca ka": {
+      "text": "Ayo baca ka",
+      "src": "audio/ibu/768ecfc247bd3c5cc40d.mp3"
+    },
+    "ayo baca kaa": {
+      "text": "Ayo baca kaa",
+      "src": "audio/ibu/6790b0765fdb1a13029c.mp3"
+    },
+    "ayo baca kado": {
+      "text": "Ayo baca kado",
+      "src": "audio/ibu/f96c8fa044f7c9f8d005.mp3"
+    },
+    "ayo baca kaki": {
+      "text": "Ayo baca kaki",
+      "src": "audio/ibu/96dee80e245cc701506d.mp3"
+    },
+    "ayo baca kayu": {
+      "text": "Ayo baca kayu",
+      "src": "audio/ibu/724ab5440a4d2c72289b.mp3"
+    },
+    "ayo baca kee": {
+      "text": "Ayo baca kee",
+      "src": "audio/ibu/bbe8cb379ec442a62444.mp3"
+    },
+    "ayo baca kera": {
+      "text": "Ayo baca kera",
+      "src": "audio/ibu/cf9bbf075eab0ad5ced0.mp3"
+    },
+    "ayo baca ki": {
+      "text": "Ayo baca ki",
+      "src": "audio/ibu/aa619f83f51eb31e5461.mp3"
+    },
+    "ayo baca kii": {
+      "text": "Ayo baca kii",
+      "src": "audio/ibu/0f87c4e044d77b0cdef8.mp3"
+    },
+    "ayo baca koki": {
+      "text": "Ayo baca koki",
+      "src": "audio/ibu/5938357a1f8da1d04450.mp3"
+    },
+    "ayo baca koo": {
+      "text": "Ayo baca koo",
+      "src": "audio/ibu/0f6441111ac181a60ce5.mp3"
+    },
+    "ayo baca kopi": {
+      "text": "Ayo baca kopi",
+      "src": "audio/ibu/96f4e6cf1ad566fc4503.mp3"
+    },
+    "ayo baca kuda": {
+      "text": "Ayo baca kuda",
+      "src": "audio/ibu/82adbff08a00a576971a.mp3"
+    },
+    "ayo baca kuku": {
+      "text": "Ayo baca kuku",
+      "src": "audio/ibu/5f2e8d69b21fc202dda7.mp3"
+    },
+    "ayo baca kura": {
+      "text": "Ayo baca kura",
+      "src": "audio/ibu/dfcea59da41193189fbb.mp3"
+    },
+    "ayo baca kutu": {
+      "text": "Ayo baca kutu",
+      "src": "audio/ibu/72bba59cf83edeb82aaa.mp3"
+    },
+    "ayo baca kuu": {
+      "text": "Ayo baca kuu",
+      "src": "audio/ibu/86cc030bb7cc0b12b18b.mp3"
+    },
+    "ayo baca laa": {
+      "text": "Ayo baca laa",
+      "src": "audio/ibu/49f65d1832754e417711.mp3"
+    },
+    "ayo baca labu": {
+      "text": "Ayo baca labu",
+      "src": "audio/ibu/9d93f09c37ecb8e4805e.mp3"
+    },
+    "ayo baca lebah": {
+      "text": "Ayo baca lebah",
+      "src": "audio/ibu/870ea762def5dec5712d.mp3"
+    },
+    "ayo baca lee": {
+      "text": "Ayo baca lee",
+      "src": "audio/ibu/439d9df8ce2fb0ba8a36.mp3"
+    },
+    "ayo baca lele": {
+      "text": "Ayo baca lele",
+      "src": "audio/ibu/ac6c7db2c7a52a76d757.mp3"
+    },
+    "ayo baca lii": {
+      "text": "Ayo baca lii",
+      "src": "audio/ibu/79d052491a948ccec81c.mp3"
+    },
+    "ayo baca loo": {
+      "text": "Ayo baca loo",
+      "src": "audio/ibu/5728ece97cb9936d599d.mp3"
+    },
+    "ayo baca luu": {
+      "text": "Ayo baca luu",
+      "src": "audio/ibu/b2874d519d9d89968396.mp3"
+    },
+    "ayo baca maa": {
+      "text": "Ayo baca maa",
+      "src": "audio/ibu/fae3b29c3ecde4227920.mp3"
+    },
+    "ayo baca madu": {
+      "text": "Ayo baca madu",
+      "src": "audio/ibu/2bc92e1795c8fefeb423.mp3"
+    },
+    "ayo baca mama": {
+      "text": "Ayo baca mama",
+      "src": "audio/ibu/03ed3346cd5530b8f022.mp3"
+    },
+    "ayo baca mata": {
+      "text": "Ayo baca mata",
+      "src": "audio/ibu/7df9e7e2204ce9a7980e.mp3"
+    },
+    "ayo baca mee": {
+      "text": "Ayo baca mee",
+      "src": "audio/ibu/cfae34bb21617b110d2b.mp3"
+    },
+    "ayo baca meja": {
+      "text": "Ayo baca meja",
+      "src": "audio/ibu/e1fca2482dc37c1b0a1b.mp3"
+    },
+    "ayo baca mii": {
+      "text": "Ayo baca mii",
+      "src": "audio/ibu/5395ece5b6274f9abfff.mp3"
+    },
+    "ayo baca moo": {
+      "text": "Ayo baca moo",
+      "src": "audio/ibu/63b1d4f738e2a37f7c54.mp3"
+    },
+    "ayo baca muu": {
+      "text": "Ayo baca muu",
+      "src": "audio/ibu/6501752ffd39115cb955.mp3"
+    },
+    "ayo baca naa": {
+      "text": "Ayo baca naa",
+      "src": "audio/ibu/4c6ed8d1f3877be564e0.mp3"
+    },
+    "ayo baca nasi": {
+      "text": "Ayo baca nasi",
+      "src": "audio/ibu/8ea6dda1b3c5a44144c6.mp3"
+    },
+    "ayo baca nee": {
+      "text": "Ayo baca nee",
+      "src": "audio/ibu/0ba2bbbb56b9114d9031.mp3"
+    },
+    "ayo baca nii": {
+      "text": "Ayo baca nii",
+      "src": "audio/ibu/66507af7125e721dfcaf.mp3"
+    },
+    "ayo baca noo": {
+      "text": "Ayo baca noo",
+      "src": "audio/ibu/e2cfe8cf6e2706fdf7aa.mp3"
+    },
+    "ayo baca nuu": {
+      "text": "Ayo baca nuu",
+      "src": "audio/ibu/1fabbd29cb02e1a8d7ad.mp3"
+    },
+    "ayo baca onta": {
+      "text": "Ayo baca onta",
+      "src": "audio/ibu/fc378909878aba873a1c.mp3"
+    },
+    "ayo baca oo": {
+      "text": "Ayo baca oo",
+      "src": "audio/ibu/26edd304cab89cb53ec4.mp3"
+    },
+    "ayo baca paa": {
+      "text": "Ayo baca paa",
+      "src": "audio/ibu/3d66a1bfda7982a8a294.mp3"
+    },
+    "ayo baca paku": {
+      "text": "Ayo baca paku",
+      "src": "audio/ibu/d45e1b6b53a52b32f771.mp3"
+    },
+    "ayo baca palu": {
+      "text": "Ayo baca palu",
+      "src": "audio/ibu/f82b64e63d93d102b2f6.mp3"
+    },
+    "ayo baca papa": {
+      "text": "Ayo baca papa",
+      "src": "audio/ibu/9623ca77f8ccac7a254f.mp3"
+    },
+    "ayo baca pari": {
+      "text": "Ayo baca pari",
+      "src": "audio/ibu/8f8f6a7b26b70bd267b0.mp3"
+    },
+    "ayo baca pee": {
+      "text": "Ayo baca pee",
+      "src": "audio/ibu/1289da67fcefab6914d1.mp3"
+    },
+    "ayo baca peh": {
+      "text": "Ayo baca peh",
+      "src": "audio/ibu/41e307cdb8e31e007b2b.mp3"
+    },
+    "ayo baca pena": {
+      "text": "Ayo baca pena",
+      "src": "audio/ibu/245a59ebb7baeb0f2a8c.mp3"
+    },
+    "ayo baca peta": {
+      "text": "Ayo baca peta",
+      "src": "audio/ibu/80d0f49db9647139d596.mp3"
+    },
+    "ayo baca pii": {
+      "text": "Ayo baca pii",
+      "src": "audio/ibu/b731afb6ea9adff67fad.mp3"
+    },
+    "ayo baca pipi": {
+      "text": "Ayo baca pipi",
+      "src": "audio/ibu/506bb79f968439d65012.mp3"
+    },
+    "ayo baca pisang": {
+      "text": "Ayo baca pisang",
+      "src": "audio/ibu/ece7c43db88fb26d627a.mp3"
+    },
+    "ayo baca pita": {
+      "text": "Ayo baca pita",
+      "src": "audio/ibu/9ef280e5a8125d7ef85a.mp3"
+    },
+    "ayo baca poo": {
+      "text": "Ayo baca poo",
+      "src": "audio/ibu/a2273a55e91f15b67453.mp3"
+    },
+    "ayo baca puu": {
+      "text": "Ayo baca puu",
+      "src": "audio/ibu/4c08ee6b2dc0fb5e097a.mp3"
+    },
+    "ayo baca quran": {
+      "text": "Ayo baca quran",
+      "src": "audio/ibu/cfcecb45cd367b062d29.mp3"
+    },
+    "ayo baca raa": {
+      "text": "Ayo baca raa",
+      "src": "audio/ibu/b6caa8e3eaa519967b5e.mp3"
+    },
+    "ayo baca ree": {
+      "text": "Ayo baca ree",
+      "src": "audio/ibu/475f49a95b9548b22864.mp3"
+    },
+    "ayo baca rii": {
+      "text": "Ayo baca rii",
+      "src": "audio/ibu/9428651665f5a51aeaf2.mp3"
+    },
+    "ayo baca roda": {
+      "text": "Ayo baca roda",
+      "src": "audio/ibu/8e24bca2063cf5cee158.mp3"
+    },
+    "ayo baca roo": {
+      "text": "Ayo baca roo",
+      "src": "audio/ibu/b04271fdad11e612c3a1.mp3"
+    },
+    "ayo baca roti": {
+      "text": "Ayo baca roti",
+      "src": "audio/ibu/1a1d48605776a0d3e692.mp3"
+    },
+    "ayo baca rusa": {
+      "text": "Ayo baca rusa",
+      "src": "audio/ibu/2f2325ae7280e9e39b09.mp3"
+    },
+    "ayo baca ruu": {
+      "text": "Ayo baca ruu",
+      "src": "audio/ibu/cadc7253774fa18d568e.mp3"
+    },
+    "ayo baca saa": {
+      "text": "Ayo baca saa",
+      "src": "audio/ibu/78d9e1ae066122682764.mp3"
+    },
+    "ayo baca sapi": {
+      "text": "Ayo baca sapi",
+      "src": "audio/ibu/a64a2d26e11c5613b8a0.mp3"
+    },
+    "ayo baca sapu": {
+      "text": "Ayo baca sapu",
+      "src": "audio/ibu/42b50208aa9e16c7d110.mp3"
+    },
+    "ayo baca sawi": {
+      "text": "Ayo baca sawi",
+      "src": "audio/ibu/85299d6658a4377f9a33.mp3"
+    },
+    "ayo baca see": {
+      "text": "Ayo baca see",
+      "src": "audio/ibu/325cd1ed5af307dbe180.mp3"
+    },
+    "ayo baca sii": {
+      "text": "Ayo baca sii",
+      "src": "audio/ibu/4bb25574fc564e3e5e4f.mp3"
+    },
+    "ayo baca soo": {
+      "text": "Ayo baca soo",
+      "src": "audio/ibu/4deab4e9b7cdf648f75f.mp3"
+    },
+    "ayo baca susu": {
+      "text": "Ayo baca susu",
+      "src": "audio/ibu/0200e689aea0ea637d67.mp3"
+    },
+    "ayo baca suu": {
+      "text": "Ayo baca suu",
+      "src": "audio/ibu/06746b032b4a900d3ab5.mp3"
+    },
+    "ayo baca taa": {
+      "text": "Ayo baca taa",
+      "src": "audio/ibu/222dec5c41c5d3d41cbc.mp3"
+    },
+    "ayo baca tali": {
+      "text": "Ayo baca tali",
+      "src": "audio/ibu/8ed882d02bb9a6df1aca.mp3"
+    },
+    "ayo baca tebu": {
+      "text": "Ayo baca tebu",
+      "src": "audio/ibu/67b333cf5716e2fdc8e0.mp3"
+    },
+    "ayo baca tee": {
+      "text": "Ayo baca tee",
+      "src": "audio/ibu/935c79225cb8df8ea8dd.mp3"
+    },
+    "ayo baca teh": {
+      "text": "Ayo baca teh",
+      "src": "audio/ibu/bd91fa493a23b1e41da4.mp3"
+    },
+    "ayo baca tii": {
+      "text": "Ayo baca tii",
+      "src": "audio/ibu/d98e67f3ee4d8c13bf83.mp3"
+    },
+    "ayo baca toko": {
+      "text": "Ayo baca toko",
+      "src": "audio/ibu/c924d2ecc97d333535cd.mp3"
+    },
+    "ayo baca too": {
+      "text": "Ayo baca too",
+      "src": "audio/ibu/e633b89f6e10e09e1664.mp3"
+    },
+    "ayo baca topi": {
+      "text": "Ayo baca topi",
+      "src": "audio/ibu/ae4ec5551c9e5fb2804f.mp3"
+    },
+    "ayo baca tuu": {
+      "text": "Ayo baca tuu",
+      "src": "audio/ibu/51e24ea36c7788ee5fe7.mp3"
+    },
+    "ayo baca udang": {
+      "text": "Ayo baca udang",
+      "src": "audio/ibu/b9e8ceb08fd2e1225bcb.mp3"
+    },
+    "ayo baca uu": {
+      "text": "Ayo baca uu",
+      "src": "audio/ibu/37d1b7cab143821138c3.mp3"
+    },
+    "ayo baca vas": {
+      "text": "Ayo baca vas",
+      "src": "audio/ibu/d291a4d1b59b92edcaf7.mp3"
+    },
+    "ayo baca waa": {
+      "text": "Ayo baca waa",
+      "src": "audio/ibu/e9467f67c80807d125bd.mp3"
+    },
+    "ayo baca we": {
+      "text": "Ayo baca we",
+      "src": "audio/ibu/0cabe2ea5c23190e0559.mp3"
+    },
+    "ayo baca wee": {
+      "text": "Ayo baca wee",
+      "src": "audio/ibu/5ebd84d2d975b0afe918.mp3"
+    },
+    "ayo baca wii": {
+      "text": "Ayo baca wii",
+      "src": "audio/ibu/46d38aae72d76ce5f89d.mp3"
+    },
+    "ayo baca woo": {
+      "text": "Ayo baca woo",
+      "src": "audio/ibu/32d0432b5155a7ea6611.mp3"
+    },
+    "ayo baca wortel": {
+      "text": "Ayo baca wortel",
+      "src": "audio/ibu/744e6a1ad242de2e7516.mp3"
+    },
+    "ayo baca wuu": {
+      "text": "Ayo baca wuu",
+      "src": "audio/ibu/2bbcdee77e13a40bec65.mp3"
+    },
+    "ayo baca xilofon": {
+      "text": "Ayo baca xilofon",
+      "src": "audio/ibu/4850051d29b9bdd43561.mp3"
+    },
+    "ayo baca yaa": {
+      "text": "Ayo baca yaa",
+      "src": "audio/ibu/669d5ab6fa70fdb6884a.mp3"
+    },
+    "ayo baca ye": {
+      "text": "Ayo baca ye",
+      "src": "audio/ibu/5254fe3c8e93001ade4c.mp3"
+    },
+    "ayo baca yee": {
+      "text": "Ayo baca yee",
+      "src": "audio/ibu/863d6e227b5017154d78.mp3"
+    },
+    "ayo baca yii": {
+      "text": "Ayo baca yii",
+      "src": "audio/ibu/3564c42ad04036e96782.mp3"
+    },
+    "ayo baca yoo": {
+      "text": "Ayo baca yoo",
+      "src": "audio/ibu/3c1a9fb7b30d4f33e1fe.mp3"
+    },
+    "ayo baca yoyo": {
+      "text": "Ayo baca yoyo",
+      "src": "audio/ibu/4c79ed1c154e5c93ae84.mp3"
+    },
+    "ayo baca yuu": {
+      "text": "Ayo baca yuu",
+      "src": "audio/ibu/0c4b11ed7be93e2e67c5.mp3"
+    },
+    "ayo baca zebra": {
+      "text": "Ayo baca zebra",
+      "src": "audio/ibu/7c2a14d3d2feae5c3a3d.mp3"
+    },
+    "ayo baca zet": {
+      "text": "Ayo baca zet",
+      "src": "audio/ibu/83b0d6faebca749b085f.mp3"
+    },
+    "ayo coba lagi": {
+      "text": "Ayo coba lagi!",
+      "src": "audio/ibu/e581721c0877fed3eea8.mp3"
+    },
+    "ayo coba lagi ya": {
+      "text": "Ayo coba lagi ya!",
+      "src": "audio/ibu/20f6ad4016e865cdd1a6.mp3"
+    },
+    "ayo kita coba bersama": {
+      "text": "Ayo kita coba bersama!",
+      "src": "audio/ibu/ff86743101b16d5d72d3.mp3"
+    },
+    "ba": {
+      "text": "ba",
+      "src": "audio/ibu/970f519c2cadbcefb1e8.mp3"
+    },
+    "baa": {
+      "text": "baa",
+      "src": "audio/ibu/665edae6d52666d13e35.mp3"
+    },
+    "bagus sekali": {
+      "text": "Bagus sekali!",
+      "src": "audio/ibu/4e87e6e47b653b293108.mp3"
+    },
+    "bah": {
+      "text": "bah",
+      "src": "audio/ibu/bcacb706cf171729008c.mp3"
+    },
+    "bahu": {
+      "text": "bahu",
+      "src": "audio/ibu/b5cc3029941c7c0a28d5.mp3"
+    },
+    "baju": {
+      "text": "baju",
+      "src": "audio/ibu/b5e5093ba002adbc6f18.mp3"
+    },
+    "bapa": {
+      "text": "bapa",
+      "src": "audio/ibu/5dd26e618c3aae4081ad.mp3"
+    },
+    "batu": {
+      "text": "batu",
+      "src": "audio/ibu/c9d517564062c98231c9.mp3"
+    },
+    "bee": {
+      "text": "bee",
+      "src": "audio/ibu/62cb81b5904a262ffaee.mp3"
+    },
+    "beh": {
+      "text": "beh",
+      "src": "audio/ibu/501553ae9e592e33ea72.mp3"
+    },
+    "bi": {
+      "text": "bi",
+      "src": "audio/ibu/d9065d6da185ec287586.mp3"
+    },
+    "bibi": {
+      "text": "bibi",
+      "src": "audio/ibu/9a1ef8e9abb02eb32f70.mp3"
+    },
+    "bii": {
+      "text": "bii",
+      "src": "audio/ibu/cd6b5d1c288075f9b688.mp3"
+    },
+    "biji": {
+      "text": "biji",
+      "src": "audio/ibu/e0ccbf3800d70dbd35c3.mp3"
+    },
+    "bintang bersinar untukmu": {
+      "text": "Bintang bersinar untukmu!",
+      "src": "audio/ibu/a9914ea24427e0be6557.mp3"
+    },
+    "bo": {
+      "text": "bo",
+      "src": "audio/ibu/3d099d0f13df9d0bb442.mp3"
+    },
+    "bola": {
+      "text": "bola",
+      "src": "audio/ibu/8b88c35eb7ba86b91d8c.mp3"
+    },
+    "boo": {
+      "text": "boo",
+      "src": "audio/ibu/6446d58d6dfafd58586d.mp3"
+    },
+    "bu": {
+      "text": "bu",
+      "src": "audio/ibu/9508394fe63a491fdcc0.mp3"
+    },
+    "buku": {
+      "text": "buku",
+      "src": "audio/ibu/05ed9135baf4a09a0c68.mp3"
+    },
+    "buu": {
+      "text": "buu",
+      "src": "audio/ibu/7692a722e544563ff89d.mp3"
+    },
+    "ca": {
+      "text": "ca",
+      "src": "audio/ibu/6959097001d10501ac7d.mp3"
+    },
+    "caa": {
+      "text": "caa",
+      "src": "audio/ibu/7f0ba16dd5f97b7d2543.mp3"
+    },
+    "cacing": {
+      "text": "cacing",
+      "src": "audio/ibu/2ec4443d8d7aa15bc20e.mp3"
+    },
+    "ce": {
+      "text": "ce",
+      "src": "audio/ibu/e64c826b6b33f307cecf.mp3"
+    },
+    "cee": {
+      "text": "cee",
+      "src": "audio/ibu/5a000748c3e16ba615e5.mp3"
+    },
+    "ceh": {
+      "text": "ceh",
+      "src": "audio/ibu/7a3695658c472b4a4b2f.mp3"
+    },
+    "ceri": {
+      "text": "ceri",
+      "src": "audio/ibu/a3e6582a94975c16a4f9.mp3"
+    },
+    "cii": {
+      "text": "cii",
+      "src": "audio/ibu/31c12e95826e6b4d48e7.mp3"
+    },
+    "cing": {
+      "text": "cing",
+      "src": "audio/ibu/8642e0b6f745c05c44e5.mp3"
+    },
+    "coba lagi ya": {
+      "text": "Coba lagi ya!",
+      "src": "audio/ibu/2632b582abb392cd976b.mp3"
+    },
+    "coo": {
+      "text": "coo",
+      "src": "audio/ibu/6350eac584f6733f5648.mp3"
+    },
+    "cu": {
+      "text": "cu",
+      "src": "audio/ibu/e67be79550661604d9b9.mp3"
+    },
+    "cumi": {
+      "text": "cumi",
+      "src": "audio/ibu/f0b6ab916e560351e66a.mp3"
+    },
+    "cuu": {
+      "text": "cuu",
+      "src": "audio/ibu/05901435402754c98e1e.mp3"
+    },
+    "da": {
+      "text": "da",
+      "src": "audio/ibu/aa58b21b01d6b8a99c1a.mp3"
+    },
+    "daa": {
+      "text": "daa",
+      "src": "audio/ibu/6bb93196733b334c27fa.mp3"
+    },
+    "dada": {
+      "text": "dada",
+      "src": "audio/ibu/47c7ef39cfa6b7bd1286.mp3"
+    },
+    "dadu": {
+      "text": "dadu",
+      "src": "audio/ibu/68530633e468f55c36db.mp3"
+    },
+    "dang": {
+      "text": "dang",
+      "src": "audio/ibu/d39d350b3835c7dd1504.mp3"
+    },
+    "daun": {
+      "text": "daun",
+      "src": "audio/ibu/c0e3b132ddc50b4763fc.mp3"
+    },
+    "dee": {
+      "text": "dee",
+      "src": "audio/ibu/e7834034bd059ecf00b0.mp3"
+    },
+    "deh": {
+      "text": "deh",
+      "src": "audio/ibu/6c3346ff4716ac62dd1b.mp3"
+    },
+    "dengarkan": {
+      "text": "Dengarkan",
+      "src": "audio/ibu/5d463098e58e564cf3da.mp3"
+    },
+    "dengarkan bunyinya baik-baik ya": {
+      "text": "Dengarkan bunyinya baik-baik ya",
+      "src": "audio/ibu/1f07b8e9426094871a5a.mp3"
+    },
+    "dengarkan dulu ya": {
+      "text": "Dengarkan dulu ya",
+      "src": "audio/ibu/66899cddf7f668111909.mp3"
+    },
+    "dengarkan ya mana huruf aa": {
+      "text": "Dengarkan ya... Mana huruf aa?",
+      "src": "audio/ibu/274ace26b4101640d268.mp3"
+    },
+    "dengarkan ya mana huruf beh": {
+      "text": "Dengarkan ya... Mana huruf beh?",
+      "src": "audio/ibu/749262922c8bd63ba274.mp3"
+    },
+    "dengarkan ya mana huruf ceh": {
+      "text": "Dengarkan ya... Mana huruf ceh?",
+      "src": "audio/ibu/e58fc9ca95d118d03e0e.mp3"
+    },
+    "dengarkan ya mana huruf deh": {
+      "text": "Dengarkan ya... Mana huruf deh?",
+      "src": "audio/ibu/a22c80791d50a335d519.mp3"
+    },
+    "dengarkan ya mana huruf ee": {
+      "text": "Dengarkan ya... Mana huruf ee?",
+      "src": "audio/ibu/b75c92b618c2692f5235.mp3"
+    },
+    "dengarkan ya mana huruf ef": {
+      "text": "Dengarkan ya... Mana huruf ef?",
+      "src": "audio/ibu/951ce98a26a6ed8341b3.mp3"
+    },
+    "dengarkan ya mana huruf eks": {
+      "text": "Dengarkan ya... Mana huruf eks?",
+      "src": "audio/ibu/8f74c0cd71b86f607012.mp3"
+    },
+    "dengarkan ya mana huruf el": {
+      "text": "Dengarkan ya... Mana huruf el?",
+      "src": "audio/ibu/45627711655bd601a79b.mp3"
+    },
+    "dengarkan ya mana huruf em": {
+      "text": "Dengarkan ya... Mana huruf em?",
+      "src": "audio/ibu/846918c1c8de832a1c6f.mp3"
+    },
+    "dengarkan ya mana huruf en": {
+      "text": "Dengarkan ya... Mana huruf en?",
+      "src": "audio/ibu/6506e9610da78f10bff3.mp3"
+    },
+    "dengarkan ya mana huruf er": {
+      "text": "Dengarkan ya... Mana huruf er?",
+      "src": "audio/ibu/86163dd457a459b2fd05.mp3"
+    },
+    "dengarkan ya mana huruf es": {
+      "text": "Dengarkan ya... Mana huruf es?",
+      "src": "audio/ibu/bfcbd34d34d1c0696989.mp3"
+    },
+    "dengarkan ya mana huruf fe": {
+      "text": "Dengarkan ya... Mana huruf fe?",
+      "src": "audio/ibu/5f6985212822304ab059.mp3"
+    },
+    "dengarkan ya mana huruf geh": {
+      "text": "Dengarkan ya... Mana huruf geh?",
+      "src": "audio/ibu/6f9959386a9fd2b02abb.mp3"
+    },
+    "dengarkan ya mana huruf ha": {
+      "text": "Dengarkan ya... Mana huruf ha?",
+      "src": "audio/ibu/d0b29c0cd965bdaf7225.mp3"
+    },
+    "dengarkan ya mana huruf ii": {
+      "text": "Dengarkan ya... Mana huruf ii?",
+      "src": "audio/ibu/81a7d51f2cb166883d3d.mp3"
+    },
+    "dengarkan ya mana huruf jeh": {
+      "text": "Dengarkan ya... Mana huruf jeh?",
+      "src": "audio/ibu/d53bb22e4eda3e113331.mp3"
+    },
+    "dengarkan ya mana huruf ka": {
+      "text": "Dengarkan ya... Mana huruf ka?",
+      "src": "audio/ibu/97fe1af3b663eea307bc.mp3"
+    },
+    "dengarkan ya mana huruf ki": {
+      "text": "Dengarkan ya... Mana huruf ki?",
+      "src": "audio/ibu/55b8a26c064ebd90ca47.mp3"
+    },
+    "dengarkan ya mana huruf oo": {
+      "text": "Dengarkan ya... Mana huruf oo?",
+      "src": "audio/ibu/8ef4e2fabd0c4010a8ba.mp3"
+    },
+    "dengarkan ya mana huruf peh": {
+      "text": "Dengarkan ya... Mana huruf peh?",
+      "src": "audio/ibu/0914ac06794dd9349a94.mp3"
+    },
+    "dengarkan ya mana huruf teh": {
+      "text": "Dengarkan ya... Mana huruf teh?",
+      "src": "audio/ibu/3ff2758f4361aad6963d.mp3"
+    },
+    "dengarkan ya mana huruf uu": {
+      "text": "Dengarkan ya... Mana huruf uu?",
+      "src": "audio/ibu/b2e7de5e663657e703ee.mp3"
+    },
+    "dengarkan ya mana huruf we": {
+      "text": "Dengarkan ya... Mana huruf we?",
+      "src": "audio/ibu/fc8e963f2dbe0ac7797f.mp3"
+    },
+    "dengarkan ya mana huruf ye": {
+      "text": "Dengarkan ya... Mana huruf ye?",
+      "src": "audio/ibu/9e2ae858cf0bb1bd0f51.mp3"
+    },
+    "dengarkan ya mana huruf zet": {
+      "text": "Dengarkan ya... Mana huruf zet?",
+      "src": "audio/ibu/d93306d358d14e7f6ff8.mp3"
+    },
+    "dii": {
+      "text": "dii",
+      "src": "audio/ibu/f3d688238d76ea5e57f5.mp3"
+    },
+    "do": {
+      "text": "do",
+      "src": "audio/ibu/ac0b52a2ae6ef99999bc.mp3"
+    },
+    "doo": {
+      "text": "doo",
+      "src": "audio/ibu/778c553efa00d3c4240e.mp3"
+    },
+    "du": {
+      "text": "du",
+      "src": "audio/ibu/601b2c2473811afea786.mp3"
+    },
+    "duri": {
+      "text": "duri",
+      "src": "audio/ibu/134f651857e754a83ca6.mp3"
+    },
+    "duu": {
+      "text": "duu",
+      "src": "audio/ibu/c6a1f340f5b1250b3fac.mp3"
+    },
+    "e": {
+      "text": "e",
+      "src": "audio/ibu/3f79bb7b435b05321651.mp3"
+    },
+    "ee": {
+      "text": "ee",
+      "src": "audio/ibu/27a84712e4b22c415fc5.mp3"
+    },
+    "ef": {
+      "text": "ef",
+      "src": "audio/ibu/4ca669ac3713d1f4aea0.mp3"
+    },
+    "eks": {
+      "text": "eks",
+      "src": "audio/ibu/6e884711fb5f55603866.mp3"
+    },
+    "el": {
+      "text": "el",
+      "src": "audio/ibu/d65c3e892354b17a4c03.mp3"
+    },
+    "elang": {
+      "text": "elang",
+      "src": "audio/ibu/4b250b1677380acfd723.mp3"
+    },
+    "em": {
+      "text": "em",
+      "src": "audio/ibu/84a47f61dd341ce73139.mp3"
+    },
+    "en": {
+      "text": "en",
+      "src": "audio/ibu/dbd3a49d0d906b4ed921.mp3"
+    },
+    "er": {
+      "text": "er",
+      "src": "audio/ibu/cc7e4412564ba8a761bd.mp3"
+    },
+    "es": {
+      "text": "es",
+      "src": "audio/ibu/c0bc1e08f9743b2d50d5.mp3"
+    },
+    "fe": {
+      "text": "fe",
+      "src": "audio/ibu/2c9dcded5b6e7e0ee0e0.mp3"
+    },
+    "fo": {
+      "text": "fo",
+      "src": "audio/ibu/9c3aee7110b787f0fb5f.mp3"
+    },
+    "fon": {
+      "text": "fon",
+      "src": "audio/ibu/027c9c9d8f4791f4eddb.mp3"
+    },
+    "foto": {
+      "text": "foto",
+      "src": "audio/ibu/6187eb884a2243dbed3a.mp3"
+    },
+    "ga": {
+      "text": "ga",
+      "src": "audio/ibu/f52d63231eb0dbaac689.mp3"
+    },
+    "gaa": {
+      "text": "gaa",
+      "src": "audio/ibu/6a20b12fb04b136c7c9e.mp3"
+    },
+    "gajah": {
+      "text": "gajah",
+      "src": "audio/ibu/64a9506d6e07e070a798.mp3"
+    },
+    "gee": {
+      "text": "gee",
+      "src": "audio/ibu/e196e019719428523a90.mp3"
+    },
+    "geh": {
+      "text": "geh",
+      "src": "audio/ibu/94571cd5a8105c2611ec.mp3"
+    },
+    "gi": {
+      "text": "gi",
+      "src": "audio/ibu/1917d730c88ed0f6fd76.mp3"
+    },
+    "gigi": {
+      "text": "gigi",
+      "src": "audio/ibu/d63d71f407ad92113aa5.mp3"
+    },
+    "gii": {
+      "text": "gii",
+      "src": "audio/ibu/f95732f27705816947be.mp3"
+    },
+    "goo": {
+      "text": "goo",
+      "src": "audio/ibu/eeea394806ada3056899.mp3"
+    },
+    "guu": {
+      "text": "guu",
+      "src": "audio/ibu/a85ba32b3f58fbf243c8.mp3"
+    },
+    "ha": {
+      "text": "ha",
+      "src": "audio/ibu/8693873cd8f8a2d9c7c5.mp3"
+    },
+    "haa": {
+      "text": "haa",
+      "src": "audio/ibu/aefb4673842099b27615.mp3"
+    },
+    "halo ayo belajar membaca bersama bu delia": {
+      "text": "Halo! Ayo belajar membaca bersama Bu Delia!",
+      "src": "audio/ibu/ce0789121f8192260215.mp3"
+    },
+    "halo sayang yuk kita belajar membaca bersama pelan-pelan saja ya": {
+      "text": "Halo, sayang. Yuk, kita belajar membaca bersama. Pelan-pelan saja, ya.",
+      "src": "audio/ibu/6e282d230f3d337185a6.mp3"
+    },
+    "halo teman ayo kita lanjutkan petualangan membaca": {
+      "text": "Halo, Teman! Ayo kita lanjutkan petualangan membaca.",
+      "src": "audio/ibu/9d482fa36dd8842d510d.mp3"
+    },
+    "hampir": {
+      "text": "Hampir!",
+      "src": "audio/ibu/aaa3f7f759001ccfb335.mp3"
+    },
+    "harimau": {
+      "text": "harimau",
+      "src": "audio/ibu/d6083a92ee02f7a700cf.mp3"
+    },
+    "hebat sekali": {
+      "text": "Hebat sekali!",
+      "src": "audio/ibu/4bc10cdbc55b24bd3b04.mp3"
+    },
+    "hee": {
+      "text": "hee",
+      "src": "audio/ibu/21b6ca9aaf9c0ca59141.mp3"
+    },
+    "hii": {
+      "text": "hii",
+      "src": "audio/ibu/a1a3b09875f9e9acade5.mp3"
+    },
+    "hoo": {
+      "text": "hoo",
+      "src": "audio/ibu/2e75a349e53c2d190fc6.mp3"
+    },
+    "hore kamu hebat sekali": {
+      "text": "Hore! Kamu hebat sekali!",
+      "src": "audio/ibu/188f313302c01ece675c.mp3"
+    },
+    "hu": {
+      "text": "hu",
+      "src": "audio/ibu/ffd3d21b48469c85982c.mp3"
+    },
+    "huruf aa": {
+      "text": "Huruf aa",
+      "src": "audio/ibu/068b934412f1aedfd6d3.mp3"
+    },
+    "huruf beh": {
+      "text": "Huruf beh",
+      "src": "audio/ibu/2d87758cf9729d46fd25.mp3"
+    },
+    "huruf ceh": {
+      "text": "Huruf ceh",
+      "src": "audio/ibu/b2ed57c3858733edf375.mp3"
+    },
+    "huruf deh": {
+      "text": "Huruf deh",
+      "src": "audio/ibu/6d40a8cf049b26bc0041.mp3"
+    },
+    "huruf ee": {
+      "text": "Huruf ee",
+      "src": "audio/ibu/08588a6b3364ca15b6db.mp3"
+    },
+    "huruf ef": {
+      "text": "Huruf ef",
+      "src": "audio/ibu/a3a20a8d67ad3187e054.mp3"
+    },
+    "huruf eks": {
+      "text": "Huruf eks",
+      "src": "audio/ibu/bcf8e080a37c202c7dcf.mp3"
+    },
+    "huruf el": {
+      "text": "Huruf el",
+      "src": "audio/ibu/1648f49761e8f52e0d30.mp3"
+    },
+    "huruf em": {
+      "text": "Huruf em",
+      "src": "audio/ibu/df04b8da90b13c6758af.mp3"
+    },
+    "huruf en": {
+      "text": "Huruf en",
+      "src": "audio/ibu/8a424fd3171f30c38f09.mp3"
+    },
+    "huruf er": {
+      "text": "Huruf er",
+      "src": "audio/ibu/018878c2807306d37613.mp3"
+    },
+    "huruf es": {
+      "text": "Huruf es",
+      "src": "audio/ibu/c42c7bc3e1a579c02708.mp3"
+    },
+    "huruf fe": {
+      "text": "Huruf fe",
+      "src": "audio/ibu/84f03f2eb4326bba2d15.mp3"
+    },
+    "huruf geh": {
+      "text": "Huruf geh",
+      "src": "audio/ibu/d8a9c79045a7cb5f2e78.mp3"
+    },
+    "huruf ha": {
+      "text": "Huruf ha",
+      "src": "audio/ibu/3d0716380df4e27a6e31.mp3"
+    },
+    "huruf ii": {
+      "text": "Huruf ii",
+      "src": "audio/ibu/bee65934543bf3543d3c.mp3"
+    },
+    "huruf jeh": {
+      "text": "Huruf jeh",
+      "src": "audio/ibu/1919b419d8e1d98cf181.mp3"
+    },
+    "huruf ka": {
+      "text": "Huruf ka",
+      "src": "audio/ibu/48a848a43ad0e89cd451.mp3"
+    },
+    "huruf ki": {
+      "text": "Huruf ki",
+      "src": "audio/ibu/c915459807b48834e358.mp3"
+    },
+    "huruf oo": {
+      "text": "Huruf oo",
+      "src": "audio/ibu/dcadb808cd6e410f6fc7.mp3"
+    },
+    "huruf peh": {
+      "text": "Huruf peh",
+      "src": "audio/ibu/ee23d7667c9571bae050.mp3"
+    },
+    "huruf teh": {
+      "text": "Huruf teh",
+      "src": "audio/ibu/ce280aeb04d4c5de7078.mp3"
+    },
+    "huruf uu": {
+      "text": "Huruf uu",
+      "src": "audio/ibu/3c9830481b0a3f2889f2.mp3"
+    },
+    "huruf we": {
+      "text": "Huruf we",
+      "src": "audio/ibu/4ef891f4cb15d7f2b981.mp3"
+    },
+    "huruf ye": {
+      "text": "Huruf ye",
+      "src": "audio/ibu/4f4cc7df80b374e4653f.mp3"
+    },
+    "huruf zet": {
+      "text": "Huruf zet",
+      "src": "audio/ibu/b25a0bcda446c61d82d2.mp3"
+    },
+    "huu": {
+      "text": "huu",
+      "src": "audio/ibu/dfdaf168e9cdda88fc33.mp3"
+    },
+    "i": {
+      "text": "i",
+      "src": "audio/ibu/de7d1b721a1e0632b7cf.mp3"
+    },
+    "ibu": {
+      "text": "ibu",
+      "src": "audio/ibu/fef60ecfd3208322e9d8.mp3"
+    },
+    "ii": {
+      "text": "ii",
+      "src": "audio/ibu/5d7f49449ab22deac22d.mp3"
+    },
+    "ikan": {
+      "text": "ikan",
+      "src": "audio/ibu/b0ec050e3d67750df685.mp3"
+    },
+    "ikuti suaranya pelan-pelan ya": {
+      "text": "Ikuti suaranya pelan-pelan ya",
+      "src": "audio/ibu/7cbf0652d9d747dfcd11.mp3"
+    },
+    "ini gambar apel huruf awal kata apel adalah": {
+      "text": "Ini gambar apel. Huruf awal kata apel adalah...?",
+      "src": "audio/ibu/c95febe6e1b3b33d0c15.mp3"
+    },
+    "ini gambar apel mana tulisannya": {
+      "text": "Ini gambar apel. Mana tulisannya?",
+      "src": "audio/ibu/24f11dfb2454907cd844.mp3"
+    },
+    "ini gambar bahu mana tulisannya": {
+      "text": "Ini gambar bahu. Mana tulisannya?",
+      "src": "audio/ibu/9a860ba293758a2f2bfb.mp3"
+    },
+    "ini gambar baju mana tulisannya": {
+      "text": "Ini gambar baju. Mana tulisannya?",
+      "src": "audio/ibu/a9f8b8f1d67309a821e7.mp3"
+    },
+    "ini gambar bapa mana tulisannya": {
+      "text": "Ini gambar bapa. Mana tulisannya?",
+      "src": "audio/ibu/f25071b692e00375e931.mp3"
+    },
+    "ini gambar batu mana tulisannya": {
+      "text": "Ini gambar batu. Mana tulisannya?",
+      "src": "audio/ibu/f31cf2ba7f7f20186fde.mp3"
+    },
+    "ini gambar bibi mana tulisannya": {
+      "text": "Ini gambar bibi. Mana tulisannya?",
+      "src": "audio/ibu/6b5ed9b1fd2b52aa4456.mp3"
+    },
+    "ini gambar biji mana tulisannya": {
+      "text": "Ini gambar biji. Mana tulisannya?",
+      "src": "audio/ibu/bbba0440af5c793fdb83.mp3"
+    },
+    "ini gambar bola huruf awal kata bola adalah": {
+      "text": "Ini gambar bola. Huruf awal kata bola adalah...?",
+      "src": "audio/ibu/0eb07e5d430bc7227054.mp3"
+    },
+    "ini gambar bola mana tulisannya": {
+      "text": "Ini gambar bola. Mana tulisannya?",
+      "src": "audio/ibu/61fef1fd7f34e98c8c5c.mp3"
+    },
+    "ini gambar buku mana tulisannya": {
+      "text": "Ini gambar buku. Mana tulisannya?",
+      "src": "audio/ibu/d0e72b3b5c3561b48bb7.mp3"
+    },
+    "ini gambar cacing huruf awal kata cacing adalah": {
+      "text": "Ini gambar cacing. Huruf awal kata cacing adalah...?",
+      "src": "audio/ibu/66ba587c41696e429283.mp3"
+    },
+    "ini gambar cacing mana tulisannya": {
+      "text": "Ini gambar cacing. Mana tulisannya?",
+      "src": "audio/ibu/8e68ca586053e125f783.mp3"
+    },
+    "ini gambar ceri mana tulisannya": {
+      "text": "Ini gambar ceri. Mana tulisannya?",
+      "src": "audio/ibu/58086f1547dcee770ea1.mp3"
+    },
+    "ini gambar cumi mana tulisannya": {
+      "text": "Ini gambar cumi. Mana tulisannya?",
+      "src": "audio/ibu/ff41e178ec634749028a.mp3"
+    },
+    "ini gambar dada mana tulisannya": {
+      "text": "Ini gambar dada. Mana tulisannya?",
+      "src": "audio/ibu/2505d0449d2791a47a55.mp3"
+    },
+    "ini gambar dadu mana tulisannya": {
+      "text": "Ini gambar dadu. Mana tulisannya?",
+      "src": "audio/ibu/47fd37c569334c6f0cb3.mp3"
+    },
+    "ini gambar daun huruf awal kata daun adalah": {
+      "text": "Ini gambar daun. Huruf awal kata daun adalah...?",
+      "src": "audio/ibu/c1d65ec46d5c6e34b492.mp3"
+    },
+    "ini gambar daun mana tulisannya": {
+      "text": "Ini gambar daun. Mana tulisannya?",
+      "src": "audio/ibu/4e4c0b779293caf890c9.mp3"
+    },
+    "ini gambar duri mana tulisannya": {
+      "text": "Ini gambar duri. Mana tulisannya?",
+      "src": "audio/ibu/fec33b871f0a4e49d316.mp3"
+    },
+    "ini gambar elang huruf awal kata elang adalah": {
+      "text": "Ini gambar elang. Huruf awal kata elang adalah...?",
+      "src": "audio/ibu/5584105f2e43ea3f0efe.mp3"
+    },
+    "ini gambar elang mana tulisannya": {
+      "text": "Ini gambar elang. Mana tulisannya?",
+      "src": "audio/ibu/40506dfad2502d813e41.mp3"
+    },
+    "ini gambar foto huruf awal kata foto adalah": {
+      "text": "Ini gambar foto. Huruf awal kata foto adalah...?",
+      "src": "audio/ibu/c0e2af5c42f983b5042f.mp3"
+    },
+    "ini gambar foto mana tulisannya": {
+      "text": "Ini gambar foto. Mana tulisannya?",
+      "src": "audio/ibu/3a96b4ed65a636a53571.mp3"
+    },
+    "ini gambar gajah huruf awal kata gajah adalah": {
+      "text": "Ini gambar gajah. Huruf awal kata gajah adalah...?",
+      "src": "audio/ibu/09909bf83a67afd60396.mp3"
+    },
+    "ini gambar gajah mana tulisannya": {
+      "text": "Ini gambar gajah. Mana tulisannya?",
+      "src": "audio/ibu/74a467fb6e87ffeb3128.mp3"
+    },
+    "ini gambar gigi mana tulisannya": {
+      "text": "Ini gambar gigi. Mana tulisannya?",
+      "src": "audio/ibu/e8c8346bbc613d62ec28.mp3"
+    },
+    "ini gambar harimau huruf awal kata harimau adalah": {
+      "text": "Ini gambar harimau. Huruf awal kata harimau adalah...?",
+      "src": "audio/ibu/cf731521c4d6f5da285a.mp3"
+    },
+    "ini gambar harimau mana tulisannya": {
+      "text": "Ini gambar harimau. Mana tulisannya?",
+      "src": "audio/ibu/42221d5af8df862a43a6.mp3"
+    },
+    "ini gambar ibu mana tulisannya": {
+      "text": "Ini gambar ibu. Mana tulisannya?",
+      "src": "audio/ibu/55242e3b19279eaccd07.mp3"
+    },
+    "ini gambar ikan huruf awal kata ikan adalah": {
+      "text": "Ini gambar ikan. Huruf awal kata ikan adalah...?",
+      "src": "audio/ibu/1e7c19a0b730f2005a9d.mp3"
+    },
+    "ini gambar ikan mana tulisannya": {
+      "text": "Ini gambar ikan. Mana tulisannya?",
+      "src": "audio/ibu/e2ae355e05b32506be81.mp3"
+    },
+    "ini gambar jeruk huruf awal kata jeruk adalah": {
+      "text": "Ini gambar jeruk. Huruf awal kata jeruk adalah...?",
+      "src": "audio/ibu/ef6205bf7ab7d940e2e8.mp3"
+    },
+    "ini gambar jeruk mana tulisannya": {
+      "text": "Ini gambar jeruk. Mana tulisannya?",
+      "src": "audio/ibu/5221b89703d5c31f19fb.mp3"
+    },
+    "ini gambar kado mana tulisannya": {
+      "text": "Ini gambar kado. Mana tulisannya?",
+      "src": "audio/ibu/51ffb386b8321c2fe44f.mp3"
+    },
+    "ini gambar kaki mana tulisannya": {
+      "text": "Ini gambar kaki. Mana tulisannya?",
+      "src": "audio/ibu/8aa04891a259b446041c.mp3"
+    },
+    "ini gambar kayu mana tulisannya": {
+      "text": "Ini gambar kayu. Mana tulisannya?",
+      "src": "audio/ibu/dd70ad85224842b62778.mp3"
+    },
+    "ini gambar kera mana tulisannya": {
+      "text": "Ini gambar kera. Mana tulisannya?",
+      "src": "audio/ibu/75a8cdd9e2bc0c2cea63.mp3"
+    },
+    "ini gambar koki mana tulisannya": {
+      "text": "Ini gambar koki. Mana tulisannya?",
+      "src": "audio/ibu/545ea4bd66fba99c24cf.mp3"
+    },
+    "ini gambar kopi mana tulisannya": {
+      "text": "Ini gambar kopi. Mana tulisannya?",
+      "src": "audio/ibu/b0f2f51b29a87e1977de.mp3"
+    },
+    "ini gambar kuda huruf awal kata kuda adalah": {
+      "text": "Ini gambar kuda. Huruf awal kata kuda adalah...?",
+      "src": "audio/ibu/363443ea369ac1a9e77b.mp3"
+    },
+    "ini gambar kuda mana tulisannya": {
+      "text": "Ini gambar kuda. Mana tulisannya?",
+      "src": "audio/ibu/70f954425db673747845.mp3"
+    },
+    "ini gambar kuku mana tulisannya": {
+      "text": "Ini gambar kuku. Mana tulisannya?",
+      "src": "audio/ibu/fa079c8d4f23f85fc586.mp3"
+    },
+    "ini gambar kura mana tulisannya": {
+      "text": "Ini gambar kura. Mana tulisannya?",
+      "src": "audio/ibu/70507166ba11f362eeb0.mp3"
+    },
+    "ini gambar kutu mana tulisannya": {
+      "text": "Ini gambar kutu. Mana tulisannya?",
+      "src": "audio/ibu/8dd8cf6b2f4fce08cea5.mp3"
+    },
+    "ini gambar labu mana tulisannya": {
+      "text": "Ini gambar labu. Mana tulisannya?",
+      "src": "audio/ibu/50f404c8072ee5c2508a.mp3"
+    },
+    "ini gambar lebah huruf awal kata lebah adalah": {
+      "text": "Ini gambar lebah. Huruf awal kata lebah adalah...?",
+      "src": "audio/ibu/f4320d0bafb4bda7368d.mp3"
+    },
+    "ini gambar lebah mana tulisannya": {
+      "text": "Ini gambar lebah. Mana tulisannya?",
+      "src": "audio/ibu/9ddbde18d4ae6919c7bc.mp3"
+    },
+    "ini gambar lele mana tulisannya": {
+      "text": "Ini gambar lele. Mana tulisannya?",
+      "src": "audio/ibu/42095c839981e26b33c8.mp3"
+    },
+    "ini gambar madu mana tulisannya": {
+      "text": "Ini gambar madu. Mana tulisannya?",
+      "src": "audio/ibu/c5f70a906781fc3d5e49.mp3"
+    },
+    "ini gambar mama mana tulisannya": {
+      "text": "Ini gambar mama. Mana tulisannya?",
+      "src": "audio/ibu/2ef2695f145cdb4562ba.mp3"
+    },
+    "ini gambar mata huruf awal kata mata adalah": {
+      "text": "Ini gambar mata. Huruf awal kata mata adalah...?",
+      "src": "audio/ibu/623cf53f48ab9c182702.mp3"
+    },
+    "ini gambar mata mana tulisannya": {
+      "text": "Ini gambar mata. Mana tulisannya?",
+      "src": "audio/ibu/882fa742c71929c7a29d.mp3"
+    },
+    "ini gambar meja mana tulisannya": {
+      "text": "Ini gambar meja. Mana tulisannya?",
+      "src": "audio/ibu/30d39097627d1bd10389.mp3"
+    },
+    "ini gambar nasi huruf awal kata nasi adalah": {
+      "text": "Ini gambar nasi. Huruf awal kata nasi adalah...?",
+      "src": "audio/ibu/f36aabaeca2502f5f0e6.mp3"
+    },
+    "ini gambar nasi mana tulisannya": {
+      "text": "Ini gambar nasi. Mana tulisannya?",
+      "src": "audio/ibu/0f24a39a2df47e5fb777.mp3"
+    },
+    "ini gambar onta huruf awal kata onta adalah": {
+      "text": "Ini gambar onta. Huruf awal kata onta adalah...?",
+      "src": "audio/ibu/80a24aee78a46afd80fb.mp3"
+    },
+    "ini gambar onta mana tulisannya": {
+      "text": "Ini gambar onta. Mana tulisannya?",
+      "src": "audio/ibu/d14b632da39097971283.mp3"
+    },
+    "ini gambar paku mana tulisannya": {
+      "text": "Ini gambar paku. Mana tulisannya?",
+      "src": "audio/ibu/e7ea35dc17ca5d00ce34.mp3"
+    },
+    "ini gambar palu mana tulisannya": {
+      "text": "Ini gambar palu. Mana tulisannya?",
+      "src": "audio/ibu/62816cbcec1c97700501.mp3"
+    },
+    "ini gambar papa mana tulisannya": {
+      "text": "Ini gambar papa. Mana tulisannya?",
+      "src": "audio/ibu/c7f5b5d3ddc4c75d997b.mp3"
+    },
+    "ini gambar pari mana tulisannya": {
+      "text": "Ini gambar pari. Mana tulisannya?",
+      "src": "audio/ibu/2903c507a512d11163cf.mp3"
+    },
+    "ini gambar pena mana tulisannya": {
+      "text": "Ini gambar pena. Mana tulisannya?",
+      "src": "audio/ibu/48eb73e887cdb05c277a.mp3"
+    },
+    "ini gambar peta mana tulisannya": {
+      "text": "Ini gambar peta. Mana tulisannya?",
+      "src": "audio/ibu/c5d955fd71b9118399a6.mp3"
+    },
+    "ini gambar pipi mana tulisannya": {
+      "text": "Ini gambar pipi. Mana tulisannya?",
+      "src": "audio/ibu/511011424cd9bc35de67.mp3"
+    },
+    "ini gambar pisang huruf awal kata pisang adalah": {
+      "text": "Ini gambar pisang. Huruf awal kata pisang adalah...?",
+      "src": "audio/ibu/844f132f61fb870e7e48.mp3"
+    },
+    "ini gambar pisang mana tulisannya": {
+      "text": "Ini gambar pisang. Mana tulisannya?",
+      "src": "audio/ibu/6345812f4611512791de.mp3"
+    },
+    "ini gambar pita mana tulisannya": {
+      "text": "Ini gambar pita. Mana tulisannya?",
+      "src": "audio/ibu/26e30af010d7521da170.mp3"
+    },
+    "ini gambar quran huruf awal kata quran adalah": {
+      "text": "Ini gambar quran. Huruf awal kata quran adalah...?",
+      "src": "audio/ibu/89fb821eb0f557f0060f.mp3"
+    },
+    "ini gambar quran mana tulisannya": {
+      "text": "Ini gambar quran. Mana tulisannya?",
+      "src": "audio/ibu/4bcea3ae5b5f9efda71f.mp3"
+    },
+    "ini gambar roda mana tulisannya": {
+      "text": "Ini gambar roda. Mana tulisannya?",
+      "src": "audio/ibu/fe72f35acb2fad112e55.mp3"
+    },
+    "ini gambar roti mana tulisannya": {
+      "text": "Ini gambar roti. Mana tulisannya?",
+      "src": "audio/ibu/9470ba36e2fb187da62b.mp3"
+    },
+    "ini gambar rusa huruf awal kata rusa adalah": {
+      "text": "Ini gambar rusa. Huruf awal kata rusa adalah...?",
+      "src": "audio/ibu/01c576337acef6b59fcd.mp3"
+    },
+    "ini gambar rusa mana tulisannya": {
+      "text": "Ini gambar rusa. Mana tulisannya?",
+      "src": "audio/ibu/1c2a8d0b735c29881265.mp3"
+    },
+    "ini gambar sapi huruf awal kata sapi adalah": {
+      "text": "Ini gambar sapi. Huruf awal kata sapi adalah...?",
+      "src": "audio/ibu/dff47be8f08ccaf90d73.mp3"
+    },
+    "ini gambar sapi mana tulisannya": {
+      "text": "Ini gambar sapi. Mana tulisannya?",
+      "src": "audio/ibu/2ea9202e4e7196555e97.mp3"
+    },
+    "ini gambar sapu mana tulisannya": {
+      "text": "Ini gambar sapu. Mana tulisannya?",
+      "src": "audio/ibu/2a2b2a7b0894805ccc8b.mp3"
+    },
+    "ini gambar sawi mana tulisannya": {
+      "text": "Ini gambar sawi. Mana tulisannya?",
+      "src": "audio/ibu/a1959de8c1cadb064b00.mp3"
+    },
+    "ini gambar susu mana tulisannya": {
+      "text": "Ini gambar susu. Mana tulisannya?",
+      "src": "audio/ibu/1a8c87410739dff91a27.mp3"
+    },
+    "ini gambar tali mana tulisannya": {
+      "text": "Ini gambar tali. Mana tulisannya?",
+      "src": "audio/ibu/f5a80c51a8ed05fa0aac.mp3"
+    },
+    "ini gambar tebu mana tulisannya": {
+      "text": "Ini gambar tebu. Mana tulisannya?",
+      "src": "audio/ibu/11f365413ca7b346f85e.mp3"
+    },
+    "ini gambar toko mana tulisannya": {
+      "text": "Ini gambar toko. Mana tulisannya?",
+      "src": "audio/ibu/325f149fe7865cb8b08a.mp3"
+    },
+    "ini gambar topi huruf awal kata topi adalah": {
+      "text": "Ini gambar topi. Huruf awal kata topi adalah...?",
+      "src": "audio/ibu/c5a373a9f1b49f8126af.mp3"
+    },
+    "ini gambar topi mana tulisannya": {
+      "text": "Ini gambar topi. Mana tulisannya?",
+      "src": "audio/ibu/78ccf4246940a46067af.mp3"
+    },
+    "ini gambar udang huruf awal kata udang adalah": {
+      "text": "Ini gambar udang. Huruf awal kata udang adalah...?",
+      "src": "audio/ibu/aede112d8d71738ef19b.mp3"
+    },
+    "ini gambar udang mana tulisannya": {
+      "text": "Ini gambar udang. Mana tulisannya?",
+      "src": "audio/ibu/044b40cbdfbb5bfa3f50.mp3"
+    },
+    "ini gambar vas huruf awal kata vas adalah": {
+      "text": "Ini gambar vas. Huruf awal kata vas adalah...?",
+      "src": "audio/ibu/ad55599706f6b147337f.mp3"
+    },
+    "ini gambar vas mana tulisannya": {
+      "text": "Ini gambar vas. Mana tulisannya?",
+      "src": "audio/ibu/ca7df2550835129aba6d.mp3"
+    },
+    "ini gambar wortel huruf awal kata wortel adalah": {
+      "text": "Ini gambar wortel. Huruf awal kata wortel adalah...?",
+      "src": "audio/ibu/776261c3c5985f8323c4.mp3"
+    },
+    "ini gambar wortel mana tulisannya": {
+      "text": "Ini gambar wortel. Mana tulisannya?",
+      "src": "audio/ibu/8d6a938ce96f83f7314c.mp3"
+    },
+    "ini gambar xilofon huruf awal kata xilofon adalah": {
+      "text": "Ini gambar xilofon. Huruf awal kata xilofon adalah...?",
+      "src": "audio/ibu/067e7d71795dc325df83.mp3"
+    },
+    "ini gambar xilofon mana tulisannya": {
+      "text": "Ini gambar xilofon. Mana tulisannya?",
+      "src": "audio/ibu/33a631465de563a9bfe0.mp3"
+    },
+    "ini gambar yoyo huruf awal kata yoyo adalah": {
+      "text": "Ini gambar yoyo. Huruf awal kata yoyo adalah...?",
+      "src": "audio/ibu/a0a974bf70fa10b403b0.mp3"
+    },
+    "ini gambar yoyo mana tulisannya": {
+      "text": "Ini gambar yoyo. Mana tulisannya?",
+      "src": "audio/ibu/b2eea2583407f95034c3.mp3"
+    },
+    "ini gambar zebra huruf awal kata zebra adalah": {
+      "text": "Ini gambar zebra. Huruf awal kata zebra adalah...?",
+      "src": "audio/ibu/7b89bb928c4d26783014.mp3"
+    },
+    "ini gambar zebra mana tulisannya": {
+      "text": "Ini gambar zebra. Mana tulisannya?",
+      "src": "audio/ibu/d651d78d1ae9d361584e.mp3"
+    },
+    "ini huruf a": {
+      "text": "Ini huruf A!",
+      "src": "audio/ibu/9796ee7af1e331d79868.mp3"
+    },
+    "ini huruf b": {
+      "text": "Ini huruf B!",
+      "src": "audio/ibu/de1a5039bce3857d1ab6.mp3"
+    },
+    "ini huruf besar a mana huruf kecilnya": {
+      "text": "Ini huruf besar A. Mana huruf kecilnya?",
+      "src": "audio/ibu/ec114c4e718bc1a37143.mp3"
+    },
+    "ini huruf besar b mana huruf kecilnya": {
+      "text": "Ini huruf besar B. Mana huruf kecilnya?",
+      "src": "audio/ibu/9a82791aaf6819b54b19.mp3"
+    },
+    "ini huruf besar c mana huruf kecilnya": {
+      "text": "Ini huruf besar C. Mana huruf kecilnya?",
+      "src": "audio/ibu/db3ba0297d92e45b40da.mp3"
+    },
+    "ini huruf besar d mana huruf kecilnya": {
+      "text": "Ini huruf besar D. Mana huruf kecilnya?",
+      "src": "audio/ibu/ac56dfc8e324868dbe8d.mp3"
+    },
+    "ini huruf besar e mana huruf kecilnya": {
+      "text": "Ini huruf besar E. Mana huruf kecilnya?",
+      "src": "audio/ibu/7ac4be94684924b917af.mp3"
+    },
+    "ini huruf besar f mana huruf kecilnya": {
+      "text": "Ini huruf besar F. Mana huruf kecilnya?",
+      "src": "audio/ibu/66cb6b4a485a318c8eab.mp3"
+    },
+    "ini huruf besar g mana huruf kecilnya": {
+      "text": "Ini huruf besar G. Mana huruf kecilnya?",
+      "src": "audio/ibu/c664be751f9be1ead107.mp3"
+    },
+    "ini huruf besar h mana huruf kecilnya": {
+      "text": "Ini huruf besar H. Mana huruf kecilnya?",
+      "src": "audio/ibu/10c69be0df749560d264.mp3"
+    },
+    "ini huruf besar i mana huruf kecilnya": {
+      "text": "Ini huruf besar I. Mana huruf kecilnya?",
+      "src": "audio/ibu/6d8104d439e08137366f.mp3"
+    },
+    "ini huruf besar j mana huruf kecilnya": {
+      "text": "Ini huruf besar J. Mana huruf kecilnya?",
+      "src": "audio/ibu/a79744d85e85bb853ddd.mp3"
+    },
+    "ini huruf besar k mana huruf kecilnya": {
+      "text": "Ini huruf besar K. Mana huruf kecilnya?",
+      "src": "audio/ibu/e59eb03652e435d9999e.mp3"
+    },
+    "ini huruf besar l mana huruf kecilnya": {
+      "text": "Ini huruf besar L. Mana huruf kecilnya?",
+      "src": "audio/ibu/38ccc87416ec9a837968.mp3"
+    },
+    "ini huruf besar m mana huruf kecilnya": {
+      "text": "Ini huruf besar M. Mana huruf kecilnya?",
+      "src": "audio/ibu/6e206c88a19b79832979.mp3"
+    },
+    "ini huruf besar n mana huruf kecilnya": {
+      "text": "Ini huruf besar N. Mana huruf kecilnya?",
+      "src": "audio/ibu/2cc58d08bdfc1e0c6287.mp3"
+    },
+    "ini huruf besar o mana huruf kecilnya": {
+      "text": "Ini huruf besar O. Mana huruf kecilnya?",
+      "src": "audio/ibu/bc1308dac600536fc0b8.mp3"
+    },
+    "ini huruf besar p mana huruf kecilnya": {
+      "text": "Ini huruf besar P. Mana huruf kecilnya?",
+      "src": "audio/ibu/bf0264d3de96d10659e0.mp3"
+    },
+    "ini huruf besar q mana huruf kecilnya": {
+      "text": "Ini huruf besar Q. Mana huruf kecilnya?",
+      "src": "audio/ibu/215e970b67d320dad02e.mp3"
+    },
+    "ini huruf besar r mana huruf kecilnya": {
+      "text": "Ini huruf besar R. Mana huruf kecilnya?",
+      "src": "audio/ibu/e7e90138f39d191045c1.mp3"
+    },
+    "ini huruf besar s mana huruf kecilnya": {
+      "text": "Ini huruf besar S. Mana huruf kecilnya?",
+      "src": "audio/ibu/12deaa21056d204c0442.mp3"
+    },
+    "ini huruf besar t mana huruf kecilnya": {
+      "text": "Ini huruf besar T. Mana huruf kecilnya?",
+      "src": "audio/ibu/8ae23d18d4becdae5d03.mp3"
+    },
+    "ini huruf besar u mana huruf kecilnya": {
+      "text": "Ini huruf besar U. Mana huruf kecilnya?",
+      "src": "audio/ibu/cd55fea8dd27bfc0aa14.mp3"
+    },
+    "ini huruf besar v mana huruf kecilnya": {
+      "text": "Ini huruf besar V. Mana huruf kecilnya?",
+      "src": "audio/ibu/82e5d3f481cada92ce55.mp3"
+    },
+    "ini huruf besar w mana huruf kecilnya": {
+      "text": "Ini huruf besar W. Mana huruf kecilnya?",
+      "src": "audio/ibu/4ea27cc11428870c05da.mp3"
+    },
+    "ini huruf besar x mana huruf kecilnya": {
+      "text": "Ini huruf besar X. Mana huruf kecilnya?",
+      "src": "audio/ibu/433bb1c3fe0063678c8f.mp3"
+    },
+    "ini huruf besar y mana huruf kecilnya": {
+      "text": "Ini huruf besar Y. Mana huruf kecilnya?",
+      "src": "audio/ibu/571b9909ba06eacc4a85.mp3"
+    },
+    "ini huruf besar z mana huruf kecilnya": {
+      "text": "Ini huruf besar Z. Mana huruf kecilnya?",
+      "src": "audio/ibu/a615d6be242f575f47d1.mp3"
+    },
+    "ini huruf c": {
+      "text": "Ini huruf C!",
+      "src": "audio/ibu/4d60486d503ed026ee83.mp3"
+    },
+    "ini huruf d": {
+      "text": "Ini huruf D!",
+      "src": "audio/ibu/c48662ce8733f8cdca95.mp3"
+    },
+    "ini huruf e": {
+      "text": "Ini huruf E!",
+      "src": "audio/ibu/fb304ae0f374deb122ed.mp3"
+    },
+    "ini huruf f": {
+      "text": "Ini huruf F!",
+      "src": "audio/ibu/8c9fea91cef48ed1c123.mp3"
+    },
+    "ini huruf g": {
+      "text": "Ini huruf G!",
+      "src": "audio/ibu/0b56eb4213e13de7c651.mp3"
+    },
+    "ini huruf h": {
+      "text": "Ini huruf H!",
+      "src": "audio/ibu/fcb1e40163a2161fd035.mp3"
+    },
+    "ini huruf i": {
+      "text": "Ini huruf I!",
+      "src": "audio/ibu/2f26e3a6c2d854423e58.mp3"
+    },
+    "ini huruf j": {
+      "text": "Ini huruf J!",
+      "src": "audio/ibu/c4fadfdeec87b11a2d4b.mp3"
+    },
+    "ini huruf k": {
+      "text": "Ini huruf K!",
+      "src": "audio/ibu/f9a8706e7e2b8f3cf7cf.mp3"
+    },
+    "ini huruf l": {
+      "text": "Ini huruf L!",
+      "src": "audio/ibu/ba11abd52ce0680c11de.mp3"
+    },
+    "ini huruf m": {
+      "text": "Ini huruf M!",
+      "src": "audio/ibu/a50d0c106388bf4ebde9.mp3"
+    },
+    "ini huruf n": {
+      "text": "Ini huruf N!",
+      "src": "audio/ibu/b2d1c3be49c2393f6948.mp3"
+    },
+    "ini huruf o": {
+      "text": "Ini huruf O!",
+      "src": "audio/ibu/72b59fc1b55ae40d6dc7.mp3"
+    },
+    "ini huruf p": {
+      "text": "Ini huruf P!",
+      "src": "audio/ibu/463852935fa777b7f533.mp3"
+    },
+    "ini huruf q": {
+      "text": "Ini huruf Q!",
+      "src": "audio/ibu/8019e665691ec7f0ba7c.mp3"
+    },
+    "ini huruf r": {
+      "text": "Ini huruf R!",
+      "src": "audio/ibu/8def21cf114f7f7604c2.mp3"
+    },
+    "ini huruf s": {
+      "text": "Ini huruf S!",
+      "src": "audio/ibu/121a1e997336d6047b4e.mp3"
+    },
+    "ini huruf t": {
+      "text": "Ini huruf T!",
+      "src": "audio/ibu/ce5956723ca52fa92ab6.mp3"
+    },
+    "ini huruf u": {
+      "text": "Ini huruf U!",
+      "src": "audio/ibu/cd04618737830e2bd747.mp3"
+    },
+    "ini huruf v": {
+      "text": "Ini huruf V!",
+      "src": "audio/ibu/a146b7de68321e890fa7.mp3"
+    },
+    "ini huruf w": {
+      "text": "Ini huruf W!",
+      "src": "audio/ibu/4d5147645174adca3801.mp3"
+    },
+    "ini huruf x": {
+      "text": "Ini huruf X!",
+      "src": "audio/ibu/1051d8b87a547aa02b6a.mp3"
+    },
+    "ini huruf y": {
+      "text": "Ini huruf Y!",
+      "src": "audio/ibu/4fdae5fef5eac44935f8.mp3"
+    },
+    "ini huruf z": {
+      "text": "Ini huruf Z!",
+      "src": "audio/ibu/88a4ff84292827a26485.mp3"
+    },
+    "ini kata apel": {
+      "text": "Ini kata apel!",
+      "src": "audio/ibu/c5d1351bfb095ab1c515.mp3"
+    },
+    "ini kata bahu": {
+      "text": "Ini kata bahu!",
+      "src": "audio/ibu/8efab34c2c097762a99d.mp3"
+    },
+    "ini kata baju": {
+      "text": "Ini kata baju!",
+      "src": "audio/ibu/bcc2245f1333c53fdb3f.mp3"
+    },
+    "ini kata bapa": {
+      "text": "Ini kata bapa!",
+      "src": "audio/ibu/0b3d11c17b0c889db9d7.mp3"
+    },
+    "ini kata batu": {
+      "text": "Ini kata batu!",
+      "src": "audio/ibu/99fb712f404c46cde7fe.mp3"
+    },
+    "ini kata bibi": {
+      "text": "Ini kata bibi!",
+      "src": "audio/ibu/97da28da2b69a5626a97.mp3"
+    },
+    "ini kata biji": {
+      "text": "Ini kata biji!",
+      "src": "audio/ibu/8f2ce6d17fd21d7d1c32.mp3"
+    },
+    "ini kata bola": {
+      "text": "Ini kata bola!",
+      "src": "audio/ibu/7c7466c8e92cee45e66e.mp3"
+    },
+    "ini kata buku": {
+      "text": "Ini kata buku!",
+      "src": "audio/ibu/728e888771a6eeba52d3.mp3"
+    },
+    "ini kata cacing": {
+      "text": "Ini kata cacing!",
+      "src": "audio/ibu/56e9e85ee803be476fb1.mp3"
+    },
+    "ini kata ceri": {
+      "text": "Ini kata ceri!",
+      "src": "audio/ibu/e295f45ca7e26f9fb885.mp3"
+    },
+    "ini kata cumi": {
+      "text": "Ini kata cumi!",
+      "src": "audio/ibu/4873bab83b881f4ea0f6.mp3"
+    },
+    "ini kata dada": {
+      "text": "Ini kata dada!",
+      "src": "audio/ibu/33ff0592d6c3ac9f5ccb.mp3"
+    },
+    "ini kata dadu": {
+      "text": "Ini kata dadu!",
+      "src": "audio/ibu/ec52355cabf5da3bfa25.mp3"
+    },
+    "ini kata daun": {
+      "text": "Ini kata daun!",
+      "src": "audio/ibu/6a12c90fd79c670091c2.mp3"
+    },
+    "ini kata duri": {
+      "text": "Ini kata duri!",
+      "src": "audio/ibu/01c796724580a6fbd314.mp3"
+    },
+    "ini kata elang": {
+      "text": "Ini kata elang!",
+      "src": "audio/ibu/d4e89c40f8000c236203.mp3"
+    },
+    "ini kata foto": {
+      "text": "Ini kata foto!",
+      "src": "audio/ibu/be6ca7f0307f02e968bd.mp3"
+    },
+    "ini kata gajah": {
+      "text": "Ini kata gajah!",
+      "src": "audio/ibu/80f515a07cc98bfcea63.mp3"
+    },
+    "ini kata gigi": {
+      "text": "Ini kata gigi!",
+      "src": "audio/ibu/021bb263f74d374a33b4.mp3"
+    },
+    "ini kata harimau": {
+      "text": "Ini kata harimau!",
+      "src": "audio/ibu/f080cb89dec2ad60df1d.mp3"
+    },
+    "ini kata ibu": {
+      "text": "Ini kata ibu!",
+      "src": "audio/ibu/0aa2a4e0d71d5cb1c5dd.mp3"
+    },
+    "ini kata ikan": {
+      "text": "Ini kata ikan!",
+      "src": "audio/ibu/046bb05d48f78c2f30fb.mp3"
+    },
+    "ini kata jeruk": {
+      "text": "Ini kata jeruk!",
+      "src": "audio/ibu/9c94b87bb73187134d12.mp3"
+    },
+    "ini kata kado": {
+      "text": "Ini kata kado!",
+      "src": "audio/ibu/c58ef3f97decefc080ba.mp3"
+    },
+    "ini kata kaki": {
+      "text": "Ini kata kaki!",
+      "src": "audio/ibu/48038a08dbace9cd641d.mp3"
+    },
+    "ini kata kayu": {
+      "text": "Ini kata kayu!",
+      "src": "audio/ibu/394c3fcc589e616436b9.mp3"
+    },
+    "ini kata kera": {
+      "text": "Ini kata kera!",
+      "src": "audio/ibu/7f883f61d24d12fc459a.mp3"
+    },
+    "ini kata koki": {
+      "text": "Ini kata koki!",
+      "src": "audio/ibu/5bc167d94b1ce8cc610d.mp3"
+    },
+    "ini kata kopi": {
+      "text": "Ini kata kopi!",
+      "src": "audio/ibu/7a646507b7a408b51382.mp3"
+    },
+    "ini kata kuda": {
+      "text": "Ini kata kuda!",
+      "src": "audio/ibu/43a35401b2906e6f5e55.mp3"
+    },
+    "ini kata kuku": {
+      "text": "Ini kata kuku!",
+      "src": "audio/ibu/e046e754ebb7f0fdd9e3.mp3"
+    },
+    "ini kata kura": {
+      "text": "Ini kata kura!",
+      "src": "audio/ibu/8955b86d03f275106326.mp3"
+    },
+    "ini kata kutu": {
+      "text": "Ini kata kutu!",
+      "src": "audio/ibu/fa456ff545c0c51fa540.mp3"
+    },
+    "ini kata labu": {
+      "text": "Ini kata labu!",
+      "src": "audio/ibu/48111e9c05839d5d1ed5.mp3"
+    },
+    "ini kata lebah": {
+      "text": "Ini kata lebah!",
+      "src": "audio/ibu/f774c401d5dea8cac511.mp3"
+    },
+    "ini kata lele": {
+      "text": "Ini kata lele!",
+      "src": "audio/ibu/92b211479400ad9a169e.mp3"
+    },
+    "ini kata madu": {
+      "text": "Ini kata madu!",
+      "src": "audio/ibu/686087f9e69b915de657.mp3"
+    },
+    "ini kata mama": {
+      "text": "Ini kata mama!",
+      "src": "audio/ibu/a6e0409760351e458b57.mp3"
+    },
+    "ini kata mata": {
+      "text": "Ini kata mata!",
+      "src": "audio/ibu/843fbf62d81eba4fadad.mp3"
+    },
+    "ini kata meja": {
+      "text": "Ini kata meja!",
+      "src": "audio/ibu/82c777e363f15cdade23.mp3"
+    },
+    "ini kata nasi": {
+      "text": "Ini kata nasi!",
+      "src": "audio/ibu/3bbd6fe6485f1cace77f.mp3"
+    },
+    "ini kata onta": {
+      "text": "Ini kata onta!",
+      "src": "audio/ibu/27ba41803f1dfbd0e566.mp3"
+    },
+    "ini kata paku": {
+      "text": "Ini kata paku!",
+      "src": "audio/ibu/b75a084363f57a826534.mp3"
+    },
+    "ini kata palu": {
+      "text": "Ini kata palu!",
+      "src": "audio/ibu/c27d625d90df6c822a17.mp3"
+    },
+    "ini kata papa": {
+      "text": "Ini kata papa!",
+      "src": "audio/ibu/5106b1f56ec506b98a5f.mp3"
+    },
+    "ini kata pari": {
+      "text": "Ini kata pari!",
+      "src": "audio/ibu/fff74c14e8e38a022f67.mp3"
+    },
+    "ini kata pena": {
+      "text": "Ini kata pena!",
+      "src": "audio/ibu/29db6c1cd4b686de58a5.mp3"
+    },
+    "ini kata peta": {
+      "text": "Ini kata peta!",
+      "src": "audio/ibu/f5537369e0ceac55043e.mp3"
+    },
+    "ini kata pipi": {
+      "text": "Ini kata pipi!",
+      "src": "audio/ibu/c279660ecb38653cd410.mp3"
+    },
+    "ini kata pisang": {
+      "text": "Ini kata pisang!",
+      "src": "audio/ibu/df83ec548c80214266d7.mp3"
+    },
+    "ini kata pita": {
+      "text": "Ini kata pita!",
+      "src": "audio/ibu/b91aeda007942f3e3471.mp3"
+    },
+    "ini kata quran": {
+      "text": "Ini kata quran!",
+      "src": "audio/ibu/3909237c2180282907bd.mp3"
+    },
+    "ini kata roda": {
+      "text": "Ini kata roda!",
+      "src": "audio/ibu/ffaeb55a26f0d6553a46.mp3"
+    },
+    "ini kata roti": {
+      "text": "Ini kata roti!",
+      "src": "audio/ibu/10e534f41e97a43e6fbc.mp3"
+    },
+    "ini kata rusa": {
+      "text": "Ini kata rusa!",
+      "src": "audio/ibu/7289a4b18300bb13c533.mp3"
+    },
+    "ini kata sapi": {
+      "text": "Ini kata sapi!",
+      "src": "audio/ibu/b56d78cd6bcdb7518bd1.mp3"
+    },
+    "ini kata sapu": {
+      "text": "Ini kata sapu!",
+      "src": "audio/ibu/571c13dc1db87002b137.mp3"
+    },
+    "ini kata sawi": {
+      "text": "Ini kata sawi!",
+      "src": "audio/ibu/02c43065b7fc62fe8bb9.mp3"
+    },
+    "ini kata susu": {
+      "text": "Ini kata susu!",
+      "src": "audio/ibu/3b104c3449474754a361.mp3"
+    },
+    "ini kata tali": {
+      "text": "Ini kata tali!",
+      "src": "audio/ibu/303f35e04c2bf57b62f4.mp3"
+    },
+    "ini kata tebu": {
+      "text": "Ini kata tebu!",
+      "src": "audio/ibu/32fd7ee0bff3bffffb4e.mp3"
+    },
+    "ini kata toko": {
+      "text": "Ini kata toko!",
+      "src": "audio/ibu/1accb874a96ab585e4c9.mp3"
+    },
+    "ini kata topi": {
+      "text": "Ini kata topi!",
+      "src": "audio/ibu/937c709db30c350a0a53.mp3"
+    },
+    "ini kata udang": {
+      "text": "Ini kata udang!",
+      "src": "audio/ibu/10ed9da324551bf79737.mp3"
+    },
+    "ini kata vas": {
+      "text": "Ini kata vas!",
+      "src": "audio/ibu/744bdf7e83fed9c889f5.mp3"
+    },
+    "ini kata wortel": {
+      "text": "Ini kata wortel!",
+      "src": "audio/ibu/c522e18db5be4dfb5bfd.mp3"
+    },
+    "ini kata xilofon": {
+      "text": "Ini kata xilofon!",
+      "src": "audio/ibu/1b1b16cd74e764090126.mp3"
+    },
+    "ini kata yoyo": {
+      "text": "Ini kata yoyo!",
+      "src": "audio/ibu/446ac01c3b41dfa48b7d.mp3"
+    },
+    "ini kata zebra": {
+      "text": "Ini kata zebra!",
+      "src": "audio/ibu/b52e3fb6c7c4418de5fc.mp3"
+    },
+    "ja": {
+      "text": "ja",
+      "src": "audio/ibu/3702fc1866630796050c.mp3"
+    },
+    "jaa": {
+      "text": "jaa",
+      "src": "audio/ibu/01a0b9e10c4935e7f21e.mp3"
+    },
+    "jagoan hebat": {
+      "text": "Jagoan hebat!",
+      "src": "audio/ibu/1045d9c0cad18725c820.mp3"
+    },
+    "jah": {
+      "text": "jah",
+      "src": "audio/ibu/21c5c3bcea24354f8664.mp3"
+    },
+    "je": {
+      "text": "je",
+      "src": "audio/ibu/9e507a6dfbf98393bbf2.mp3"
+    },
+    "jee": {
+      "text": "jee",
+      "src": "audio/ibu/4fee1dbead187ec2e364.mp3"
+    },
+    "jeh": {
+      "text": "jeh",
+      "src": "audio/ibu/bc407558737e71b5b0e8.mp3"
+    },
+    "jeruk": {
+      "text": "jeruk",
+      "src": "audio/ibu/59a71d5475771ffe9d0b.mp3"
+    },
+    "ji": {
+      "text": "ji",
+      "src": "audio/ibu/bddf2d2528c7bbf50940.mp3"
+    },
+    "jii": {
+      "text": "jii",
+      "src": "audio/ibu/4384abc0cf2681deeeb0.mp3"
+    },
+    "joo": {
+      "text": "joo",
+      "src": "audio/ibu/7e89aadf5e96c325ae6e.mp3"
+    },
+    "ju": {
+      "text": "ju",
+      "src": "audio/ibu/27c47b28fb5f4545bda5.mp3"
+    },
+    "juu": {
+      "text": "juu",
+      "src": "audio/ibu/615d0d69302ab961599a.mp3"
+    },
+    "ka": {
+      "text": "ka",
+      "src": "audio/ibu/3ebb1c99b12b77463e97.mp3"
+    },
+    "kaa": {
+      "text": "kaa",
+      "src": "audio/ibu/c2759e00b2fbbcba07ae.mp3"
+    },
+    "kado": {
+      "text": "kado",
+      "src": "audio/ibu/cf266e6f968283b91ff5.mp3"
+    },
+    "kaki": {
+      "text": "kaki",
+      "src": "audio/ibu/8ecee8bdc0c5fbd761c9.mp3"
+    },
+    "kamu mendapat dua bintang": {
+      "text": "Kamu mendapat dua bintang!",
+      "src": "audio/ibu/c1612bee67b8fb96c762.mp3"
+    },
+    "kamu mendapat satu bintang": {
+      "text": "Kamu mendapat satu bintang!",
+      "src": "audio/ibu/5ffa552f6f039a8effe5.mp3"
+    },
+    "kamu mendapat tiga bintang": {
+      "text": "Kamu mendapat tiga bintang!",
+      "src": "audio/ibu/8115c090a60fe1cff749.mp3"
+    },
+    "kamu pintar": {
+      "text": "Kamu pintar!",
+      "src": "audio/ibu/4df7d540994328ae753b.mp3"
+    },
+    "kan": {
+      "text": "kan",
+      "src": "audio/ibu/a2f45baa601696ccfe19.mp3"
+    },
+    "kata apel a pel": {
+      "text": "Kata apel: a... pel",
+      "src": "audio/ibu/fa613c254abc18902cad.mp3"
+    },
+    "kata apel huruf awalnya apa ya": {
+      "text": "Kata apel. Huruf awalnya apa ya?",
+      "src": "audio/ibu/bc1093a297cea3b5e7f9.mp3"
+    },
+    "kata bahu ba hu": {
+      "text": "Kata bahu: ba... hu",
+      "src": "audio/ibu/e8a64afb85f9e8542fa9.mp3"
+    },
+    "kata baju ba ju": {
+      "text": "Kata baju: ba... ju",
+      "src": "audio/ibu/e1e45b2f71daa3079df9.mp3"
+    },
+    "kata bapa ba pa": {
+      "text": "Kata bapa: ba... pa",
+      "src": "audio/ibu/b4e9fb4c490dbff2a8b2.mp3"
+    },
+    "kata batu ba tu": {
+      "text": "Kata batu: ba... tu",
+      "src": "audio/ibu/3a5dc6cbacf9004abef2.mp3"
+    },
+    "kata bibi bi bi": {
+      "text": "Kata bibi: bi... bi",
+      "src": "audio/ibu/896b69bb9658d18a0866.mp3"
+    },
+    "kata biji bi ji": {
+      "text": "Kata biji: bi... ji",
+      "src": "audio/ibu/425fda1b3acad3afb15d.mp3"
+    },
+    "kata bola bo la": {
+      "text": "Kata bola: bo... la",
+      "src": "audio/ibu/f08690dfc00cea8edec5.mp3"
+    },
+    "kata bola huruf awalnya apa ya": {
+      "text": "Kata bola. Huruf awalnya apa ya?",
+      "src": "audio/ibu/5a416142d339f9d1652b.mp3"
+    },
+    "kata buku bu ku": {
+      "text": "Kata buku: bu... ku",
+      "src": "audio/ibu/b7694f5220842fe3b6fc.mp3"
+    },
+    "kata cacing ca cing": {
+      "text": "Kata cacing: ca... cing",
+      "src": "audio/ibu/a7860989f15d4c43aef9.mp3"
+    },
+    "kata cacing huruf awalnya apa ya": {
+      "text": "Kata cacing. Huruf awalnya apa ya?",
+      "src": "audio/ibu/b167b4614c39a622333b.mp3"
+    },
+    "kata ceri ce ri": {
+      "text": "Kata ceri: ce... ri",
+      "src": "audio/ibu/f015ea6bbdc7fc51f0ae.mp3"
+    },
+    "kata cumi cu mi": {
+      "text": "Kata cumi: cu... mi",
+      "src": "audio/ibu/44a444d62ae2cae47ca9.mp3"
+    },
+    "kata dada da da": {
+      "text": "Kata dada: da... da",
+      "src": "audio/ibu/7a3f2f07271eb0e6b3f5.mp3"
+    },
+    "kata dadu da du": {
+      "text": "Kata dadu: da... du",
+      "src": "audio/ibu/9586b2f573417207abd9.mp3"
+    },
+    "kata daun da un": {
+      "text": "Kata daun: da... un",
+      "src": "audio/ibu/6e1f0606bccf7e45715c.mp3"
+    },
+    "kata daun huruf awalnya apa ya": {
+      "text": "Kata daun. Huruf awalnya apa ya?",
+      "src": "audio/ibu/9d9f2d8ec23e477a214a.mp3"
+    },
+    "kata duri du ri": {
+      "text": "Kata duri: du... ri",
+      "src": "audio/ibu/c36286b5e8a3b6e22509.mp3"
+    },
+    "kata elang e lang": {
+      "text": "Kata elang: e... lang",
+      "src": "audio/ibu/d77d7d5a4908488c0da5.mp3"
+    },
+    "kata elang huruf awalnya apa ya": {
+      "text": "Kata elang. Huruf awalnya apa ya?",
+      "src": "audio/ibu/fff460db7f60642edeaa.mp3"
+    },
+    "kata foto fo to": {
+      "text": "Kata foto: fo... to",
+      "src": "audio/ibu/9e91b6ffcb9ddd228ea1.mp3"
+    },
+    "kata foto huruf awalnya apa ya": {
+      "text": "Kata foto. Huruf awalnya apa ya?",
+      "src": "audio/ibu/9ac56c610d7701c160ae.mp3"
+    },
+    "kata gajah ga jah": {
+      "text": "Kata gajah: ga... jah",
+      "src": "audio/ibu/970f43267bdd61dc5d59.mp3"
+    },
+    "kata gajah huruf awalnya apa ya": {
+      "text": "Kata gajah. Huruf awalnya apa ya?",
+      "src": "audio/ibu/69fa9ceffcb17c60643b.mp3"
+    },
+    "kata gigi gi gi": {
+      "text": "Kata gigi: gi... gi",
+      "src": "audio/ibu/2774a2dee564d308c6ba.mp3"
+    },
+    "kata harimau ha ri mau": {
+      "text": "Kata harimau: ha... ri... mau",
+      "src": "audio/ibu/ed3e9ee326dc6afd31ab.mp3"
+    },
+    "kata harimau huruf awalnya apa ya": {
+      "text": "Kata harimau. Huruf awalnya apa ya?",
+      "src": "audio/ibu/a29763ae8ff8b5f7eb53.mp3"
+    },
+    "kata ibu i bu": {
+      "text": "Kata ibu: i... bu",
+      "src": "audio/ibu/64e5767aca8f75062f2b.mp3"
+    },
+    "kata ikan huruf awalnya apa ya": {
+      "text": "Kata ikan. Huruf awalnya apa ya?",
+      "src": "audio/ibu/aa5d8f878da02c0fb526.mp3"
+    },
+    "kata ikan i kan": {
+      "text": "Kata ikan: i... kan",
+      "src": "audio/ibu/caf55b1ece33573ea402.mp3"
+    },
+    "kata jeruk huruf awalnya apa ya": {
+      "text": "Kata jeruk. Huruf awalnya apa ya?",
+      "src": "audio/ibu/5551f3dc21686ad0907f.mp3"
+    },
+    "kata jeruk je ruk": {
+      "text": "Kata jeruk: je... ruk",
+      "src": "audio/ibu/4ab6786b079a912655e3.mp3"
+    },
+    "kata kado ka do": {
+      "text": "Kata kado: ka... do",
+      "src": "audio/ibu/0059ace149581f4842a2.mp3"
+    },
+    "kata kaki ka ki": {
+      "text": "Kata kaki: ka... ki",
+      "src": "audio/ibu/3a948b3134af324725bf.mp3"
+    },
+    "kata kayu ka yu": {
+      "text": "Kata kayu: ka... yu",
+      "src": "audio/ibu/2140c74271e4785a7f1d.mp3"
+    },
+    "kata kera ke ra": {
+      "text": "Kata kera: ke... ra",
+      "src": "audio/ibu/419f8b8983460db8bf22.mp3"
+    },
+    "kata koki ko ki": {
+      "text": "Kata koki: ko... ki",
+      "src": "audio/ibu/d686285dd8def15c7b9c.mp3"
+    },
+    "kata kopi ko pi": {
+      "text": "Kata kopi: ko... pi",
+      "src": "audio/ibu/693374e00db51638e001.mp3"
+    },
+    "kata kuda huruf awalnya apa ya": {
+      "text": "Kata kuda. Huruf awalnya apa ya?",
+      "src": "audio/ibu/a4ee7f047e5f7d950548.mp3"
+    },
+    "kata kuda ku da": {
+      "text": "Kata kuda: ku... da",
+      "src": "audio/ibu/c3e8dedd34d7e22e0917.mp3"
+    },
+    "kata kuku ku ku": {
+      "text": "Kata kuku: ku... ku",
+      "src": "audio/ibu/19335cae38e672cea02d.mp3"
+    },
+    "kata kura ku ra": {
+      "text": "Kata kura: ku... ra",
+      "src": "audio/ibu/736afe6b1e61d67ae14c.mp3"
+    },
+    "kata kutu ku tu": {
+      "text": "Kata kutu: ku... tu",
+      "src": "audio/ibu/a5ea3c6a450affaf6ce5.mp3"
+    },
+    "kata labu la bu": {
+      "text": "Kata labu: la... bu",
+      "src": "audio/ibu/b8a187de2096fc47970e.mp3"
+    },
+    "kata lebah huruf awalnya apa ya": {
+      "text": "Kata lebah. Huruf awalnya apa ya?",
+      "src": "audio/ibu/f5769003ff64e90661d5.mp3"
+    },
+    "kata lebah le bah": {
+      "text": "Kata lebah: le... bah",
+      "src": "audio/ibu/f32c2798e7f9233b680b.mp3"
+    },
+    "kata lele le le": {
+      "text": "Kata lele: le... le",
+      "src": "audio/ibu/f6f0048a5c115eedb7c8.mp3"
+    },
+    "kata madu ma du": {
+      "text": "Kata madu: ma... du",
+      "src": "audio/ibu/305a3f0c7034d6f94a0f.mp3"
+    },
+    "kata mama ma ma": {
+      "text": "Kata mama: ma... ma",
+      "src": "audio/ibu/62b4b2d40ff104b150c2.mp3"
+    },
+    "kata mata huruf awalnya apa ya": {
+      "text": "Kata mata. Huruf awalnya apa ya?",
+      "src": "audio/ibu/fec41a3db939f076c3b8.mp3"
+    },
+    "kata mata ma ta": {
+      "text": "Kata mata: ma... ta",
+      "src": "audio/ibu/0d2b161c6d2b2df20887.mp3"
+    },
+    "kata meja me ja": {
+      "text": "Kata meja: me... ja",
+      "src": "audio/ibu/5c788505244bbb4f342a.mp3"
+    },
+    "kata nasi huruf awalnya apa ya": {
+      "text": "Kata nasi. Huruf awalnya apa ya?",
+      "src": "audio/ibu/faffcf8a0d4fcd01b8bc.mp3"
+    },
+    "kata nasi na si": {
+      "text": "Kata nasi: na... si",
+      "src": "audio/ibu/c2c680f3f477a477e319.mp3"
+    },
+    "kata onta huruf awalnya apa ya": {
+      "text": "Kata onta. Huruf awalnya apa ya?",
+      "src": "audio/ibu/53cdc0f219d48af5a2f8.mp3"
+    },
+    "kata onta on ta": {
+      "text": "Kata onta: on... ta",
+      "src": "audio/ibu/ea7f59156cbd48fdac2f.mp3"
+    },
+    "kata paku pa ku": {
+      "text": "Kata paku: pa... ku",
+      "src": "audio/ibu/6bc989d0d3d456b0ea88.mp3"
+    },
+    "kata palu pa lu": {
+      "text": "Kata palu: pa... lu",
+      "src": "audio/ibu/ccc2799d3d7355f43863.mp3"
+    },
+    "kata papa pa pa": {
+      "text": "Kata papa: pa... pa",
+      "src": "audio/ibu/ec5c977658c0581d0b4c.mp3"
+    },
+    "kata pari pa ri": {
+      "text": "Kata pari: pa... ri",
+      "src": "audio/ibu/2f301780333288164ae0.mp3"
+    },
+    "kata pena pe na": {
+      "text": "Kata pena: pe... na",
+      "src": "audio/ibu/61009b4db2f69f06612f.mp3"
+    },
+    "kata peta pe ta": {
+      "text": "Kata peta: pe... ta",
+      "src": "audio/ibu/dbc0e87a7c6ebf6c4cdb.mp3"
+    },
+    "kata pipi pi pi": {
+      "text": "Kata pipi: pi... pi",
+      "src": "audio/ibu/3bfdb3ce21c341eedcb7.mp3"
+    },
+    "kata pisang huruf awalnya apa ya": {
+      "text": "Kata pisang. Huruf awalnya apa ya?",
+      "src": "audio/ibu/14046986826622010961.mp3"
+    },
+    "kata pisang pi sang": {
+      "text": "Kata pisang: pi... sang",
+      "src": "audio/ibu/742b43ee5dd0d73d2f13.mp3"
+    },
+    "kata pita pi ta": {
+      "text": "Kata pita: pi... ta",
+      "src": "audio/ibu/2cae8d73c56a0a2ba971.mp3"
+    },
+    "kata quran huruf awalnya apa ya": {
+      "text": "Kata quran. Huruf awalnya apa ya?",
+      "src": "audio/ibu/0a4282d15f49845f2cef.mp3"
+    },
+    "kata quran qu ran": {
+      "text": "Kata quran: qu... ran",
+      "src": "audio/ibu/f63145f70e393a6b6e22.mp3"
+    },
+    "kata roda ro da": {
+      "text": "Kata roda: ro... da",
+      "src": "audio/ibu/94abc76b03b1e180cb3c.mp3"
+    },
+    "kata roti ro ti": {
+      "text": "Kata roti: ro... ti",
+      "src": "audio/ibu/e5990c545afd775c73d6.mp3"
+    },
+    "kata rusa huruf awalnya apa ya": {
+      "text": "Kata rusa. Huruf awalnya apa ya?",
+      "src": "audio/ibu/a5ef1da08bd10e142561.mp3"
+    },
+    "kata rusa ru sa": {
+      "text": "Kata rusa: ru... sa",
+      "src": "audio/ibu/6f9e6a392c59ae9e1be2.mp3"
+    },
+    "kata sapi huruf awalnya apa ya": {
+      "text": "Kata sapi. Huruf awalnya apa ya?",
+      "src": "audio/ibu/eee18d93c140d99998e8.mp3"
+    },
+    "kata sapi sa pi": {
+      "text": "Kata sapi: sa... pi",
+      "src": "audio/ibu/b356d45340ef3a653dcf.mp3"
+    },
+    "kata sapu sa pu": {
+      "text": "Kata sapu: sa... pu",
+      "src": "audio/ibu/33240410759fba63bd06.mp3"
+    },
+    "kata sawi sa wi": {
+      "text": "Kata sawi: sa... wi",
+      "src": "audio/ibu/afcd2eabbd85a86267fe.mp3"
+    },
+    "kata susu su su": {
+      "text": "Kata susu: su... su",
+      "src": "audio/ibu/304e08d8041ad3bb6e36.mp3"
+    },
+    "kata tali ta li": {
+      "text": "Kata tali: ta... li",
+      "src": "audio/ibu/a281362589f4f499bf68.mp3"
+    },
+    "kata tebu te bu": {
+      "text": "Kata tebu: te... bu",
+      "src": "audio/ibu/b064b7be9f314b651b92.mp3"
+    },
+    "kata toko to ko": {
+      "text": "Kata toko: to... ko",
+      "src": "audio/ibu/b3176a962b924443436f.mp3"
+    },
+    "kata topi huruf awalnya apa ya": {
+      "text": "Kata topi. Huruf awalnya apa ya?",
+      "src": "audio/ibu/a3bc048f766685ae3725.mp3"
+    },
+    "kata topi to pi": {
+      "text": "Kata topi: to... pi",
+      "src": "audio/ibu/c65fd489ec7ff5feb972.mp3"
+    },
+    "kata udang huruf awalnya apa ya": {
+      "text": "Kata udang. Huruf awalnya apa ya?",
+      "src": "audio/ibu/25f642994899b4b442d0.mp3"
+    },
+    "kata udang u dang": {
+      "text": "Kata udang: u... dang",
+      "src": "audio/ibu/35b4d0711379119fc6ce.mp3"
+    },
+    "kata vas huruf awalnya apa ya": {
+      "text": "Kata vas. Huruf awalnya apa ya?",
+      "src": "audio/ibu/1844bde7c3d1e82d4d35.mp3"
+    },
+    "kata vas vas": {
+      "text": "Kata vas: vas",
+      "src": "audio/ibu/9243d81aa260d408f960.mp3"
+    },
+    "kata wortel huruf awalnya apa ya": {
+      "text": "Kata wortel. Huruf awalnya apa ya?",
+      "src": "audio/ibu/7d3ca83a39af7a7d1ec8.mp3"
+    },
+    "kata wortel wor tel": {
+      "text": "Kata wortel: wor... tel",
+      "src": "audio/ibu/00cd72b0a31e8a43f67a.mp3"
+    },
+    "kata xilofon huruf awalnya apa ya": {
+      "text": "Kata xilofon. Huruf awalnya apa ya?",
+      "src": "audio/ibu/b8e498c6a20dfa4c7e36.mp3"
+    },
+    "kata xilofon xi lo fon": {
+      "text": "Kata xilofon: xi... lo... fon",
+      "src": "audio/ibu/5e2c19726f7a4da28c2c.mp3"
+    },
+    "kata yoyo huruf awalnya apa ya": {
+      "text": "Kata yoyo. Huruf awalnya apa ya?",
+      "src": "audio/ibu/3d574661df7a58aadf6b.mp3"
+    },
+    "kata yoyo yo yo": {
+      "text": "Kata yoyo: yo... yo",
+      "src": "audio/ibu/821b89bafa6cd3bf81fc.mp3"
+    },
+    "kata zebra huruf awalnya apa ya": {
+      "text": "Kata zebra. Huruf awalnya apa ya?",
+      "src": "audio/ibu/76f3a2d263b0c21c39e8.mp3"
+    },
+    "kata zebra zeb ra": {
+      "text": "Kata zebra: zeb... ra",
+      "src": "audio/ibu/d1e1c3401f5cfd745bca.mp3"
+    },
+    "kayu": {
+      "text": "kayu",
+      "src": "audio/ibu/2ca8d7d127ff8acb6385.mp3"
+    },
+    "ke": {
+      "text": "ke",
+      "src": "audio/ibu/8e5202705183bd3a20a2.mp3"
+    },
+    "kee": {
+      "text": "kee",
+      "src": "audio/ibu/2bce189a88f21ae3c9f4.mp3"
+    },
+    "kera": {
+      "text": "kera",
+      "src": "audio/ibu/a28910a9368aaa599a9e.mp3"
+    },
+    "keren coba sekali lagi": {
+      "text": "Keren, coba sekali lagi!",
+      "src": "audio/ibu/5f953339ac3285f72aa2.mp3"
+    },
+    "keren sekali": {
+      "text": "Keren sekali!",
+      "src": "audio/ibu/23744991b167a7648c80.mp3"
+    },
+    "ki": {
+      "text": "ki",
+      "src": "audio/ibu/2b84b2a9020f8b086b77.mp3"
+    },
+    "kii": {
+      "text": "kii",
+      "src": "audio/ibu/1a83ff5d7bae2e2c987c.mp3"
+    },
+    "ko": {
+      "text": "ko",
+      "src": "audio/ibu/1fdbc74ccfd68d0714ae.mp3"
+    },
+    "koki": {
+      "text": "koki",
+      "src": "audio/ibu/707c403908e826807640.mp3"
+    },
+    "koo": {
+      "text": "koo",
+      "src": "audio/ibu/c9b1366e59ac8faa5f95.mp3"
+    },
+    "kopi": {
+      "text": "kopi",
+      "src": "audio/ibu/5f48a5df5e2ecb1282c9.mp3"
+    },
+    "ku": {
+      "text": "ku",
+      "src": "audio/ibu/88d178d728e8394f3bdd.mp3"
+    },
+    "kuda": {
+      "text": "kuda",
+      "src": "audio/ibu/1ab138fd89d4c0600748.mp3"
+    },
+    "kuku": {
+      "text": "kuku",
+      "src": "audio/ibu/81a50432934af4642227.mp3"
+    },
+    "kura": {
+      "text": "kura",
+      "src": "audio/ibu/8191587cda863a97ac7d.mp3"
+    },
+    "kutu": {
+      "text": "kutu",
+      "src": "audio/ibu/8197c0ac02d29e323d9b.mp3"
+    },
+    "kuu": {
+      "text": "kuu",
+      "src": "audio/ibu/6af031d7c56b61c60bd4.mp3"
+    },
+    "la": {
+      "text": "la",
+      "src": "audio/ibu/b737ca7ee563ae80e457.mp3"
+    },
+    "laa": {
+      "text": "laa",
+      "src": "audio/ibu/5f12ca4a862a4545fc94.mp3"
+    },
+    "labu": {
+      "text": "labu",
+      "src": "audio/ibu/0d0ae105d7909d205e46.mp3"
+    },
+    "lang": {
+      "text": "lang",
+      "src": "audio/ibu/5cf7d7ec1cb5c221981f.mp3"
+    },
+    "le": {
+      "text": "le",
+      "src": "audio/ibu/61098a4bf2a5e216533e.mp3"
+    },
+    "lebah": {
+      "text": "lebah",
+      "src": "audio/ibu/78b65daff780a4bd70dc.mp3"
+    },
+    "lee": {
+      "text": "lee",
+      "src": "audio/ibu/1508b697895abf03d55c.mp3"
+    },
+    "lele": {
+      "text": "lele",
+      "src": "audio/ibu/6a9175580764e9ed5e37.mp3"
+    },
+    "lengkapi kata apel suku kata apa yang hilang": {
+      "text": "Lengkapi kata apel! Suku kata apa yang hilang?",
+      "src": "audio/ibu/90867f1ff4087339b9d5.mp3"
+    },
+    "lengkapi kata bahu suku kata apa yang hilang": {
+      "text": "Lengkapi kata bahu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/fefe51c23e1bb4e3a4d0.mp3"
+    },
+    "lengkapi kata baju suku kata apa yang hilang": {
+      "text": "Lengkapi kata baju! Suku kata apa yang hilang?",
+      "src": "audio/ibu/7c7265b0a8b175cafdff.mp3"
+    },
+    "lengkapi kata bapa suku kata apa yang hilang": {
+      "text": "Lengkapi kata bapa! Suku kata apa yang hilang?",
+      "src": "audio/ibu/042e25087aeb1850df6a.mp3"
+    },
+    "lengkapi kata batu suku kata apa yang hilang": {
+      "text": "Lengkapi kata batu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/9809d173dc9c53c05ab9.mp3"
+    },
+    "lengkapi kata bibi suku kata apa yang hilang": {
+      "text": "Lengkapi kata bibi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/21ee2db3101f48ad55fc.mp3"
+    },
+    "lengkapi kata biji suku kata apa yang hilang": {
+      "text": "Lengkapi kata biji! Suku kata apa yang hilang?",
+      "src": "audio/ibu/60ed158e63143cd5febd.mp3"
+    },
+    "lengkapi kata bola suku kata apa yang hilang": {
+      "text": "Lengkapi kata bola! Suku kata apa yang hilang?",
+      "src": "audio/ibu/ed2c4ee4edb9bf64fb98.mp3"
+    },
+    "lengkapi kata buku suku kata apa yang hilang": {
+      "text": "Lengkapi kata buku! Suku kata apa yang hilang?",
+      "src": "audio/ibu/9c9e0a557201c80edb6c.mp3"
+    },
+    "lengkapi kata cacing suku kata apa yang hilang": {
+      "text": "Lengkapi kata cacing! Suku kata apa yang hilang?",
+      "src": "audio/ibu/f6658b069ab0bbe1bf53.mp3"
+    },
+    "lengkapi kata ceri suku kata apa yang hilang": {
+      "text": "Lengkapi kata ceri! Suku kata apa yang hilang?",
+      "src": "audio/ibu/bc00454534b397eecfcf.mp3"
+    },
+    "lengkapi kata cumi suku kata apa yang hilang": {
+      "text": "Lengkapi kata cumi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/b12ff5dc696e7b56642c.mp3"
+    },
+    "lengkapi kata dada suku kata apa yang hilang": {
+      "text": "Lengkapi kata dada! Suku kata apa yang hilang?",
+      "src": "audio/ibu/36de021c059e8098c416.mp3"
+    },
+    "lengkapi kata dadu suku kata apa yang hilang": {
+      "text": "Lengkapi kata dadu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/3f6e5a1456849b16b1bc.mp3"
+    },
+    "lengkapi kata daun suku kata apa yang hilang": {
+      "text": "Lengkapi kata daun! Suku kata apa yang hilang?",
+      "src": "audio/ibu/b86904e812c90eb47eea.mp3"
+    },
+    "lengkapi kata duri suku kata apa yang hilang": {
+      "text": "Lengkapi kata duri! Suku kata apa yang hilang?",
+      "src": "audio/ibu/e19039320b2249d0bd51.mp3"
+    },
+    "lengkapi kata elang suku kata apa yang hilang": {
+      "text": "Lengkapi kata elang! Suku kata apa yang hilang?",
+      "src": "audio/ibu/f0c865cb1e89f09a98ee.mp3"
+    },
+    "lengkapi kata foto suku kata apa yang hilang": {
+      "text": "Lengkapi kata foto! Suku kata apa yang hilang?",
+      "src": "audio/ibu/fdde1320e8ee1d9e223f.mp3"
+    },
+    "lengkapi kata gajah suku kata apa yang hilang": {
+      "text": "Lengkapi kata gajah! Suku kata apa yang hilang?",
+      "src": "audio/ibu/65dbb205fabd6ec0c2ef.mp3"
+    },
+    "lengkapi kata gigi suku kata apa yang hilang": {
+      "text": "Lengkapi kata gigi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/293ab60261571701b5b8.mp3"
+    },
+    "lengkapi kata harimau suku kata apa yang hilang": {
+      "text": "Lengkapi kata harimau! Suku kata apa yang hilang?",
+      "src": "audio/ibu/16742912fe92fdc467db.mp3"
+    },
+    "lengkapi kata ibu suku kata apa yang hilang": {
+      "text": "Lengkapi kata ibu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/2c52e179968b1e80c566.mp3"
+    },
+    "lengkapi kata ikan suku kata apa yang hilang": {
+      "text": "Lengkapi kata ikan! Suku kata apa yang hilang?",
+      "src": "audio/ibu/89f2d57b3a405e46b4df.mp3"
+    },
+    "lengkapi kata jeruk suku kata apa yang hilang": {
+      "text": "Lengkapi kata jeruk! Suku kata apa yang hilang?",
+      "src": "audio/ibu/885e797f7e20d057b2e8.mp3"
+    },
+    "lengkapi kata kado suku kata apa yang hilang": {
+      "text": "Lengkapi kata kado! Suku kata apa yang hilang?",
+      "src": "audio/ibu/e2435913a38a8d96354b.mp3"
+    },
+    "lengkapi kata kaki suku kata apa yang hilang": {
+      "text": "Lengkapi kata kaki! Suku kata apa yang hilang?",
+      "src": "audio/ibu/ccd951f6e151af50a4b3.mp3"
+    },
+    "lengkapi kata kayu suku kata apa yang hilang": {
+      "text": "Lengkapi kata kayu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/c93e375a9511db61c4a8.mp3"
+    },
+    "lengkapi kata kera suku kata apa yang hilang": {
+      "text": "Lengkapi kata kera! Suku kata apa yang hilang?",
+      "src": "audio/ibu/e2bc5504aa2d0add428a.mp3"
+    },
+    "lengkapi kata koki suku kata apa yang hilang": {
+      "text": "Lengkapi kata koki! Suku kata apa yang hilang?",
+      "src": "audio/ibu/e32129cb87ebb5b131a8.mp3"
+    },
+    "lengkapi kata kopi suku kata apa yang hilang": {
+      "text": "Lengkapi kata kopi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/de357636136e5838b008.mp3"
+    },
+    "lengkapi kata kuda suku kata apa yang hilang": {
+      "text": "Lengkapi kata kuda! Suku kata apa yang hilang?",
+      "src": "audio/ibu/7b699478d09a270e82f4.mp3"
+    },
+    "lengkapi kata kuku suku kata apa yang hilang": {
+      "text": "Lengkapi kata kuku! Suku kata apa yang hilang?",
+      "src": "audio/ibu/999ef40f2018d91d5db6.mp3"
+    },
+    "lengkapi kata kura suku kata apa yang hilang": {
+      "text": "Lengkapi kata kura! Suku kata apa yang hilang?",
+      "src": "audio/ibu/f675eef061dbb6712bae.mp3"
+    },
+    "lengkapi kata kutu suku kata apa yang hilang": {
+      "text": "Lengkapi kata kutu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/ba06afc24bb8c84008ef.mp3"
+    },
+    "lengkapi kata labu suku kata apa yang hilang": {
+      "text": "Lengkapi kata labu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/3724e4e2ac523a70c7ae.mp3"
+    },
+    "lengkapi kata lebah suku kata apa yang hilang": {
+      "text": "Lengkapi kata lebah! Suku kata apa yang hilang?",
+      "src": "audio/ibu/97aa6b7374e4fe36133d.mp3"
+    },
+    "lengkapi kata lele suku kata apa yang hilang": {
+      "text": "Lengkapi kata lele! Suku kata apa yang hilang?",
+      "src": "audio/ibu/61116b97c5c51c9d54c6.mp3"
+    },
+    "lengkapi kata madu suku kata apa yang hilang": {
+      "text": "Lengkapi kata madu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/e7c21dab6c6ec829b413.mp3"
+    },
+    "lengkapi kata mama suku kata apa yang hilang": {
+      "text": "Lengkapi kata mama! Suku kata apa yang hilang?",
+      "src": "audio/ibu/62ca181d28ce5bf4d24a.mp3"
+    },
+    "lengkapi kata mata suku kata apa yang hilang": {
+      "text": "Lengkapi kata mata! Suku kata apa yang hilang?",
+      "src": "audio/ibu/05c8998491720f7854b4.mp3"
+    },
+    "lengkapi kata meja suku kata apa yang hilang": {
+      "text": "Lengkapi kata meja! Suku kata apa yang hilang?",
+      "src": "audio/ibu/bae5ad749b50e70f5512.mp3"
+    },
+    "lengkapi kata nasi suku kata apa yang hilang": {
+      "text": "Lengkapi kata nasi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/775b81f431e26346be1f.mp3"
+    },
+    "lengkapi kata onta suku kata apa yang hilang": {
+      "text": "Lengkapi kata onta! Suku kata apa yang hilang?",
+      "src": "audio/ibu/63bd85e87a423f2d6b1f.mp3"
+    },
+    "lengkapi kata paku suku kata apa yang hilang": {
+      "text": "Lengkapi kata paku! Suku kata apa yang hilang?",
+      "src": "audio/ibu/fc6e04e11d64035736b9.mp3"
+    },
+    "lengkapi kata palu suku kata apa yang hilang": {
+      "text": "Lengkapi kata palu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/5e3bdef3648bfd1319db.mp3"
+    },
+    "lengkapi kata papa suku kata apa yang hilang": {
+      "text": "Lengkapi kata papa! Suku kata apa yang hilang?",
+      "src": "audio/ibu/7f6f6c2f1c613b841fe4.mp3"
+    },
+    "lengkapi kata pari suku kata apa yang hilang": {
+      "text": "Lengkapi kata pari! Suku kata apa yang hilang?",
+      "src": "audio/ibu/cb6e88f34c16d9472d9c.mp3"
+    },
+    "lengkapi kata pena suku kata apa yang hilang": {
+      "text": "Lengkapi kata pena! Suku kata apa yang hilang?",
+      "src": "audio/ibu/bc9d53e154f609c2c4a3.mp3"
+    },
+    "lengkapi kata peta suku kata apa yang hilang": {
+      "text": "Lengkapi kata peta! Suku kata apa yang hilang?",
+      "src": "audio/ibu/827aec290d82eb4bc075.mp3"
+    },
+    "lengkapi kata pipi suku kata apa yang hilang": {
+      "text": "Lengkapi kata pipi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/3d7c2f543fa9de2c28a7.mp3"
+    },
+    "lengkapi kata pisang suku kata apa yang hilang": {
+      "text": "Lengkapi kata pisang! Suku kata apa yang hilang?",
+      "src": "audio/ibu/765a95a818156778f10f.mp3"
+    },
+    "lengkapi kata pita suku kata apa yang hilang": {
+      "text": "Lengkapi kata pita! Suku kata apa yang hilang?",
+      "src": "audio/ibu/6f07dc6b03462e785346.mp3"
+    },
+    "lengkapi kata quran suku kata apa yang hilang": {
+      "text": "Lengkapi kata quran! Suku kata apa yang hilang?",
+      "src": "audio/ibu/e970efb005f40d37b884.mp3"
+    },
+    "lengkapi kata roda suku kata apa yang hilang": {
+      "text": "Lengkapi kata roda! Suku kata apa yang hilang?",
+      "src": "audio/ibu/7934aa7051d22f0e8071.mp3"
+    },
+    "lengkapi kata roti suku kata apa yang hilang": {
+      "text": "Lengkapi kata roti! Suku kata apa yang hilang?",
+      "src": "audio/ibu/b47105cc31f9cbade5b0.mp3"
+    },
+    "lengkapi kata rusa suku kata apa yang hilang": {
+      "text": "Lengkapi kata rusa! Suku kata apa yang hilang?",
+      "src": "audio/ibu/aa8fac07d744641bb739.mp3"
+    },
+    "lengkapi kata sapi suku kata apa yang hilang": {
+      "text": "Lengkapi kata sapi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/b4a57785603bb024d31a.mp3"
+    },
+    "lengkapi kata sapu suku kata apa yang hilang": {
+      "text": "Lengkapi kata sapu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/8fb3d1a8458acf2eaa4c.mp3"
+    },
+    "lengkapi kata sawi suku kata apa yang hilang": {
+      "text": "Lengkapi kata sawi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/76b467c099cf6e4b56b4.mp3"
+    },
+    "lengkapi kata susu suku kata apa yang hilang": {
+      "text": "Lengkapi kata susu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/0a34171358b2b277d68c.mp3"
+    },
+    "lengkapi kata tali suku kata apa yang hilang": {
+      "text": "Lengkapi kata tali! Suku kata apa yang hilang?",
+      "src": "audio/ibu/9c2b2bf653280cd20454.mp3"
+    },
+    "lengkapi kata tebu suku kata apa yang hilang": {
+      "text": "Lengkapi kata tebu! Suku kata apa yang hilang?",
+      "src": "audio/ibu/53057842cb276c6a076f.mp3"
+    },
+    "lengkapi kata toko suku kata apa yang hilang": {
+      "text": "Lengkapi kata toko! Suku kata apa yang hilang?",
+      "src": "audio/ibu/ebf87c21c80cc3c22173.mp3"
+    },
+    "lengkapi kata topi suku kata apa yang hilang": {
+      "text": "Lengkapi kata topi! Suku kata apa yang hilang?",
+      "src": "audio/ibu/cba85da2aec46926937c.mp3"
+    },
+    "lengkapi kata udang suku kata apa yang hilang": {
+      "text": "Lengkapi kata udang! Suku kata apa yang hilang?",
+      "src": "audio/ibu/35918aa3754f5cb789bd.mp3"
+    },
+    "lengkapi kata vas suku kata apa yang hilang": {
+      "text": "Lengkapi kata vas! Suku kata apa yang hilang?",
+      "src": "audio/ibu/bffd9ce0599329bd51e9.mp3"
+    },
+    "lengkapi kata wortel suku kata apa yang hilang": {
+      "text": "Lengkapi kata wortel! Suku kata apa yang hilang?",
+      "src": "audio/ibu/a75fe051036b19c8e708.mp3"
+    },
+    "lengkapi kata xilofon suku kata apa yang hilang": {
+      "text": "Lengkapi kata xilofon! Suku kata apa yang hilang?",
+      "src": "audio/ibu/f8f73764a0efa97bb20c.mp3"
+    },
+    "lengkapi kata yoyo suku kata apa yang hilang": {
+      "text": "Lengkapi kata yoyo! Suku kata apa yang hilang?",
+      "src": "audio/ibu/e9ce22bfd42099694f52.mp3"
+    },
+    "lengkapi kata zebra suku kata apa yang hilang": {
+      "text": "Lengkapi kata zebra! Suku kata apa yang hilang?",
+      "src": "audio/ibu/0a3ad4610db111e53585.mp3"
+    },
+    "li": {
+      "text": "li",
+      "src": "audio/ibu/00a9e4255a5b63067b76.mp3"
+    },
+    "lii": {
+      "text": "lii",
+      "src": "audio/ibu/305ce8d8591975fafaf9.mp3"
+    },
+    "lo": {
+      "text": "lo",
+      "src": "audio/ibu/9294ab38039f60d2ec53.mp3"
+    },
+    "loo": {
+      "text": "loo",
+      "src": "audio/ibu/15f3b852d2465ae56ff5.mp3"
+    },
+    "lu": {
+      "text": "lu",
+      "src": "audio/ibu/80c0fcbbfa9d03d861b2.mp3"
+    },
+    "luu": {
+      "text": "luu",
+      "src": "audio/ibu/1c9c5b8f16acc032ca89.mp3"
+    },
+    "ma": {
+      "text": "ma",
+      "src": "audio/ibu/3c44c3e1b8b784478672.mp3"
+    },
+    "maa": {
+      "text": "maa",
+      "src": "audio/ibu/37bfd2508fbbac943f3b.mp3"
+    },
+    "madu": {
+      "text": "madu",
+      "src": "audio/ibu/d30486e1e8e7c01376a9.mp3"
+    },
+    "mama": {
+      "text": "mama",
+      "src": "audio/ibu/ccb711f092ac8ef1805b.mp3"
+    },
+    "mantap": {
+      "text": "Mantap!",
+      "src": "audio/ibu/03c5b5bdae5bff038d87.mp3"
+    },
+    "mata": {
+      "text": "mata",
+      "src": "audio/ibu/c6b312868e056101fe03.mp3"
+    },
+    "mau": {
+      "text": "mau",
+      "src": "audio/ibu/239be9e20e9ae0bd359f.mp3"
+    },
+    "me": {
+      "text": "me",
+      "src": "audio/ibu/2744ccd10c7533bd736a.mp3"
+    },
+    "mee": {
+      "text": "mee",
+      "src": "audio/ibu/e90c560ecb63987067f5.mp3"
+    },
+    "meja": {
+      "text": "meja",
+      "src": "audio/ibu/9a23690b9037f28c3faa.mp3"
+    },
+    "mi": {
+      "text": "mi",
+      "src": "audio/ibu/eee1c1ade6525d246318.mp3"
+    },
+    "mii": {
+      "text": "mii",
+      "src": "audio/ibu/762a161d59cdfd6c0f6d.mp3"
+    },
+    "moo": {
+      "text": "moo",
+      "src": "audio/ibu/47dfae9288abf3d5d225.mp3"
+    },
+    "muu": {
+      "text": "muu",
+      "src": "audio/ibu/fa62ec8bdf57acae92fc.mp3"
+    },
+    "na": {
+      "text": "na",
+      "src": "audio/ibu/3d9fc4bde7ceef058d65.mp3"
+    },
+    "naa": {
+      "text": "naa",
+      "src": "audio/ibu/8b977393d3881617cc95.mp3"
+    },
+    "nasi": {
+      "text": "nasi",
+      "src": "audio/ibu/ca26e500b10aaee98322.mp3"
+    },
+    "nee": {
+      "text": "nee",
+      "src": "audio/ibu/18fc166232dc2df69a48.mp3"
+    },
+    "nii": {
+      "text": "nii",
+      "src": "audio/ibu/84139e0de4584b2890e6.mp3"
+    },
+    "noo": {
+      "text": "noo",
+      "src": "audio/ibu/36d2c3997d6b67084312.mp3"
+    },
+    "nuu": {
+      "text": "nuu",
+      "src": "audio/ibu/6dfc02f0208ead67b67c.mp3"
+    },
+    "on": {
+      "text": "on",
+      "src": "audio/ibu/b8d31e852725afb1e26d.mp3"
+    },
+    "onta": {
+      "text": "onta",
+      "src": "audio/ibu/6e8615893da9474539d5.mp3"
+    },
+    "oo": {
+      "text": "oo",
+      "src": "audio/ibu/a8c23cc814179578e3a7.mp3"
+    },
+    "pa": {
+      "text": "pa",
+      "src": "audio/ibu/9513229d435978263d82.mp3"
+    },
+    "paa": {
+      "text": "paa",
+      "src": "audio/ibu/204e1db22bfdc48a931e.mp3"
+    },
+    "paku": {
+      "text": "paku",
+      "src": "audio/ibu/a3cf2936c836c053cf77.mp3"
+    },
+    "palu": {
+      "text": "palu",
+      "src": "audio/ibu/5eb2825424995e7589fa.mp3"
+    },
+    "papa": {
+      "text": "papa",
+      "src": "audio/ibu/58cc6181518fbfb49da9.mp3"
+    },
+    "pari": {
+      "text": "pari",
+      "src": "audio/ibu/b613030f8c7be797e7a4.mp3"
+    },
+    "pe": {
+      "text": "pe",
+      "src": "audio/ibu/cdf69b25a417e25753dc.mp3"
+    },
+    "pee": {
+      "text": "pee",
+      "src": "audio/ibu/cdd28ff1530967cdd5ca.mp3"
+    },
+    "peh": {
+      "text": "peh",
+      "src": "audio/ibu/a4ad3dcc77622dd1f522.mp3"
+    },
+    "pel": {
+      "text": "pel",
+      "src": "audio/ibu/96b21b5b31ebe16404e8.mp3"
+    },
+    "pelajaran tidak ditemukan": {
+      "text": "Pelajaran tidak ditemukan!",
+      "src": "audio/ibu/b522d3fe7c239c421e74.mp3"
+    },
+    "pelan-pelan saja ya": {
+      "text": "Pelan-pelan saja ya",
+      "src": "audio/ibu/8d8c64fb66ab498b3af7.mp3"
+    },
+    "pena": {
+      "text": "pena",
+      "src": "audio/ibu/7ba0ea6b73e7f545df59.mp3"
+    },
+    "perhatikan bentuk hurufnya ya": {
+      "text": "Perhatikan bentuk hurufnya ya",
+      "src": "audio/ibu/928853473e7cf2a654e4.mp3"
+    },
+    "peta": {
+      "text": "peta",
+      "src": "audio/ibu/fe9357d94072f04cf8bc.mp3"
+    },
+    "pi": {
+      "text": "pi",
+      "src": "audio/ibu/85b42e1702877c851eb7.mp3"
+    },
+    "pii": {
+      "text": "pii",
+      "src": "audio/ibu/bd75b3e080945674c035.mp3"
+    },
+    "pilih kartu pelajaran untuk mulai petualangan membaca": {
+      "text": "Pilih kartu pelajaran untuk mulai petualangan membaca!",
+      "src": "audio/ibu/f4e552778738358a94af.mp3"
+    },
+    "pilih kata yang cocok dengan gambar ini ya": {
+      "text": "Pilih kata yang cocok dengan gambar ini ya!",
+      "src": "audio/ibu/d87761d51d15101167c4.mp3"
+    },
+    "pintar membaca": {
+      "text": "Pintar membaca!",
+      "src": "audio/ibu/04f8f7d9d0501c3a8af1.mp3"
+    },
+    "pipi": {
+      "text": "pipi",
+      "src": "audio/ibu/afff93af301832dd9d76.mp3"
+    },
+    "pisang": {
+      "text": "pisang",
+      "src": "audio/ibu/5adc45b4db6d9719c5b5.mp3"
+    },
+    "pita": {
+      "text": "pita",
+      "src": "audio/ibu/69530ff425efb5d214ed.mp3"
+    },
+    "poo": {
+      "text": "poo",
+      "src": "audio/ibu/22e6ae454b63268f695b.mp3"
+    },
+    "pu": {
+      "text": "pu",
+      "src": "audio/ibu/4b4d5589e12d32d58935.mp3"
+    },
+    "puu": {
+      "text": "puu",
+      "src": "audio/ibu/4454123f357213f62214.mp3"
+    },
+    "qu": {
+      "text": "qu",
+      "src": "audio/ibu/a082f17cf976fb34724b.mp3"
+    },
+    "quran": {
+      "text": "quran",
+      "src": "audio/ibu/8987fb9276868758b95c.mp3"
+    },
+    "ra": {
+      "text": "ra",
+      "src": "audio/ibu/37e7702e5ce449c1225f.mp3"
+    },
+    "raa": {
+      "text": "raa",
+      "src": "audio/ibu/7d2e81fadfa8cdee031d.mp3"
+    },
+    "ran": {
+      "text": "ran",
+      "src": "audio/ibu/c8fc6bf296faa18d058b.mp3"
+    },
+    "ree": {
+      "text": "ree",
+      "src": "audio/ibu/403f27f16d7b54e79c33.mp3"
+    },
+    "ri": {
+      "text": "ri",
+      "src": "audio/ibu/396a14ab206e2b44e03c.mp3"
+    },
+    "rii": {
+      "text": "rii",
+      "src": "audio/ibu/50b9b82cbb6eccd228c3.mp3"
+    },
+    "ro": {
+      "text": "ro",
+      "src": "audio/ibu/7ef9ec0cf2c4facafddd.mp3"
+    },
+    "roda": {
+      "text": "roda",
+      "src": "audio/ibu/6d6ed6bc85c650cc89a5.mp3"
+    },
+    "roo": {
+      "text": "roo",
+      "src": "audio/ibu/3e7085367457fdba220d.mp3"
+    },
+    "roti": {
+      "text": "roti",
+      "src": "audio/ibu/387f8648d2c5074841a2.mp3"
+    },
+    "ru": {
+      "text": "ru",
+      "src": "audio/ibu/ed5ad332c10604371270.mp3"
+    },
+    "ruk": {
+      "text": "ruk",
+      "src": "audio/ibu/ddfe2e8b0da49dc48a94.mp3"
+    },
+    "rusa": {
+      "text": "rusa",
+      "src": "audio/ibu/4402e009d2e8ed3d08f7.mp3"
+    },
+    "ruu": {
+      "text": "ruu",
+      "src": "audio/ibu/a367d1cd11abbd30abc7.mp3"
+    },
+    "sa": {
+      "text": "sa",
+      "src": "audio/ibu/4cf6829aa93728e8f3c9.mp3"
+    },
+    "saa": {
+      "text": "saa",
+      "src": "audio/ibu/9231737bc7cc04d1ff10.mp3"
+    },
+    "sang": {
+      "text": "sang",
+      "src": "audio/ibu/f28d18c311d2ddfec226.mp3"
+    },
+    "sapi": {
+      "text": "sapi",
+      "src": "audio/ibu/46f843559b7015efb3cc.mp3"
+    },
+    "sapu": {
+      "text": "sapu",
+      "src": "audio/ibu/99dec47980fdec089930.mp3"
+    },
+    "satu jempol untukmu": {
+      "text": "Satu jempol untukmu!",
+      "src": "audio/ibu/bc8161ae76206d34ba65.mp3"
+    },
+    "satu lagi ya": {
+      "text": "Satu lagi ya!",
+      "src": "audio/ibu/91ce04d220c843ccc09e.mp3"
+    },
+    "sawi": {
+      "text": "sawi",
+      "src": "audio/ibu/9cd8f61e6b989bbc6f37.mp3"
+    },
+    "sedikit lagi pasti bisa": {
+      "text": "Sedikit lagi, pasti bisa!",
+      "src": "audio/ibu/5664f1671c84a954943f.mp3"
+    },
+    "see": {
+      "text": "see",
+      "src": "audio/ibu/aa9e9b5c907d50feb410.mp3"
+    },
+    "sekarang giliranmu ya": {
+      "text": "Sekarang giliranmu, ya.",
+      "src": "audio/ibu/d2b16f47ad26d8fed486.mp3"
+    },
+    "selamat datang di cerita mini": {
+      "text": "Selamat datang di Cerita Mini!",
+      "src": "audio/ibu/325a4254dbce3f8958d2.mp3"
+    },
+    "selamat datang di kalimat pendek": {
+      "text": "Selamat datang di Kalimat Pendek!",
+      "src": "audio/ibu/93380f0317e66f7ba1ce.mp3"
+    },
+    "selamat datang di kata lebih panjang": {
+      "text": "Selamat datang di Kata Lebih Panjang!",
+      "src": "audio/ibu/c68fa557ab98b63c662e.mp3"
+    },
+    "selamat datang di kata pertama": {
+      "text": "Selamat datang di Kata Pertama!",
+      "src": "audio/ibu/9e4203c137c6367a951b.mp3"
+    },
+    "selamat datang di kenal huruf": {
+      "text": "Selamat datang di Kenal Huruf!",
+      "src": "audio/ibu/5a6c0c5762a59266c601.mp3"
+    },
+    "selamat datang di suku kata": {
+      "text": "Selamat datang di Suku Kata!",
+      "src": "audio/ibu/532ff837ff0744f72648.mp3"
+    },
+    "si": {
+      "text": "si",
+      "src": "audio/ibu/97a62ad21d79c01cceb7.mp3"
+    },
+    "sii": {
+      "text": "sii",
+      "src": "audio/ibu/ae657693b03504952e7e.mp3"
+    },
+    "soo": {
+      "text": "soo",
+      "src": "audio/ibu/4f75bb3d593b7636558d.mp3"
+    },
+    "su": {
+      "text": "su",
+      "src": "audio/ibu/0a64ce10853f25cb3dc3.mp3"
+    },
+    "sudah cocok hebat sekali": {
+      "text": "Sudah cocok. Hebat sekali!",
+      "src": "audio/ibu/b454feed8fbfd51a61f6.mp3"
+    },
+    "susu": {
+      "text": "susu",
+      "src": "audio/ibu/a858c1f331b17abb2478.mp3"
+    },
+    "susun suku kata untuk kata apel": {
+      "text": "Susun suku kata untuk kata: apel!",
+      "src": "audio/ibu/05413ebb9bb3d801f288.mp3"
+    },
+    "susun suku kata untuk kata bahu": {
+      "text": "Susun suku kata untuk kata: bahu!",
+      "src": "audio/ibu/3664e8bbdf6eb60b1cac.mp3"
+    },
+    "susun suku kata untuk kata baju": {
+      "text": "Susun suku kata untuk kata: baju!",
+      "src": "audio/ibu/8cd86490600bee4821ef.mp3"
+    },
+    "susun suku kata untuk kata bapa": {
+      "text": "Susun suku kata untuk kata: bapa!",
+      "src": "audio/ibu/3a7e87a46f1829c5d564.mp3"
+    },
+    "susun suku kata untuk kata batu": {
+      "text": "Susun suku kata untuk kata: batu!",
+      "src": "audio/ibu/0cafa2092deecfccebea.mp3"
+    },
+    "susun suku kata untuk kata bibi": {
+      "text": "Susun suku kata untuk kata: bibi!",
+      "src": "audio/ibu/357f4f95221e1bac2a07.mp3"
+    },
+    "susun suku kata untuk kata biji": {
+      "text": "Susun suku kata untuk kata: biji!",
+      "src": "audio/ibu/adca298fc13404a7e0af.mp3"
+    },
+    "susun suku kata untuk kata bola": {
+      "text": "Susun suku kata untuk kata: bola!",
+      "src": "audio/ibu/3a4a7f1b38a55075f907.mp3"
+    },
+    "susun suku kata untuk kata buku": {
+      "text": "Susun suku kata untuk kata: buku!",
+      "src": "audio/ibu/0d2338acaff77e7e34bd.mp3"
+    },
+    "susun suku kata untuk kata cacing": {
+      "text": "Susun suku kata untuk kata: cacing!",
+      "src": "audio/ibu/1b003dd56cabd81615a5.mp3"
+    },
+    "susun suku kata untuk kata ceri": {
+      "text": "Susun suku kata untuk kata: ceri!",
+      "src": "audio/ibu/e8b0cd7f483987ef90d3.mp3"
+    },
+    "susun suku kata untuk kata cumi": {
+      "text": "Susun suku kata untuk kata: cumi!",
+      "src": "audio/ibu/9bb1266bcf221955fcfe.mp3"
+    },
+    "susun suku kata untuk kata dada": {
+      "text": "Susun suku kata untuk kata: dada!",
+      "src": "audio/ibu/bcb0ad6a641d12d13de1.mp3"
+    },
+    "susun suku kata untuk kata dadu": {
+      "text": "Susun suku kata untuk kata: dadu!",
+      "src": "audio/ibu/fc6058a7d0189d478d34.mp3"
+    },
+    "susun suku kata untuk kata daun": {
+      "text": "Susun suku kata untuk kata: daun!",
+      "src": "audio/ibu/24049be74d396d23c5a9.mp3"
+    },
+    "susun suku kata untuk kata duri": {
+      "text": "Susun suku kata untuk kata: duri!",
+      "src": "audio/ibu/390ce9545dea89618df2.mp3"
+    },
+    "susun suku kata untuk kata elang": {
+      "text": "Susun suku kata untuk kata: elang!",
+      "src": "audio/ibu/d069408ff85e74f6b8c4.mp3"
+    },
+    "susun suku kata untuk kata foto": {
+      "text": "Susun suku kata untuk kata: foto!",
+      "src": "audio/ibu/24604b3b3621d44e6d49.mp3"
+    },
+    "susun suku kata untuk kata gajah": {
+      "text": "Susun suku kata untuk kata: gajah!",
+      "src": "audio/ibu/afa31126e0b228bb6faa.mp3"
+    },
+    "susun suku kata untuk kata gigi": {
+      "text": "Susun suku kata untuk kata: gigi!",
+      "src": "audio/ibu/bfe64eb48da077a95f17.mp3"
+    },
+    "susun suku kata untuk kata harimau": {
+      "text": "Susun suku kata untuk kata: harimau!",
+      "src": "audio/ibu/cc2132595adcfd743995.mp3"
+    },
+    "susun suku kata untuk kata ibu": {
+      "text": "Susun suku kata untuk kata: ibu!",
+      "src": "audio/ibu/8cad52d1f8a87aebcce3.mp3"
+    },
+    "susun suku kata untuk kata ikan": {
+      "text": "Susun suku kata untuk kata: ikan!",
+      "src": "audio/ibu/25a46aa777b1a94f4cb7.mp3"
+    },
+    "susun suku kata untuk kata jeruk": {
+      "text": "Susun suku kata untuk kata: jeruk!",
+      "src": "audio/ibu/de2a663c1fe0d5ca8f83.mp3"
+    },
+    "susun suku kata untuk kata kado": {
+      "text": "Susun suku kata untuk kata: kado!",
+      "src": "audio/ibu/86e02fea361118b0bc81.mp3"
+    },
+    "susun suku kata untuk kata kaki": {
+      "text": "Susun suku kata untuk kata: kaki!",
+      "src": "audio/ibu/8066cf9d1363dc0c80c9.mp3"
+    },
+    "susun suku kata untuk kata kayu": {
+      "text": "Susun suku kata untuk kata: kayu!",
+      "src": "audio/ibu/1ff23218461d7401e02e.mp3"
+    },
+    "susun suku kata untuk kata kera": {
+      "text": "Susun suku kata untuk kata: kera!",
+      "src": "audio/ibu/6a9e093e0c0f164b5faa.mp3"
+    },
+    "susun suku kata untuk kata koki": {
+      "text": "Susun suku kata untuk kata: koki!",
+      "src": "audio/ibu/b840a3bc35c8550e0ad0.mp3"
+    },
+    "susun suku kata untuk kata kopi": {
+      "text": "Susun suku kata untuk kata: kopi!",
+      "src": "audio/ibu/28b06d35c365d7432f02.mp3"
+    },
+    "susun suku kata untuk kata kuda": {
+      "text": "Susun suku kata untuk kata: kuda!",
+      "src": "audio/ibu/936db81394dd2a8740a9.mp3"
+    },
+    "susun suku kata untuk kata kuku": {
+      "text": "Susun suku kata untuk kata: kuku!",
+      "src": "audio/ibu/4aeb603cd555f56c2ad9.mp3"
+    },
+    "susun suku kata untuk kata kura": {
+      "text": "Susun suku kata untuk kata: kura!",
+      "src": "audio/ibu/233d21c1c3d150e978c1.mp3"
+    },
+    "susun suku kata untuk kata kutu": {
+      "text": "Susun suku kata untuk kata: kutu!",
+      "src": "audio/ibu/410cfc80ba454eebbe32.mp3"
+    },
+    "susun suku kata untuk kata labu": {
+      "text": "Susun suku kata untuk kata: labu!",
+      "src": "audio/ibu/510341039f46789602e5.mp3"
+    },
+    "susun suku kata untuk kata lebah": {
+      "text": "Susun suku kata untuk kata: lebah!",
+      "src": "audio/ibu/4368db2bcff0a5cf48a5.mp3"
+    },
+    "susun suku kata untuk kata lele": {
+      "text": "Susun suku kata untuk kata: lele!",
+      "src": "audio/ibu/665c322a1f878be7cae2.mp3"
+    },
+    "susun suku kata untuk kata madu": {
+      "text": "Susun suku kata untuk kata: madu!",
+      "src": "audio/ibu/3740d3320e98bd65776f.mp3"
+    },
+    "susun suku kata untuk kata mama": {
+      "text": "Susun suku kata untuk kata: mama!",
+      "src": "audio/ibu/bf6afccd17ba85c14709.mp3"
+    },
+    "susun suku kata untuk kata mata": {
+      "text": "Susun suku kata untuk kata: mata!",
+      "src": "audio/ibu/387df284c6defd5e64cd.mp3"
+    },
+    "susun suku kata untuk kata meja": {
+      "text": "Susun suku kata untuk kata: meja!",
+      "src": "audio/ibu/2c565e12059a12af81ce.mp3"
+    },
+    "susun suku kata untuk kata nasi": {
+      "text": "Susun suku kata untuk kata: nasi!",
+      "src": "audio/ibu/214bf7498c348fc0dccf.mp3"
+    },
+    "susun suku kata untuk kata onta": {
+      "text": "Susun suku kata untuk kata: onta!",
+      "src": "audio/ibu/e70dab0c4c48743b085a.mp3"
+    },
+    "susun suku kata untuk kata paku": {
+      "text": "Susun suku kata untuk kata: paku!",
+      "src": "audio/ibu/92e614597a6b5bc48e6b.mp3"
+    },
+    "susun suku kata untuk kata palu": {
+      "text": "Susun suku kata untuk kata: palu!",
+      "src": "audio/ibu/e5bd142c99022b532c79.mp3"
+    },
+    "susun suku kata untuk kata papa": {
+      "text": "Susun suku kata untuk kata: papa!",
+      "src": "audio/ibu/429f7a7c0906768ed925.mp3"
+    },
+    "susun suku kata untuk kata pari": {
+      "text": "Susun suku kata untuk kata: pari!",
+      "src": "audio/ibu/317b1e730d6a5585042a.mp3"
+    },
+    "susun suku kata untuk kata pena": {
+      "text": "Susun suku kata untuk kata: pena!",
+      "src": "audio/ibu/7d4ce4edfd2997e9802b.mp3"
+    },
+    "susun suku kata untuk kata peta": {
+      "text": "Susun suku kata untuk kata: peta!",
+      "src": "audio/ibu/a948092eae8dd298437c.mp3"
+    },
+    "susun suku kata untuk kata pipi": {
+      "text": "Susun suku kata untuk kata: pipi!",
+      "src": "audio/ibu/8171746fc5cfa705ecbb.mp3"
+    },
+    "susun suku kata untuk kata pisang": {
+      "text": "Susun suku kata untuk kata: pisang!",
+      "src": "audio/ibu/4b1d35e9fda69cb1bf7f.mp3"
+    },
+    "susun suku kata untuk kata pita": {
+      "text": "Susun suku kata untuk kata: pita!",
+      "src": "audio/ibu/91e18e3856a7d6b5d623.mp3"
+    },
+    "susun suku kata untuk kata quran": {
+      "text": "Susun suku kata untuk kata: quran!",
+      "src": "audio/ibu/a30aef7397f82056bc2b.mp3"
+    },
+    "susun suku kata untuk kata roda": {
+      "text": "Susun suku kata untuk kata: roda!",
+      "src": "audio/ibu/74147dbde34b096f17ba.mp3"
+    },
+    "susun suku kata untuk kata roti": {
+      "text": "Susun suku kata untuk kata: roti!",
+      "src": "audio/ibu/8ba47a142a382a3410c8.mp3"
+    },
+    "susun suku kata untuk kata rusa": {
+      "text": "Susun suku kata untuk kata: rusa!",
+      "src": "audio/ibu/22261cfbd23ac4346c74.mp3"
+    },
+    "susun suku kata untuk kata sapi": {
+      "text": "Susun suku kata untuk kata: sapi!",
+      "src": "audio/ibu/802b0d2a55c10b363785.mp3"
+    },
+    "susun suku kata untuk kata sapu": {
+      "text": "Susun suku kata untuk kata: sapu!",
+      "src": "audio/ibu/53c5bf9e64bb919fa2ad.mp3"
+    },
+    "susun suku kata untuk kata sawi": {
+      "text": "Susun suku kata untuk kata: sawi!",
+      "src": "audio/ibu/0d1dba90c891db885d24.mp3"
+    },
+    "susun suku kata untuk kata susu": {
+      "text": "Susun suku kata untuk kata: susu!",
+      "src": "audio/ibu/17a385f4d2bf3fd41d1d.mp3"
+    },
+    "susun suku kata untuk kata tali": {
+      "text": "Susun suku kata untuk kata: tali!",
+      "src": "audio/ibu/a283369a521a15593800.mp3"
+    },
+    "susun suku kata untuk kata tebu": {
+      "text": "Susun suku kata untuk kata: tebu!",
+      "src": "audio/ibu/be97e10cbef1391c24f4.mp3"
+    },
+    "susun suku kata untuk kata toko": {
+      "text": "Susun suku kata untuk kata: toko!",
+      "src": "audio/ibu/225ef818cc2c4d0cad6f.mp3"
+    },
+    "susun suku kata untuk kata topi": {
+      "text": "Susun suku kata untuk kata: topi!",
+      "src": "audio/ibu/0b266a69de1f9ea185f7.mp3"
+    },
+    "susun suku kata untuk kata udang": {
+      "text": "Susun suku kata untuk kata: udang!",
+      "src": "audio/ibu/46aa770ff916aa9b4e74.mp3"
+    },
+    "susun suku kata untuk kata vas": {
+      "text": "Susun suku kata untuk kata: vas!",
+      "src": "audio/ibu/03338130728e5b432de8.mp3"
+    },
+    "susun suku kata untuk kata wortel": {
+      "text": "Susun suku kata untuk kata: wortel!",
+      "src": "audio/ibu/4440a8e784ce68d42542.mp3"
+    },
+    "susun suku kata untuk kata xilofon": {
+      "text": "Susun suku kata untuk kata: xilofon!",
+      "src": "audio/ibu/43f4d9aa8453a537ed08.mp3"
+    },
+    "susun suku kata untuk kata yoyo": {
+      "text": "Susun suku kata untuk kata: yoyo!",
+      "src": "audio/ibu/b593144b5302f7bffbc1.mp3"
+    },
+    "susun suku kata untuk kata zebra": {
+      "text": "Susun suku kata untuk kata: zebra!",
+      "src": "audio/ibu/1c4a35e9273ea57ebc1a.mp3"
+    },
+    "suu": {
+      "text": "suu",
+      "src": "audio/ibu/2488d1f0a3ac8858afdf.mp3"
+    },
+    "ta": {
+      "text": "ta",
+      "src": "audio/ibu/76592b9de6d38238a52a.mp3"
+    },
+    "taa": {
+      "text": "taa",
+      "src": "audio/ibu/dd751b4e69f1e3100806.mp3"
+    },
+    "tali": {
+      "text": "tali",
+      "src": "audio/ibu/6fa29cc695ff56e28560.mp3"
+    },
+    "te": {
+      "text": "te",
+      "src": "audio/ibu/2d6c9a90dd38f6852515.mp3"
+    },
+    "tebu": {
+      "text": "tebu",
+      "src": "audio/ibu/dbd450fe5a5bb271eca2.mp3"
+    },
+    "tee": {
+      "text": "tee",
+      "src": "audio/ibu/c4b8650808fdbc63b3d8.mp3"
+    },
+    "teh": {
+      "text": "teh",
+      "src": "audio/ibu/57a499486a01b8c5a2f8.mp3"
+    },
+    "tel": {
+      "text": "tel",
+      "src": "audio/ibu/f4313db688f3f0060506.mp3"
+    },
+    "ti": {
+      "text": "ti",
+      "src": "audio/ibu/cfccfcdeb2a5022c816b.mp3"
+    },
+    "tii": {
+      "text": "tii",
+      "src": "audio/ibu/b4cb33b437f6e2d88f3d.mp3"
+    },
+    "to": {
+      "text": "to",
+      "src": "audio/ibu/663ea1bfffe5038f3f0c.mp3"
+    },
+    "toko": {
+      "text": "toko",
+      "src": "audio/ibu/96f9559c215c2f553196.mp3"
+    },
+    "too": {
+      "text": "too",
+      "src": "audio/ibu/94c05f1c45a1d1a913e0.mp3"
+    },
+    "topi": {
+      "text": "topi",
+      "src": "audio/ibu/9dde961e7aa37cb9a141.mp3"
+    },
+    "tu": {
+      "text": "tu",
+      "src": "audio/ibu/764c4c7b78d6fd3b7bf7.mp3"
+    },
+    "tuu": {
+      "text": "tuu",
+      "src": "audio/ibu/07dfffa46ed45bc92d74.mp3"
+    },
+    "u": {
+      "text": "u",
+      "src": "audio/ibu/0bfe935e70c321c7ca3a.mp3"
+    },
+    "udang": {
+      "text": "udang",
+      "src": "audio/ibu/6094ad4f8c7dbeaa300f.mp3"
+    },
+    "un": {
+      "text": "un",
+      "src": "audio/ibu/68bca10eea2ba33f6f15.mp3"
+    },
+    "uu": {
+      "text": "uu",
+      "src": "audio/ibu/5afab9a620f6f1128450.mp3"
+    },
+    "vas": {
+      "text": "vas",
+      "src": "audio/ibu/74356fbb67fef5edcfb2.mp3"
+    },
+    "waa": {
+      "text": "waa",
+      "src": "audio/ibu/119ada9cb09d644669f5.mp3"
+    },
+    "wah luar biasa": {
+      "text": "Wah, luar biasa!",
+      "src": "audio/ibu/0a38f603da96c23a1c87.mp3"
+    },
+    "we": {
+      "text": "we",
+      "src": "audio/ibu/dc7c811b9561739d9b75.mp3"
+    },
+    "wee": {
+      "text": "wee",
+      "src": "audio/ibu/eef039444ec32273e238.mp3"
+    },
+    "wi": {
+      "text": "wi",
+      "src": "audio/ibu/97bb6198b18008ed8707.mp3"
+    },
+    "wii": {
+      "text": "wii",
+      "src": "audio/ibu/1d0f7e15d6ed1142469f.mp3"
+    },
+    "woo": {
+      "text": "woo",
+      "src": "audio/ibu/b260539511e1699624d9.mp3"
+    },
+    "wor": {
+      "text": "wor",
+      "src": "audio/ibu/32c044dfea70a1f4bee5.mp3"
+    },
+    "wortel": {
+      "text": "wortel",
+      "src": "audio/ibu/9df3a5f038a52f650f05.mp3"
+    },
+    "wuu": {
+      "text": "wuu",
+      "src": "audio/ibu/cf2ed5cfb2fce29f8b08.mp3"
+    },
+    "xi": {
+      "text": "xi",
+      "src": "audio/ibu/17057013652043f03365.mp3"
+    },
+    "xilofon": {
+      "text": "xilofon",
+      "src": "audio/ibu/afc9d89fa3eb5bf221d7.mp3"
+    },
+    "yaa": {
+      "text": "yaa",
+      "src": "audio/ibu/f7bdab6e0a2a1427c038.mp3"
+    },
+    "ye": {
+      "text": "ye",
+      "src": "audio/ibu/ee425df98582637bac95.mp3"
+    },
+    "yee": {
+      "text": "yee",
+      "src": "audio/ibu/d453b9b4c616f9899e4f.mp3"
+    },
+    "yii": {
+      "text": "yii",
+      "src": "audio/ibu/f40671a7fbd0b0f3d944.mp3"
+    },
+    "yo": {
+      "text": "yo",
+      "src": "audio/ibu/e9058ab198f6908f7021.mp3"
+    },
+    "yoo": {
+      "text": "yoo",
+      "src": "audio/ibu/d85bb3e3204117c4257c.mp3"
+    },
+    "yoyo": {
+      "text": "yoyo",
+      "src": "audio/ibu/da30e45705f79aa7555b.mp3"
+    },
+    "yu": {
+      "text": "yu",
+      "src": "audio/ibu/5109f6dc636d70687d8b.mp3"
+    },
+    "yuk dengarkan bu delia dulu": {
+      "text": "Yuk, dengarkan Bu Delia dulu",
+      "src": "audio/ibu/aad88773a1a365781b35.mp3"
+    },
+    "yuk kita baca bareng": {
+      "text": "Yuk kita baca bareng!",
+      "src": "audio/ibu/faa50746451d359fafe4.mp3"
+    },
+    "yuk kita belajar membaca bersama bu delia": {
+      "text": "Yuk, kita belajar membaca bersama Bu Delia.",
+      "src": "audio/ibu/8aa080aafbfedb05a0ad.mp3"
+    },
+    "yuk ulang bagian ini pelan-pelan": {
+      "text": "Yuk, ulang bagian ini pelan-pelan.",
+      "src": "audio/ibu/256d828375d777142061.mp3"
+    },
+    "yuu": {
+      "text": "yuu",
+      "src": "audio/ibu/05fbd4a487321d7b972d.mp3"
+    },
+    "zeb": {
+      "text": "zeb",
+      "src": "audio/ibu/8a1de20d6c37c303b230.mp3"
+    },
+    "zebra": {
+      "text": "zebra",
+      "src": "audio/ibu/676cb75018edccf10fce.mp3"
+    },
+    "zet": {
+      "text": "zet",
+      "src": "audio/ibu/72d7027887e4341e0d65.mp3"
+    }
+  }
+}

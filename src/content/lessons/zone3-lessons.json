@@ -5,6 +5,7 @@
     "title": "Kata Keluarga (Ibu, Bapa, Mama, Papa)",
     "itemIds": ["w_ibu", "w_bapa", "w_mama", "w_papa", "w_bibi"],
     "activities": [
+      { "type": "speech_check" },
       { "type": "match_picture_word" },
       { "type": "arrange_syllables" },
       { "type": "karaoke_read" }
@@ -17,6 +18,7 @@
     "itemIds": ["w_mata", "w_kaki", "w_gigi", "w_pipi", "w_kuku"],
     "unlockAfter": ["lesson_3_family"],
     "activities": [
+      { "type": "speech_check" },
       { "type": "match_picture_word" },
       { "type": "arrange_syllables" },
       { "type": "complete_word" },
@@ -30,6 +32,7 @@
     "itemIds": ["w_bola", "w_buku", "w_topi", "w_baju", "w_meja", "w_sapu"],
     "unlockAfter": ["lesson_3_body"],
     "activities": [
+      { "type": "speech_check" },
       { "type": "match_picture_word" },
       { "type": "arrange_syllables" },
       { "type": "complete_word" },
@@ -43,6 +46,7 @@
     "itemIds": ["w_palu", "w_paku", "w_pita", "w_tali", "w_kado", "w_roda"],
     "unlockAfter": ["lesson_3_objects"],
     "activities": [
+      { "type": "speech_check" },
       { "type": "match_picture_word" },
       { "type": "arrange_syllables" },
       { "type": "complete_word" },
@@ -56,6 +60,7 @@
     "itemIds": ["w_roti", "w_susu", "w_nasi", "w_madu", "w_tebu", "w_ceri"],
     "unlockAfter": ["lesson_3_tools"],
     "activities": [
+      { "type": "speech_check" },
       { "type": "match_picture_word" },
       { "type": "arrange_syllables" },
       { "type": "complete_word" },
@@ -69,6 +74,7 @@
     "itemIds": ["w_sapi", "w_kuda", "w_rusa", "w_kutu", "w_lele", "w_kera"],
     "unlockAfter": ["lesson_3_food"],
     "activities": [
+      { "type": "speech_check" },
       { "type": "match_picture_word" },
       { "type": "arrange_syllables" },
       { "type": "complete_word" },

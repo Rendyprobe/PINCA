@@ -30,3 +30,44 @@ Digunakan untuk memverifikasi kualitas aplikasi di setiap rilis milestone.
 - [ ] Tidak ada rekaman audio tersimpan di IndexedDB, LocalStorage, atau dikirim ke jaringan
 - [ ] Validasi konten lulus (`npm run validate:content`)
 
+
+
+## Suara ibu AI dan UI bacaan
+- [ ] Dengarkan contoh suara, kemudian uji vokal, bunyi konsonan, suku kata, dan kata.
+- [ ] Pastikan suara ibu yang sama terdengar pada petunjuk, contoh bacaan, dan pujian.
+- [ ] Ketuk mikrofon saat pemandu masih berbicara: mic menunggu audio selesai dan 400 ms hening.
+- [ ] Batalkan saat menunggu izin/mulai mendengar; tidak boleh muncul sesi mic terlambat.
+- [ ] Tolak izin atau putuskan jaringan; anak tetap bisa melanjutkan dengan tombol sentuh.
+- [ ] Periksa kartu, lencana, navigasi zona, dan tombol di 360 px, 768 px, serta zoom 200%.
+
+Catatan sesi implementasi: browser tidak terhubung; pemeriksaan visual dan suara
+langsung di perangkat belum dilakukan. Paket MP3 dan alur aplikasi diperiksa otomatis.
+
+
+## Bu Delia dan koreksi bacaan
+- [ ] Pastikan label Kembali tetap utuh pada desktop, layar 360 px, dan zoom 200%.
+- [ ] Dengarkan perkenalan Bu Delia dan petunjuk yang menyebut nama pendamping.
+- [ ] Uji target ba dengan bacaan bi, bu dengan bo, dan bola dengan bula; jangan langsung lulus.
+- [ ] Uji urutan kalimat dan kata tambahan; pastikan skor berkurang.
+- [ ] Pastikan mode ketuk tercatat sebagai bantuan dan mode mic yang cocok tercatat sebagai terverifikasi.
+- [ ] Tolak izin mikrofon, lalu coba lagi setelah izin diberikan lewat browser.
+- [ ] Pindah tab saat menunggu mic; tidak boleh ada capture terlambat.
+
+Hasil otomatis pembaruan Bu Delia: 80 tes, typecheck, lint, validate:content, dan
+build lulus. Tujuh ekspresi SVG sudah dirender dan diperiksa. Pengujian interaktif
+browser dan kualitas suara ekspresif belum selesai; browser tidak terhubung dan
+kredensial ElevenLabs belum tersedia.
+
+## Hasil pengenalan dan pilihan latihan eksplisit
+
+- [ ] Ketuk Mulai bicara, tunggu "Aku mendengarkan", lalu baca kata lengkap saat sorotan suku kata aktif; kata tepat harus terverifikasi.
+- [ ] Hentikan mikrofon setelah bicara; hasil final yang terlambat tetap diterima selama jendela penyelesaian.
+- [ ] Diam selama tiga sesi; tidak boleh menambah hitungan bacaan salah atau menampilkan Aku Sudah Baca secara otomatis.
+- [ ] Baca kata berbeda beberapa kali; tetap dapat mencoba lagi, tanpa lulus otomatis.
+- [ ] Pilih Latihan tanpa penilaian; konfirmasi selesai harus tercatat sebagai bantuan.
+- [ ] Buka Status mikrofon dan bantuan; periksa tahap input, suara, ucapan, dan teks ketika bacaan tidak muncul.
+- [ ] Jalankan Periksa input mikrofon; indikator merespons suara. Selesaikan pemeriksaan sebelum memulai penilaian.
+- [ ] Tolak izin atau putuskan jaringan; tampilkan bantuan teknis dan pilihan latihan eksplisit, tanpa menilai bacaan salah.
+
+91 tes otomatis lulus. Pemeriksaan mikrofon fisik dan hasil transkripsi di perangkat
+pengguna belum dapat diverifikasi dari lingkungan ini.

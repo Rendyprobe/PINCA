@@ -1,5 +1,10 @@
 @import './tokens.css';
 
+/* Keep document scrolling native; page content must not become a scroll trap. */
+html {
+  overflow-y: auto;
+}
+
 /* Modern Reset */
 *,
 *::before,
@@ -25,6 +30,7 @@ body {
 
 #root {
   min-height: 100vh;
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }

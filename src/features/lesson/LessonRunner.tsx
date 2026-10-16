@@ -17,6 +17,7 @@ import { MatchPictureWord } from '@/features/activities/MatchPictureWord/MatchPi
 import { ArrangeSyllables } from '@/features/activities/ArrangeSyllables/ArrangeSyllables';
 import { CompleteWord } from '@/features/activities/CompleteWord/CompleteWord';
 import { KaraokeRead } from '@/features/activities/KaraokeRead/KaraokeRead';
+import { SpeechReadCheck } from '@/features/activities/SpeechReadCheck/SpeechReadCheck';
 import { Button } from '@/components/Button/Button';
 import { StarBar } from '@/components/StarBar/StarBar';
 import { Mascot } from '@/components/Mascot/Mascot';
@@ -31,7 +32,7 @@ const DEFAULT_SETTINGS: UserSettings = {
   fontSize: 'large',
   fontFamily: 'default',
   soundEnabled: true,
-  micEnabled: false,
+  micEnabled: true,
 };
 
 export const LessonRunner: React.FC = () => {
@@ -102,7 +103,7 @@ export const LessonRunner: React.FC = () => {
       }, 500);
 
       void tts.speak(
-        `Hore! Kamu hebat sekali telah menyelesaikan ${lesson.title}! Kamu mendapat ${stars} bintang!`,
+        `Hore! Kamu hebat sekali! Kamu mendapat ${['nol', 'satu', 'dua', 'tiga'][stars]} bintang!`,
       );
     }
   };
@@ -116,9 +117,14 @@ export const LessonRunner: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.topBar}>
-        <Button variant="ghost" size="normal" onClick={handleBackToMap}>
+        <Button
+          variant="secondary"
+          size="normal"
+          onClick={handleBackToMap}
+          ariaLabel="Kembali ke Peta Belajar"
+        >
           <span>⬅️</span>
-          <span>Peta</span>
+          <span>Kembali</span>
         </Button>
         <span className={styles.lessonTitle}>{lesson.title}</span>
         <span style={{ fontWeight: 700, fontSize: 'var(--font-size-sm)' }}>
@@ -185,6 +191,14 @@ export const LessonRunner: React.FC = () => {
 
           {currentActivity.type === 'karaoke_read' && (
             <KaraokeRead
+              items={lessonItems}
+              onComplete={handleActivityComplete}
+              settings={DEFAULT_SETTINGS}
+            />
+          )}
+
+          {currentActivity.type === 'speech_check' && (
+            <SpeechReadCheck
               items={lessonItems}
               onComplete={handleActivityComplete}
               settings={DEFAULT_SETTINGS}

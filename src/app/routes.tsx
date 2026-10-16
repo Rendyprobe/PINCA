@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
   const navigate = useNavigate();
   const [mascotMood, setMascotMood] = useState<MascotMood>('senang');
   const [speech, setSpeech] = useState<string>(
-    'Halo! Ayo belajar membaca bersama Bu Hantu!',
+    'Halo! Ayo belajar membaca bersama Bu Delia!',
   );
   const zones = getZones();
 
@@ -93,13 +93,7 @@ const HomePage: React.FC = () => {
               clickable
               onClick={() => {
                 sfx.playClick();
-                if (zone.id === 'zone_1') {
-                  navigate('/map');
-                } else {
-                  void tts.speak(
-                    `${zone.title} masih terkunci. Yuk selesaikan Zona 1 dulu!`,
-                  );
-                }
+                navigate(`/map?zone=${zone.id}`);
               }}
             >
               <div

@@ -20,6 +20,7 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
   const [selectedText, setSelectedText] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [shakeText, setShakeText] = useState<string | null>(null);
+  const [wrongTexts, setWrongTexts] = useState<string[]>([]);
 
   const startTimeRef = useRef(Date.now());
   const attemptsRef = useRef<Record<string, number>>({});
@@ -50,6 +51,7 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
     setSelectedText(null);
     setIsCorrect(null);
     setShakeText(null);
+    setWrongTexts([]);
 
     const promptText = `Lengkapi kata ${currentItem.text}! Suku kata apa yang hilang?`;
     void tts.speak(promptText, { rate: 0.8 });
@@ -72,9 +74,7 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
       setIsCorrect(true);
       sfx.playSuccessDing();
       const praise = getRandomPraise();
-      void tts.speak(
-        `${praise} Sempurna! ${currentItem.syllables.join('-')} jadi ${currentItem.text}!`,
-      );
+      void tts.speak(praise);
 
       const totalAttempts = attemptsRef.current[itemId] ?? 1;
       const totalHints = hintsUsedRef.current[itemId] ?? 0;
@@ -103,6 +103,9 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
       sfx.playClick();
       setShakeText(chosen);
       setTimeout(() => setShakeText(null), 400);
+      setWrongTexts((prev) =>
+        prev.includes(chosen) ? prev : [...prev, chosen],
+      );
       const hint = getRandomHint();
       void tts.speak(`Hampir! ${hint}. Ayo coba lagi!`);
     }
@@ -185,13 +188,21 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
 
       <div className={styles.optionsGrid}>
         {options.map((opt) => {
-          const isSelected = selectedText === opt;
-          const isCardCorrect = isSelected && isCorrect;
+          const isTarget = opt.toLowerCase() === targetSyl?.toLowerCase();
+          const isCardCorrect = isTarget && isCorrect;
           const isCardShaking = shakeText === opt;
+          const isWrong = wrongTexts.includes(opt);
+          const showHint =
+            isTarget &&
+            !isCorrect &&
+            (wrongTexts.length > 0 ||
+              (hintsUsedRef.current[currentItem.id] ?? 0) > 0);
 
           const btnClass = [
             styles.optionBtn,
             isCardCorrect ? styles.optionCorrect : '',
+            showHint ? styles.optionHint : '',
+            isWrong && !isCardCorrect ? styles.optionWrong : '',
             isCardShaking ? styles.optionShake : '',
           ]
             .filter(Boolean)
@@ -205,6 +216,12 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
               onClick={() => handleSelect(opt)}
               aria-label={`Pilih suku kata ${opt}`}
             >
+              {isCardCorrect && (
+                <span className={styles.correctBadge}>✓ Benar!</span>
+              )}
+              {showHint && !isCardCorrect && (
+                <span className={styles.hintBadge}>⭐ Ini dia!</span>
+              )}
               <span>{opt}</span>
             </button>
           );

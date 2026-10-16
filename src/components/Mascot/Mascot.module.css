@@ -7,10 +7,12 @@
 }
 
 .mascotSvg {
+  max-width: 100%;
+  flex-shrink: 0;
   width: 140px;
   height: 140px;
   display: block;
-  overflow: visible;
+  overflow: hidden;
   transition: transform var(--transition-bounce);
 }
 
@@ -56,5 +58,32 @@
   to {
     opacity: 1;
     transform: scale(1) translateY(0);
+  }
+}
+
+.mascotWrapper {
+  max-width: 100%;
+}
+.bubble {
+  overflow-wrap: break-word;
+  border-color: #b69ad5;
+  background: #fffdf8;
+}
+.bubble::after {
+  border-top-color: #b69ad5;
+}
+.celebrating {
+  animation: deliaCelebrate 1.4s ease-in-out 2;
+}
+@keyframes deliaCelebrate {
+  50% {
+    transform: translateY(-4px) rotate(2deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mascotSvg,
+  .bubble {
+    animation: none;
+    transition: none;
   }
 }

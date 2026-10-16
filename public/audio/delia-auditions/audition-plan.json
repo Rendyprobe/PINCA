@@ -1,0 +1,54 @@
+{
+  "persona": "Native Indonesian woman, warm and patient motherly reading teacher. Conversational delivery, gentle encouragement, natural pauses and clear vowels. Keep letter and syllable demonstrations precise, without exaggerated acting.",
+  "note": "Persona is selection guidance, not an API field. Audition quality must be reviewed by listening.",
+  "samples": [
+    {
+      "label": "tenang",
+      "voice_id": null,
+      "file": "tenang.mp3",
+      "request": {
+        "text": "Halo, aku Bu Delia. Yuk, kita belajar membaca bersama. Pelan-pelan saja, ya. Dengarkan dulu. Ba. Bi. Bu. Bola. Ibu. Sekarang giliranmu. Ayo baca: ibu. Sudah cocok. Hebat sekali! Yuk, kita coba satu lagi.",
+        "model_id": "eleven_v3",
+        "language_code": "id",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.8,
+          "style": 0.15,
+          "speed": 0.92
+        }
+      }
+    },
+    {
+      "label": "hangat",
+      "voice_id": null,
+      "file": "hangat.mp3",
+      "request": {
+        "text": "Halo, aku Bu Delia. Yuk, kita belajar membaca bersama. Pelan-pelan saja, ya. Dengarkan dulu. Ba. Bi. Bu. Bola. Ibu. Sekarang giliranmu. Ayo baca: ibu. Sudah cocok. Hebat sekali! Yuk, kita coba satu lagi.",
+        "model_id": "eleven_v3",
+        "language_code": "id",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.8,
+          "style": 0.3,
+          "speed": 0.96
+        }
+      }
+    },
+    {
+      "label": "ceria-lembut",
+      "voice_id": null,
+      "file": "ceria-lembut.mp3",
+      "request": {
+        "text": "Halo, aku Bu Delia. Yuk, kita belajar membaca bersama. Pelan-pelan saja, ya. Dengarkan dulu. Ba. Bi. Bu. Bola. Ibu. Sekarang giliranmu. Ayo baca: ibu. Sudah cocok. Hebat sekali! Yuk, kita coba satu lagi.",
+        "model_id": "eleven_v3",
+        "language_code": "id",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.8,
+          "style": 0.45,
+          "speed": 0.98
+        }
+      }
+    }
+  ]
+}

@@ -11,11 +11,11 @@ export type ThresholdConfig = Record<Level, LevelThreshold>;
 
 // Ambang dasar (Normal) sesuai GEMINI.md Bagian 5.4
 export const BASE_THRESHOLDS: ThresholdConfig = {
-  letter: { pass: 0.5, almost: 0.35 },
-  syllable: { pass: 0.6, almost: 0.45 },
-  word: { pass: 0.7, almost: 0.55 },
+  letter: { pass: 0.45, almost: 0.35 },
+  syllable: { pass: 0.55, almost: 0.45 },
+  word: { pass: 0.65, almost: 0.55 },
   sentence: { pass: 0.75, almost: 0.6 },
-  story: { pass: 0.7, almost: 0.55 },
+  story: { pass: 0.65, almost: 0.55 },
 };
 
 /**

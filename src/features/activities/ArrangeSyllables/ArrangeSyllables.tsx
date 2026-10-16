@@ -84,7 +84,7 @@ export const ArrangeSyllables: React.FC<ActivityProps<WordItem>> = ({
       setIsCorrect(true);
       sfx.playSuccessDing();
       const praise = getRandomPraise();
-      void tts.speak(`${praise} Kata ${currentItem.text} tersusun sempurna!`);
+      void tts.speak(praise);
 
       const totalAttempts = attemptsRef.current[itemId] ?? 1;
       const totalHints = hintsUsedRef.current[itemId] ?? 0;

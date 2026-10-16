@@ -1,6 +1,19 @@
+import { audioGate } from './audioGate';
 class SFXService {
   private ctx: AudioContext | null = null;
   private muted = false;
+  private output: GainNode | null = null;
+
+  constructor() {
+    audioGate.subscribe((capturing) => {
+      if (this.ctx && this.output) {
+        this.output.gain.setValueAtTime(
+          capturing || this.muted ? 0 : 1,
+          this.ctx.currentTime,
+        );
+      }
+    });
+  }
 
   private getContext(): AudioContext | null {
     if (typeof window === 'undefined') return null;
@@ -12,6 +25,9 @@ class SFXService {
           .webkitAudioContext;
       if (AudioContextClass) {
         this.ctx = new AudioContextClass();
+        this.output = this.ctx.createGain();
+        this.output.gain.value = this.muted || audioGate.isCapturing() ? 0 : 1;
+        this.output.connect(this.ctx.destination);
       }
     }
 
@@ -24,6 +40,12 @@ class SFXService {
 
   public setMuted(muted: boolean): void {
     this.muted = muted;
+    if (this.ctx && this.output) {
+      this.output.gain.setValueAtTime(
+        muted || audioGate.isCapturing() ? 0 : 1,
+        this.ctx.currentTime,
+      );
+    }
   }
 
   public isMuted(): boolean {
@@ -34,7 +56,7 @@ class SFXService {
    * Efek klik tombol lembut (pop pendek)
    */
   public playClick(): void {
-    if (this.muted) return;
+    if (this.muted || audioGate.isCapturing()) return;
     const ctx = this.getContext();
     if (!ctx) return;
 
@@ -50,7 +72,7 @@ class SFXService {
       gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.05);
 
       osc.connect(gain);
-      gain.connect(ctx.destination);
+      gain.connect(this.output ?? ctx.destination);
 
       osc.start(ctx.currentTime);
       osc.stop(ctx.currentTime + 0.05);
@@ -63,7 +85,7 @@ class SFXService {
    * Efek 'ting' lembut saat jawaban/huruf benar (nada E5 -> B5)
    */
   public playSuccessDing(): void {
-    if (this.muted) return;
+    if (this.muted || audioGate.isCapturing()) return;
     const ctx = this.getContext();
     if (!ctx) return;
 
@@ -78,7 +100,7 @@ class SFXService {
       gain1.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
 
       osc1.connect(gain1);
-      gain1.connect(ctx.destination);
+      gain1.connect(this.output ?? ctx.destination);
       osc1.start(now);
       osc1.stop(now + 0.2);
 
@@ -91,7 +113,7 @@ class SFXService {
       gain2.gain.exponentialRampToValueAtTime(0.01, now + 0.4);
 
       osc2.connect(gain2);
-      gain2.connect(ctx.destination);
+      gain2.connect(this.output ?? ctx.destination);
       osc2.start(now + 0.08);
       osc2.stop(now + 0.4);
     } catch {
@@ -103,7 +125,7 @@ class SFXService {
    * Efek 'pop' ceria saat bintang muncul
    */
   public playStarPop(): void {
-    if (this.muted) return;
+    if (this.muted || audioGate.isCapturing()) return;
     const ctx = this.getContext();
     if (!ctx) return;
 
@@ -120,7 +142,7 @@ class SFXService {
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.12);
 
       osc.connect(gain);
-      gain.connect(ctx.destination);
+      gain.connect(this.output ?? ctx.destination);
 
       osc.start(now);
       osc.stop(now + 0.12);
@@ -133,7 +155,7 @@ class SFXService {
    * Efek selebrasi riang di akhir pelajaran (arpeggio ceria C-E-G-C)
    */
   public playCelebrate(): void {
-    if (this.muted) return;
+    if (this.muted || audioGate.isCapturing()) return;
     const ctx = this.getContext();
     if (!ctx) return;
 
@@ -153,7 +175,7 @@ class SFXService {
         gain.gain.exponentialRampToValueAtTime(0.01, start + 0.25);
 
         osc.connect(gain);
-        gain.connect(ctx.destination);
+        gain.connect(this.output ?? ctx.destination);
 
         osc.start(start);
         osc.stop(start + 0.25);

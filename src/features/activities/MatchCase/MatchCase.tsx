@@ -16,9 +16,9 @@ export const MatchCase: React.FC<ActivityProps<LetterItem>> = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [options, setOptions] = useState<LetterItem[]>([]);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [shakeId, setShakeId] = useState<string | null>(null);
+  const [wrongIds, setWrongIds] = useState<string[]>([]);
 
   const startTimeRef = useRef(Date.now());
   const attemptsRef = useRef<Record<string, number>>({});
@@ -41,9 +41,9 @@ export const MatchCase: React.FC<ActivityProps<LetterItem>> = ({
       () => 0.5 - Math.random(),
     );
     setOptions(merged);
-    setSelectedId(null);
     setIsCorrect(null);
     setShakeId(null);
+    setWrongIds([]);
 
     const promptText = `Ini huruf besar ${currentItem.upper}. Mana huruf kecilnya?`;
     void tts.speak(promptText, { rate: 0.75 });
@@ -58,15 +58,12 @@ export const MatchCase: React.FC<ActivityProps<LetterItem>> = ({
 
     const itemId = currentItem.id;
     attemptsRef.current[itemId] = (attemptsRef.current[itemId] ?? 0) + 1;
-    setSelectedId(chosen.id);
 
     if (chosen.id === currentItem.id) {
       setIsCorrect(true);
       sfx.playSuccessDing();
       const praise = getRandomPraise();
-      void tts.speak(
-        `${praise} Cocok sekali! Huruf besar ${currentItem.upper} dan huruf kecil ${currentItem.lower}!`,
-      );
+      void tts.speak(praise);
 
       const totalAttempts = attemptsRef.current[itemId] ?? 1;
       const totalHints = hintsUsedRef.current[itemId] ?? 0;
@@ -95,6 +92,9 @@ export const MatchCase: React.FC<ActivityProps<LetterItem>> = ({
       sfx.playClick();
       setShakeId(chosen.id);
       setTimeout(() => setShakeId(null), 400);
+      setWrongIds((prev) =>
+        prev.includes(chosen.id) ? prev : [...prev, chosen.id],
+      );
       const hint = getRandomHint();
       void tts.speak(`Hampir! ${hint}. Ayo coba lagi!`);
     }
@@ -121,13 +121,21 @@ export const MatchCase: React.FC<ActivityProps<LetterItem>> = ({
 
       <div className={styles.optionsGrid}>
         {options.map((opt) => {
-          const isSelected = selectedId === opt.id;
-          const isCardCorrect = isSelected && isCorrect;
+          const isTarget = opt.id === currentItem.id;
+          const isCardCorrect = isTarget && isCorrect;
           const isCardShaking = shakeId === opt.id;
+          const isWrong = wrongIds.includes(opt.id);
+          const showHint =
+            isTarget &&
+            !isCorrect &&
+            (wrongIds.length > 0 ||
+              (hintsUsedRef.current[currentItem.id] ?? 0) > 0);
 
           const btnClass = [
             styles.optionBtn,
             isCardCorrect ? styles.optionCorrect : '',
+            showHint ? styles.optionHint : '',
+            isWrong && !isCardCorrect ? styles.optionWrong : '',
             isCardShaking ? styles.optionShake : '',
           ]
             .filter(Boolean)
@@ -141,6 +149,12 @@ export const MatchCase: React.FC<ActivityProps<LetterItem>> = ({
               onClick={() => handleSelect(opt)}
               aria-label={`Pilih huruf kecil ${opt.lower}`}
             >
+              {isCardCorrect && (
+                <span className={styles.correctBadge}>✓ Benar!</span>
+              )}
+              {showHint && !isCardCorrect && (
+                <span className={styles.hintBadge}>⭐ Ini dia!</span>
+              )}
               <span>{opt.lower}</span>
             </button>
           );

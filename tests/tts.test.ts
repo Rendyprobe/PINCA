@@ -15,20 +15,53 @@ describe('TTS Service Wrapper', () => {
     expect(tts.isSpeaking()).toBe(false);
   });
 
-  it('speaks text and resolves promise upon completion', async () => {
-    const mockSpeak = vi.fn().mockImplementation((utterance: SpeechSynthesisUtterance) => {
-      // Simulate speech completion
-      setTimeout(() => {
-        utterance.onend?.(new Event('end') as SpeechSynthesisEvent);
-      }, 10);
-    });
+  it('speaks text via Audio when available', async () => {
+    let played = false;
+    const originalAudio = window.Audio;
+    window.Audio = class {
+      src = '';
+      onended: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      play() {
+        played = true;
+        setTimeout(() => this.onended?.(), 10);
+        return Promise.resolve();
+      }
+      pause() {}
+    } as unknown as typeof Audio;
+
+    await tts.speak('Halo Teman!', { audioSrc: '/audio/test-guide.mp3' });
+    expect(played).toBe(true);
+    window.Audio = originalAudio;
+  });
+
+  it('falls back to speechSynthesis when Audio fails', async () => {
+    const mockSpeak = vi
+      .fn()
+      .mockImplementation((utterance: SpeechSynthesisUtterance) => {
+        setTimeout(() => {
+          utterance.onend?.(new Event('end') as SpeechSynthesisEvent);
+        }, 10);
+      });
 
     if (typeof window !== 'undefined' && window.speechSynthesis) {
       window.speechSynthesis.speak = mockSpeak;
     }
 
-    await tts.speak('Halo Teman!', { rate: 0.8 });
+    const originalAudio = window.Audio;
+    window.Audio = class {
+      src = '';
+      onended: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      play() {
+        setTimeout(() => this.onerror?.(), 5);
+        return Promise.reject(new Error('Audio load failed'));
+      }
+      pause() {}
+    } as unknown as typeof Audio;
+
+    await tts.speak('Halo lagi!', { audioSrc: '/audio/test-unavailable.mp3' });
     expect(mockSpeak).toHaveBeenCalled();
+    window.Audio = originalAudio;
   });
 });
-

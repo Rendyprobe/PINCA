@@ -111,7 +111,7 @@ Aturan:
 
 ## 3. MASKOT
 
-- Satu maskot hewan ramah (usulan: **burung hantu kecil bernama "Bu Hantu"/ atau kelinci "Kiko"**; developer boleh memilih, konsisten di seluruh aplikasi). Dibuat dalam **SVG inline** dengan beberapa ekspresi: `idle`, `senang`, `semangat`, `berpikir`, `mendengar` (telinga/telinga tegak, ikon mikrofon kecil), `merayakan`, `istirahat` (menguap).
+- Satu maskot hewan ramah (usulan: **burung hantu kecil bernama "Bu Delia"/ atau kelinci "Kiko"**; developer boleh memilih, konsisten di seluruh aplikasi). Dibuat dalam **SVG inline** dengan beberapa ekspresi: `idle`, `senang`, `semangat`, `berpikir`, `mendengar` (telinga/telinga tegak, ikon mikrofon kecil), `merayakan`, `istirahat` (menguap).
 - Maskot **berekasi pada state**: menyambut saat buka aplikasi, mendengar saat mic aktif, berpikir saat memproses, bersorak saat berhasil, menyemangati saat gagal.
 - Maskot **tidak menutupi teks bacaan**. Posisikan di sudut atau di bawah area bacaan.
 - Maskot punya "gelembung ucapan" singkat yang **juga dibacakan TTS** (bisa dimatikan).
@@ -164,10 +164,10 @@ Zona berikutnya **terkunci** sampai zona sebelumnya mencapai ambang penguasaan (
 
 ### 4.3 Penguasaan (mastery) dan kenaikan level
 - Setiap **item** (huruf/suku kata/kata/kalimat) punya skor penguasaan 0–100% berdasarkan beberapa percobaan terakhir (lihat 8.2).
-- Pelajaran dianggap **selesai** jika ≥ 80% item mencapai tingkat "lancar" dalam sesi tersebut, atau anak mencoba ≥ 3 kali dengan bantuan.
+- Pelajaran dianggap **selesai** jika ≥ 80% item mencapai tingkat "lancar" dalam sesi tersebut, atau anak secara eksplisit menyelesaikan latihan bersama dengan hasil bantuan.
 - **Kesulitan adaptif**: setelah 3 keberhasilan berturut-turut tanpa petunjuk → naikkan tingkat bantuan lebih sedikit/kata lebih sulit; setelah 3 kegagalan berturut-turut → turunkan ke item yang lebih mudah, aktifkan bantuan otomatis, atau ulang dengan mode dengar-dulu.
 - **Pengulangan berjarak (spaced repetition ringan)**: item yang sering terlewat muncul kembali di sesi berikutnya (Bagian 8.3).
-- Anak **tidak pernah terjebak**: setelah N gagal (default 3), aplikasi memberi jalan: dibacakan, ditirukan bersama, lalu tetap dihitung "selesai dengan bantuan" dengan 1 bintang.
+- Anak **tidak pernah terjebak**: setelah N percobaan tidak cocok (default 3), aplikasi menyarankan latihan bersama. Anak tetap dapat mencoba mikrofon. Selesai dengan bantuan hanya setelah memilih dan mengonfirmasi latihan tanpa penilaian, bukan otomatis karena hitungan percobaan.
 
 ---
 
@@ -192,10 +192,13 @@ idle → (tap mic) → requestingPermission → listening
 listening → (hasil interim) → listening (update progress)
 listening → (hasil final cocok) → success
 listening → (hasil final tidak cocok) → retry (hitungan++)
-listening → (tidak ada suara N detik) → noSpeech → retry
-retry → (hitungan < batas) → hint → listening
-retry → (hitungan ≥ batas) → assisted (dibacakan + tiru) → completedWithHelp
-permissionDenied / unsupported / networkError → fallbackTap (mode ketuk)
+listening → (batas waktu / tombol selesai) → evaluating (tunggu hasil final)
+listening / evaluating → (tanpa teks final) → noSpeech (tidak menambah hitungan salah)
+retry → hint → listening (tidak otomatis lulus setelah sejumlah percobaan)
+permissionDenied / unsupported / networkError → speechError (coba mikrofon lagi)
+idle / retry / noSpeech / speechError → (pilih latihan tanpa penilaian) → assisted
+assisted → (konfirmasi latihan bersama) → completedWithHelp (bukan terverifikasi)
+pengaturan mikrofon mati → fallbackTap (mode ketuk, hasil bantuan)
 success → celebrate → next
 ```
 
@@ -272,7 +275,7 @@ Buat modul `src/lib/speech/normalizeId.ts` berisi:
 Web Speech API buruk dalam mengenali satu huruf. Terapkan salah satu (atau kombinasi), diatur di config:
 1. **Cocokkan terhadap "kata contoh"**: tampilkan `A — apel`, anak diminta mengucapkan huruf *atau* kata contoh. Terima jika transcript cocok dengan huruf, nama huruf, bunyi huruf, **atau** kata contoh.
 2. **Tabel alias** per huruf (nama huruf Indonesia "a, be, ce, de, e, ef, ge, ha, i, je, ka, el, em, en, o, pe, ki, er, es, te, u, ve, we, eks, ye, zet") + bunyi umum ("ba", "bu", "ibu" untuk "i", dst.) di `letters.json` → `acceptedAliases`.
-3. **Tidak menghukum**: untuk huruf, kategori "hampir" diperlakukan sebagai lulus-dengan-1-bintang jika anak sudah mencoba 2 kali.
+3. **Tidak menghukum**: tawarkan latihan bersama setelah beberapa percobaan. Hasil "hampir" tidak otomatis dianggap benar. Latihan bersama dipilih eksplisit dan dicatat sebagai bantuan, sesuai arahan pengguna 17 Oktober 2026.
 4. Tawarkan **"mode dengar-tiru"** (TTS bunyi → anak meniru → langsung dihitung tanpa pengecekan ketat) untuk anak yang tidak nyaman dengan mic.
 
 ### 5.9 Fallback dan ketahanan (WAJIB)
@@ -800,7 +803,7 @@ Agent **wajib** menulis tes tabel untuk fungsi ini sebelum menganggapnya selesai
 2. Anak ketuk 🎤, maskot mendengar. Anak berkata "i". Hasil cocok → huruf `I` menyala hijau dengan "pop" kecil. Sorotan pindah ke `BU`.
 3. Anak berkata "bu". Cocok → `B` lalu `U` menyala berurutan, seluruh kata hijau, ✅, bintang terbang ke bilah bintang, konfeti, maskot bersorak: "Hebat! IBU!". TTS mengucapkan "ibu" sebagai penegasan.
 4. Jika anak berkata "bo": skor "hampir" → suku kata `BU` ungu lembut, maskot: "Hampir! Dengar ya… bu". TTS "bu". Anak coba lagi.
-5. Jika 3 kali belum berhasil: maskot: "Yuk kita baca bareng!" → karaoke `I-BU` dengan sorotan, anak meniru, ditandai selesai dengan bantuan (1 bintang) lalu lanjut.
+5. Jika beberapa kali belum berhasil: tawarkan "Yuk kita baca bareng!". Anak dapat tetap mencoba mikrofon atau memilih latihan tanpa penilaian. Hanya pilihan eksplisit yang membuka konfirmasi selesai dengan bantuan; tanpa teks final tidak dihitung sebagai bacaan salah.
 
 ### 20.4 Daftar periksa "Selesai" sebelum menyatakan fitur beres
 - [ ] Berjalan tanpa error di konsol
