@@ -1,0 +1,657 @@
+[
+  {
+    "id": "syl_ba",
+    "level": "syllable",
+    "text": "ba",
+    "letters": ["b", "a"],
+    "difficulty": 1,
+    "ttsText": "baa"
+  },
+  {
+    "id": "syl_bi",
+    "level": "syllable",
+    "text": "bi",
+    "letters": ["b", "i"],
+    "difficulty": 1,
+    "ttsText": "bii"
+  },
+  {
+    "id": "syl_bu",
+    "level": "syllable",
+    "text": "bu",
+    "letters": ["b", "u"],
+    "difficulty": 1,
+    "ttsText": "buu"
+  },
+  {
+    "id": "syl_be",
+    "level": "syllable",
+    "text": "be",
+    "letters": ["b", "e"],
+    "difficulty": 1,
+    "ttsText": "bee"
+  },
+  {
+    "id": "syl_bo",
+    "level": "syllable",
+    "text": "bo",
+    "letters": ["b", "o"],
+    "difficulty": 1,
+    "ttsText": "boo"
+  },
+
+  {
+    "id": "syl_ca",
+    "level": "syllable",
+    "text": "ca",
+    "letters": ["c", "a"],
+    "difficulty": 2,
+    "ttsText": "caa"
+  },
+  {
+    "id": "syl_ci",
+    "level": "syllable",
+    "text": "ci",
+    "letters": ["c", "i"],
+    "difficulty": 2,
+    "ttsText": "cii"
+  },
+  {
+    "id": "syl_cu",
+    "level": "syllable",
+    "text": "cu",
+    "letters": ["c", "u"],
+    "difficulty": 2,
+    "ttsText": "cuu"
+  },
+  {
+    "id": "syl_ce",
+    "level": "syllable",
+    "text": "ce",
+    "letters": ["c", "e"],
+    "difficulty": 2,
+    "ttsText": "cee"
+  },
+  {
+    "id": "syl_co",
+    "level": "syllable",
+    "text": "co",
+    "letters": ["c", "o"],
+    "difficulty": 2,
+    "ttsText": "coo"
+  },
+
+  {
+    "id": "syl_da",
+    "level": "syllable",
+    "text": "da",
+    "letters": ["d", "a"],
+    "difficulty": 1,
+    "ttsText": "daa"
+  },
+  {
+    "id": "syl_di",
+    "level": "syllable",
+    "text": "di",
+    "letters": ["d", "i"],
+    "difficulty": 1,
+    "ttsText": "dii"
+  },
+  {
+    "id": "syl_du",
+    "level": "syllable",
+    "text": "du",
+    "letters": ["d", "u"],
+    "difficulty": 1,
+    "ttsText": "duu"
+  },
+  {
+    "id": "syl_de",
+    "level": "syllable",
+    "text": "de",
+    "letters": ["d", "e"],
+    "difficulty": 1,
+    "ttsText": "dee"
+  },
+  {
+    "id": "syl_do",
+    "level": "syllable",
+    "text": "do",
+    "letters": ["d", "o"],
+    "difficulty": 1,
+    "ttsText": "doo"
+  },
+
+  {
+    "id": "syl_ga",
+    "level": "syllable",
+    "text": "ga",
+    "letters": ["g", "a"],
+    "difficulty": 2,
+    "ttsText": "gaa"
+  },
+  {
+    "id": "syl_gi",
+    "level": "syllable",
+    "text": "gi",
+    "letters": ["g", "i"],
+    "difficulty": 2,
+    "ttsText": "gii"
+  },
+  {
+    "id": "syl_gu",
+    "level": "syllable",
+    "text": "gu",
+    "letters": ["g", "u"],
+    "difficulty": 2,
+    "ttsText": "guu"
+  },
+  {
+    "id": "syl_ge",
+    "level": "syllable",
+    "text": "ge",
+    "letters": ["g", "e"],
+    "difficulty": 2,
+    "ttsText": "gee"
+  },
+  {
+    "id": "syl_go",
+    "level": "syllable",
+    "text": "go",
+    "letters": ["g", "o"],
+    "difficulty": 2,
+    "ttsText": "goo"
+  },
+
+  {
+    "id": "syl_ha",
+    "level": "syllable",
+    "text": "ha",
+    "letters": ["h", "a"],
+    "difficulty": 2,
+    "ttsText": "haa"
+  },
+  {
+    "id": "syl_hi",
+    "level": "syllable",
+    "text": "hi",
+    "letters": ["h", "i"],
+    "difficulty": 2,
+    "ttsText": "hii"
+  },
+  {
+    "id": "syl_hu",
+    "level": "syllable",
+    "text": "hu",
+    "letters": ["h", "u"],
+    "difficulty": 2,
+    "ttsText": "huu"
+  },
+  {
+    "id": "syl_he",
+    "level": "syllable",
+    "text": "he",
+    "letters": ["h", "e"],
+    "difficulty": 2,
+    "ttsText": "hee"
+  },
+  {
+    "id": "syl_ho",
+    "level": "syllable",
+    "text": "ho",
+    "letters": ["h", "o"],
+    "difficulty": 2,
+    "ttsText": "hoo"
+  },
+
+  {
+    "id": "syl_ja",
+    "level": "syllable",
+    "text": "ja",
+    "letters": ["j", "a"],
+    "difficulty": 2,
+    "ttsText": "jaa"
+  },
+  {
+    "id": "syl_ji",
+    "level": "syllable",
+    "text": "ji",
+    "letters": ["j", "i"],
+    "difficulty": 2,
+    "ttsText": "jii"
+  },
+  {
+    "id": "syl_ju",
+    "level": "syllable",
+    "text": "ju",
+    "letters": ["j", "u"],
+    "difficulty": 2,
+    "ttsText": "juu"
+  },
+  {
+    "id": "syl_je",
+    "level": "syllable",
+    "text": "je",
+    "letters": ["j", "e"],
+    "difficulty": 2,
+    "ttsText": "jee"
+  },
+  {
+    "id": "syl_jo",
+    "level": "syllable",
+    "text": "jo",
+    "letters": ["j", "o"],
+    "difficulty": 2,
+    "ttsText": "joo"
+  },
+
+  {
+    "id": "syl_ka",
+    "level": "syllable",
+    "text": "ka",
+    "letters": ["k", "a"],
+    "difficulty": 1,
+    "ttsText": "kaa"
+  },
+  {
+    "id": "syl_ki",
+    "level": "syllable",
+    "text": "ki",
+    "letters": ["k", "i"],
+    "difficulty": 1,
+    "ttsText": "kii"
+  },
+  {
+    "id": "syl_ku",
+    "level": "syllable",
+    "text": "ku",
+    "letters": ["k", "u"],
+    "difficulty": 1,
+    "ttsText": "kuu"
+  },
+  {
+    "id": "syl_ke",
+    "level": "syllable",
+    "text": "ke",
+    "letters": ["k", "e"],
+    "difficulty": 1,
+    "ttsText": "kee"
+  },
+  {
+    "id": "syl_ko",
+    "level": "syllable",
+    "text": "ko",
+    "letters": ["k", "o"],
+    "difficulty": 1,
+    "ttsText": "koo"
+  },
+
+  {
+    "id": "syl_la",
+    "level": "syllable",
+    "text": "la",
+    "letters": ["l", "a"],
+    "difficulty": 1,
+    "ttsText": "laa"
+  },
+  {
+    "id": "syl_li",
+    "level": "syllable",
+    "text": "li",
+    "letters": ["l", "i"],
+    "difficulty": 1,
+    "ttsText": "lii"
+  },
+  {
+    "id": "syl_lu",
+    "level": "syllable",
+    "text": "lu",
+    "letters": ["l", "u"],
+    "difficulty": 1,
+    "ttsText": "luu"
+  },
+  {
+    "id": "syl_le",
+    "level": "syllable",
+    "text": "le",
+    "letters": ["l", "e"],
+    "difficulty": 1,
+    "ttsText": "lee"
+  },
+  {
+    "id": "syl_lo",
+    "level": "syllable",
+    "text": "lo",
+    "letters": ["l", "o"],
+    "difficulty": 1,
+    "ttsText": "loo"
+  },
+
+  {
+    "id": "syl_ma",
+    "level": "syllable",
+    "text": "ma",
+    "letters": ["m", "a"],
+    "difficulty": 1,
+    "ttsText": "maa"
+  },
+  {
+    "id": "syl_mi",
+    "level": "syllable",
+    "text": "mi",
+    "letters": ["m", "i"],
+    "difficulty": 1,
+    "ttsText": "mii"
+  },
+  {
+    "id": "syl_mu",
+    "level": "syllable",
+    "text": "mu",
+    "letters": ["m", "u"],
+    "difficulty": 1,
+    "ttsText": "muu"
+  },
+  {
+    "id": "syl_me",
+    "level": "syllable",
+    "text": "me",
+    "letters": ["m", "e"],
+    "difficulty": 1,
+    "ttsText": "mee"
+  },
+  {
+    "id": "syl_mo",
+    "level": "syllable",
+    "text": "mo",
+    "letters": ["m", "o"],
+    "difficulty": 1,
+    "ttsText": "moo"
+  },
+
+  {
+    "id": "syl_na",
+    "level": "syllable",
+    "text": "na",
+    "letters": ["n", "a"],
+    "difficulty": 1,
+    "ttsText": "naa"
+  },
+  {
+    "id": "syl_ni",
+    "level": "syllable",
+    "text": "ni",
+    "letters": ["n", "i"],
+    "difficulty": 1,
+    "ttsText": "nii"
+  },
+  {
+    "id": "syl_nu",
+    "level": "syllable",
+    "text": "nu",
+    "letters": ["n", "u"],
+    "difficulty": 1,
+    "ttsText": "nuu"
+  },
+  {
+    "id": "syl_ne",
+    "level": "syllable",
+    "text": "ne",
+    "letters": ["n", "e"],
+    "difficulty": 1,
+    "ttsText": "nee"
+  },
+  {
+    "id": "syl_no",
+    "level": "syllable",
+    "text": "no",
+    "letters": ["n", "o"],
+    "difficulty": 1,
+    "ttsText": "noo"
+  },
+
+  {
+    "id": "syl_pa",
+    "level": "syllable",
+    "text": "pa",
+    "letters": ["p", "a"],
+    "difficulty": 1,
+    "ttsText": "paa"
+  },
+  {
+    "id": "syl_pi",
+    "level": "syllable",
+    "text": "pi",
+    "letters": ["p", "i"],
+    "difficulty": 1,
+    "ttsText": "pii"
+  },
+  {
+    "id": "syl_pu",
+    "level": "syllable",
+    "text": "pu",
+    "letters": ["p", "u"],
+    "difficulty": 1,
+    "ttsText": "puu"
+  },
+  {
+    "id": "syl_pe",
+    "level": "syllable",
+    "text": "pe",
+    "letters": ["p", "e"],
+    "difficulty": 1,
+    "ttsText": "pee"
+  },
+  {
+    "id": "syl_po",
+    "level": "syllable",
+    "text": "po",
+    "letters": ["p", "o"],
+    "difficulty": 1,
+    "ttsText": "poo"
+  },
+
+  {
+    "id": "syl_ra",
+    "level": "syllable",
+    "text": "ra",
+    "letters": ["r", "a"],
+    "difficulty": 2,
+    "ttsText": "raa"
+  },
+  {
+    "id": "syl_ri",
+    "level": "syllable",
+    "text": "ri",
+    "letters": ["r", "i"],
+    "difficulty": 2,
+    "ttsText": "rii"
+  },
+  {
+    "id": "syl_ru",
+    "level": "syllable",
+    "text": "ru",
+    "letters": ["r", "u"],
+    "difficulty": 2,
+    "ttsText": "ruu"
+  },
+  {
+    "id": "syl_re",
+    "level": "syllable",
+    "text": "re",
+    "letters": ["r", "e"],
+    "difficulty": 2,
+    "ttsText": "ree"
+  },
+  {
+    "id": "syl_ro",
+    "level": "syllable",
+    "text": "ro",
+    "letters": ["r", "o"],
+    "difficulty": 2,
+    "ttsText": "roo"
+  },
+
+  {
+    "id": "syl_sa",
+    "level": "syllable",
+    "text": "sa",
+    "letters": ["s", "a"],
+    "difficulty": 1,
+    "ttsText": "saa"
+  },
+  {
+    "id": "syl_si",
+    "level": "syllable",
+    "text": "si",
+    "letters": ["s", "i"],
+    "difficulty": 1,
+    "ttsText": "sii"
+  },
+  {
+    "id": "syl_su",
+    "level": "syllable",
+    "text": "su",
+    "letters": ["s", "u"],
+    "difficulty": 1,
+    "ttsText": "suu"
+  },
+  {
+    "id": "syl_se",
+    "level": "syllable",
+    "text": "se",
+    "letters": ["s", "e"],
+    "difficulty": 1,
+    "ttsText": "see"
+  },
+  {
+    "id": "syl_so",
+    "level": "syllable",
+    "text": "so",
+    "letters": ["s", "o"],
+    "difficulty": 1,
+    "ttsText": "soo"
+  },
+
+  {
+    "id": "syl_ta",
+    "level": "syllable",
+    "text": "ta",
+    "letters": ["t", "a"],
+    "difficulty": 1,
+    "ttsText": "taa"
+  },
+  {
+    "id": "syl_ti",
+    "level": "syllable",
+    "text": "ti",
+    "letters": ["t", "i"],
+    "difficulty": 1,
+    "ttsText": "tii"
+  },
+  {
+    "id": "syl_tu",
+    "level": "syllable",
+    "text": "tu",
+    "letters": ["t", "u"],
+    "difficulty": 1,
+    "ttsText": "tuu"
+  },
+  {
+    "id": "syl_te",
+    "level": "syllable",
+    "text": "te",
+    "letters": ["t", "e"],
+    "difficulty": 1,
+    "ttsText": "tee"
+  },
+  {
+    "id": "syl_to",
+    "level": "syllable",
+    "text": "to",
+    "letters": ["t", "o"],
+    "difficulty": 1,
+    "ttsText": "too"
+  },
+
+  {
+    "id": "syl_wa",
+    "level": "syllable",
+    "text": "wa",
+    "letters": ["w", "a"],
+    "difficulty": 2,
+    "ttsText": "waa"
+  },
+  {
+    "id": "syl_wi",
+    "level": "syllable",
+    "text": "wi",
+    "letters": ["w", "i"],
+    "difficulty": 2,
+    "ttsText": "wii"
+  },
+  {
+    "id": "syl_wu",
+    "level": "syllable",
+    "text": "wu",
+    "letters": ["w", "u"],
+    "difficulty": 2,
+    "ttsText": "wuu"
+  },
+  {
+    "id": "syl_we",
+    "level": "syllable",
+    "text": "we",
+    "letters": ["w", "e"],
+    "difficulty": 2,
+    "ttsText": "wee"
+  },
+  {
+    "id": "syl_wo",
+    "level": "syllable",
+    "text": "wo",
+    "letters": ["w", "o"],
+    "difficulty": 2,
+    "ttsText": "woo"
+  },
+
+  {
+    "id": "syl_ya",
+    "level": "syllable",
+    "text": "ya",
+    "letters": ["y", "a"],
+    "difficulty": 2,
+    "ttsText": "yaa"
+  },
+  {
+    "id": "syl_yi",
+    "level": "syllable",
+    "text": "yi",
+    "letters": ["y", "i"],
+    "difficulty": 2,
+    "ttsText": "yii"
+  },
+  {
+    "id": "syl_yu",
+    "level": "syllable",
+    "text": "yu",
+    "letters": ["y", "u"],
+    "difficulty": 2,
+    "ttsText": "yuu"
+  },
+  {
+    "id": "syl_ye",
+    "level": "syllable",
+    "text": "ye",
+    "letters": ["y", "e"],
+    "difficulty": 2,
+    "ttsText": "yee"
+  },
+  {
+    "id": "syl_yo",
+    "level": "syllable",
+    "text": "yo",
+    "letters": ["y", "o"],
+    "difficulty": 2,
+    "ttsText": "yoo"
+  }
+]

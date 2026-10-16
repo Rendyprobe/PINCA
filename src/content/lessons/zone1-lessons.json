@@ -1,0 +1,73 @@
+[
+  {
+    "id": "lesson_1_vowels",
+    "zoneId": "zone_1",
+    "title": "Huruf Vokal (A, I, U, E, O)",
+    "itemIds": ["l_a", "l_i", "l_u", "l_e", "l_o"],
+    "activities": [
+      { "type": "listen_tap" },
+      { "type": "match_case" },
+      { "type": "sound_guess" }
+    ]
+  },
+  {
+    "id": "lesson_1_consonants_1",
+    "zoneId": "zone_1",
+    "title": "Konsonan Ramah (B, M, P, T)",
+    "itemIds": ["l_b", "l_m", "l_p", "l_t"],
+    "unlockAfter": ["lesson_1_vowels"],
+    "activities": [
+      { "type": "listen_tap" },
+      { "type": "match_case" },
+      { "type": "sound_guess" }
+    ]
+  },
+  {
+    "id": "lesson_1_consonants_2",
+    "zoneId": "zone_1",
+    "title": "Konsonan Ceria (D, K, G, S)",
+    "itemIds": ["l_d", "l_k", "l_g", "l_s"],
+    "unlockAfter": ["lesson_1_consonants_1"],
+    "activities": [
+      { "type": "listen_tap" },
+      { "type": "match_case" },
+      { "type": "sound_guess" }
+    ]
+  },
+  {
+    "id": "lesson_1_consonants_3",
+    "zoneId": "zone_1",
+    "title": "Konsonan Lincah (L, R, N, H)",
+    "itemIds": ["l_l", "l_r", "l_n", "l_h"],
+    "unlockAfter": ["lesson_1_consonants_2"],
+    "activities": [
+      { "type": "listen_tap" },
+      { "type": "match_case" },
+      { "type": "sound_guess" }
+    ]
+  },
+  {
+    "id": "lesson_1_consonants_4",
+    "zoneId": "zone_1",
+    "title": "Konsonan Asyik (J, C, W, Y)",
+    "itemIds": ["l_j", "l_c", "l_w", "l_y"],
+    "unlockAfter": ["lesson_1_consonants_3"],
+    "activities": [
+      { "type": "listen_tap" },
+      { "type": "match_case" },
+      { "type": "sound_guess" }
+    ]
+  },
+  {
+    "id": "lesson_1_consonants_5",
+    "zoneId": "zone_1",
+    "title": "Huruf Khusus (F, V, Z, Q, X)",
+    "itemIds": ["l_f", "l_v", "l_z", "l_q", "l_x"],
+    "unlockAfter": ["lesson_1_consonants_4"],
+    "activities": [
+      { "type": "listen_tap" },
+      { "type": "match_case" },
+      { "type": "sound_guess" }
+    ]
+  }
+]

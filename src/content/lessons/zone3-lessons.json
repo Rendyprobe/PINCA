@@ -1,0 +1,78 @@
+[
+  {
+    "id": "lesson_3_family",
+    "zoneId": "zone_3",
+    "title": "Kata Keluarga (Ibu, Bapa, Mama, Papa)",
+    "itemIds": ["w_ibu", "w_bapa", "w_mama", "w_papa", "w_bibi"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "karaoke_read" }
+    ]
+  },
+  {
+    "id": "lesson_3_body",
+    "zoneId": "zone_3",
+    "title": "Bagian Tubuh (Mata, Kaki, Gigi, Pipi)",
+    "itemIds": ["w_mata", "w_kaki", "w_gigi", "w_pipi", "w_kuku"],
+    "unlockAfter": ["lesson_3_family"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" }
+    ]
+  },
+  {
+    "id": "lesson_3_objects",
+    "zoneId": "zone_3",
+    "title": "Benda Sekitar (Bola, Buku, Topi, Baju)",
+    "itemIds": ["w_bola", "w_buku", "w_topi", "w_baju", "w_meja", "w_sapu"],
+    "unlockAfter": ["lesson_3_body"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" }
+    ]
+  },
+  {
+    "id": "lesson_3_tools",
+    "zoneId": "zone_3",
+    "title": "Benda Mainan & Perkakas (Palu, Pita, Kado, Roda)",
+    "itemIds": ["w_palu", "w_paku", "w_pita", "w_tali", "w_kado", "w_roda"],
+    "unlockAfter": ["lesson_3_objects"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" }
+    ]
+  },
+  {
+    "id": "lesson_3_food",
+    "zoneId": "zone_3",
+    "title": "Makanan & Minuman (Roti, Susu, Nasi, Madu)",
+    "itemIds": ["w_roti", "w_susu", "w_nasi", "w_madu", "w_tebu", "w_ceri"],
+    "unlockAfter": ["lesson_3_tools"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" }
+    ]
+  },
+  {
+    "id": "lesson_3_animals",
+    "zoneId": "zone_3",
+    "title": "Hewan Ramah (Sapi, Kuda, Rusa, Lele, Kera)",
+    "itemIds": ["w_sapi", "w_kuda", "w_rusa", "w_kutu", "w_lele", "w_kera"],
+    "unlockAfter": ["lesson_3_food"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" }
+    ]
+  }
+]

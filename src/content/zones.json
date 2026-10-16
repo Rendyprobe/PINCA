@@ -1,0 +1,65 @@
+[
+  {
+    "id": "zone_1",
+    "title": "Kenal Huruf",
+    "icon": "🔤",
+    "lessonIds": [
+      "lesson_1_vowels",
+      "lesson_1_consonants_1",
+      "lesson_1_consonants_2",
+      "lesson_1_consonants_3",
+      "lesson_1_consonants_4",
+      "lesson_1_consonants_5"
+    ],
+    "order": 1
+  },
+  {
+    "id": "zone_2",
+    "title": "Suku Kata",
+    "icon": "🧩",
+    "lessonIds": [
+      "lesson_2_kv_ba",
+      "lesson_2_kv_ma",
+      "lesson_2_kv_pa",
+      "lesson_2_kv_da",
+      "lesson_2_kv_sa",
+      "lesson_2_kv_ka"
+    ],
+    "order": 2
+  },
+  {
+    "id": "zone_3",
+    "title": "Kata Pertama",
+    "icon": "📖",
+    "lessonIds": [
+      "lesson_3_family",
+      "lesson_3_body",
+      "lesson_3_objects",
+      "lesson_3_tools",
+      "lesson_3_food",
+      "lesson_3_animals"
+    ],
+    "order": 3
+  },
+  {
+    "id": "zone_4",
+    "title": "Kata Lebih Panjang",
+    "icon": "🚀",
+    "lessonIds": ["lesson_4_kvk", "lesson_4_3_syllables"],
+    "order": 4
+  },
+  {
+    "id": "zone_5",
+    "title": "Kalimat Pendek",
+    "icon": "🌟",
+    "lessonIds": ["lesson_5_simple_sentences"],
+    "order": 5
+  },
+  {
+    "id": "zone_6",
+    "title": "Cerita Mini",
+    "icon": "📚",
+    "lessonIds": ["lesson_6_stories"],
+    "order": 6
+  }
+]

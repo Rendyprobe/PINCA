@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.hintCard {
+  background-color: var(--color-surface);
+  border: 3px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.wordImage {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.instruction {
+  font-family: var(--font-display);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.slotsRow {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.slot {
+  width: 90px;
+  height: 90px;
+  border: 3px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--color-text);
+  cursor: pointer;
+  transition:
+    transform var(--transition-bounce),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
+  user-select: none;
+}
+
+.slotFilled {
+  border-style: solid;
+  border-color: var(--color-primary);
+  background-color: #e7f5ff;
+  box-shadow: var(--shadow-sm);
+}
+
+.slotCorrect {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+  transform: scale(1.06);
+}
+
+.slotShake {
+  animation: gentleShake 350ms ease-in-out;
+  border-color: var(--color-hint);
+}
+
+.poolRow {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pieceBtn {
+  min-width: 80px;
+  min-height: var(--touch-target-child);
+  padding: 8px 20px;
+  background-color: var(--color-surface);
+  border: 3px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.pieceBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.pieceUsed {
+  opacity: 0.25;
+  cursor: default;
+  transform: none;
+  border-color: var(--color-border);
+}
+
+@keyframes gentleShake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "lesson_2_kv_ba",
+    "zoneId": "zone_2",
+    "title": "Suku Kata B (Ba, Bi, Bu, Be, Bo)",
+    "itemIds": ["syl_ba", "syl_bi", "syl_bu", "syl_be", "syl_bo"],
+    "activities": [{ "type": "listen_tap" }, { "type": "karaoke_read" }]
+  },
+  {
+    "id": "lesson_2_kv_ma",
+    "zoneId": "zone_2",
+    "title": "Suku Kata M (Ma, Mi, Mu, Me, Mo)",
+    "itemIds": ["syl_ma", "syl_mi", "syl_mu", "syl_me", "syl_mo"],
+    "unlockAfter": ["lesson_2_kv_ba"],
+    "activities": [{ "type": "listen_tap" }, { "type": "karaoke_read" }]
+  },
+  {
+    "id": "lesson_2_kv_pa",
+    "zoneId": "zone_2",
+    "title": "Suku Kata P (Pa, Pi, Pu, Pe, Po)",
+    "itemIds": ["syl_pa", "syl_pi", "syl_pu", "syl_pe", "syl_po"],
+    "unlockAfter": ["lesson_2_kv_ma"],
+    "activities": [{ "type": "listen_tap" }, { "type": "karaoke_read" }]
+  },
+  {
+    "id": "lesson_2_kv_da",
+    "zoneId": "zone_2",
+    "title": "Suku Kata D (Da, Di, Du, De, Do)",
+    "itemIds": ["syl_da", "syl_di", "syl_du", "syl_de", "syl_do"],
+    "unlockAfter": ["lesson_2_kv_pa"],
+    "activities": [{ "type": "listen_tap" }, { "type": "karaoke_read" }]
+  },
+  {
+    "id": "lesson_2_kv_sa",
+    "zoneId": "zone_2",
+    "title": "Suku Kata S (Sa, Si, Su, Se, So)",
+    "itemIds": ["syl_sa", "syl_si", "syl_su", "syl_se", "syl_so"],
+    "unlockAfter": ["lesson_2_kv_da"],
+    "activities": [{ "type": "listen_tap" }, { "type": "karaoke_read" }]
+  },
+  {
+    "id": "lesson_2_kv_ka",
+    "zoneId": "zone_2",
+    "title": "Suku Kata K (Ka, Ki, Ku, Ke, Ko)",
+    "itemIds": ["syl_ka", "syl_ki", "syl_ku", "syl_ke", "syl_ko"],
+    "unlockAfter": ["lesson_2_kv_sa"],
+    "activities": [{ "type": "listen_tap" }, { "type": "karaoke_read" }]
+  }
+]
