@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import { AppLayout } from '@/components/Layout/AppLayout';
 import { Button } from '@/components/Button/Button';
 import { Card } from '@/components/Card/Card';
@@ -173,6 +173,7 @@ export const AppRoutes: React.FC = () => {
           }
         />
         <Route path="/lesson/:lessonId" element={<LessonRunner />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
       {showProfileModal && profile && (

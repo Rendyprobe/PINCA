@@ -3,19 +3,30 @@ import styles from './ListenTap.module.css';
 import type {
   ActivityProps,
   LetterItem,
+  SyllableItem,
   ActivityResultItem,
 } from '@/types/content';
-import { getLetters, getRandomPraise, getRandomHint } from '@/content';
+import {
+  getLetters,
+  getSyllables,
+  getRandomPraise,
+  getRandomHint,
+} from '@/content';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
-export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
+type SupportedItem = LetterItem | SyllableItem;
+
+const isLetter = (item: SupportedItem): item is LetterItem =>
+  item.level === 'letter';
+
+export const ListenTap: React.FC<ActivityProps<SupportedItem>> = ({
   items,
   onComplete,
   onProgress,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [options, setOptions] = useState<LetterItem[]>([]);
+  const [options, setOptions] = useState<SupportedItem[]>([]);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [shakeId, setShakeId] = useState<string | null>(null);
   const [wrongIds, setWrongIds] = useState<string[]>([]);
@@ -27,16 +38,24 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
 
   const currentItem = items[currentIndex];
   const allLetters = useRef(getLetters()).current;
+  const allSyllables = useRef(getSyllables()).current;
 
   // Siapkan pilihan opsi saat item berganti
   useEffect(() => {
     if (!currentItem) return;
 
-    // Ambil 2 distraktor dari seluruh huruf yang bukan currentItem
-    const distractors = allLetters
-      .filter((l) => l.id !== currentItem.id)
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 2);
+    let distractors: SupportedItem[];
+    if (isLetter(currentItem)) {
+      distractors = allLetters
+        .filter((l) => l.id !== currentItem.id)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 2);
+    } else {
+      distractors = allSyllables
+        .filter((s) => s.id !== currentItem.id)
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 2);
+    }
 
     const merged = [currentItem, ...distractors].sort(
       () => 0.5 - Math.random(),
@@ -47,25 +66,37 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
     setWrongIds([]);
 
     // TTS membacakan instruksi
-    const promptText = `Dengarkan ya... Mana huruf ${currentItem.soundTts}?`;
+    const promptText = isLetter(currentItem)
+      ? `Dengarkan ya... Mana huruf ${currentItem.soundTts}?`
+      : `Dengarkan ya... Mana suku kata ${currentItem.ttsText ?? currentItem.text}?`;
     void tts.speak(promptText, { rate: 0.75 });
 
     if (onProgress) {
       onProgress({ index: currentIndex + 1, total: items.length });
     }
-  }, [currentIndex, currentItem, allLetters, items.length, onProgress]);
+  }, [
+    currentIndex,
+    currentItem,
+    allLetters,
+    allSyllables,
+    items.length,
+    onProgress,
+  ]);
 
   const handleReplay = () => {
     if (!currentItem) return;
     sfx.playClick();
     const itemId = currentItem.id;
     hintsUsedRef.current[itemId] = (hintsUsedRef.current[itemId] ?? 0) + 1;
-    void tts.speak(currentItem.ttsText ?? currentItem.soundTts, {
+    const speakText = isLetter(currentItem)
+      ? (currentItem.ttsText ?? currentItem.soundTts)
+      : (currentItem.ttsText ?? currentItem.text);
+    void tts.speak(speakText, {
       audioSrc: currentItem.audioSrc,
     });
   };
 
-  const handleSelect = (chosen: LetterItem) => {
+  const handleSelect = (chosen: SupportedItem) => {
     if (!currentItem || isCorrect) return;
 
     const itemId = currentItem.id;
@@ -118,6 +149,10 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
 
   if (!currentItem) return null;
 
+  const instructionLabel = isLetter(currentItem)
+    ? `Ketuk huruf "${currentItem.upper}"`
+    : `Ketuk suku kata "${currentItem.text}"`;
+
   return (
     <div className={styles.container}>
       <div className={styles.instructionBox}>
@@ -125,13 +160,11 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
           type="button"
           className={styles.replayBtn}
           onClick={handleReplay}
-          aria-label="Dengarkan bunyi huruf lagi"
+          aria-label="Dengarkan bunyi lagi"
         >
           🔊
         </button>
-        <span className={styles.instructionText}>
-          Ketuk huruf <strong>&quot;{currentItem.upper}&quot;</strong>
-        </span>
+        <span className={styles.instructionText}>{instructionLabel}</span>
       </div>
 
       <div className={styles.grid}>
@@ -156,6 +189,14 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
             .filter(Boolean)
             .join(' ');
 
+          const optDisplay = isLetter(opt)
+            ? `${opt.upper} ${opt.lower}`
+            : opt.text;
+
+          const optAria = isLetter(opt)
+            ? `Huruf ${opt.upper}`
+            : `Suku kata ${opt.text}`;
+
           return (
             <div
               key={opt.id}
@@ -163,7 +204,7 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
               onClick={() => handleSelect(opt)}
               role="button"
               tabIndex={0}
-              aria-label={`Huruf ${opt.upper}`}
+              aria-label={optAria}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                   e.preventDefault();
@@ -177,9 +218,7 @@ export const ListenTap: React.FC<ActivityProps<LetterItem>> = ({
               {showHint && !isCardCorrect && (
                 <span className={styles.hintBadge}>⭐ Ini dia!</span>
               )}
-              <span className={styles.letterDisplay}>
-                {opt.upper} {opt.lower}
-              </span>
+              <span className={styles.letterDisplay}>{optDisplay}</span>
               {opt.image && (
                 <span
                   className={styles.exampleImage}

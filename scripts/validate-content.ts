@@ -171,6 +171,42 @@ function validateContent() {
               hasErrors = true;
             }
           });
+
+          ls.activities.forEach((act) => {
+            if (act.type === 'match_case' || act.type === 'sound_guess') {
+              const invalid = ls.itemIds.filter((id) => !letterIds.has(id));
+              if (invalid.length > 0) {
+                console.error(
+                  `❌ Pelajaran ${ls.id} memiliki aktivitas ${act.type} tetapi merujuk item non-huruf: ${invalid.join(', ')}`,
+                );
+                hasErrors = true;
+              }
+            }
+            if (
+              act.type === 'match_picture_word' ||
+              act.type === 'arrange_syllables' ||
+              act.type === 'complete_word'
+            ) {
+              const invalid = ls.itemIds.filter((id) => !wordIds.has(id));
+              if (invalid.length > 0) {
+                console.error(
+                  `❌ Pelajaran ${ls.id} memiliki aktivitas ${act.type} tetapi merujuk item non-kata: ${invalid.join(', ')}`,
+                );
+                hasErrors = true;
+              }
+            }
+            if (act.type === 'listen_tap') {
+              const invalid = ls.itemIds.filter(
+                (id) => !letterIds.has(id) && !syllableIds.has(id),
+              );
+              if (invalid.length > 0) {
+                console.error(
+                  `❌ Pelajaran ${ls.id} memiliki aktivitas listen_tap tetapi merujuk item yang tidak didukung: ${invalid.join(', ')}`,
+                );
+                hasErrors = true;
+              }
+            }
+          });
         });
 
         console.log(`✅ ${lf} valid (${lessons.length} pelajaran terverifikasi)`);

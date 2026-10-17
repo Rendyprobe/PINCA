@@ -71,3 +71,13 @@ kredensial ElevenLabs belum tersedia.
 
 91 tes otomatis lulus. Pemeriksaan mikrofon fisik dan hasil transkripsi di perangkat
 pengguna belum dapat diverifikasi dari lingkungan ini.
+
+## Paket suara F3 pilihan pengguna
+
+- [x] Pengguna mendengarkan audisi dan memilih preset F3.
+- [x] Buat seluruh 978 klip secara lokal dan pertahankan seluruh key teks lama.
+- [x] Dekode seluruh MP3 dan validasi waveform sebelum mengaktifkan manifest F3.
+- [x] Periksa HTTP 200 untuk contoh instruksi, huruf, dan pujian F3.
+- [x] Jalankan 92 tes, termasuk keberadaan semua aset pada manifest F3.
+- [ ] Dengarkan sampel huruf, suku kata, kata, dan instruksi langsung dari aktivitas setelah refresh.
+- [ ] Periksa pelafalan contoh pendek dan pemenggalan seluruh materi yang akan digunakan anak.

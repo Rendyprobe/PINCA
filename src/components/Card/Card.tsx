@@ -10,8 +10,17 @@ export const Card: React.FC<CardProps> = ({
   clickable = false,
   className,
   children,
+  onKeyDown,
   ...rest
 }) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (clickable && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      rest.onClick?.(e as unknown as React.MouseEvent<HTMLDivElement>);
+    }
+    onKeyDown?.(e);
+  };
+
   const combinedClass = [
     styles.card,
     clickable ? styles.clickable : '',
@@ -21,7 +30,13 @@ export const Card: React.FC<CardProps> = ({
     .join(' ');
 
   return (
-    <div className={combinedClass} {...rest}>
+    <div
+      className={combinedClass}
+      role={clickable ? 'button' : undefined}
+      tabIndex={clickable ? 0 : undefined}
+      onKeyDown={handleKeyDown}
+      {...rest}
+    >
       {children}
     </div>
   );

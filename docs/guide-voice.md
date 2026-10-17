@@ -1,11 +1,14 @@
 # Suara pemandu Bu Delia
 
-Pemandu memakai audio AI perempuan Indonesia `id-ID-GadisNeural`, dengan tempo
-`-12%`, pitch asli, dan volume `-5%`. Paket berisi 978 entri audio lokal
+Pengguna memilih preset perempuan **F3 dari Supertonic 3** melalui audisi lokal.
+Pemandu memakai bahasa Indonesia, speed `0.95`, delapan langkah, dan seed `42`.
+Paket berisi 978 entri MP3 lokal
 untuk materi, contoh bacaan, instruksi, dan pujian. Audio dimuat sesuai kebutuhan;
 seluruh paket tidak diunduh saat halaman pertama dibuka.
 
-Contoh: `public/audio/ibu/6e282d230f3d337185a6.mp3`.
+Lokasi paket: `public/audio/delia-f3/`. Model hanya dijalankan saat membuat aset,
+tidak diunduh atau dijalankan di browser anak. MP3 lama Gadis tetap tersedia
+sebagai cadangan; manifest aktif menentukan paket yang diputar.
 
 ## Pemutaran
 
@@ -34,19 +37,22 @@ agar izin mikrofon tidak disamakan dengan hasil pengenalan yang berhasil.
 
 ## Membuat ulang aset
 
-Generator opsional hanya diperlukan saat menyiapkan aset, bukan saat menjalankan
-aplikasi. Ia memakai [edge-tts](https://github.com/rany2/edge-tts) untuk membuat
-audio materi publik; tidak mengirim nama profil atau audio anak.
+Generator hanya diperlukan saat menyiapkan aset, bukan saat menjalankan aplikasi.
+Model Supertonic 3 dan environment terpisah disiapkan sesuai
+[panduan audisi lokal](local-voice-audition.md). Pembuatan materi memakai CPU
+lokal tanpa permintaan jaringan atau biaya API.
 
 ```powershell
-python -m pip install edge-tts
-python scripts/generate-guide-voice.py
+$voicePython = Join-Path $env:LOCALAPPDATA 'PINCA\supertonic3\.venv\Scripts\python.exe'
+& $voicePython -X utf8 scripts/generate-local-guide.py --activate
 ```
 
-Generator melanjutkan dari MP3 yang sudah ada. Jika karakter suara atau parameter
-generator berubah, pindahkan paket lama ke lokasi cadangan sebelum membuat ulang.
-Manifest hanya berisi klip yang berhasil dibuat. Setelah menambah materi, jalankan
-generator dan pemeriksaan proyek lagi.
+Generator melanjutkan MP3 valid yang sudah ada. Hash nama file mencakup teks,
+model, dan parameter. Manifest aktif hanya diganti setelah semua klip lulus
+validasi file dan waveform. Generator membaca daftar teks pada manifest yang
+ada; materi baru perlu ditambahkan ke daftar ini sebelum paket dibuat ulang.
+`scripts/generate-guide-voice.py` adalah generator Gadis lama dan tidak diperlukan
+untuk paket F3.
 
 Daftar voice Indonesia didokumentasikan oleh
 [Microsoft Speech](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-support?tabs=tts).
@@ -63,9 +69,13 @@ secara visual.
 
 ## Audisi suara Bu Delia yang lebih ekspresif
 
-Paket Gadis Neural di atas masih menjadi suara aktif. Nama baru dan maskot tidak
-mengubah karakter model suara tersebut. Penggantian ke model ekspresif belum
-selesai karena kredensial dan pilihan voice layanan belum tersedia.
+Audisi F1/F2/F3 tersedia di `/previews-bu-delia-local.html`. Pengguna memilih F3.
+Detail perangkat, pemakaian RAM, durasi pembuatan, dan lisensi model tercatat di
+[panduan lokal](local-voice-audition.md). Pilihan suara tidak otomatis memverifikasi
+ketepatan semua huruf dan suku kata; tetap lakukan pemeriksaan lewat pendengaran.
+
+Bagian berikut adalah alternatif audisi ElevenLabs yang sebelumnya disiapkan;
+layanan tersebut tidak digunakan untuk membuat paket F3.
 
 `python scripts/preview-delia-voice.py` membuat rencana tiga sampel yang dapat
 ditinjau, tanpa mengirim permintaan atau menggunakan kredit layanan. Semua sampel

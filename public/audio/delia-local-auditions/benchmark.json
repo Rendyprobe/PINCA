@@ -1,0 +1,63 @@
+{
+  "model": "supertone-oss-archive/supertonic-3",
+  "revision": "aafc6e32416a594460b32413efc49d7fe4ce6d46",
+  "source_helper_sha256": "7f65aaf26b23f61698fc7c95e1873a7878cd95498fc0ea9503027f1e998b72a3",
+  "provider": "CPUExecutionProvider",
+  "threads": 2,
+  "steps": 8,
+  "speed": 0.95,
+  "seed": 42,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "logical_cpu_count": 8,
+  "system_ram_mib": 7866,
+  "initial_available_ram_mib": 1011,
+  "load_seconds": 3.596,
+  "python_peak_resident_ram_mib": 488,
+  "minimum_available_system_ram_mib": 609,
+  "samples": [
+    {
+      "voice": "F1",
+      "file": "bu-delia-f1.wav",
+      "text": "Halo, aku Bu Delia. Yuk, kita belajar bersama. Ini kata ibu. I... bu... ibu. Iya, tepat! Kamu sudah membacanya dengan baik.",
+      "audio_seconds": 12.53,
+      "generation_seconds": 12.097,
+      "generation_seconds_per_audio_second": 0.965,
+      "raw_peak_amplitude": 0.4243,
+      "applied_gain": 1.0,
+      "peak_amplitude": 0.4243
+    },
+    {
+      "voice": "F2",
+      "file": "bu-delia-f2.wav",
+      "text": "Halo, aku Bu Delia. Yuk, kita belajar bersama. Ini kata ibu. I... bu... ibu. Iya, tepat! Kamu sudah membacanya dengan baik.",
+      "audio_seconds": 11.886,
+      "generation_seconds": 11.615,
+      "generation_seconds_per_audio_second": 0.977,
+      "raw_peak_amplitude": 0.4719,
+      "applied_gain": 1.0,
+      "peak_amplitude": 0.4719
+    },
+    {
+      "voice": "F3",
+      "file": "bu-delia-f3.wav",
+      "text": "Halo, aku Bu Delia. Yuk, kita belajar bersama. Ini kata ibu. I... bu... ibu. Iya, tepat! Kamu sudah membacanya dengan baik.",
+      "audio_seconds": 12.874,
+      "generation_seconds": 13.374,
+      "generation_seconds_per_audio_second": 1.039,
+      "raw_peak_amplitude": 0.3976,
+      "applied_gain": 1.0,
+      "peak_amplitude": 0.3976
+    }
+  ],
+  "listening_review": "User listened to auditions and selected F3. Individual curriculum clips still require listening review.",
+  "selected_voice": "F3"
+}

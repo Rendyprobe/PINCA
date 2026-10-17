@@ -36,3 +36,11 @@ lerna-debug.log*
 .DS_Store
 Thumbs.db
 
+# Local Python build-script caches
+__pycache__/
+*.py[cod]
+
+# Local archives
+archive/
+
+

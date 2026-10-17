@@ -186,6 +186,28 @@
   justify-content: flex-end;
   justify-self: end;
 }
+.nodeCardLocked {
+  opacity: 0.72;
+  background: #fbf9f4;
+  border-color: #e4ddcf;
+  box-shadow: none;
+}
+.nodeCardLocked:hover {
+  transform: none;
+  border-color: #e4ddcf;
+}
+.lockedLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: #f1ede4;
+  color: #7b7468;
+  font-size: 13px;
+  font-weight: 700;
+  min-height: 40px;
+}
 .startLabel {
   display: inline-flex;
   align-items: center;

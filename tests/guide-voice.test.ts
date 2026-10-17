@@ -28,15 +28,16 @@ describe('Local motherly guide voice', () => {
     expect(getGuideAudio('  AYO BACA BOLA! ')).toBe(
       getGuideAudio('Ayo baca bola'),
     );
-    expect(getGuideAudio('Ayo baca bola')).toMatch(/^\/audio\/ibu\/.+\.mp3$/);
+    expect(getGuideAudio('Ayo baca bola')).toMatch(/^\/audio\/delia-f3\/.+\.mp3$/);
   });
 
   it('ships a local MP3 for every manifest entry', () => {
-    const files = import.meta.glob('/public/audio/ibu/*.mp3');
+    const files = import.meta.glob('/public/audio/delia-f3/*.mp3');
+    expect(guideAudio.voice).toBe('Supertonic3-F3');
     expect(Object.keys(guideAudio.entries).length).toBeGreaterThan(800);
     for (const [key, entry] of Object.entries(guideAudio.entries)) {
       expect(guideAudioKey(entry.text)).toBe(key);
-      expect(entry.src).toMatch(/^audio\/ibu\/[a-f0-9]{20}\.mp3$/);
+      expect(entry.src).toMatch(/^audio\/delia-f3\/[a-f0-9]{20}\.mp3$/);
       expect(files[`/public/${entry.src}`]).toBeDefined();
     }
   });

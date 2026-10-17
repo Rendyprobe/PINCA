@@ -1,0 +1,17 @@
+{
+  "voice": "Supertonic3-F3",
+  "language": "id",
+  "speed": 0.95,
+  "steps": 8,
+  "seed": 42,
+  "model": "supertone-oss-archive/supertonic-3",
+  "revision": "aafc6e32416a594460b32413efc49d7fe4ce6d46",
+  "source_helper_sha256": "7f65aaf26b23f61698fc7c95e1873a7878cd95498fc0ea9503027f1e998b72a3",
+  "completed_at": "2026-10-16T20:32:53.637960+00:00",
+  "clips": 978,
+  "total_audio_seconds": 2397.548,
+  "elapsed_seconds_this_run": 1561.711,
+  "threads": 2,
+  "license": "OpenRAIL-M",
+  "listening_review": "User selected F3 audition; individual curriculum clips still require listening review."
+}

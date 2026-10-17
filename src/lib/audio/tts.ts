@@ -17,6 +17,7 @@ class TTSService {
   private speaking = false;
   private isInitialized = false;
   private muted = false;
+  private defaultRate = 0.85;
   private audioCache = new Map<string, HTMLAudioElement>();
   private finishCurrent: (() => void) | null = null;
   private generation = 0;
@@ -28,6 +29,16 @@ class TTSService {
 
   constructor() {
     this.getSynth();
+  }
+
+  public setDefaultRate(rate: number): void {
+    if (rate >= 0.5 && rate <= 2.0) {
+      this.defaultRate = rate;
+    }
+  }
+
+  public getDefaultRate(): number {
+    return this.defaultRate;
   }
 
   public setMuted(muted: boolean): void {
@@ -173,6 +184,7 @@ class TTSService {
         }
         this.currentAudio = audio;
         audio.currentTime = 0;
+        audio.playbackRate = options.rate ?? this.defaultRate;
         audio.volume = options.volume ?? 1;
         audio.onended = () => finish(false);
         audio.onerror = () => finish(true);
@@ -202,7 +214,7 @@ class TTSService {
       }
 
       // Pitch 1.0 (nada manusia alami)
-      // Rate 0.85 (tempo wajar bicara ramah anak)
+      // Rate 0.85 default (tempo wajar bicara ramah anak, atau konfigurasi orang tua)
       const { volume = 1.0 } = options;
       const voice = this.getBestIndonesianVoice();
       if (!voice) {
@@ -213,9 +225,9 @@ class TTSService {
       const utterance = new SpeechSynthesisUtterance(text);
       this.currentUtterance = utterance;
 
-      utterance.rate = GUIDE_VOICE.rate;
-      utterance.pitch = GUIDE_VOICE.pitch;
-      utterance.lang = GUIDE_VOICE.lang;
+      utterance.rate = options.rate ?? this.defaultRate;
+      utterance.pitch = options.pitch ?? GUIDE_VOICE.pitch;
+      utterance.lang = options.lang ?? GUIDE_VOICE.lang;
       utterance.volume = volume;
 
       utterance.voice = voice;

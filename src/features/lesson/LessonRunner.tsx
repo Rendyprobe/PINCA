@@ -5,6 +5,7 @@ import { getLessonById, getItemById } from '@/content';
 import type {
   BaseItem,
   LetterItem,
+  SyllableItem,
   WordItem,
   ActivityResult,
   ActivityResultItem,
@@ -22,6 +23,7 @@ import { Button } from '@/components/Button/Button';
 import { StarBar } from '@/components/StarBar/StarBar';
 import { Mascot } from '@/components/Mascot/Mascot';
 import { progressService } from '@/lib/progress/progressService';
+import { progressStorage } from '@/lib/storage/progressStorage';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -43,6 +45,23 @@ export const LessonRunner: React.FC = () => {
   const [activityIndex, setActivityIndex] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
   const [earnedStars, setEarnedStars] = useState(0);
+  const [userSettings, setUserSettings] =
+    useState<UserSettings>(DEFAULT_SETTINGS);
+
+  useEffect(() => {
+    let active = true;
+    void progressStorage.getActiveProfile().then((profile) => {
+      if (active && profile?.settings) {
+        setUserSettings(profile.settings);
+        if (profile.settings.ttsRate) {
+          tts.setDefaultRate(profile.settings.ttsRate);
+        }
+      }
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   const accumulatedResults = useRef<ActivityResultItem[]>([]);
 
@@ -143,9 +162,9 @@ export const LessonRunner: React.FC = () => {
         <div className={styles.activityCard}>
           {currentActivity.type === 'listen_tap' && (
             <ListenTap
-              items={lessonItems as LetterItem[]}
+              items={lessonItems as (LetterItem | SyllableItem)[]}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
 
@@ -153,7 +172,7 @@ export const LessonRunner: React.FC = () => {
             <MatchCase
               items={lessonItems as LetterItem[]}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
 
@@ -161,7 +180,7 @@ export const LessonRunner: React.FC = () => {
             <SoundGuess
               items={lessonItems as LetterItem[]}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
 
@@ -169,7 +188,7 @@ export const LessonRunner: React.FC = () => {
             <MatchPictureWord
               items={lessonItems as WordItem[]}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
 
@@ -177,7 +196,7 @@ export const LessonRunner: React.FC = () => {
             <ArrangeSyllables
               items={lessonItems as WordItem[]}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
 
@@ -185,7 +204,7 @@ export const LessonRunner: React.FC = () => {
             <CompleteWord
               items={lessonItems as WordItem[]}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
 
@@ -193,7 +212,7 @@ export const LessonRunner: React.FC = () => {
             <KaraokeRead
               items={lessonItems}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
 
@@ -201,7 +220,7 @@ export const LessonRunner: React.FC = () => {
             <SpeechReadCheck
               items={lessonItems}
               onComplete={handleActivityComplete}
-              settings={DEFAULT_SETTINGS}
+              settings={userSettings}
             />
           )}
         </div>

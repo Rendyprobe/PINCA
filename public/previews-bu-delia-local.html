@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audisi suara Bu Delia</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 32px 20px; font-family: system-ui, sans-serif; color: #302943; background: #fff8e9; line-height: 1.6; }
+      main { max-width: 780px; margin: auto; }
+      h1 { line-height: 1.2; }
+      .intro, article, aside { background: white; border: 1px solid #ded3ee; border-radius: 18px; padding: 20px; margin: 18px 0; }
+      h2 { margin-top: 0; }
+      audio { display: block; width: 100%; }
+      .detail { color: #665a75; font-size: .9rem; }
+      a { color: #6242a0; }
+      blockquote { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p><a href="/#/map">← Kembali ke peta belajar</a></p>
+      <h1>Pilih suara Bu Delia</h1>
+      <p>Tiga contoh AI lokal dari Supertonic 3. F3 adalah suara yang kamu pilih untuk Bu Delia.</p>
+      <section class="intro" aria-label="Teks contoh">
+        <p><strong>Semua contoh membaca teks yang sama:</strong></p>
+        <blockquote>Halo, aku Bu Delia. Yuk, kita belajar bersama. Ini kata ibu. I… bu… ibu. Iya, tepat! Kamu sudah membacanya dengan baik.</blockquote>
+      </section>
+      <article>
+        <h2>Suara F1</h2>
+        <audio controls preload="none" aria-label="Dengarkan contoh suara F1" src="/audio/delia-local-auditions/bu-delia-f1.wav"></audio>
+        <p class="detail" id="F1">Contoh sapaan, membaca, dan pujian.</p>
+      </article>
+      <article>
+        <h2>Suara F2</h2>
+        <audio controls preload="none" aria-label="Dengarkan contoh suara F2" src="/audio/delia-local-auditions/bu-delia-f2.wav"></audio>
+        <p class="detail" id="F2">Contoh sapaan, membaca, dan pujian.</p>
+      </article>
+      <article>
+        <h2>Suara F3 — terpilih</h2>
+        <audio controls preload="none" aria-label="Dengarkan contoh suara F3" src="/audio/delia-local-auditions/bu-delia-f3.wav"></audio>
+        <p class="detail" id="F3">Contoh sapaan, membaca, dan pujian.</p>
+      </article>
+      <aside>
+        <strong>Yang perlu didengarkan</strong>
+        <p>Apakah terasa hangat dan alami? Apakah kata “ibu” dan contoh “i… bu…” diucapkan tepat? Pilih karakter yang nyaman didengar berulang kali.</p>
+        <p id="benchmark" class="detail">Laporan pengukuran tersedia setelah contoh selesai dibuat.</p>
+        <a href="/audio/delia-local-auditions/benchmark.json">Buka hasil pengukuran</a>
+      </aside>
+    </main>
+    <script>
+      document.querySelectorAll('audio').forEach((player) => {
+        player.addEventListener('play', () => {
+          document.querySelectorAll('audio').forEach((other) => {
+            if (other !== player) other.pause();
+          });
+        });
+      });
+      fetch('/audio/delia-local-auditions/benchmark.json')
+        .then((response) => {
+          if (!response.ok) throw new Error('Belum tersedia');
+          return response.json();
+        })
+        .then((report) => {
+          for (const sample of report.samples) {
+            document.getElementById(sample.voice).textContent =
+              `Durasi ${sample.audio_seconds.toFixed(1)} detik · dibuat dalam ${sample.generation_seconds.toFixed(1)} detik.`;
+          }
+          document.getElementById('benchmark').textContent =
+            `CPU, ${report.threads} thread · RAM proses tertinggi teramati ${report.python_peak_resident_ram_mib} MiB · memuat model ${report.load_seconds.toFixed(1)} detik. Angka ini berasal dari satu sesi pengujian.`;
+        })
+        .catch(() => {});
+    </script>
+  </body>
+</html>

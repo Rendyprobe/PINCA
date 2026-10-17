@@ -155,3 +155,34 @@ Dokumen ini mencatat keputusan arsitektur dan teknis penting proyek sesuai GEMIN
 - Empty results never increment mismatch retries. No retry count automatically enters assisted mode. The user chooses practice without assessment; its completion remains assisted. Updated the specification to reflect this explicit user direction.
 - Removed automatic concurrent amplitude capture during recognition. A separate opt-in microphone check and collapsed stage diagnostics help distinguish device input, detected speech, and returned text without recording or storing audio.
 - Added regression cases for delayed final results, startup timeout, final/interim segments, whole-word acceptance during syllable reading, repeated empty sessions, and absence of concurrent getUserMedia during ASR. Automated suite: 91 tests pass; lint and content validation pass. Hardware capture and provider transcription remain a manual check.
+
+### 2026-10-17 - User selected local Supertonic F3 for Bu Delia
+
+- Generated comparable F1/F2/F3 auditions locally on an i5-8365U laptop with 8 GB RAM. User listened and chose F3. Audition measurements and the standalone player are preserved for review.
+- Generated and activated all 978 existing guide-text entries with Supertonic 3 F3, Indonesian, speed 0.95, eight steps, seed 42, two CPU threads. Assets total 37.54 MiB of MP3; model weights and the Python environment remain outside the repository and are not needed in the browser.
+- Pack creation and full waveform/file verification completed in 1561.711 seconds. Each clip was verified before the active manifest changed atomically. All previous text keys remain covered; filenames include a hash of text and voice configuration so existing Gadis audio caches cannot masquerade as F3.
+- Added an offline, resumable generator and setup/provenance documentation. The original Gadis files remain available for rollback; browser speech synthesis is still the fallback for text absent from the local pack.
+- The selected audition establishes the user's character preference. Individual curriculum pronunciation, especially isolated letters and syllables, still requires listening review. No child recording or cloud inference was used to generate these assets.
+
+### 2026-10-18 - Remediation of audit blockers (ListenTap syllable support, lesson locking, keyboard a11y, 404 fallback)
+
+- Polimorfik ListenTap: Generalize `ListenTap` component to accept both `LetterItem` and `SyllableItem`. In syllable mode, distractors are chosen from syllables, prompts use syllable pronunciation text, and options render syllable text cleanly without undefined labels. Added unit test suite `tests/listen-tap.test.tsx`.
+- Enforce lesson prerequisites: `LearningMap` now evaluates `lesson.unlockAfter`. Locked lessons display a lock icon (🔒), disabled state, and screen reader-friendly guidance, with Bu Delia prompting the child to complete prerequisites first.
+- Accessible Cards: Clickable `Card` components now include `role="button"`, `tabIndex={0}`, and handle `Enter`/`Space` key presses for full keyboard accessibility.
+- 404 Route handling: Added wildcard redirect (`<Route path="*" element={<Navigate to="/" replace />} />`) in `routes.tsx` to prevent blank screens on invalid URLs.
+- Activity-item validation: `scripts/validate-content.ts` now verifies that activity types within lessons are compatible with the curriculum item levels (letters vs syllables vs words).
+- Formatting: Formatted all files with Prettier so `npm run format:check` passes cleanly.
+
+### 2026-10-18 - Parent Settings Modal & Parental Gate (P1 Remediation)
+
+- Added a dedicated Parent Settings Modal (`ParentSettingsModal.tsx`) accessible from the learning map via the "Orang Tua" header action.
+- Implemented a Parental Gate with a randomized arithmetic verification challenge (`num1 + num2 = ?`) to ensure children do not accidentally modify curriculum or audio settings.
+- Configurable settings include:
+  - Speech & Microphone toggle (`micEnabled`), enabling child to switch between interactive speech check and tap-to-complete mode.
+  - Difficulty threshold (`easy`, `normal`, `strict`), controlling phonetic/fuzzy similarity thresholds for speech recognition.
+  - Reading mode preference (`syllables` vs `whole-word`).
+  - Bu Delia guide speech tempo (`ttsRate`: slow `0.7`, medium `0.85`, normal `1.0`), wired into both audio playback rate and browser fallback voice rate via `tts.setDefaultRate()`.
+  - Manual curriculum unlock toggle (`unlockedAllLessons`), allowing parents or teachers to unlock all lessons without prerequisite gates when needed.
+- Propagated active profile `settings` from `progressStorage` into `LessonRunner.tsx` and dynamically passed down to all activity components.
+- Added automated unit test suite `tests/parent-settings.test.tsx` verifying parental gate math challenge, security blocking on wrong answer, setting adjustments, and profile persistence.
+

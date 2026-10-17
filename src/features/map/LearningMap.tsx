@@ -9,6 +9,7 @@ import {
 import { StarBar } from '@/components/StarBar/StarBar';
 import { Mascot } from '@/components/Mascot/Mascot';
 import { Button } from '@/components/Button/Button';
+import { ParentSettingsModal } from '@/features/parent/ParentSettingsModal';
 import { sfx } from '@/lib/audio/sfx';
 import { tts } from '@/lib/audio/tts';
 
@@ -23,6 +24,7 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
 
   const [profile, setProfile] = useState<ChildProfile | null>(null);
   const [selectedZoneId, setSelectedZoneId] = useState<string>('zone_1');
+  const [showParentSettings, setShowParentSettings] = useState(false);
   const zones = useMemo(() => getZones(), []);
 
   useEffect(() => {
@@ -58,7 +60,14 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
     }
   };
 
-  const handleLessonClick = (lessonId: string) => {
+  const handleLessonClick = (lessonId: string, isUnlocked: boolean) => {
+    if (!isUnlocked) {
+      sfx.playClick();
+      void tts.speak(
+        'Pelajaran ini masih terkunci. Selesaikan pelajaran sebelumnya dulu ya!',
+      );
+      return;
+    }
     sfx.playClick();
     tts.cancel();
     navigate(`/lesson/${lessonId}`);
@@ -92,17 +101,32 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
           <span>Kembali ke Beranda</span>
         </Button>
 
-        {onOpenProfile && (
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
           <Button
             variant="ghost"
             size="normal"
-            onClick={onOpenProfile}
-            ariaLabel="Ubah profil anak"
+            onClick={() => {
+              sfx.playClick();
+              setShowParentSettings(true);
+            }}
+            ariaLabel="Pengaturan Orang Tua dan Guru"
           >
-            <span>{profile.avatar}</span>
-            <span>{profile.name}</span>
+            <span>⚙️</span>
+            <span>Orang Tua</span>
           </Button>
-        )}
+
+          {onOpenProfile && (
+            <Button
+              variant="ghost"
+              size="normal"
+              onClick={onOpenProfile}
+              ariaLabel="Ubah profil anak"
+            >
+              <span>{profile.avatar}</span>
+              <span>{profile.name}</span>
+            </Button>
+          )}
+        </div>
       </div>
 
       <header className={styles.welcome}>
@@ -206,19 +230,38 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
         ) : (
           activeLessons.map((lesson, index) => {
             const isCompleted = completedSet.has(lesson.id);
+            const isUnlocked =
+              Boolean(profile.unlockedAllLessons) ||
+              !lesson.unlockAfter ||
+              lesson.unlockAfter.length === 0 ||
+              lesson.unlockAfter.every((depId) => completedSet.has(depId));
             const stars = profile.lessonStars[lesson.id] ?? 0;
-            const cardClass = styles.nodeCard;
+            const cardClass = [
+              styles.nodeCard,
+              !isUnlocked ? styles.nodeCardLocked : '',
+            ]
+              .filter(Boolean)
+              .join(' ');
 
             return (
               <button
                 type="button"
                 key={lesson.id}
                 className={cardClass}
-                onClick={() => handleLessonClick(lesson.id)}
-                aria-label={`Pelajaran ${lesson.title}, ${isCompleted ? `${stars} bintang` : 'Belum selesai'}`}
+                onClick={() => handleLessonClick(lesson.id, isUnlocked)}
+                aria-disabled={!isUnlocked}
+                aria-label={`Pelajaran ${lesson.title}, ${
+                  !isUnlocked
+                    ? 'Terkunci. Selesaikan pelajaran sebelumnya dulu'
+                    : isCompleted
+                      ? `${stars} bintang`
+                      : 'Belum selesai'
+                }`}
               >
                 <span className={styles.nodeInfo}>
-                  <span className={styles.nodeNumber}>{index + 1}</span>
+                  <span className={styles.nodeNumber}>
+                    {!isUnlocked ? '🔒' : index + 1}
+                  </span>
                   <span>
                     <span className={styles.nodeTitle}>{lesson.title}</span>
                     <span className={styles.nodeSubtitle}>
@@ -229,7 +272,9 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
                 </span>
 
                 <span className={styles.nodeAction}>
-                  {isCompleted ? (
+                  {!isUnlocked ? (
+                    <span className={styles.lockedLabel}>🔒 Terkunci</span>
+                  ) : isCompleted ? (
                     <StarBar stars={stars} size="normal" />
                   ) : (
                     <span className={styles.startLabel}>
@@ -256,6 +301,18 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
           }}
         />
       </div>
+
+      {showParentSettings && (
+        <ParentSettingsModal
+          profile={profile}
+          onClose={() => setShowParentSettings(false)}
+          onSave={async (updatedProfile) => {
+            setProfile(updatedProfile);
+            await progressStorage.saveProfile(updatedProfile);
+            setShowParentSettings(false);
+          }}
+        />
+      )}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { openDB, type IDBPDatabase } from 'idb';
-import type { ItemOutcome } from '@/types/content';
+import type { ItemOutcome, UserSettings } from '@/types/content';
 
 export interface ItemProgress {
   itemId: string;
@@ -13,6 +13,16 @@ export interface ItemProgress {
   confusions?: string[];
 }
 
+export const DEFAULT_USER_SETTINGS: UserSettings = {
+  readingMode: 'syllables',
+  difficultyThreshold: 'easy',
+  ttsRate: 0.85,
+  fontSize: 'large',
+  fontFamily: 'default',
+  soundEnabled: true,
+  micEnabled: true,
+};
+
 export interface ChildProfile {
   id: string;
   name: string;
@@ -21,6 +31,8 @@ export interface ChildProfile {
   activeZoneId: string;
   completedLessonIds: string[];
   lessonStars: Record<string, number>; // lessonId -> stars (1..3)
+  settings?: UserSettings;
+  unlockedAllLessons?: boolean;
 }
 
 const DB_NAME = 'ayo-membaca';
@@ -65,13 +77,25 @@ export class ProgressStorage {
       activeZoneId: 'zone_1',
       completedLessonIds: [],
       lessonStars: {},
+      settings: { ...DEFAULT_USER_SETTINGS },
+      unlockedAllLessons: false,
     };
 
     try {
       const db = await this.dbPromise;
       if (db) {
-        const stored = await db.get('profiles', defaultProfile.id);
-        if (stored) return stored as ChildProfile;
+        const stored = (await db.get('profiles', defaultProfile.id)) as
+          ChildProfile | undefined;
+        if (stored) {
+          return {
+            ...defaultProfile,
+            ...stored,
+            settings: {
+              ...DEFAULT_USER_SETTINGS,
+              ...(stored.settings ?? {}),
+            },
+          };
+        }
       }
     } catch {
       // Fallback to localStorage below
@@ -81,7 +105,15 @@ export class ProgressStorage {
       const lsRaw = localStorage.getItem(LS_PROFILE_KEY);
       if (lsRaw) {
         try {
-          return JSON.parse(lsRaw) as ChildProfile;
+          const stored = JSON.parse(lsRaw) as ChildProfile;
+          return {
+            ...defaultProfile,
+            ...stored,
+            settings: {
+              ...DEFAULT_USER_SETTINGS,
+              ...(stored.settings ?? {}),
+            },
+          };
         } catch {
           // ignore error
         }
