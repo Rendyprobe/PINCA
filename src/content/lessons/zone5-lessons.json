@@ -1,0 +1,68 @@
+[
+  {
+    "id": "l5_1",
+    "zoneId": "zone_5",
+    "title": "Kalimat Pertama Kita",
+    "itemIds": ["s_ini_bola", "s_itu_buku", "s_ibu_masak"],
+    "activities": [
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ]
+  },
+  {
+    "id": "l5_2",
+    "zoneId": "zone_5",
+    "title": "Keluarga Tercinta",
+    "itemIds": ["s_bapa_baca", "s_adik_minum", "s_bibi_beli"],
+    "activities": [
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l5_1"]
+  },
+  {
+    "id": "l5_3",
+    "zoneId": "zone_5",
+    "title": "Hewan & Alam Sekitar",
+    "itemIds": ["s_sapi_makan", "s_kuda_lari", "s_kelinci_lucu"],
+    "activities": [
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l5_2"]
+  },
+  {
+    "id": "l5_4",
+    "zoneId": "zone_5",
+    "title": "Kalimat Bertanya",
+    "itemIds": ["s_dimana_bola", "s_siapa_makan", "s_kamu_suka"],
+    "activities": [
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l5_3"]
+  },
+  {
+    "id": "l5_5",
+    "zoneId": "zone_5",
+    "title": "Kalimat Seru & Ceria",
+    "itemIds": ["s_ayo_main", "s_hari_cerah", "s_bunga_wangi"],
+    "activities": [
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l5_4"]
+  },
+  {
+    "id": "l5_6",
+    "zoneId": "zone_5",
+    "title": "Membaca Kalimat Lengkap",
+    "itemIds": ["s_keluarga_bahagia", "s_kakak_sepeda", "s_ibu_kue"],
+    "activities": [
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l5_5"]
+  }
+]
+

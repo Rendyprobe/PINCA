@@ -6,6 +6,7 @@ import type {
   BaseItem,
   WordItem,
   LetterItem,
+  SentenceItem,
   ActivityResult,
   ActivityResultItem,
   UserSettings,
@@ -18,6 +19,7 @@ import type {
 import { useSpeechCheck } from '@/features/speech/useSpeechCheck';
 import { Mascot, type MascotMood } from '@/components/Mascot/Mascot';
 import { Button } from '@/components/Button/Button';
+import { WordIllustration } from '@/components/Illustration/WordIllustration';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 import styles from './SpeechReadCheck.module.css';
@@ -51,7 +53,6 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
   const startTimeRef = useRef<number>(Date.now());
   const retriesRef = useRef(0);
   const perItemResultsRef = useRef<ActivityResultItem[]>([]);
-  const [hasAnnouncedPrompt, setHasAnnouncedPrompt] = useState(false);
   const [checkingMic, setCheckingMic] = useState(false);
   const [assistedSpeaking, setAssistedSpeaking] = useState(false);
 
@@ -64,7 +65,11 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
 
   // Ekstrak data sesuai level item
   const syllables = currentItem
-    ? (currentItem as WordItem).syllables
+    ? 'syllables' in currentItem
+      ? (currentItem as WordItem).syllables
+      : 'words' in currentItem
+        ? (currentItem as SentenceItem).words
+        : undefined
     : undefined;
   const exampleWordId = currentItem
     ? (currentItem as LetterItem).exampleWordId
@@ -99,7 +104,6 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
       if (currentIndex + 1 < items.length) {
         advanceTimer.current = setTimeout(() => {
           setCurrentIndex((prev) => prev + 1);
-          setHasAnnouncedPrompt(false);
         }, 1200);
       } else {
         // Semua item selesai
@@ -214,15 +218,7 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
       : targetText;
   const isBusy = isListening || isRequesting || state === 'evaluating';
 
-  // Sambut anak dengan petunjuk suara saat awal setiap item
-  useEffect(() => {
-    if (targetText && !hasAnnouncedPrompt) {
-      setHasAnnouncedPrompt(true);
-      void tts.speak(`Ayo baca ${pronunciation}`);
-    }
-  }, [hasAnnouncedPrompt, targetText, pronunciation]);
-
-  // Dengarkan pengucapan kata via TTS
+  // Dengarkan pengucapan kata via TTS (hanya saat ditekan anak)
   const handleHearExample = useCallback(() => {
     if (!currentItem) return;
     sfx.playClick();
@@ -345,12 +341,8 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
       {/* Area Gambar (jika ada) */}
       <div className={styles.cardArea} aria-label="Kartu bacaan">
         {currentItem.image && (
-          <div
-            className={styles.imageBox}
-            role="img"
-            aria-label={currentItem.image.alt}
-          >
-            {currentItem.image.value}
+          <div className={styles.imageBox}>
+            <WordIllustration image={currentItem.image} size="90px" />
           </div>
         )}
 

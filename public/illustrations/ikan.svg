@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Ikan">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#E7F5FF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#339AF0" stroke-width="4" />
+
+  <!-- Tail Fin (Flowing Orange/Yellow Fin) -->
+  <path d="M 68 100 Q 34 66 38 90 Q 42 100 36 112 Q 32 134 68 104 Z" fill="#FFA94D" stroke="#E8590C" stroke-width="3" />
+  <!-- Tail fin highlight -->
+  <path d="M 58 100 Q 42 86 44 94 Q 46 100 42 106 Q 40 114 58 102 Z" fill="#FFE066" />
+
+  <!-- Dorsal Fin (Top Fin) -->
+  <path d="M 90 66 Q 110 52 126 68 Q 106 72 90 66 Z" fill="#FFA94D" stroke="#E8590C" stroke-width="2.5" />
+
+  <!-- Ventral Fin (Bottom Fin) -->
+  <path d="M 100 134 Q 112 148 122 138 Q 112 134 100 134 Z" fill="#FFA94D" stroke="#E8590C" stroke-width="2.5" />
+
+  <!-- Fish Body (Chubby Cute Goldfish) -->
+  <ellipse cx="104" cy="102" rx="46" ry="34" fill="#FF922B" stroke="#E8590C" stroke-width="3.5" />
+
+  <!-- Belly Accent (Cream / Soft Yellow) -->
+  <path d="M 76 114 C 84 130, 120 132, 136 114 C 120 124, 90 124, 76 114 Z" fill="#FFE066" />
+
+  <!-- Pectoral Side Fin -->
+  <path d="M 104 104 Q 90 118 104 120 Q 114 116 104 104 Z" fill="#FFD43B" stroke="#E8590C" stroke-width="2.5" />
+
+  <!-- Big Sparkling Happy Fish Eye -->
+  <circle cx="128" cy="92" r="9" fill="#FFFFFF" stroke="#2B2B3A" stroke-width="2" />
+  <circle cx="130" cy="92" r="5.5" fill="#2B2B3A" />
+  <circle cx="128.5" cy="89.5" r="2" fill="#FFFFFF" />
+  <circle cx="132" cy="94" r="1" fill="#FFFFFF" />
+
+  <!-- Cute Rosy Cheek -->
+  <ellipse cx="120" cy="104" rx="6" ry="4" fill="#FF6B6B" opacity="0.6" />
+
+  <!-- Happy Smile / Fish Lips -->
+  <path d="M 148 100 Q 154 104 148 108" stroke="#D9480F" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Water Bubbles -->
+  <circle cx="158" cy="84" r="6" fill="#E7F5FF" stroke="#339AF0" stroke-width="2" />
+  <circle cx="156" cy="82" r="1.5" fill="#FFFFFF" />
+
+  <circle cx="168" cy="68" r="4" fill="#E7F5FF" stroke="#339AF0" stroke-width="1.8" />
+  <circle cx="167" cy="66" r="1" fill="#FFFFFF" />
+
+  <circle cx="162" cy="52" r="3" fill="#E7F5FF" stroke="#339AF0" stroke-width="1.5" />
+</svg>
+

@@ -6,7 +6,7 @@
     "syllables": ["a", "pel"],
     "difficulty": 1,
     "tags": ["buah"],
-    "image": { "type": "emoji", "value": "🍎", "alt": "apel merah" },
+    "image": { "type": "svg", "value": "/illustrations/apel.svg", "alt": "Apel merah manis" },
     "imageRequired": true,
     "acceptedAliases": ["apel", "apple"]
   },
@@ -17,7 +17,7 @@
     "syllables": ["bo", "la"],
     "difficulty": 1,
     "tags": ["mainan"],
-    "image": { "type": "emoji", "value": "⚽", "alt": "bola sepak" },
+    "image": { "type": "svg", "value": "/illustrations/bola.svg", "alt": "Bola warna-warni" },
     "imageRequired": true,
     "acceptedAliases": ["bola"]
   },
@@ -39,7 +39,7 @@
     "syllables": ["da", "un"],
     "difficulty": 1,
     "tags": ["tanaman"],
-    "image": { "type": "emoji", "value": "🍃", "alt": "daun hijau" },
+    "image": { "type": "svg", "value": "/illustrations/daun.svg", "alt": "Daun hijau segar" },
     "imageRequired": true,
     "acceptedAliases": ["daun"]
   },
@@ -94,7 +94,7 @@
     "syllables": ["i", "kan"],
     "difficulty": 1,
     "tags": ["hewan"],
-    "image": { "type": "emoji", "value": "🐟", "alt": "ikan berenang" },
+    "image": { "type": "svg", "value": "/illustrations/ikan.svg", "alt": "Ikan mas berenang" },
     "imageRequired": true,
     "acceptedAliases": ["ikan"]
   },
@@ -105,7 +105,7 @@
     "syllables": ["je", "ruk"],
     "difficulty": 1,
     "tags": ["buah"],
-    "image": { "type": "emoji", "value": "🍊", "alt": "jeruk manis" },
+    "image": { "type": "svg", "value": "/illustrations/jeruk.svg", "alt": "Jeruk manis segar" },
     "imageRequired": true,
     "acceptedAliases": ["jeruk"]
   },
@@ -116,7 +116,7 @@
     "syllables": ["ku", "da"],
     "difficulty": 1,
     "tags": ["hewan"],
-    "image": { "type": "emoji", "value": "🐎", "alt": "kuda lari" },
+    "image": { "type": "svg", "value": "/illustrations/kuda.svg", "alt": "Kuda poni ceria" },
     "imageRequired": true,
     "acceptedAliases": ["kuda"]
   },
@@ -138,7 +138,7 @@
     "syllables": ["ma", "ta"],
     "difficulty": 1,
     "tags": ["tubuh"],
-    "image": { "type": "emoji", "value": "👁️", "alt": "mata melihat" },
+    "image": { "type": "svg", "value": "/illustrations/mata.svg", "alt": "Mata berbinar ramah" },
     "imageRequired": true,
     "acceptedAliases": ["mata"]
   },
@@ -171,7 +171,7 @@
     "syllables": ["pi", "sang"],
     "difficulty": 1,
     "tags": ["buah"],
-    "image": { "type": "emoji", "value": "🍌", "alt": "pisang kuning" },
+    "image": { "type": "svg", "value": "/illustrations/pisang.svg", "alt": "Pisang kuning manis" },
     "imageRequired": true,
     "acceptedAliases": ["pisang"]
   },
@@ -204,7 +204,7 @@
     "syllables": ["sa", "pi"],
     "difficulty": 1,
     "tags": ["hewan"],
-    "image": { "type": "emoji", "value": "🐄", "alt": "sapi perah" },
+    "image": { "type": "svg", "value": "/illustrations/sapi.svg", "alt": "Sapi perah lucu" },
     "imageRequired": true,
     "acceptedAliases": ["sapi"]
   },
@@ -215,7 +215,7 @@
     "syllables": ["to", "pi"],
     "difficulty": 1,
     "tags": ["pakaian"],
-    "image": { "type": "emoji", "value": "🧢", "alt": "topi biru" },
+    "image": { "type": "svg", "value": "/illustrations/topi.svg", "alt": "Topi bisbol keren" },
     "imageRequired": true,
     "acceptedAliases": ["topi"]
   },
@@ -248,7 +248,7 @@
     "syllables": ["wor", "tel"],
     "difficulty": 1,
     "tags": ["sayur"],
-    "image": { "type": "emoji", "value": "🥕", "alt": "wortel oranye" },
+    "image": { "type": "svg", "value": "/illustrations/wortel.svg", "alt": "Wortel oranye segar" },
     "imageRequired": true,
     "acceptedAliases": ["wortel"]
   },

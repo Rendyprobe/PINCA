@@ -182,6 +182,109 @@ export class ProgressStorage {
       );
     }
   }
+
+  public async getAllItemProgress(): Promise<ItemProgress[]> {
+    try {
+      const db = await this.dbPromise;
+      if (db) {
+        const res = (await db.getAll('progress')) as ItemProgress[];
+        if (res && res.length > 0) return res;
+      }
+    } catch {
+      // ignore
+    }
+
+    const results: ItemProgress[] = [];
+    if (typeof window !== 'undefined') {
+      const prefix = `${LS_PROGRESS_KEY}_`;
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith(prefix)) {
+          const raw = localStorage.getItem(key);
+          if (raw) {
+            try {
+              results.push(JSON.parse(raw) as ItemProgress);
+            } catch {
+              // ignore
+            }
+          }
+        }
+      }
+    }
+    return results;
+  }
+
+  public async exportData(): Promise<string> {
+    const profile = await this.getActiveProfile();
+    const progressList = await this.getAllItemProgress();
+    const data = {
+      schemaVersion: 1,
+      appName: 'Ayo Membaca!',
+      exportedAt: Date.now(),
+      profile,
+      progressList,
+    };
+    return JSON.stringify(data, null, 2);
+  }
+
+  public async importData(jsonString: string): Promise<ChildProfile> {
+    const parsed = JSON.parse(jsonString) as {
+      profile?: ChildProfile;
+      progressList?: ItemProgress[];
+    };
+
+    if (!parsed.profile || !parsed.profile.id) {
+      throw new Error('Format file cadangan tidak valid');
+    }
+
+    await this.saveProfile(parsed.profile);
+
+    if (Array.isArray(parsed.progressList)) {
+      for (const item of parsed.progressList) {
+        if (item && item.itemId) {
+          await this.saveItemProgress(item);
+        }
+      }
+    }
+
+    return parsed.profile;
+  }
+
+  public async resetProfileProgress(profile: ChildProfile): Promise<ChildProfile> {
+    const cleanProfile: ChildProfile = {
+      ...profile,
+      activeZoneId: 'zone_1',
+      completedLessonIds: [],
+      lessonStars: {},
+      unlockedAllLessons: false,
+    };
+
+    await this.saveProfile(cleanProfile);
+
+    // Bersihkan progress store
+    try {
+      const db = await this.dbPromise;
+      if (db) {
+        await db.clear('progress');
+      }
+    } catch {
+      // ignore
+    }
+
+    if (typeof window !== 'undefined') {
+      const prefix = `${LS_PROGRESS_KEY}_`;
+      const keysToRemove: string[] = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith(prefix)) {
+          keysToRemove.push(key);
+        }
+      }
+      keysToRemove.forEach((k) => localStorage.removeItem(k));
+    }
+
+    return cleanProfile;
+  }
 }
 
 export const progressStorage = new ProgressStorage();

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Roda">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#E9ECEF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#495057" stroke-width="4" />
+
+  <!-- Shadow below wheel -->
+  <ellipse cx="100" cy="162" rx="48" ry="10" fill="#2B2B3A" opacity="0.15" />
+
+  <!-- Outer Tire (Black Rubber Tire with Tread) -->
+  <circle cx="100" cy="104" r="56" fill="#343A40" stroke="#212529" stroke-width="3" />
+
+  <!-- Tire Inner Wall Rim -->
+  <circle cx="100" cy="104" r="44" fill="#495057" />
+
+  <!-- Steel / Alloy Wheel Rim (Silver / Shiny Cyan Rim) -->
+  <circle cx="100" cy="104" r="36" fill="#CED4DA" stroke="#868E96" stroke-width="3" />
+  <circle cx="100" cy="104" r="34" fill="#F1F3F5" />
+
+  <!-- Wheel Spokes (Star Pattern 5 Spokes) -->
+  <!-- Center Hub -->
+  <circle cx="100" cy="104" r="14" fill="#4DABF7" stroke="#1864AB" stroke-width="3" />
+  <circle cx="100" cy="104" r="6" fill="#FFD43B" />
+
+  <!-- Spokes -->
+  <line x1="100" y1="90" x2="100" y2="70" stroke="#1864AB" stroke-width="5" stroke-linecap="round" />
+  <line x1="113" y1="99" x2="131" y2="90" stroke="#1864AB" stroke-width="5" stroke-linecap="round" />
+  <line x1="108" y1="115" x2="120" y2="133" stroke="#1864AB" stroke-width="5" stroke-linecap="round" />
+  <line x1="92" y1="115" x2="80" y2="133" stroke="#1864AB" stroke-width="5" stroke-linecap="round" />
+  <line x1="87" y1="99" x2="69" y2="90" stroke="#1864AB" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Motion Speed / Spin Curves -->
+  <path d="M 152 66 Q 166 84 164 106" stroke="#FFA94D" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M 48 142 Q 34 124 36 102" stroke="#4DABF7" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <circle cx="166" cy="62" r="3" fill="#FFD43B" />
+</svg>
+

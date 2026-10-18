@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Apel">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#FFE3E3" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#FF6B6B" stroke-width="4" />
+
+  <!-- Apple Body (Glossy Red, Rounded) -->
+  <path d="M 100 80 C 80 50, 48 65, 52 110 C 55 145, 78 172, 100 168 C 122 172, 145 145, 148 110 C 152 65, 120 50, 100 80 Z" fill="#FA5252" stroke="#C92A2A" stroke-width="3.5" />
+  
+  <!-- Apple Highlight Shine -->
+  <ellipse cx="78" cy="100" rx="14" ry="24" transform="rotate(-25 78 100)" fill="#FF8787" opacity="0.6" />
+  <ellipse cx="74" cy="95" rx="6" ry="14" transform="rotate(-25 74 95)" fill="#FFFFFF" opacity="0.75" />
+
+  <!-- Apple Stem (Tangkai Cokelat) -->
+  <path d="M 100 78 Q 106 50 118 42" stroke="#5C3C1E" stroke-width="6" stroke-linecap="round" fill="none" />
+
+  <!-- Green Leaf (Daun Segar) -->
+  <path d="M 106 62 Q 134 50 144 68 Q 124 78 106 62 Z" fill="#51CF66" stroke="#2B8A3E" stroke-width="2.5" />
+  <path d="M 108 63 Q 125 64 140 68" stroke="#2B8A3E" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Cute Smiling Face on Apple -->
+  <circle cx="85" cy="118" r="4.5" fill="#2B2B3A" />
+  <circle cx="115" cy="118" r="4.5" fill="#2B2B3A" />
+  <circle cx="84" cy="116.5" r="1.5" fill="#FFFFFF" />
+  <circle cx="114" cy="116.5" r="1.5" fill="#FFFFFF" />
+  <!-- Rosy Cheeks -->
+  <ellipse cx="76" cy="126" rx="6" ry="3.5" fill="#FF8787" opacity="0.7" />
+  <ellipse cx="124" cy="126" rx="6" ry="3.5" fill="#FF8787" opacity="0.7" />
+  <!-- Smile -->
+  <path d="M 93 126 Q 100 134 107 126" stroke="#2B2B3A" stroke-width="2.8" stroke-linecap="round" fill="none" />
+</svg>
+

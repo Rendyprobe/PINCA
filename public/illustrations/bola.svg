@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Bola">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#E7F5FF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#4DABF7" stroke-width="4" />
+
+  <!-- Ball Base Circle -->
+  <circle cx="100" cy="104" r="58" fill="#FFFFFF" stroke="#339AF0" stroke-width="4" />
+
+  <!-- Ball Colorful Pattern Panels -->
+  <!-- Center Pentagon -->
+  <polygon points="100,82 118,95 111,116 89,116 82,95" fill="#4DABF7" stroke="#1C7ED6" stroke-width="2.5" />
+
+  <!-- Outer Pentagon Connections -->
+  <path d="M 100 82 L 100 52" stroke="#1C7ED6" stroke-width="2.5" />
+  <path d="M 118 95 L 145 88" stroke="#1C7ED6" stroke-width="2.5" />
+  <path d="M 111 116 L 134 140" stroke="#1C7ED6" stroke-width="2.5" />
+  <path d="M 89 116 L 66 140" stroke="#1C7ED6" stroke-width="2.5" />
+  <path d="M 82 95 L 55 88" stroke="#1C7ED6" stroke-width="2.5" />
+
+  <!-- Colorful Outer Patches -->
+  <path d="M 85 49 C 94 47, 106 47, 115 49 L 100 82 Z" fill="#FFA94D" />
+  <path d="M 148 76 C 153 85, 156 95, 155 105 L 118 95 Z" fill="#FFD43B" />
+  <path d="M 142 130 C 135 140, 125 148, 115 154 L 111 116 Z" fill="#40C057" />
+  <path d="M 85 154 C 75 148, 65 140, 58 130 L 89 116 Z" fill="#FF6B6B" />
+  <path d="M 45 105 C 44 95, 47 85, 52 76 L 82 95 Z" fill="#CC5DE8" />
+
+  <!-- Ball Shine / Highlight -->
+  <ellipse cx="78" cy="74" rx="12" ry="7" transform="rotate(-30 78 74)" fill="#FFFFFF" opacity="0.75" />
+
+  <!-- Motion lines / sparkles -->
+  <path d="M 158 56 Q 166 62 168 70" stroke="#FFA94D" stroke-width="3" stroke-linecap="round" fill="none" />
+  <circle cx="166" cy="46" r="3" fill="#FFD43B" />
+  <circle cx="42" cy="148" r="3" fill="#4DABF7" />
+</svg>
+

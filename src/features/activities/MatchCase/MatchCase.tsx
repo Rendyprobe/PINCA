@@ -45,8 +45,10 @@ export const MatchCase: React.FC<ActivityProps<LetterItem>> = ({
     setShakeId(null);
     setWrongIds([]);
 
-    const promptText = `Ini huruf besar ${currentItem.upper}. Mana huruf kecilnya?`;
-    void tts.speak(promptText, { rate: 0.75 });
+    if (currentIndex === 0) {
+      const promptText = `Pasangkan huruf besar dengan huruf kecil yang tepat ya!`;
+      void tts.speak(promptText, { rate: 0.75 });
+    }
 
     if (onProgress) {
       onProgress({ index: currentIndex + 1, total: items.length });

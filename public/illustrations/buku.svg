@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Buku">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#E7F5FF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#4DABF7" stroke-width="4" />
+
+  <!-- Book Cover (Blue Curved Open Pages) -->
+  <path d="M 100 148 C 76 138, 48 140, 36 148 L 36 82 C 48 74, 76 72, 100 82 C 124 72, 152 74, 164 82 L 164 148 C 152 140, 124 138, 100 148 Z" fill="#339AF0" stroke="#1864AB" stroke-width="3" />
+  
+  <!-- Book Spine Center -->
+  <path d="M 100 82 L 100 148" stroke="#1864AB" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Book Pages (Cream/White) -->
+  <path d="M 100 142 C 78 132, 52 134, 40 142 L 40 80 C 52 72, 78 70, 100 80 C 122 70, 148 72, 160 80 L 160 142 C 148 134, 122 132, 100 142 Z" fill="#FFFFFF" stroke="#CED4DA" stroke-width="2" />
+
+  <!-- Book Spine Center line -->
+  <path d="M 100 80 L 100 142" stroke="#ADB5BD" stroke-width="2" />
+
+  <!-- Left Page Lines (Text lines illustration) -->
+  <line x1="50" y1="92" x2="88" y2="92" stroke="#74C0FC" stroke-width="3" stroke-linecap="round" />
+  <line x1="50" y1="104" x2="88" y2="104" stroke="#74C0FC" stroke-width="3" stroke-linecap="round" />
+  <line x1="50" y1="116" x2="78" y2="116" stroke="#74C0FC" stroke-width="3" stroke-linecap="round" />
+  <line x1="50" y1="128" x2="84" y2="128" stroke="#74C0FC" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Right Page Golden Star -->
+  <polygon points="130,90 133,99 143,99 135,105 138,114 130,108 122,114 125,105 117,99 127,99" fill="#FFD43B" stroke="#F59F00" stroke-width="1.8" />
+  <line x1="112" y1="122" x2="150" y2="122" stroke="#FFA94D" stroke-width="3" stroke-linecap="round" />
+  <line x1="112" y1="130" x2="140" y2="130" stroke="#FFA94D" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Bookmark Ribbon (Red) -->
+  <path d="M 97 80 L 97 154 L 100 148 L 103 154 L 103 80 Z" fill="#FF6B6B" stroke="#E03131" stroke-width="1.5" />
+
+  <!-- Sparkles around book -->
+  <circle cx="156" cy="62" r="3" fill="#FFD43B" />
+  <circle cx="44" cy="62" r="3" fill="#4DABF7" />
+</svg>
+

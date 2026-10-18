@@ -1,0 +1,183 @@
+[
+  {
+    "id": "s_ini_bola",
+    "level": "sentence",
+    "text": "Ini bola.",
+    "words": ["Ini", "bola"],
+    "punctuation": ".",
+    "difficulty": 1,
+    "tags": ["benda"],
+    "image": { "type": "emoji", "value": "⚽", "alt": "bola" }
+  },
+  {
+    "id": "s_itu_buku",
+    "level": "sentence",
+    "text": "Itu buku.",
+    "words": ["Itu", "buku"],
+    "punctuation": ".",
+    "difficulty": 1,
+    "tags": ["benda"],
+    "image": { "type": "emoji", "value": "📘", "alt": "buku" }
+  },
+  {
+    "id": "s_ibu_masak",
+    "level": "sentence",
+    "text": "Ibu masak nasi.",
+    "words": ["Ibu", "masak", "nasi"],
+    "punctuation": ".",
+    "difficulty": 1,
+    "tags": ["keluarga"],
+    "image": { "type": "svg", "value": "/illustrations/ibu.svg", "alt": "ibu" }
+  },
+  {
+    "id": "s_bapa_baca",
+    "level": "sentence",
+    "text": "Bapa baca buku.",
+    "words": ["Bapa", "baca", "buku"],
+    "punctuation": ".",
+    "difficulty": 1,
+    "tags": ["keluarga"],
+    "image": { "type": "svg", "value": "/illustrations/bapa.svg", "alt": "bapa" }
+  },
+  {
+    "id": "s_adik_minum",
+    "level": "sentence",
+    "text": "Adik minum susu.",
+    "words": ["Adik", "minum", "susu"],
+    "punctuation": ".",
+    "difficulty": 1,
+    "tags": ["keluarga"],
+    "image": { "type": "svg", "value": "/illustrations/bayi.svg", "alt": "adik" }
+  },
+  {
+    "id": "s_bibi_beli",
+    "level": "sentence",
+    "text": "Bibi beli baju baru.",
+    "words": ["Bibi", "beli", "baju", "baru"],
+    "punctuation": ".",
+    "difficulty": 2,
+    "tags": ["keluarga"],
+    "image": { "type": "svg", "value": "/illustrations/bibi.svg", "alt": "bibi" }
+  },
+  {
+    "id": "s_sapi_makan",
+    "level": "sentence",
+    "text": "Sapi makan rumput.",
+    "words": ["Sapi", "makan", "rumput"],
+    "punctuation": ".",
+    "difficulty": 2,
+    "tags": ["hewan"],
+    "image": { "type": "emoji", "value": "🐮", "alt": "sapi" }
+  },
+  {
+    "id": "s_kuda_lari",
+    "level": "sentence",
+    "text": "Kuda lari cepat!",
+    "words": ["Kuda", "lari", "cepat"],
+    "punctuation": "!",
+    "difficulty": 2,
+    "tags": ["hewan"],
+    "image": { "type": "emoji", "value": "🐴", "alt": "kuda" }
+  },
+  {
+    "id": "s_kelinci_lucu",
+    "level": "sentence",
+    "text": "Kelinci melompat riang!",
+    "words": ["Kelinci", "melompat", "riang"],
+    "punctuation": "!",
+    "difficulty": 2,
+    "tags": ["hewan"],
+    "image": { "type": "emoji", "value": "🐇", "alt": "kelinci" }
+  },
+  {
+    "id": "s_dimana_bola",
+    "level": "sentence",
+    "text": "Di mana bola adik?",
+    "words": ["Di", "mana", "bola", "adik"],
+    "punctuation": "?",
+    "difficulty": 2,
+    "tags": ["tanya"],
+    "image": { "type": "emoji", "value": "❓", "alt": "tanya" }
+  },
+  {
+    "id": "s_siapa_makan",
+    "level": "sentence",
+    "text": "Siapa yang makan roti?",
+    "words": ["Siapa", "yang", "makan", "roti"],
+    "punctuation": "?",
+    "difficulty": 2,
+    "tags": ["tanya"],
+    "image": { "type": "emoji", "value": "🍞", "alt": "roti" }
+  },
+  {
+    "id": "s_kamu_suka",
+    "level": "sentence",
+    "text": "Apakah kamu suka apel?",
+    "words": ["Apakah", "kamu", "suka", "apel"],
+    "punctuation": "?",
+    "difficulty": 2,
+    "tags": ["tanya"],
+    "image": { "type": "emoji", "value": "🍎", "alt": "apel" }
+  },
+  {
+    "id": "s_ayo_main",
+    "level": "sentence",
+    "text": "Ayo kita main bola!",
+    "words": ["Ayo", "kita", "main", "bola"],
+    "punctuation": "!",
+    "difficulty": 2,
+    "tags": ["kegiatan"],
+    "image": { "type": "emoji", "value": "⚽", "alt": "bola" }
+  },
+  {
+    "id": "s_hari_cerah",
+    "level": "sentence",
+    "text": "Hari ini sangat cerah!",
+    "words": ["Hari", "ini", "sangat", "cerah"],
+    "punctuation": "!",
+    "difficulty": 2,
+    "tags": ["alam"],
+    "image": { "type": "emoji", "value": "☀️", "alt": "matahari" }
+  },
+  {
+    "id": "s_bunga_wangi",
+    "level": "sentence",
+    "text": "Bunga di taman sangat wangi.",
+    "words": ["Bunga", "di", "taman", "sangat", "wangi"],
+    "punctuation": ".",
+    "difficulty": 3,
+    "tags": ["alam"],
+    "image": { "type": "emoji", "value": "🌸", "alt": "bunga" }
+  },
+  {
+    "id": "s_keluarga_bahagia",
+    "level": "sentence",
+    "text": "Keluarga kami sangat bahagia.",
+    "words": ["Keluarga", "kami", "sangat", "bahagia"],
+    "punctuation": ".",
+    "difficulty": 3,
+    "tags": ["keluarga"],
+    "image": { "type": "svg", "value": "/illustrations/ibu.svg", "alt": "keluarga" }
+  },
+  {
+    "id": "s_kakak_sepeda",
+    "level": "sentence",
+    "text": "Kakak naik sepeda di taman.",
+    "words": ["Kakak", "naik", "sepeda", "di", "taman"],
+    "punctuation": ".",
+    "difficulty": 3,
+    "tags": ["kegiatan"],
+    "image": { "type": "emoji", "value": "🚲", "alt": "sepeda" }
+  },
+  {
+    "id": "s_ibu_kue",
+    "level": "sentence",
+    "text": "Ibu membuat kue yang lezat.",
+    "words": ["Ibu", "membuat", "kue", "yang", "lezat"],
+    "punctuation": ".",
+    "difficulty": 3,
+    "tags": ["makanan"],
+    "image": { "type": "emoji", "value": "🍰", "alt": "kue" }
+  }
+]
+

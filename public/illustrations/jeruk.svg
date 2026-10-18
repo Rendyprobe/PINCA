@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Jeruk">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#FFE8CC" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#FFA94D" stroke-width="4" />
+
+  <!-- Shadow below orange -->
+  <ellipse cx="100" cy="156" rx="46" ry="10" fill="#2B2B3A" opacity="0.12" />
+
+  <!-- Orange Fruit Body -->
+  <circle cx="100" cy="110" r="48" fill="#FFA94D" stroke="#E8590C" stroke-width="3.5" />
+
+  <!-- Orange Texture & Shine -->
+  <ellipse cx="80" cy="90" rx="12" ry="7" transform="rotate(-30 80 90)" fill="#FFD8A8" opacity="0.6" />
+  <ellipse cx="76" cy="86" rx="6" ry="3.5" transform="rotate(-30 76 86)" fill="#FFFFFF" opacity="0.75" />
+
+  <!-- Orange Stem (Tangkai Cokelat) -->
+  <rect x="97" y="58" width="6" height="12" rx="3" fill="#5C3C1E" stroke="#3D291E" stroke-width="1.5" />
+
+  <!-- Green Orange Leaves -->
+  <path d="M 100 64 C 114 50, 138 52, 142 66 C 128 72, 110 68, 100 64 Z" fill="#51CF66" stroke="#2B8A3E" stroke-width="2.5" />
+  <path d="M 100 64 Q 120 62 140 66" stroke="#2B8A3E" stroke-width="1.8" fill="none" />
+
+  <path d="M 98 64 C 84 54, 68 56, 66 68 C 78 72, 90 68, 98 64 Z" fill="#69DB7C" stroke="#2B8A3E" stroke-width="2" />
+
+  <!-- Cute Smiling Face on Orange -->
+  <circle cx="85" cy="116" r="4" fill="#2B2B3A" />
+  <circle cx="115" cy="116" r="4" fill="#2B2B3A" />
+  <circle cx="83.5" cy="114.5" r="1.5" fill="#FFFFFF" />
+  <circle cx="113.5" cy="114.5" r="1.5" fill="#FFFFFF" />
+  <!-- Rosy Cheeks -->
+  <ellipse cx="76" cy="123" rx="6" ry="3.5" fill="#FF6B6B" opacity="0.7" />
+  <ellipse cx="124" cy="123" rx="6" ry="3.5" fill="#FF6B6B" opacity="0.7" />
+  <!-- Smile -->
+  <path d="M 93 124 Q 100 132 107 124" stroke="#2B2B3A" stroke-width="2.8" stroke-linecap="round" fill="none" />
+</svg>
+

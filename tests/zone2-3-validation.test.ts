@@ -2,12 +2,14 @@ import { describe, it, expect } from 'vitest';
 import {
   getSyllables,
   getZone3Words,
+  getZone4Words,
   getAllWords,
   getZone2Lessons,
   getZone3Lessons,
+  getZone4Lessons,
 } from '@/content';
 
-describe('Zone 2 & Zone 3 Curriculum Data Integrity', () => {
+describe('Zone 2, 3, & 4 Curriculum Data Integrity', () => {
   it('contains at least 80 open KV syllables in syllables.json', () => {
     const syllables = getSyllables();
     expect(syllables.length).toBeGreaterThanOrEqual(80);
@@ -61,6 +63,36 @@ describe('Zone 2 & Zone 3 Curriculum Data Integrity', () => {
 
     z3Lessons.forEach((ls) => {
       expect(ls.zoneId).toBe('zone_3');
+      expect(ls.itemIds.length).toBeGreaterThanOrEqual(1);
+      ls.itemIds.forEach((id) => {
+        expect(wordIdSet.has(id)).toBe(true);
+      });
+    });
+  });
+
+  it('validates Zone 4 longer words integrity', () => {
+    const z4Words = getZone4Words();
+    expect(z4Words.length).toBeGreaterThanOrEqual(20);
+
+    z4Words.forEach((w) => {
+      expect(w.level).toBe('word');
+      expect(w.syllables.length).toBeGreaterThanOrEqual(2);
+      expect(w.syllables.join('').toLowerCase()).toBe(w.text.toLowerCase());
+      expect(w.image).toBeDefined();
+      expect(w.image?.alt.length).toBeGreaterThan(0);
+      expect(w.image?.value.length).toBeGreaterThan(0);
+    });
+  });
+
+  it('validates Zone 4 lessons item references', () => {
+    const z4Lessons = getZone4Lessons();
+    const allWords = getAllWords();
+    const wordIdSet = new Set(allWords.map((w) => w.id));
+
+    expect(z4Lessons.length).toBeGreaterThanOrEqual(6);
+
+    z4Lessons.forEach((ls) => {
+      expect(ls.zoneId).toBe('zone_4');
       expect(ls.itemIds.length).toBeGreaterThanOrEqual(1);
       ls.itemIds.forEach((id) => {
         expect(wordIdSet.has(id)).toBe(true);

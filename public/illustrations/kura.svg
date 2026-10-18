@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Kura-Kura">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#EBFBEE" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#40C057" stroke-width="4" />
+
+  <!-- Shadow below turtle -->
+  <ellipse cx="100" cy="154" rx="55" ry="12" fill="#2B2B3A" opacity="0.12" />
+
+  <!-- Tiny Tail -->
+  <path d="M 44 116 Q 34 116 38 122 Q 44 122 46 118 Z" fill="#69DB7C" stroke="#2B8A3E" stroke-width="2" />
+
+  <!-- Turtle Flippers / Feet -->
+  <ellipse cx="68" cy="138" rx="12" ry="8" transform="rotate(-15 68 138)" fill="#69DB7C" stroke="#2B8A3E" stroke-width="2.5" />
+  <ellipse cx="132" cy="138" rx="12" ry="8" transform="rotate(15 132 138)" fill="#69DB7C" stroke="#2B8A3E" stroke-width="2.5" />
+  <ellipse cx="72" cy="94" rx="10" ry="7" transform="rotate(20 72 94)" fill="#69DB7C" stroke="#2B8A3E" stroke-width="2.5" />
+
+  <!-- Turtle Head (Right-facing) -->
+  <ellipse cx="150" cy="104" rx="16" ry="14" fill="#69DB7C" stroke="#2B8A3E" stroke-width="2.5" />
+  <!-- Turtle Sparkling Eye -->
+  <circle cx="154" cy="100" r="4.5" fill="#2B2B3A" />
+  <circle cx="153" cy="98.5" r="1.5" fill="#FFFFFF" />
+  <!-- Turtle Rosy Cheek -->
+  <circle cx="148" cy="108" r="3.5" fill="#FF8787" opacity="0.7" />
+  <!-- Turtle Smile -->
+  <path d="M 156 108 Q 160 112 163 108" stroke="#2B8A3E" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Turtle Shell (Dome / Carapace) -->
+  <path d="M 46 126 C 46 76, 76 64, 100 64 C 124 64, 148 76, 148 126 Z" fill="#40C057" stroke="#2B8A3E" stroke-width="3.5" />
+
+  <!-- Shell Rim (Plastron rim) -->
+  <path d="M 42 126 Q 97 122 152 126 Q 97 132 42 126 Z" fill="#FFE066" stroke="#FAB005" stroke-width="2.5" />
+
+  <!-- Shell Hexagon Pattern -->
+  <polygon points="100,74 116,84 116,102 100,112 84,102 84,84" fill="#51CF66" stroke="#237B34" stroke-width="2" />
+  <polygon points="76,104 84,102 100,112 96,124 68,124" fill="#37B24D" stroke="#237B34" stroke-width="2" />
+  <polygon points="124,104 116,102 100,112 104,124 132,124" fill="#37B24D" stroke="#237B34" stroke-width="2" />
+  <polygon points="100,74 116,84 136,80 130,72 100,66" fill="#37B24D" stroke="#237B34" stroke-width="2" />
+  <polygon points="100,74 84,84 64,80 70,72 100,66" fill="#37B24D" stroke="#237B34" stroke-width="2" />
+</svg>
+

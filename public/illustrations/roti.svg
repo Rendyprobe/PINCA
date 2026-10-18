@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Roti">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#FFE8CC" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#FFA94D" stroke-width="4" />
+
+  <!-- Shadow below bread -->
+  <ellipse cx="100" cy="156" rx="50" ry="10" fill="#2B2B3A" opacity="0.12" />
+
+  <!-- Back Toast Slice -->
+  <path d="M 64 68 C 64 56, 82 50, 96 56 C 110 50, 128 56, 128 68 C 132 82, 134 130, 128 140 C 122 144, 70 144, 64 140 C 58 130, 60 82, 64 68 Z" fill="#D9480F" />
+  <path d="M 68 70 C 68 60, 84 54, 96 60 C 108 54, 124 60, 124 70 C 128 82, 130 126, 124 136 C 120 140, 72 140, 68 136 C 62 126, 64 82, 68 70 Z" fill="#FFD8A8" />
+
+  <!-- Front Toast Slice (Angled slightly) -->
+  <path d="M 72 74 C 72 62, 90 56, 104 62 C 118 56, 136 62, 136 74 C 140 88, 142 136, 136 146 C 130 150, 78 150, 72 146 C 66 136, 68 88, 72 74 Z" fill="#E8590C" stroke="#D9480F" stroke-width="3" />
+  <!-- Bread Crust Border -->
+  <path d="M 76 76 C 76 66, 92 60, 104 66 C 116 60, 132 66, 132 76 C 136 88, 138 132, 132 142 C 128 146, 80 146, 76 142 C 70 132, 72 88, 76 76 Z" fill="#FFE8CC" />
+
+  <!-- Yummy Jam / Butter Pat in Center (Red Strawberry Jam heart) -->
+  <path d="M 104 90 C 96 82, 86 88, 90 98 C 94 106, 104 114, 104 114 C 104 114, 114 106, 118 98 C 122 88, 112 82, 104 90 Z" fill="#FA5252" stroke="#E03131" stroke-width="2" />
+  <!-- Jam Gloss -->
+  <circle cx="98" cy="92" r="2.5" fill="#FFFFFF" opacity="0.8" />
+
+  <!-- Cute Face on Toast -->
+  <circle cx="92" cy="122" r="3.5" fill="#5C3C1E" />
+  <circle cx="116" cy="122" r="3.5" fill="#5C3C1E" />
+  <!-- Rosy cheeks -->
+  <ellipse cx="85" cy="127" rx="5" ry="3" fill="#FF8787" opacity="0.7" />
+  <ellipse cx="123" cy="127" rx="5" ry="3" fill="#FF8787" opacity="0.7" />
+  <!-- Smile -->
+  <path d="M 99 128 Q 104 134 109 128" stroke="#5C3C1E" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Little crumbs and sparkles -->
+  <circle cx="148" cy="144" r="2.5" fill="#FFA94D" />
+  <circle cx="154" cy="148" r="1.8" fill="#FFA94D" />
+  <circle cx="58" cy="142" r="2.2" fill="#FFA94D" />
+  <circle cx="146" cy="72" r="3" fill="#FFD43B" />
+</svg>
+

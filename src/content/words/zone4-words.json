@@ -1,0 +1,245 @@
+[
+  {
+    "id": "w_bulan",
+    "level": "word",
+    "text": "bulan",
+    "syllables": ["bu", "lan"],
+    "difficulty": 2,
+    "tags": ["alam"],
+    "image": { "type": "emoji", "value": "🌙", "alt": "bulan" },
+    "imageRequired": true,
+    "acceptedAliases": ["bu lan", "bulan"]
+  },
+  {
+    "id": "w_makan",
+    "level": "word",
+    "text": "makan",
+    "syllables": ["ma", "kan"],
+    "difficulty": 2,
+    "tags": ["kegiatan"],
+    "image": { "type": "emoji", "value": "🍽️", "alt": "makan" },
+    "imageRequired": true,
+    "acceptedAliases": ["ma kan", "makan"]
+  },
+  {
+    "id": "w_hutan",
+    "level": "word",
+    "text": "hutan",
+    "syllables": ["hu", "tan"],
+    "difficulty": 2,
+    "tags": ["alam"],
+    "image": { "type": "emoji", "value": "🌲", "alt": "hutan" },
+    "imageRequired": true,
+    "acceptedAliases": ["hu tan", "hutan"]
+  },
+  {
+    "id": "w_rumah",
+    "level": "word",
+    "text": "rumah",
+    "syllables": ["ru", "mah"],
+    "difficulty": 2,
+    "tags": ["tempat"],
+    "image": { "type": "emoji", "value": "🏠", "alt": "rumah" },
+    "imageRequired": true,
+    "acceptedAliases": ["ru mah", "rumah"]
+  },
+  {
+    "id": "w_pohon",
+    "level": "word",
+    "text": "pohon",
+    "syllables": ["po", "hon"],
+    "difficulty": 2,
+    "tags": ["alam"],
+    "image": { "type": "emoji", "value": "🌳", "alt": "pohon" },
+    "imageRequired": true,
+    "acceptedAliases": ["po hon", "pohon"]
+  },
+  {
+    "id": "w_tidur",
+    "level": "word",
+    "text": "tidur",
+    "syllables": ["ti", "dur"],
+    "difficulty": 2,
+    "tags": ["kegiatan"],
+    "image": { "type": "emoji", "value": "🛏️", "alt": "tidur" },
+    "imageRequired": true,
+    "acceptedAliases": ["ti dur", "tidur"]
+  },
+  {
+    "id": "w_minum",
+    "level": "word",
+    "text": "minum",
+    "syllables": ["mi", "num"],
+    "difficulty": 2,
+    "tags": ["kegiatan"],
+    "image": { "type": "emoji", "value": "🥤", "alt": "minum" },
+    "imageRequired": true,
+    "acceptedAliases": ["mi num", "minum"]
+  },
+  {
+    "id": "w_teman",
+    "level": "word",
+    "text": "teman",
+    "syllables": ["te", "man"],
+    "difficulty": 2,
+    "tags": ["sosial"],
+    "image": { "type": "emoji", "value": "🤝", "alt": "teman" },
+    "imageRequired": true,
+    "acceptedAliases": ["te man", "teman"]
+  },
+  {
+    "id": "w_sepeda",
+    "level": "word",
+    "text": "sepeda",
+    "syllables": ["se", "pe", "da"],
+    "difficulty": 3,
+    "tags": ["kendaraan"],
+    "image": { "type": "emoji", "value": "🚲", "alt": "sepeda" },
+    "imageRequired": true,
+    "acceptedAliases": ["se pe da", "sepeda"]
+  },
+  {
+    "id": "w_kelinci",
+    "level": "word",
+    "text": "kelinci",
+    "syllables": ["ke", "lin", "ci"],
+    "difficulty": 3,
+    "tags": ["hewan"],
+    "image": { "type": "emoji", "value": "🐇", "alt": "kelinci" },
+    "imageRequired": true,
+    "acceptedAliases": ["ke lin ci", "kelinci"]
+  },
+  {
+    "id": "w_boneka",
+    "level": "word",
+    "text": "boneka",
+    "syllables": ["bo", "ne", "ka"],
+    "difficulty": 3,
+    "tags": ["mainan"],
+    "image": { "type": "emoji", "value": "🧸", "alt": "boneka" },
+    "imageRequired": true,
+    "acceptedAliases": ["bo ne ka", "boneka"]
+  },
+  {
+    "id": "w_sepatu",
+    "level": "word",
+    "text": "sepatu",
+    "syllables": ["se", "pa", "tu"],
+    "difficulty": 3,
+    "tags": ["pakaian"],
+    "image": { "type": "emoji", "value": "👟", "alt": "sepatu" },
+    "imageRequired": true,
+    "acceptedAliases": ["se pa tu", "sepatu"]
+  },
+  {
+    "id": "w_kereta",
+    "level": "word",
+    "text": "kereta",
+    "syllables": ["ke", "re", "ta"],
+    "difficulty": 3,
+    "tags": ["kendaraan"],
+    "image": { "type": "emoji", "value": "🚂", "alt": "kereta" },
+    "imageRequired": true,
+    "acceptedAliases": ["ke re ta", "kereta"]
+  },
+  {
+    "id": "w_kamera",
+    "level": "word",
+    "text": "kamera",
+    "syllables": ["ka", "me", "ra"],
+    "difficulty": 3,
+    "tags": ["benda"],
+    "image": { "type": "emoji", "value": "📷", "alt": "kamera" },
+    "imageRequired": true,
+    "acceptedAliases": ["ka me ra", "kamera"]
+  },
+  {
+    "id": "w_celana",
+    "level": "word",
+    "text": "celana",
+    "syllables": ["ce", "la", "na"],
+    "difficulty": 3,
+    "tags": ["pakaian"],
+    "image": { "type": "emoji", "value": "👖", "alt": "celana" },
+    "imageRequired": true,
+    "acceptedAliases": ["ce la na", "celana"]
+  },
+  {
+    "id": "w_bunga",
+    "level": "word",
+    "text": "bunga",
+    "syllables": ["bu", "nga"],
+    "difficulty": 3,
+    "tags": ["alam"],
+    "image": { "type": "emoji", "value": "🌸", "alt": "bunga" },
+    "imageRequired": true,
+    "acceptedAliases": ["bu nga", "bunga"]
+  },
+  {
+    "id": "w_singa",
+    "level": "word",
+    "text": "singa",
+    "syllables": ["si", "nga"],
+    "difficulty": 3,
+    "tags": ["hewan"],
+    "image": { "type": "emoji", "value": "🦁", "alt": "singa" },
+    "imageRequired": true,
+    "acceptedAliases": ["si nga", "singa"]
+  },
+  {
+    "id": "w_wangi",
+    "level": "word",
+    "text": "wangi",
+    "syllables": ["wa", "ngi"],
+    "difficulty": 3,
+    "tags": ["sifat"],
+    "image": { "type": "emoji", "value": "💐", "alt": "wangi" },
+    "imageRequired": true,
+    "acceptedAliases": ["wa ngi", "wangi"]
+  },
+  {
+    "id": "w_nyanyi",
+    "level": "word",
+    "text": "nyanyi",
+    "syllables": ["nya", "nyi"],
+    "difficulty": 3,
+    "tags": ["kegiatan"],
+    "image": { "type": "emoji", "value": "🎵", "alt": "nyanyi" },
+    "imageRequired": true,
+    "acceptedAliases": ["nya nyi", "nyanyi"]
+  },
+  {
+    "id": "w_pantai",
+    "level": "word",
+    "text": "pantai",
+    "syllables": ["pan", "tai"],
+    "difficulty": 3,
+    "tags": ["alam"],
+    "image": { "type": "emoji", "value": "🏖️", "alt": "pantai" },
+    "imageRequired": true,
+    "acceptedAliases": ["pan tai", "pantai"]
+  },
+  {
+    "id": "w_tupai",
+    "level": "word",
+    "text": "tupai",
+    "syllables": ["tu", "pai"],
+    "difficulty": 3,
+    "tags": ["hewan"],
+    "image": { "type": "emoji", "value": "🐿️", "alt": "tupai" },
+    "imageRequired": true,
+    "acceptedAliases": ["tu pai", "tupai"]
+  },
+  {
+    "id": "w_sekolah",
+    "level": "word",
+    "text": "sekolah",
+    "syllables": ["se", "ko", "lah"],
+    "difficulty": 3,
+    "tags": ["tempat"],
+    "image": { "type": "emoji", "value": "🏫", "alt": "sekolah" },
+    "imageRequired": true,
+    "acceptedAliases": ["se ko lah", "sekolah"]
+  }
+]
+

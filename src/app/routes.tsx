@@ -150,6 +150,24 @@ export const AppRoutes: React.FC = () => {
     void progressStorage.getActiveProfile().then((p) => setProfile(p));
   }, []);
 
+  useEffect(() => {
+    if (!profile?.settings?.fontSize) return;
+    const size = profile.settings.fontSize;
+    if (size === 'small') {
+      document.documentElement.style.setProperty('--font-size-2xl', '2.25rem');
+      document.documentElement.style.setProperty('--font-size-3xl', '3.5rem');
+    } else if (size === 'medium') {
+      document.documentElement.style.setProperty('--font-size-2xl', '2.6rem');
+      document.documentElement.style.setProperty('--font-size-3xl', '4rem');
+    } else if (size === 'xlarge') {
+      document.documentElement.style.setProperty('--font-size-2xl', '3.75rem');
+      document.documentElement.style.setProperty('--font-size-3xl', '5.5rem');
+    } else {
+      document.documentElement.style.setProperty('--font-size-2xl', '3rem');
+      document.documentElement.style.setProperty('--font-size-3xl', '4.5rem');
+    }
+  }, [profile?.settings?.fontSize]);
+
   const profileHeaderButton = profile ? (
     <Button
       variant="ghost"
@@ -169,7 +187,11 @@ export const AppRoutes: React.FC = () => {
         <Route
           path="/map"
           element={
-            <LearningMap onOpenProfile={() => setShowProfileModal(true)} />
+            <LearningMap
+              profile={profile}
+              onUpdateProfile={setProfile}
+              onOpenProfile={() => setShowProfileModal(true)}
+            />
           }
         />
         <Route path="/lesson/:lessonId" element={<LessonRunner />} />

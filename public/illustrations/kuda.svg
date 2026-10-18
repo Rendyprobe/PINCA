@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Kuda">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#FFE8CC" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#FFA94D" stroke-width="4" />
+
+  <!-- Horse Ears -->
+  <path d="M 72 44 L 84 68 L 68 68 Z" fill="#A0522D" stroke="#5C3C1E" stroke-width="2.5" stroke-linejoin="round" />
+  <path d="M 73 50 L 80 66 L 70 66 Z" fill="#FFA94D" />
+
+  <path d="M 128 44 L 116 68 L 132 68 Z" fill="#A0522D" stroke="#5C3C1E" stroke-width="2.5" stroke-linejoin="round" />
+  <path d="M 127 50 L 120 66 L 130 66 Z" fill="#FFA94D" />
+
+  <!-- Horse Mane (Dark Brown Flowing Hair Behind & Top) -->
+  <path d="M 80 50 C 90 38, 110 38, 120 50 C 130 44, 136 60, 134 76 C 146 84, 144 116, 136 138 L 120 134 C 126 116, 128 92, 118 78 Z" fill="#5C3C1E" />
+
+  <!-- Horse Neck & Head -->
+  <path d="M 82 144 L 82 92 C 78 84, 76 72, 86 64 C 94 58, 108 58, 114 64 C 122 72, 122 84, 118 92 L 126 144 Z" fill="#CD7F4A" stroke="#5C3C1E" stroke-width="3" />
+
+  <!-- Horse Forehead Star / White Blaze -->
+  <polygon points="100,72 103,78 109,78 104,82 106,88 100,84 94,88 96,82 91,78 97,78" fill="#FFFFFF" />
+
+  <!-- Friendly Sparkling Horse Eyes -->
+  <circle cx="86" cy="86" r="6" fill="#2B2B3A" />
+  <circle cx="114" cy="86" r="6" fill="#2B2B3A" />
+  <circle cx="84.5" cy="84" r="2" fill="#FFFFFF" />
+  <circle cx="112.5" cy="84" r="2" fill="#FFFFFF" />
+
+  <!-- Cute Rosy Cheeks -->
+  <ellipse cx="76" cy="98" rx="6" ry="4" fill="#FF8787" opacity="0.6" />
+  <ellipse cx="124" cy="98" rx="6" ry="4" fill="#FF8787" opacity="0.6" />
+
+  <!-- Horse Muzzle / Snout -->
+  <ellipse cx="100" cy="120" rx="26" ry="18" fill="#E8A87C" stroke="#5C3C1E" stroke-width="2.5" />
+  <!-- Nostrils -->
+  <ellipse cx="91" cy="118" rx="4" ry="5" fill="#5C3C1E" />
+  <ellipse cx="109" cy="118" rx="4" ry="5" fill="#5C3C1E" />
+
+  <!-- Gentle Smile -->
+  <path d="M 94 128 Q 100 134 106 128" stroke="#5C3C1E" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Forelock Bangs -->
+  <path d="M 94 56 Q 100 70 102 56 Q 106 68 110 58" stroke="#5C3C1E" stroke-width="4" stroke-linecap="round" fill="none" />
+</svg>
+

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "l4_1",
+    "zoneId": "zone_4",
+    "title": "Kata KVK Sehari-hari",
+    "itemIds": ["w_bulan", "w_makan", "w_rumah", "w_tidur"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ]
+  },
+  {
+    "id": "l4_2",
+    "zoneId": "zone_4",
+    "title": "Alam & Teman Kita",
+    "itemIds": ["w_hutan", "w_pohon", "w_minum", "w_teman"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l4_1"]
+  },
+  {
+    "id": "l4_3",
+    "zoneId": "zone_4",
+    "title": "Kata Tiga Suku Kata",
+    "itemIds": ["w_sepeda", "w_kelinci", "w_boneka", "w_sepatu"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l4_2"]
+  },
+  {
+    "id": "l4_4",
+    "zoneId": "zone_4",
+    "title": "Benda & Kendaraan",
+    "itemIds": ["w_kereta", "w_kamera", "w_celana"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l4_3"]
+  },
+  {
+    "id": "l4_5",
+    "zoneId": "zone_4",
+    "title": "Bunyi Spesial NG & NY",
+    "itemIds": ["w_bunga", "w_singa", "w_wangi", "w_nyanyi"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l4_4"]
+  },
+  {
+    "id": "l4_6",
+    "zoneId": "zone_4",
+    "title": "Petualangan Kata Hebat",
+    "itemIds": ["w_pantai", "w_tupai", "w_sekolah"],
+    "activities": [
+      { "type": "match_picture_word" },
+      { "type": "arrange_syllables" },
+      { "type": "complete_word" },
+      { "type": "karaoke_read" },
+      { "type": "speech_check" }
+    ],
+    "unlockAfter": ["l4_5"]
+  }
+]
+

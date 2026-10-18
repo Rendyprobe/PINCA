@@ -13,7 +13,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
   children,
   headerAction,
 }) => {
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(() => tts.isMuted());
 
   const toggleSound = () => {
     const nextMuted = !isMuted;

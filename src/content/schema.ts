@@ -99,6 +99,8 @@ export const storyItemSchema = z.object({
 export const letterItemsFileSchema = z.array(letterItemSchema);
 export const syllableItemsFileSchema = z.array(syllableItemSchema);
 export const wordItemsFileSchema = z.array(wordItemSchema);
+export const sentenceItemsFileSchema = z.array(sentenceItemSchema);
+export const storyItemsFileSchema = z.array(storyItemSchema);
 
 export const activityConfigSchema = z.object({
   type: z.string().min(1),
@@ -133,3 +135,19 @@ export const feedbackFileSchema = z.object({
     .min(6, 'Minimal 6 variasi penyemangat'),
   hints: z.array(z.string().min(1)).min(4, 'Minimal 4 variasi petunjuk lembut'),
 });
+
+export const badgeSchema = z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  description: z.string().min(1),
+  icon: z.string().min(1),
+  requirementType: z.enum([
+    'lessons_completed',
+    'stars_collected',
+    'zone_completed',
+  ]),
+  threshold: z.number().int().min(1),
+  targetZoneId: z.string().optional(),
+});
+
+export const badgesFileSchema = z.array(badgeSchema);

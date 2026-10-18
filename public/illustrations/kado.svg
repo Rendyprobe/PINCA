@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Kado">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#E7F5FF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#4DABF7" stroke-width="4" />
+
+  <!-- Gift Box Shadow -->
+  <ellipse cx="100" cy="160" rx="48" ry="10" fill="#2B2B3A" opacity="0.12" />
+
+  <!-- Gift Box Lower Body (Turquoise/Blue) -->
+  <rect x="58" y="104" width="84" height="52" rx="8" fill="#4DABF7" stroke="#1864AB" stroke-width="3" />
+
+  <!-- Gift Box Lid (Overhanging) -->
+  <rect x="52" y="88" width="96" height="20" rx="6" fill="#339AF0" stroke="#1864AB" stroke-width="3" />
+
+  <!-- Vertical Golden Ribbon -->
+  <rect x="92" y="88" width="16" height="68" fill="#FFD43B" stroke="#F59F00" stroke-width="2" />
+
+  <!-- Horizontal Golden Ribbon on Lid -->
+  <rect x="52" y="94" width="96" height="8" fill="#FFD43B" stroke="#F59F00" stroke-width="1.8" />
+
+  <!-- Big Decorative Ribbon Bow on Top -->
+  <!-- Left Loop -->
+  <path d="M 100 88 C 82 72, 60 72, 70 84 C 78 92, 94 88, 100 88 Z" fill="#FFE066" stroke="#F59F00" stroke-width="2.5" />
+  <!-- Right Loop -->
+  <path d="M 100 88 C 118 72, 140 72, 130 84 C 122 92, 106 88, 100 88 Z" fill="#FFE066" stroke="#F59F00" stroke-width="2.5" />
+  <!-- Center Knot -->
+  <circle cx="100" cy="88" r="7" fill="#F59F00" />
+  <circle cx="100" cy="88" r="5" fill="#FFD43B" />
+  <!-- Ribbon Tails -->
+  <path d="M 96 92 Q 86 104 82 110" stroke="#F59F00" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M 104 92 Q 114 104 118 110" stroke="#F59F00" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+  <!-- Star Sparkles around Gift -->
+  <path d="M 148 64 L 151 72 L 159 75 L 151 78 L 148 86 L 145 78 L 137 75 L 145 72 Z" fill="#FF922B" />
+  <circle cx="50" cy="74" r="3.5" fill="#FFD43B" />
+  <circle cx="156" cy="122" r="3" fill="#4DABF7" />
+</svg>
+

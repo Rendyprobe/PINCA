@@ -1,0 +1,61 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.svgImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 10px rgba(43, 43, 58, 0.08));
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  user-select: none;
+}
+
+.svgImage:hover {
+  transform: scale(1.06);
+}
+
+.emojiBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 40% 35%, #fffdf8 0%, #fff3db 100%);
+  border: 3.5px solid #ffd43b;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(43, 43, 58, 0.08);
+  line-height: 1;
+  text-align: center;
+  user-select: none;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.emojiBadge:hover {
+  transform: scale(1.06);
+}
+
+.emojiChar {
+  line-height: 1;
+  display: block;
+  user-select: none;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svgImage,
+  .emojiBadge {
+    transition: none;
+    transform: none;
+  }
+}

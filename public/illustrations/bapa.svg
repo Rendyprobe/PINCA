@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Bapak">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#E7F5FF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#4DABF7" stroke-width="4" />
+
+  <!-- Body / Clothes (Green Polo Shirt) -->
+  <path d="M 48 188 C 48 146, 68 140, 100 140 C 132 140, 152 146, 152 188 Z" fill="#40C057" />
+  <!-- Polo Collar -->
+  <path d="M 82 140 L 100 160 L 118 140 Z" fill="#2F9E44" />
+  <path d="M 97 160 L 103 160 L 103 182 L 97 182 Z" fill="#2F9E44" />
+  <circle cx="100" cy="168" r="2.5" fill="#FFFFFF" />
+  <circle cx="100" cy="176" r="2.5" fill="#FFFFFF" />
+
+  <!-- Neck -->
+  <rect x="91" y="124" width="18" height="22" rx="9" fill="#FFD2A5" />
+
+  <!-- Head / Face -->
+  <ellipse cx="100" cy="98" rx="38" ry="40" fill="#FFDFC4" />
+
+  <!-- Ears -->
+  <ellipse cx="62" cy="100" rx="7" ry="10" fill="#FFDFC4" />
+  <ellipse cx="138" cy="100" rx="7" ry="10" fill="#FFDFC4" />
+  <path d="M 64 97 Q 66 100 64 103" stroke="#E0A370" stroke-width="2" fill="none" />
+  <path d="M 136 97 Q 134 100 136 103" stroke="#E0A370" stroke-width="2" fill="none" />
+
+  <!-- Hair (Neat, friendly short hair) -->
+  <path d="M 62 90 C 60 62, 74 50, 100 50 C 126 50, 140 62, 138 90 C 135 72, 126 62, 100 62 C 74 62, 65 72, 62 90 Z" fill="#2F251E" />
+  <!-- Front Hair Tuft -->
+  <path d="M 62 84 C 70 70, 85 62, 104 62 C 122 62, 135 70, 138 82 C 130 68, 118 64, 102 64 C 82 64, 70 72, 62 84 Z" fill="#42342B" />
+
+  <!-- Friendly Eyebrows -->
+  <path d="M 76 84 Q 85 78 94 82" stroke="#2F251E" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M 106 82 Q 115 78 124 84" stroke="#2F251E" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+  <!-- Smiling Crescent Eyes -->
+  <path d="M 76 96 Q 85 88 94 96" stroke="#2B2B3A" stroke-width="3.8" stroke-linecap="round" fill="none" />
+  <path d="M 106 96 Q 115 88 124 96" stroke="#2B2B3A" stroke-width="3.8" stroke-linecap="round" fill="none" />
+
+  <!-- Friendly Nose -->
+  <path d="M 97 103 Q 100 108 103 103" stroke="#E0A370" stroke-width="2.8" stroke-linecap="round" fill="none" />
+
+  <!-- Rosy Cheeks -->
+  <ellipse cx="74" cy="108" rx="8" ry="5" fill="#FF8787" opacity="0.5" />
+  <ellipse cx="126" cy="108" rx="8" ry="5" fill="#FF8787" opacity="0.5" />
+
+  <!-- Broad Warm Smile -->
+  <path d="M 86 114 Q 100 130 114 114" stroke="#2B2B3A" stroke-width="3.5" stroke-linecap="round" fill="#D9480F" />
+  <!-- White Teeth -->
+  <path d="M 90 115 Q 100 120 110 115" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="#FFFFFF" />
+</svg>
+

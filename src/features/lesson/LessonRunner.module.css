@@ -103,3 +103,70 @@
 .topBar > button {
   white-space: nowrap;
 }
+
+.newBadgeCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #fff9db 0%, #fff3bf 100%);
+  border: 3px solid #fcc419;
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(252, 196, 25, 0.35);
+  animation: badgePop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  max-width: 440px;
+  width: 100%;
+}
+
+.newBadgeIcon {
+  font-size: 3.5rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  flex-shrink: 0;
+}
+
+.newBadgeInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.newBadgeTag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #e67700;
+}
+
+.newBadgeTitle {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #2b2b3a;
+  line-height: 1.2;
+}
+
+.newBadgeDesc {
+  font-size: 0.9rem;
+  color: #5c5f66;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+@keyframes badgePop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .newBadgeCard {
+    animation: none;
+  }
+}

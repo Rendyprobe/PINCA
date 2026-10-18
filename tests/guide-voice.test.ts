@@ -24,21 +24,24 @@ describe('Local motherly guide voice', () => {
     expect(selectGuideVoice([voice('Microsoft David', 'en-US')])).toBeNull();
   });
 
-  it('resolves punctuation and case variants to the same local MP3', () => {
+  it('resolves punctuation and case variants to the same local audio file', () => {
     expect(getGuideAudio('  AYO BACA BOLA! ')).toBe(
       getGuideAudio('Ayo baca bola'),
     );
-    expect(getGuideAudio('Ayo baca bola')).toMatch(/^\/audio\/delia-f3\/.+\.mp3$/);
+    expect(getGuideAudio('Ayo baca bola')).toMatch(/^\/audio\/delia-(?:f3|kore)\/.+\.(?:mp3|wav)$/);
   });
 
-  it('ships a local MP3 for every manifest entry', () => {
-    const files = import.meta.glob('/public/audio/delia-f3/*.mp3');
-    expect(guideAudio.voice).toBe('Supertonic3-F3');
+  it('ships a local audio asset for every manifest entry', () => {
+    const mp3Files = import.meta.glob('/public/audio/delia-f3/*.mp3');
+    const wavFiles = import.meta.glob('/public/audio/delia-kore/*.wav');
     expect(Object.keys(guideAudio.entries).length).toBeGreaterThan(800);
     for (const [key, entry] of Object.entries(guideAudio.entries)) {
       expect(guideAudioKey(entry.text)).toBe(key);
-      expect(entry.src).toMatch(/^audio\/delia-f3\/[a-f0-9]{20}\.mp3$/);
-      expect(files[`/public/${entry.src}`]).toBeDefined();
+      expect(entry.src).toMatch(/^audio\/delia-(?:f3|kore)\/[a-f0-9]{20}\.(?:mp3|wav)$/);
+      const isAvailable =
+        mp3Files[`/public/${entry.src}`] !== undefined ||
+        wavFiles[`/public/${entry.src}`] !== undefined;
+      expect(isAvailable).toBe(true);
     }
   });
 

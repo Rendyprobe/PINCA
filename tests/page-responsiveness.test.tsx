@@ -75,6 +75,6 @@ describe('Page responsiveness regressions', () => {
       screen.getByRole('button', { name: 'Kata Pertama' }),
     ).toHaveAttribute('aria-pressed', 'true');
     expect(load).toHaveBeenCalledTimes(1);
-    expect(speak).toHaveBeenCalledTimes(2);
+    expect(speak).toHaveBeenCalledTimes(0);
   });
 });

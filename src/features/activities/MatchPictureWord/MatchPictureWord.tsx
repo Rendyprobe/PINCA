@@ -6,6 +6,7 @@ import type {
   ActivityResultItem,
 } from '@/types/content';
 import { getAllWords, getRandomPraise, getRandomHint } from '@/content';
+import { WordIllustration } from '@/components/Illustration/WordIllustration';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -45,8 +46,10 @@ export const MatchPictureWord: React.FC<ActivityProps<WordItem>> = ({
     setShakeId(null);
     setWrongIds([]);
 
-    const promptText = 'Pilih kata yang cocok dengan gambar ini ya!';
-    void tts.speak(promptText, { rate: 0.8 });
+    if (currentIndex === 0) {
+      const promptText = 'Pilih kata yang cocok dengan gambar ini ya!';
+      void tts.speak(promptText, { rate: 0.8 });
+    }
 
     if (onProgress) {
       onProgress({ index: currentIndex + 1, total: items.length });
@@ -116,13 +119,9 @@ export const MatchPictureWord: React.FC<ActivityProps<WordItem>> = ({
     <div className={styles.container}>
       <div className={styles.imageCard}>
         {currentItem.image && (
-          <span
-            className={styles.emojiDisplay}
-            role="img"
-            aria-label={currentItem.image.alt}
-          >
-            {currentItem.image.value}
-          </span>
+          <div className={styles.emojiDisplay}>
+            <WordIllustration image={currentItem.image} size="120px" />
+          </div>
         )}
         <span className={styles.promptText}>Gambar apakah ini?</span>
         <button

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Susu">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#E7F5FF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#4DABF7" stroke-width="4" />
+
+  <!-- Shadow below carton -->
+  <ellipse cx="100" cy="162" rx="42" ry="9" fill="#2B2B3A" opacity="0.12" />
+
+  <!-- Straw (Red and White Striped Drinking Straw) -->
+  <path d="M 116 38 L 122 56 L 112 88" stroke="#FA5252" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path d="M 116 38 L 122 56 L 112 88" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+
+  <!-- Milk Carton Gable Top (Roof) -->
+  <polygon points="76,82 100,62 124,82" fill="#74C0FC" stroke="#1864AB" stroke-width="2.5" />
+  <polygon points="100,62 124,82 140,74 116,56" fill="#4DABF7" stroke="#1864AB" stroke-width="2.5" />
+
+  <!-- Carton Gable Ridge Clip -->
+  <rect x="94" y="56" width="24" height="7" rx="2" fill="#1864AB" />
+
+  <!-- Carton Front Body -->
+  <rect x="76" y="82" width="48" height="72" rx="4" fill="#FFFFFF" stroke="#1864AB" stroke-width="3" />
+
+  <!-- Carton Side Body (Perspective depth) -->
+  <polygon points="124,82 140,74 140,146 124,154" fill="#E7F5FF" stroke="#1864AB" stroke-width="3" stroke-linejoin="round" />
+
+  <!-- Front Body Blue Wave Graphic -->
+  <path d="M 76 118 Q 88 124 100 118 Q 112 112 124 118 L 124 154 L 76 154 Z" fill="#4DABF7" />
+
+  <!-- Cute Cow Face Icon on Carton -->
+  <!-- Cow Head -->
+  <ellipse cx="100" cy="102" rx="14" ry="12" fill="#FFFFFF" stroke="#343A40" stroke-width="2" />
+  <!-- Cow Ears -->
+  <ellipse cx="88" cy="95" rx="5" ry="3" fill="#343A40" />
+  <ellipse cx="112" cy="95" rx="5" ry="3" fill="#343A40" />
+  <!-- Cow Snout -->
+  <ellipse cx="100" cy="107" rx="10" ry="6" fill="#FFC9C9" stroke="#343A40" stroke-width="1.5" />
+  <circle cx="96" cy="107" r="1.2" fill="#E03131" />
+  <circle cx="104" cy="107" r="1.2" fill="#E03131" />
+  <!-- Cow Eyes -->
+  <circle cx="94" cy="100" r="1.8" fill="#343A40" />
+  <circle cx="106" cy="100" r="1.8" fill="#343A40" />
+
+  <!-- Milk Splash Drops -->
+  <circle cx="64" cy="116" r="3" fill="#74C0FC" />
+  <circle cx="56" cy="128" r="4" fill="#4DABF7" />
+  <circle cx="148" cy="110" r="3.5" fill="#4DABF7" />
+</svg>
+

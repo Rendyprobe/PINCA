@@ -3,52 +3,210 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Audisi suara Bu Delia</title>
+    <title>Audisi Suara Bu Delia — Google Gemini AI Voice</title>
     <style>
-      * { box-sizing: border-box; }
-      body { margin: 0; padding: 32px 20px; font-family: system-ui, sans-serif; color: #302943; background: #fff8e9; line-height: 1.6; }
-      main { max-width: 780px; margin: auto; }
-      h1 { line-height: 1.2; }
-      .intro, article, aside { background: white; border: 1px solid #ded3ee; border-radius: 18px; padding: 20px; margin: 18px 0; }
-      h2 { margin-top: 0; }
-      audio { display: block; width: 100%; }
-      .detail { color: #665a75; font-size: .9rem; }
-      a { color: #6242a0; }
-      blockquote { margin: 0; }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 32px 20px;
+        font-family: system-ui, -apple-system, sans-serif;
+        color: #302943;
+        background: #fff8e9;
+        line-height: 1.6;
+      }
+      main {
+        max-width: 820px;
+        margin: auto;
+      }
+      h1 {
+        line-height: 1.2;
+        color: #2b2b3a;
+      }
+      .badge-gemini {
+        background: linear-gradient(135deg, #1a73e8 0%, #8ab4f8 100%);
+        color: white;
+        font-size: 0.85rem;
+        padding: 5px 12px;
+        border-radius: 99px;
+        font-weight: bold;
+        vertical-align: middle;
+        margin-left: 8px;
+        box-shadow: 0 2px 6px rgba(26, 115, 232, 0.3);
+      }
+      .badge-current {
+        background: #ffa94d;
+        color: white;
+        font-size: 0.8rem;
+        padding: 4px 10px;
+        border-radius: 99px;
+        font-weight: bold;
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+      .card-gemini {
+        background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+        border: 2px solid #4dabf7;
+        border-radius: 20px;
+        padding: 24px;
+        margin: 20px 0;
+        box-shadow: 0 6px 18px rgba(77, 171, 247, 0.15);
+      }
+      article,
+      aside {
+        background: white;
+        border: 1px solid #ded3ee;
+        border-radius: 18px;
+        padding: 20px;
+        margin: 18px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 1.35rem;
+      }
+      .audio-group {
+        margin-bottom: 18px;
+        background: white;
+        padding: 12px 16px;
+        border-radius: 14px;
+        border: 1px solid #e1e9f4;
+      }
+      .audio-label {
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: #1a4f8a;
+      }
+      audio {
+        display: block;
+        width: 100%;
+        margin-top: 6px;
+      }
+      .detail {
+        color: #555068;
+        font-size: 0.95rem;
+      }
+      .btn-back {
+        display: inline-block;
+        padding: 8px 16px;
+        background: #eee6f8;
+        border-radius: 12px;
+        color: #553c9a;
+        margin-bottom: 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .btn-back:hover {
+        background: #ded3ee;
+      }
     </style>
   </head>
   <body>
     <main>
-      <p><a href="/#/map">← Kembali ke peta belajar</a></p>
-      <h1>Pilih suara Bu Delia</h1>
-      <p>Tiga contoh AI lokal dari Supertonic 3. F3 adalah suara yang kamu pilih untuk Bu Delia.</p>
-      <section class="intro" aria-label="Teks contoh">
-        <p><strong>Semua contoh membaca teks yang sama:</strong></p>
-        <blockquote>Halo, aku Bu Delia. Yuk, kita belajar bersama. Ini kata ibu. I… bu… ibu. Iya, tepat! Kamu sudah membacanya dengan baik.</blockquote>
-      </section>
-      <article>
-        <h2>Suara F1</h2>
-        <audio controls preload="none" aria-label="Dengarkan contoh suara F1" src="/audio/delia-local-auditions/bu-delia-f1.wav"></audio>
-        <p class="detail" id="F1">Contoh sapaan, membaca, dan pujian.</p>
+      <a href="/#/map" class="btn-back">← Kembali ke Peta Belajar</a>
+
+      <h1>✨ Dengarkan Suara Bu Delia dari Google Gemini AI</h1>
+      <p>
+        Sampel di bawah ini dibuat langsung menggunakan
+        <strong>Google Gemini 2.5 Multimodal TTS API</strong> dengan API Key
+        milikmu. Suara ini memiliki intonasi hidup, nafas alami, dan ekspresi
+        seperti manusia asli yang sedang berbicara langsung dengan anak!
+      </p>
+
+      <!-- OPSI 1: GEMINI AI - KORE (REKOMENDASI UTAMA) -->
+      <div class="card-gemini">
+        <h2>
+          🌟 Google Gemini AI — Karakter "Kore"
+          <span class="badge-gemini">Paling Hangat & Lembut ⭐</span>
+        </h2>
+        <p class="detail">
+          Sangat cocok untuk Bu Delia: suaranya keibuan, lembut, sabar, dan
+          penuh senyuman saat menyapa dan memuji anak.
+        </p>
+
+        <div class="audio-group">
+          <div class="audio-label">
+            🔊 Contoh 1: Menyapa Anak ("Halo, Teman! Ayo kita lanjutkan
+            petualangan membaca.")
+          </div>
+          <audio
+            controls
+            preload="auto"
+            src="/audio/delia-local-auditions/gemini-kore-sapaan.wav"
+          ></audio>
+        </div>
+
+        <div class="audio-group">
+          <div class="audio-label">
+            🔊 Contoh 2: Membimbing Membaca Suku Kata ("Ini kata ibu. I... bu...
+            ibu.")
+          </div>
+          <audio
+            controls
+            preload="auto"
+            src="/audio/delia-local-auditions/gemini-kore-baca.wav"
+          ></audio>
+        </div>
+
+        <div class="audio-group">
+          <div class="audio-label">
+            🔊 Contoh 3: Pujian Selebrasi ("Hebat sekali! Kamu pintar sekali!")
+          </div>
+          <audio
+            controls
+            preload="auto"
+            src="/audio/delia-local-auditions/gemini-kore-pujian.wav"
+          ></audio>
+        </div>
+      </div>
+
+      <!-- OPSI 2: GEMINI AI - AOEDE -->
+      <article style="border: 2px solid #845ef7">
+        <h2>
+          ✨ Google Gemini AI — Karakter "Aoede"
+          <span class="badge-gemini" style="background: #845ef7"
+            >Ceria & Jernih</span
+          >
+        </h2>
+        <p class="detail">
+          Karakter suara wanita yang sedikit lebih energik dan segar.
+        </p>
+
+        <div class="audio-group">
+          <div class="audio-label">
+            🔊 Contoh Sapaan ("Halo, Teman! Ayo kita lanjutkan petualangan
+            membaca.")
+          </div>
+          <audio
+            controls
+            preload="auto"
+            src="/audio/delia-local-auditions/gemini-aoede-sapaan.wav"
+          ></audio>
+        </div>
       </article>
-      <article>
-        <h2>Suara F2</h2>
-        <audio controls preload="none" aria-label="Dengarkan contoh suara F2" src="/audio/delia-local-auditions/bu-delia-f2.wav"></audio>
-        <p class="detail" id="F2">Contoh sapaan, membaca, dan pujian.</p>
+
+      <!-- OPSI PEMBANDING LAMA: SUPERTONIC F3 -->
+      <article style="border: 1px dashed #ffa94d; background: #fffcf8">
+        <h2>
+          Suara Lama: Supertonic F3
+          <span class="badge-current">Yang Kamu Nilai Robotik</span>
+        </h2>
+        <p class="detail">
+          Dihasilkan oleh model AI lokal CPU ringan (terasa datar dan mekanis):
+        </p>
+        <div class="audio-group">
+          <audio
+            controls
+            preload="none"
+            src="/audio/delia-local-auditions/bu-delia-f3.wav"
+          ></audio>
+        </div>
       </article>
-      <article>
-        <h2>Suara F3 — terpilih</h2>
-        <audio controls preload="none" aria-label="Dengarkan contoh suara F3" src="/audio/delia-local-auditions/bu-delia-f3.wav"></audio>
-        <p class="detail" id="F3">Contoh sapaan, membaca, dan pujian.</p>
-      </article>
-      <aside>
-        <strong>Yang perlu didengarkan</strong>
-        <p>Apakah terasa hangat dan alami? Apakah kata “ibu” dan contoh “i… bu…” diucapkan tepat? Pilih karakter yang nyaman didengar berulang kali.</p>
-        <p id="benchmark" class="detail">Laporan pengukuran tersedia setelah contoh selesai dibuat.</p>
-        <a href="/audio/delia-local-auditions/benchmark.json">Buka hasil pengukuran</a>
-      </aside>
     </main>
+
     <script>
+      // Hentikan pemutaran audio lain saat satu audio mulai diputar
       document.querySelectorAll('audio').forEach((player) => {
         player.addEventListener('play', () => {
           document.querySelectorAll('audio').forEach((other) => {
@@ -56,20 +214,6 @@
           });
         });
       });
-      fetch('/audio/delia-local-auditions/benchmark.json')
-        .then((response) => {
-          if (!response.ok) throw new Error('Belum tersedia');
-          return response.json();
-        })
-        .then((report) => {
-          for (const sample of report.samples) {
-            document.getElementById(sample.voice).textContent =
-              `Durasi ${sample.audio_seconds.toFixed(1)} detik · dibuat dalam ${sample.generation_seconds.toFixed(1)} detik.`;
-          }
-          document.getElementById('benchmark').textContent =
-            `CPU, ${report.threads} thread · RAM proses tertinggi teramati ${report.python_peak_resident_ram_mib} MiB · memuat model ${report.load_seconds.toFixed(1)} detik. Angka ini berasal dari satu sesi pengujian.`;
-        })
-        .catch(() => {});
     </script>
   </body>
 </html>

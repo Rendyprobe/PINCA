@@ -6,6 +6,7 @@ import type {
   ActivityResultItem,
 } from '@/types/content';
 import { getSyllables, getRandomPraise, getRandomHint } from '@/content';
+import { WordIllustration } from '@/components/Illustration/WordIllustration';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -53,8 +54,10 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
     setShakeText(null);
     setWrongTexts([]);
 
-    const promptText = `Lengkapi kata ${currentItem.text}! Suku kata apa yang hilang?`;
-    void tts.speak(promptText, { rate: 0.8 });
+    if (currentIndex === 0) {
+      const promptText = 'Pilih suku kata yang hilang untuk melengkapi kata ya!';
+      void tts.speak(promptText, { rate: 0.8 });
+    }
 
     if (onProgress) {
       onProgress({ index: currentIndex + 1, total: items.length });
@@ -130,13 +133,9 @@ export const CompleteWord: React.FC<ActivityProps<WordItem>> = ({
     <div className={styles.container}>
       <div className={styles.wordCard}>
         {currentItem.image && (
-          <span
-            className={styles.emoji}
-            role="img"
-            aria-label={currentItem.image.alt}
-          >
-            {currentItem.image.value}
-          </span>
+          <div className={styles.emoji}>
+            <WordIllustration image={currentItem.image} size="110px" />
+          </div>
         )}
 
         <div className={styles.syllablesDisplay}>

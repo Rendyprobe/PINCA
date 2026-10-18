@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Bibi">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#F3F0FF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#9775FA" stroke-width="4" />
+
+  <!-- Body / Clothes (Pastel Purple / Lavender Blouse) -->
+  <path d="M 48 188 C 48 146, 68 140, 100 140 C 132 140, 152 146, 152 188 Z" fill="#9775FA" />
+  <path d="M 85 140 L 100 162 L 115 140 Z" fill="#E599F7" />
+
+  <!-- Soft Pastel Hijab / Headscarf -->
+  <path d="M 54 115 C 50 70, 70 48, 100 48 C 130 48, 150 70, 146 115 C 144 140, 128 152, 100 152 C 72 152, 56 140, 54 115 Z" fill="#D0BFFF" />
+  <path d="M 66 110 C 64 80, 80 66, 100 66 C 120 66, 136 80, 134 110 C 132 135, 118 144, 100 144 C 82 144, 68 135, 66 110 Z" fill="#FFDFC4" />
+
+  <!-- Friendly Eyebrows -->
+  <path d="M 78 86 Q 86 82 93 86" stroke="#4A3428" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 107 86 Q 114 82 122 86" stroke="#4A3428" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Warm Smiling Eyes -->
+  <path d="M 77 96 Q 85 89 93 96" stroke="#2B2B3A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M 107 96 Q 115 89 123 96" stroke="#2B2B3A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+  <!-- Cheerful Cheeks -->
+  <ellipse cx="75" cy="108" rx="8" ry="5" fill="#FF8787" opacity="0.6" />
+  <ellipse cx="125" cy="108" rx="8" ry="5" fill="#FF8787" opacity="0.6" />
+
+  <!-- Nose -->
+  <path d="M 98 103 Q 100 107 102 103" stroke="#E0A370" stroke-width="2.2" stroke-linecap="round" fill="none" />
+
+  <!-- Warm Gentle Smile -->
+  <path d="M 88 114 Q 100 128 112 114" stroke="#2B2B3A" stroke-width="3" stroke-linecap="round" fill="#E03131" />
+  <path d="M 92 115 Q 100 119 108 115" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="#FFFFFF" />
+
+  <!-- Hijab Pin / Brooch Accessory -->
+  <circle cx="100" cy="148" r="5" fill="#FFD43B" />
+  <circle cx="100" cy="148" r="2" fill="#E599F7" />
+</svg>
+

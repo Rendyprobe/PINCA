@@ -59,6 +59,7 @@
 .syllableDone {
   background-color: var(--color-success-light);
   border-color: var(--color-success);
+  border-bottom: 5px solid var(--color-success);
   color: var(--color-success);
   transform: scale(1.04);
 }
@@ -68,4 +69,13 @@
   gap: 16px;
   align-items: center;
   justify-content: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .syllableBlock,
+  .syllableActive,
+  .syllableDone {
+    transition: none;
+    transform: none;
+  }
 }

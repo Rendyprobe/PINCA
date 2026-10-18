@@ -1,0 +1,71 @@
+[
+  {
+    "id": "badge_first_step",
+    "title": "Langkah Pertama",
+    "description": "Menyelesaikan pelajaran membaca pertama!",
+    "icon": "🐣",
+    "requirementType": "lessons_completed",
+    "threshold": 1
+  },
+  {
+    "id": "badge_vowel_master",
+    "title": "Penjelajah Huruf",
+    "description": "Menyelesaikan semua pelajaran di Zona Kenal Huruf!",
+    "icon": "🔤",
+    "requirementType": "zone_completed",
+    "threshold": 1,
+    "targetZoneId": "zone_1"
+  },
+  {
+    "id": "badge_syllable_friend",
+    "title": "Sahabat Suku Kata",
+    "description": "Berhasil menyusun dan membaca suku kata di Zona 2!",
+    "icon": "🧩",
+    "requirementType": "zone_completed",
+    "threshold": 1,
+    "targetZoneId": "zone_2"
+  },
+  {
+    "id": "badge_word_builder",
+    "title": "Penyusun Kata",
+    "description": "Hebat! Menyelesaikan pelajaran kata bergambar di Zona 3!",
+    "icon": "📖",
+    "requirementType": "zone_completed",
+    "threshold": 1,
+    "targetZoneId": "zone_3"
+  },
+  {
+    "id": "badge_star_collector_10",
+    "title": "Bintang Kejora",
+    "description": "Mengumpulkan 10 bintang petualangan membaca!",
+    "icon": "⭐",
+    "requirementType": "stars_collected",
+    "threshold": 10
+  },
+  {
+    "id": "badge_star_collector_25",
+    "title": "Bintang Bersinar",
+    "description": "Luar biasa! Mengumpulkan 25 bintang emas!",
+    "icon": "🌟",
+    "requirementType": "stars_collected",
+    "threshold": 25
+  },
+  {
+    "id": "badge_story_listener",
+    "title": "Pecinta Cerita",
+    "description": "Membaca dan menyelesaikan cerita mini bergambar!",
+    "icon": "📚",
+    "requirementType": "zone_completed",
+    "threshold": 1,
+    "targetZoneId": "zone_6"
+  },
+  {
+    "id": "badge_reading_champion",
+    "title": "Jagoan Membaca",
+    "description": "Menyelesaikan 15 pelajaran petualangan membaca!",
+    "icon": "👑",
+    "requirementType": "lessons_completed",
+    "threshold": 15
+  }
+]
+

@@ -9,7 +9,7 @@
     "nameTts": "a",
     "exampleWordId": "w_apel",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "🍎", "alt": "a untuk apel" },
+    "image": { "type": "svg", "value": "/illustrations/apel.svg", "alt": "a untuk apel" },
     "acceptedAliases": ["a", "aa", "apel"]
   },
   {
@@ -22,7 +22,7 @@
     "nameTts": "be",
     "exampleWordId": "w_bola",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "⚽", "alt": "b untuk bola" },
+    "image": { "type": "svg", "value": "/illustrations/bola.svg", "alt": "b untuk bola" },
     "acceptedAliases": ["b", "be", "beh", "bola"]
   },
   {
@@ -48,7 +48,7 @@
     "nameTts": "de",
     "exampleWordId": "w_daun",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "🍃", "alt": "d untuk daun" },
+    "image": { "type": "svg", "value": "/illustrations/daun.svg", "alt": "d untuk daun" },
     "acceptedAliases": ["d", "de", "deh", "daun"]
   },
   {
@@ -113,7 +113,7 @@
     "nameTts": "i",
     "exampleWordId": "w_ikan",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "🐟", "alt": "i untuk ikan" },
+    "image": { "type": "svg", "value": "/illustrations/ikan.svg", "alt": "i untuk ikan" },
     "acceptedAliases": ["i", "ii", "ikan"]
   },
   {
@@ -126,7 +126,7 @@
     "nameTts": "je",
     "exampleWordId": "w_jeruk",
     "difficulty": 2,
-    "image": { "type": "emoji", "value": "🍊", "alt": "j untuk jeruk" },
+    "image": { "type": "svg", "value": "/illustrations/jeruk.svg", "alt": "j untuk jeruk" },
     "acceptedAliases": ["j", "je", "jeh", "jeruk"]
   },
   {
@@ -139,7 +139,7 @@
     "nameTts": "ka",
     "exampleWordId": "w_kuda",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "🐎", "alt": "k untuk kuda" },
+    "image": { "type": "svg", "value": "/illustrations/kuda.svg", "alt": "k untuk kuda" },
     "acceptedAliases": ["k", "ka", "kuda"]
   },
   {
@@ -165,7 +165,7 @@
     "nameTts": "em",
     "exampleWordId": "w_mata",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "👁️", "alt": "m untuk mata" },
+    "image": { "type": "svg", "value": "/illustrations/mata.svg", "alt": "m untuk mata" },
     "acceptedAliases": ["m", "em", "mata"]
   },
   {
@@ -204,7 +204,7 @@
     "nameTts": "pe",
     "exampleWordId": "w_pisang",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "🍌", "alt": "p untuk pisang" },
+    "image": { "type": "svg", "value": "/illustrations/pisang.svg", "alt": "p untuk pisang" },
     "acceptedAliases": ["p", "pe", "peh", "pisang"]
   },
   {
@@ -243,7 +243,7 @@
     "nameTts": "es",
     "exampleWordId": "w_sapi",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "🐄", "alt": "s untuk sapi" },
+    "image": { "type": "svg", "value": "/illustrations/sapi.svg", "alt": "s untuk sapi" },
     "acceptedAliases": ["s", "es", "sapi"]
   },
   {
@@ -256,7 +256,7 @@
     "nameTts": "te",
     "exampleWordId": "w_topi",
     "difficulty": 1,
-    "image": { "type": "emoji", "value": "🧢", "alt": "t untuk topi" },
+    "image": { "type": "svg", "value": "/illustrations/topi.svg", "alt": "t untuk topi" },
     "acceptedAliases": ["t", "te", "teh", "topi"]
   },
   {
@@ -295,7 +295,7 @@
     "nameTts": "we",
     "exampleWordId": "w_wortel",
     "difficulty": 2,
-    "image": { "type": "emoji", "value": "🥕", "alt": "w untuk wortel" },
+    "image": { "type": "svg", "value": "/illustrations/wortel.svg", "alt": "w untuk wortel" },
     "acceptedAliases": ["w", "we", "wortel"]
   },
   {

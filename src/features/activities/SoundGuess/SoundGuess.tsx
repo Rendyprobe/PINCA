@@ -11,6 +11,7 @@ import {
   getRandomPraise,
   getRandomHint,
 } from '@/content';
+import { WordIllustration } from '@/components/Illustration/WordIllustration';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -56,8 +57,11 @@ export const SoundGuess: React.FC<ActivityProps<LetterItem>> = ({
     setWrongIds([]);
 
     const wordName = exampleWord?.text ?? currentItem.text;
-    const promptText = `Ini gambar ${wordName}. Huruf awal kata ${wordName} adalah...?`;
-    void tts.speak(promptText, { rate: 0.75 });
+    const promptText =
+      currentIndex === 0
+        ? `Tebak huruf awal dari gambar ini ya! Huruf awal kata ${wordName} adalah...?`
+        : `Huruf awal kata ${wordName}?`;
+    void tts.speak(promptText, { rate: 0.8 });
 
     if (onProgress) {
       onProgress({ index: currentIndex + 1, total: items.length });
@@ -131,13 +135,9 @@ export const SoundGuess: React.FC<ActivityProps<LetterItem>> = ({
     <div className={styles.container}>
       <div className={styles.imageCard}>
         {exampleWord?.image && (
-          <span
-            className={styles.exampleEmoji}
-            role="img"
-            aria-label={exampleWord.image.alt}
-          >
-            {exampleWord.image.value}
-          </span>
+          <div className={styles.exampleEmoji}>
+            <WordIllustration image={exampleWord.image} size="110px" />
+          </div>
         )}
         <span className={styles.wordTitle}>
           {exampleWord?.text ?? currentItem.text}

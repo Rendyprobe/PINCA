@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Madu">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#FFF3BF" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#FAB005" stroke-width="4" />
+
+  <!-- Shadow below honey pot -->
+  <ellipse cx="100" cy="162" rx="46" ry="10" fill="#2B2B3A" opacity="0.12" />
+
+  <!-- Honey Pot Jar Body (Round Clay/Glass Pot) -->
+  <path d="M 68 96 C 54 116, 56 148, 76 156 C 92 160, 108 160, 124 156 C 144 148, 146 116, 132 96 Z" fill="#FFA94D" stroke="#D9480F" stroke-width="3" />
+
+  <!-- Honey Jar Neck -->
+  <rect x="74" y="86" width="52" height="12" rx="4" fill="#FF922B" stroke="#D9480F" stroke-width="2.5" />
+
+  <!-- Honey Pot Cloth Lid & Tie -->
+  <path d="M 70 86 Q 100 80 130 86 L 126 76 Q 100 70 74 76 Z" fill="#FFE066" stroke="#F59F00" stroke-width="2.5" />
+  <!-- Tie String -->
+  <line x1="72" y1="88" x2="128" y2="88" stroke="#E8590C" stroke-width="3" stroke-linecap="round" />
+  <circle cx="100" cy="88" r="3" fill="#E8590C" />
+
+  <!-- Honey Dripping over edge -->
+  <path d="M 82 96 Q 84 114 90 114 Q 96 114 98 102 Q 102 120 108 120 Q 114 120 118 96 Z" fill="#FFD43B" stroke="#F59F00" stroke-width="2" />
+  <circle cx="108" cy="126" r="3" fill="#FFD43B" />
+
+  <!-- Cute Bee Flying beside Jar -->
+  <!-- Bee Body -->
+  <ellipse cx="146" cy="68" rx="10" ry="8" fill="#FFD43B" stroke="#2B2B3A" stroke-width="2" />
+  <!-- Bee Stripes -->
+  <line x1="144" y1="61" x2="144" y2="75" stroke="#2B2B3A" stroke-width="2.5" />
+  <line x1="149" y1="62" x2="149" y2="74" stroke="#2B2B3A" stroke-width="2.5" />
+  <!-- Bee Wings -->
+  <ellipse cx="142" cy="56" rx="5" ry="7" fill="#E7F5FF" stroke="#339AF0" stroke-width="1.5" />
+  <ellipse cx="150" cy="56" rx="5" ry="7" fill="#E7F5FF" stroke="#339AF0" stroke-width="1.5" />
+  <!-- Bee Eye -->
+  <circle cx="139" cy="66" r="1.5" fill="#2B2B3A" />
+  <!-- Bee Flight Path -->
+  <path d="M 124 58 Q 130 52 136 60" stroke="#FAB005" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 2" fill="none" />
+
+  <!-- Honey Pot Label (Honeycomb / Honey icon) -->
+  <ellipse cx="100" cy="138" rx="18" ry="12" fill="#FFF8E7" stroke="#D9480F" stroke-width="1.8" />
+  <polygon points="100,130 106,134 106,142 100,146 94,142 94,134" fill="#FFD43B" stroke="#F59F00" stroke-width="1.5" />
+</svg>
+

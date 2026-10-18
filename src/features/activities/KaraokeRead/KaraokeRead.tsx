@@ -4,9 +4,11 @@ import type {
   ActivityProps,
   BaseItem,
   WordItem,
+  SentenceItem,
   ActivityResultItem,
 } from '@/types/content';
 import { Button } from '@/components/Button/Button';
+import { WordIllustration } from '@/components/Illustration/WordIllustration';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -28,9 +30,11 @@ export const KaraokeRead: React.FC<ActivityProps<BaseItem>> = ({
   const syllables: string[] =
     currentItem && 'syllables' in currentItem
       ? (currentItem as WordItem).syllables
-      : currentItem
-        ? [currentItem.text]
-        : [];
+      : currentItem && 'words' in currentItem
+        ? (currentItem as SentenceItem).words
+        : currentItem
+          ? [currentItem.text]
+          : [];
 
   const wordImage =
     currentItem && 'image' in currentItem && currentItem.image
@@ -124,13 +128,9 @@ export const KaraokeRead: React.FC<ActivityProps<BaseItem>> = ({
     <div className={styles.container}>
       <div className={styles.card}>
         {wordImage && (
-          <span
-            className={styles.wordImage}
-            role="img"
-            aria-label={wordImage.alt}
-          >
-            {wordImage.value}
-          </span>
+          <div className={styles.wordImage}>
+            <WordIllustration image={wordImage} size="110px" />
+          </div>
         )}
 
         <div className={styles.syllablesRow}>

@@ -87,6 +87,16 @@ export interface Zone {
   order: number;
 }
 
+export interface Badge {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  requirementType: 'lessons_completed' | 'stars_collected' | 'zone_completed';
+  threshold: number;
+  targetZoneId?: string;
+}
+
 export interface UserSettings {
   readingMode: 'syllables' | 'whole-word';
   difficultyThreshold: 'easy' | 'normal' | 'strict';

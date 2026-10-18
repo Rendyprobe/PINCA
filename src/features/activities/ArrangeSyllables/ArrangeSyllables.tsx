@@ -6,6 +6,7 @@ import type {
   ActivityResultItem,
 } from '@/types/content';
 import { getSyllables, getRandomPraise, getRandomHint } from '@/content';
+import { WordIllustration } from '@/components/Illustration/WordIllustration';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -63,8 +64,10 @@ export const ArrangeSyllables: React.FC<ActivityProps<WordItem>> = ({
     setIsCorrect(null);
     setIsShaking(false);
 
-    const promptText = `Susun suku kata untuk kata: ${currentItem.text}!`;
-    void tts.speak(promptText, { rate: 0.8 });
+    if (currentIndex === 0) {
+      const promptText = 'Susun suku kata untuk membentuk kata ya!';
+      void tts.speak(promptText, { rate: 0.8 });
+    }
 
     if (onProgress) {
       onProgress({ index: currentIndex + 1, total: items.length });
@@ -216,13 +219,9 @@ export const ArrangeSyllables: React.FC<ActivityProps<WordItem>> = ({
     <div className={styles.container}>
       <div className={styles.hintCard}>
         {currentItem.image && (
-          <span
-            className={styles.wordImage}
-            role="img"
-            aria-label={currentItem.image.alt}
-          >
-            {currentItem.image.value}
-          </span>
+          <div className={styles.wordImage}>
+            <WordIllustration image={currentItem.image} size="96px" />
+          </div>
         )}
         <div>
           <p className={styles.instruction}>

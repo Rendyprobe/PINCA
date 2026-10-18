@@ -1,0 +1,119 @@
+[
+  {
+    "id": "story_kelinci_sahabat",
+    "title": "Kelinci dan Sahabat Barunya",
+    "level": "story",
+    "difficulty": 2,
+    "pages": [
+      {
+        "sentenceIds": ["s_kelinci_lucu"],
+        "illustration": { "type": "emoji", "value": "🐇", "alt": "kelinci putih" }
+      },
+      {
+        "sentenceIds": ["s_sapi_makan"],
+        "illustration": { "type": "emoji", "value": "🐮", "alt": "sapi di rumput" }
+      },
+      {
+        "sentenceIds": ["s_keluarga_bahagia"],
+        "illustration": { "type": "emoji", "value": "🌳", "alt": "hutan hijau" }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Siapa yang melompat riang di kebun?",
+        "options": [
+          { "text": "Kelinci", "image": { "type": "emoji", "value": "🐇", "alt": "kelinci" } },
+          { "text": "Kuda", "image": { "type": "emoji", "value": "🐴", "alt": "kuda" } },
+          { "text": "Singa", "image": { "type": "emoji", "value": "🦁", "alt": "singa" } }
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "Apa yang dimakan oleh sapi sahabatnya?",
+        "options": [
+          { "text": "Rumput", "image": { "type": "emoji", "value": "🌱", "alt": "rumput" } },
+          { "text": "Roti", "image": { "type": "emoji", "value": "🍞", "alt": "roti" } },
+          { "text": "Ikan", "image": { "type": "emoji", "value": "🐟", "alt": "ikan" } }
+        ],
+        "answerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "story_bermain_bola",
+    "title": "Hari Ceria Bermain Bola",
+    "level": "story",
+    "difficulty": 2,
+    "pages": [
+      {
+        "sentenceIds": ["s_hari_cerah"],
+        "illustration": { "type": "emoji", "value": "☀️", "alt": "hari cerah" }
+      },
+      {
+        "sentenceIds": ["s_ayo_main"],
+        "illustration": { "type": "emoji", "value": "⚽", "alt": "bola sepak" }
+      },
+      {
+        "sentenceIds": ["s_kakak_sepeda"],
+        "illustration": { "type": "emoji", "value": "🚲", "alt": "sepeda gembira" }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Bagaimana cuaca pada hari itu?",
+        "options": [
+          { "text": "Sangat cerah", "image": { "type": "emoji", "value": "☀️", "alt": "cerah" } },
+          { "text": "Hujan deras", "image": { "type": "emoji", "value": "🌧️", "alt": "hujan" } }
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "Permainan apa yang mereka mainkan bersama?",
+        "options": [
+          { "text": "Main bola", "image": { "type": "emoji", "value": "⚽", "alt": "bola" } },
+          { "text": "Main layangan", "image": { "type": "emoji", "value": "🪁", "alt": "layangan" } }
+        ],
+        "answerIndex": 0
+      }
+    ]
+  },
+  {
+    "id": "story_dapur_ibu",
+    "title": "Kue Spesial Buatan Ibu",
+    "level": "story",
+    "difficulty": 3,
+    "pages": [
+      {
+        "sentenceIds": ["s_ibu_masak"],
+        "illustration": { "type": "svg", "value": "/illustrations/ibu.svg", "alt": "ibu memasak" }
+      },
+      {
+        "sentenceIds": ["s_ibu_kue"],
+        "illustration": { "type": "emoji", "value": "🍰", "alt": "kue lezat" }
+      },
+      {
+        "sentenceIds": ["s_keluarga_bahagia"],
+        "illustration": { "type": "svg", "value": "/illustrations/bapa.svg", "alt": "keluarga tersenyum" }
+      }
+    ],
+    "questions": [
+      {
+        "prompt": "Apa yang dibuat oleh ibu di dapur?",
+        "options": [
+          { "text": "Kue lezat", "image": { "type": "emoji", "value": "🍰", "alt": "kue" } },
+          { "text": "Sepatu", "image": { "type": "emoji", "value": "👟", "alt": "sepatu" } }
+        ],
+        "answerIndex": 0
+      },
+      {
+        "prompt": "Bagaimana perasaan seluruh keluarga?",
+        "options": [
+          { "text": "Sangat bahagia", "image": { "type": "emoji", "value": "😊", "alt": "bahagia" } },
+          { "text": "Sedih", "image": { "type": "emoji", "value": "😢", "alt": "sedih" } }
+        ],
+        "answerIndex": 0
+      }
+    ]
+  }
+]
+

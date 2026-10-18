@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import styles from './LessonRunner.module.css';
-import { getLessonById, getItemById } from '@/content';
+import { getLessonById, getItemById, getStoryById } from '@/content';
 import type {
   BaseItem,
   LetterItem,
   SyllableItem,
   WordItem,
+  StoryItem,
   ActivityResult,
   ActivityResultItem,
   UserSettings,
@@ -19,11 +20,14 @@ import { ArrangeSyllables } from '@/features/activities/ArrangeSyllables/Arrange
 import { CompleteWord } from '@/features/activities/CompleteWord/CompleteWord';
 import { KaraokeRead } from '@/features/activities/KaraokeRead/KaraokeRead';
 import { SpeechReadCheck } from '@/features/activities/SpeechReadCheck/SpeechReadCheck';
+import { StoryReader } from '@/features/activities/StoryReader/StoryReader';
 import { Button } from '@/components/Button/Button';
 import { StarBar } from '@/components/StarBar/StarBar';
 import { Mascot } from '@/components/Mascot/Mascot';
+import { Confetti } from '@/components/Confetti/Confetti';
 import { progressService } from '@/lib/progress/progressService';
 import { progressStorage } from '@/lib/storage/progressStorage';
+import { evaluateBadges, type EvaluatedBadge } from '@/lib/progress/badgeService';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -45,6 +49,7 @@ export const LessonRunner: React.FC = () => {
   const [activityIndex, setActivityIndex] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
   const [earnedStars, setEarnedStars] = useState(0);
+  const [newBadges, setNewBadges] = useState<EvaluatedBadge[]>([]);
   const [userSettings, setUserSettings] =
     useState<UserSettings>(DEFAULT_SETTINGS);
 
@@ -110,19 +115,41 @@ export const LessonRunner: React.FC = () => {
         0,
       );
 
+      const profileBefore = await progressStorage.getActiveProfile();
+      const prevUnlockedIds = new Set(
+        profileBefore
+          ? evaluateBadges(profileBefore)
+              .filter((b) => b.isUnlocked)
+              .map((b) => b.id)
+          : [],
+      );
+
       const stars = progressService.calculateStars(allOutcomes, totalHints);
       setEarnedStars(stars);
       setIsCompleted(true);
 
       await progressService.completeLesson(lesson.id, stars);
 
+      const updatedProfile = await progressStorage.getActiveProfile();
+      const newlyUnlocked = updatedProfile
+        ? evaluateBadges(updatedProfile).filter(
+            (b) => b.isUnlocked && !prevUnlockedIds.has(b.id),
+          )
+        : [];
+      setNewBadges(newlyUnlocked);
+
       sfx.playCelebrate();
       setTimeout(() => {
         sfx.playStarPop();
       }, 500);
 
+      const starWord = ['nol', 'satu', 'dua', 'tiga'][stars] ?? 'tiga';
+      const firstBadge = newlyUnlocked[0];
+      const badgePraise = firstBadge
+        ? ` dan stiker baru ${firstBadge.title}!`
+        : '!';
       void tts.speak(
-        `Hore! Kamu hebat sekali! Kamu mendapat ${['nol', 'satu', 'dua', 'tiga'][stars]} bintang!`,
+        `Hore! Kamu hebat sekali! Kamu mendapat ${starWord} bintang${badgePraise}`,
       );
     }
   };
@@ -223,9 +250,21 @@ export const LessonRunner: React.FC = () => {
               settings={userSettings}
             />
           )}
+
+          {currentActivity.type === 'story_reader' && (
+            <StoryReader
+              story={
+                (getStoryById(lesson.itemIds[0] ?? '') ??
+                  (lessonItems[0] as unknown as StoryItem)) as StoryItem
+              }
+              onComplete={handleActivityComplete}
+              settings={userSettings}
+            />
+          )}
         </div>
       ) : (
-        <div className={styles.celebrationCard}>
+        <div className={styles.celebrationCard} style={{ position: 'relative' }}>
+          <Confetti count={32} />
           <Mascot
             mood="merayakan"
             speechBubble="Luar biasa! Kamu pintar sekali!"
@@ -237,6 +276,21 @@ export const LessonRunner: React.FC = () => {
           </p>
 
           <StarBar stars={earnedStars} size="large" />
+
+          {newBadges[0] && (
+            <div className={styles.newBadgeCard}>
+              <span className={styles.newBadgeIcon}>{newBadges[0].icon}</span>
+              <div className={styles.newBadgeInfo}>
+                <span className={styles.newBadgeTag}>🏆 STIKER BARU DIRAIH!</span>
+                <span className={styles.newBadgeTitle}>
+                  {newBadges[0].title}
+                </span>
+                <span className={styles.newBadgeDesc}>
+                  {newBadges[0].description}
+                </span>
+              </div>
+            </div>
+          )}
 
           <div style={{ marginTop: '16px' }}>
             <Button variant="primary" size="large" onClick={handleBackToMap}>

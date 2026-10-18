@@ -10,34 +10,44 @@ import { StarBar } from '@/components/StarBar/StarBar';
 import { Mascot } from '@/components/Mascot/Mascot';
 import { Button } from '@/components/Button/Button';
 import { ParentSettingsModal } from '@/features/parent/ParentSettingsModal';
+import { BadgeAlbumModal } from '@/features/rewards/BadgeAlbumModal';
 import { sfx } from '@/lib/audio/sfx';
 import { tts } from '@/lib/audio/tts';
 
 export interface LearningMapProps {
   onOpenProfile?: () => void;
+  profile?: ChildProfile | null;
+  onUpdateProfile?: (updated: ChildProfile) => void;
 }
 
-export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
+export const LearningMap: React.FC<LearningMapProps> = ({
+  onOpenProfile,
+  profile: propProfile,
+  onUpdateProfile,
+}) => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const queryZone = searchParams.get('zone');
 
-  const [profile, setProfile] = useState<ChildProfile | null>(null);
+  const [internalProfile, setInternalProfile] = useState<ChildProfile | null>(
+    null,
+  );
+  const profile = propProfile ?? internalProfile;
   const [selectedZoneId, setSelectedZoneId] = useState<string>('zone_1');
   const [showParentSettings, setShowParentSettings] = useState(false);
+  const [showBadgeAlbum, setShowBadgeAlbum] = useState(false);
   const zones = useMemo(() => getZones(), []);
 
   useEffect(() => {
     let active = true;
     void progressStorage.getActiveProfile().then((p) => {
       if (!active) return;
-      setProfile(p);
+      setInternalProfile(p);
       const targetZone = queryZone || p.activeZoneId || 'zone_1';
       const validZoneIds = zones.map((z) => z.id);
       if (validZoneIds.includes(targetZone)) {
         setSelectedZoneId(targetZone);
       }
-      void tts.speak('Halo, Teman! Ayo kita lanjutkan petualangan membaca.');
     });
     return () => {
       active = false;
@@ -52,11 +62,6 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
     setSelectedZoneId(zoneId);
     if (profile) {
       void progressStorage.saveProfile({ ...profile, activeZoneId: zoneId });
-    }
-
-    const currentZone = zones.find((z) => z.id === zoneId);
-    if (currentZone) {
-      void tts.speak(`Selamat datang di ${currentZone.title}!`);
     }
   };
 
@@ -102,6 +107,19 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
         </Button>
 
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+          <Button
+            variant="ghost"
+            size="normal"
+            onClick={() => {
+              sfx.playClick();
+              setShowBadgeAlbum(true);
+            }}
+            ariaLabel="Lihat Album Stiker Prestasi"
+          >
+            <span>🏆</span>
+            <span>Stiker</span>
+          </Button>
+
           <Button
             variant="ghost"
             size="normal"
@@ -302,12 +320,20 @@ export const LearningMap: React.FC<LearningMapProps> = ({ onOpenProfile }) => {
         />
       </div>
 
+      {showBadgeAlbum && (
+        <BadgeAlbumModal
+          profile={profile}
+          onClose={() => setShowBadgeAlbum(false)}
+        />
+      )}
+
       {showParentSettings && (
         <ParentSettingsModal
           profile={profile}
           onClose={() => setShowParentSettings(false)}
           onSave={async (updatedProfile) => {
-            setProfile(updatedProfile);
+            setInternalProfile(updatedProfile);
+            onUpdateProfile?.(updatedProfile);
             await progressStorage.saveProfile(updatedProfile);
             setShowParentSettings(false);
           }}

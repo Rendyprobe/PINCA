@@ -12,6 +12,7 @@ import {
   getRandomPraise,
   getRandomHint,
 } from '@/content';
+import { WordIllustration } from '@/components/Illustration/WordIllustration';
 import { tts } from '@/lib/audio/tts';
 import { sfx } from '@/lib/audio/sfx';
 
@@ -65,11 +66,18 @@ export const ListenTap: React.FC<ActivityProps<SupportedItem>> = ({
     setShakeId(null);
     setWrongIds([]);
 
-    // TTS membacakan instruksi
-    const promptText = isLetter(currentItem)
-      ? `Dengarkan ya... Mana huruf ${currentItem.soundTts}?`
-      : `Dengarkan ya... Mana suku kata ${currentItem.ttsText ?? currentItem.text}?`;
-    void tts.speak(promptText, { rate: 0.75 });
+    const targetSound = isLetter(currentItem)
+      ? (currentItem.ttsText ?? currentItem.soundTts)
+      : (currentItem.ttsText ?? currentItem.text);
+
+    if (currentIndex === 0) {
+      const promptText = `Dengarkan bunyi lalu ketuk yang tepat ya! Mana ${targetSound}?`;
+      void tts.speak(promptText, { rate: 0.75 });
+    } else {
+      void tts.speak(targetSound, {
+        audioSrc: currentItem.audioSrc,
+      });
+    }
 
     if (onProgress) {
       onProgress({ index: currentIndex + 1, total: items.length });
@@ -220,13 +228,9 @@ export const ListenTap: React.FC<ActivityProps<SupportedItem>> = ({
               )}
               <span className={styles.letterDisplay}>{optDisplay}</span>
               {opt.image && (
-                <span
-                  className={styles.exampleImage}
-                  role="img"
-                  aria-label={opt.image.alt}
-                >
-                  {opt.image.value}
-                </span>
+                <div className={styles.exampleImage}>
+                  <WordIllustration image={opt.image} size="64px" />
+                </div>
               )}
             </div>
           );

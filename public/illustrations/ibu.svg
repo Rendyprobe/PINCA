@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="Ibu">
+  <!-- Background Badge -->
+  <circle cx="100" cy="100" r="92" fill="#FFEAA7" opacity="0.4" />
+  <circle cx="100" cy="100" r="88" fill="#FFF8E7" stroke="#FFA94D" stroke-width="4" />
+
+  <!-- Body / Clothes -->
+  <path d="M 50 188 C 50 148, 70 142, 100 142 C 130 142, 150 148, 150 188 Z" fill="#4DABF7" />
+  <!-- Collar -->
+  <path d="M 85 142 L 100 162 L 115 142 Z" fill="#FFFFFF" />
+  <circle cx="100" cy="172" r="3" fill="#FFFFFF" />
+
+  <!-- Neck -->
+  <rect x="91" y="126" width="18" height="20" rx="9" fill="#FFD2A5" />
+
+  <!-- Back Hair (soft bun) -->
+  <circle cx="100" cy="62" r="36" fill="#4A3428" />
+
+  <!-- Head / Face -->
+  <ellipse cx="100" cy="98" rx="36" ry="38" fill="#FFDFC4" />
+
+  <!-- Ears -->
+  <ellipse cx="64" cy="98" rx="6" ry="9" fill="#FFDFC4" />
+  <ellipse cx="136" cy="98" rx="6" ry="9" fill="#FFDFC4" />
+  <!-- Cute Earring dots -->
+  <circle cx="63" cy="103" r="3" fill="#FFA94D" />
+  <circle cx="137" cy="103" r="3" fill="#FFA94D" />
+
+  <!-- Front Hair -->
+  <path d="M 64 92 C 64 64, 76 56, 100 56 C 124 56, 136 64, 136 92 C 130 76, 114 70, 100 70 C 86 70, 70 76, 64 92 Z" fill="#4A3428" />
+  <!-- Bangs Curve -->
+  <path d="M 66 84 C 78 72, 92 78, 100 82 C 108 76, 126 72, 134 84 C 128 72, 115 65, 100 65 C 85 65, 72 72, 66 84 Z" fill="#3D291E" />
+
+  <!-- Eyebrows -->
+  <path d="M 80 84 Q 87 79 94 83" stroke="#4A3428" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <path d="M 106 83 Q 113 79 120 84" stroke="#4A3428" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Smiling Eyes -->
+  <path d="M 78 94 Q 86 87 94 94" stroke="#2B2B3A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <path d="M 106 94 Q 114 87 122 94" stroke="#2B2B3A" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  <!-- Eyelashes -->
+  <path d="M 94 92 L 98 89" stroke="#2B2B3A" stroke-width="2" stroke-linecap="round" />
+  <path d="M 122 92 L 126 89" stroke="#2B2B3A" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Cute Nose -->
+  <path d="M 98 102 Q 100 106 102 102" stroke="#E0A370" stroke-width="2.5" stroke-linecap="round" fill="none" />
+
+  <!-- Rosy Blushing Cheeks -->
+  <ellipse cx="76" cy="106" rx="8" ry="5" fill="#FF8787" opacity="0.6" />
+  <ellipse cx="124" cy="106" rx="8" ry="5" fill="#FF8787" opacity="0.6" />
+
+  <!-- Happy Smile -->
+  <path d="M 88 112 Q 100 126 112 112" stroke="#2B2B3A" stroke-width="3" stroke-linecap="round" fill="#E03131" />
+  <!-- Teeth highlight -->
+  <path d="M 92 113 Q 100 117 108 113" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="#FFFFFF" />
+
+  <!-- Hair Clip Flower -->
+  <circle cx="128" cy="74" r="7" fill="#FF6B6B" />
+  <circle cx="128" cy="74" r="3" fill="#FFE066" />
+</svg>
+

@@ -7,7 +7,10 @@ import {
   letterItemsFileSchema,
   syllableItemsFileSchema,
   wordItemsFileSchema,
+  sentenceItemsFileSchema,
+  storyItemsFileSchema,
   lessonsFileSchema,
+  badgesFileSchema,
 } from '../src/content/schema';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -52,9 +55,43 @@ function validateContent() {
     hasErrors = true;
   }
 
-  // 3. Validasi words (zone1-words.json & zone3-words.json)
+  // 2b. Validasi badges.json
+  const badgesPath = path.join(contentDir, 'badges.json');
+  if (fs.existsSync(badgesPath)) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(badgesPath, 'utf-8'));
+      const badges = badgesFileSchema.parse(raw);
+      const badgeIds = new Set<string>();
+      badges.forEach((b) => {
+        if (badgeIds.has(b.id)) {
+          console.error(`❌ Duplikat lencana ID: ${b.id}`);
+          hasErrors = true;
+        }
+        badgeIds.add(b.id);
+        if (b.targetZoneId && !zoneIds.has(b.targetZoneId)) {
+          console.error(
+            `❌ Lencana ${b.id} merujuk targetZoneId tidak valid: ${b.targetZoneId}`,
+          );
+          hasErrors = true;
+        }
+      });
+      console.log(`✅ badges.json valid (${badges.length} lencana terdefinisi)`);
+    } catch (err) {
+      console.error('❌ Gagal validasi badges.json:', err);
+      hasErrors = true;
+    }
+  } else {
+    console.error('❌ File badges.json tidak ditemukan!');
+    hasErrors = true;
+  }
+
+  // 3. Validasi words (zone1-words.json, zone3-words.json, zone4-words.json)
   const wordIds = new Set<string>();
-  const wordFiles = ['words/zone1-words.json', 'words/zone3-words.json'];
+  const wordFiles = [
+    'words/zone1-words.json',
+    'words/zone3-words.json',
+    'words/zone4-words.json',
+  ];
   for (const wf of wordFiles) {
     const fullPath = path.join(contentDir, wf);
     if (fs.existsSync(fullPath)) {
@@ -140,12 +177,84 @@ function validateContent() {
     hasErrors = true;
   }
 
-  // 6. Validasi lessons (zone1, zone2, zone3)
-  const allItemIds = new Set([...letterIds, ...syllableIds, ...wordIds]);
+  // 5b. Validasi sentences (sentences/zone5-sentences.json)
+  const sentenceIds = new Set<string>();
+  const sentencesPath = path.join(contentDir, 'sentences/zone5-sentences.json');
+  if (fs.existsSync(sentencesPath)) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(sentencesPath, 'utf-8'));
+      const sentences = sentenceItemsFileSchema.parse(raw);
+      sentences.forEach((s) => {
+        if (sentenceIds.has(s.id)) {
+          console.error(`❌ Duplikat kalimat ID: ${s.id}`);
+          hasErrors = true;
+        }
+        sentenceIds.add(s.id);
+      });
+      console.log(
+        `✅ sentences/zone5-sentences.json valid (${sentences.length} kalimat terverifikasi)`,
+      );
+    } catch (err) {
+      console.error('❌ Gagal validasi sentences/zone5-sentences.json:', err);
+      hasErrors = true;
+    }
+  } else {
+    console.error('❌ File sentences/zone5-sentences.json tidak ditemukan!');
+    hasErrors = true;
+  }
+
+  // 5c. Validasi stories (stories/zone6-stories.json)
+  const storyIds = new Set<string>();
+  const storiesPath = path.join(contentDir, 'stories/zone6-stories.json');
+  if (fs.existsSync(storiesPath)) {
+    try {
+      const raw = JSON.parse(fs.readFileSync(storiesPath, 'utf-8'));
+      const stories = storyItemsFileSchema.parse(raw);
+      stories.forEach((st) => {
+        if (storyIds.has(st.id)) {
+          console.error(`❌ Duplikat cerita ID: ${st.id}`);
+          hasErrors = true;
+        }
+        storyIds.add(st.id);
+        // Validasi rujukan kalimat di halaman cerita
+        st.pages.forEach((pg) => {
+          pg.sentenceIds.forEach((sid) => {
+            if (!sentenceIds.has(sid)) {
+              console.error(
+                `❌ Cerita ${st.id} merujuk sentenceId tidak valid: ${sid}`,
+              );
+              hasErrors = true;
+            }
+          });
+        });
+      });
+      console.log(
+        `✅ stories/zone6-stories.json valid (${stories.length} cerita mini terverifikasi)`,
+      );
+    } catch (err) {
+      console.error('❌ Gagal validasi stories/zone6-stories.json:', err);
+      hasErrors = true;
+    }
+  } else {
+    console.error('❌ File stories/zone6-stories.json tidak ditemukan!');
+    hasErrors = true;
+  }
+
+  // 6. Validasi lessons (zone1, zone2, zone3, zone4, zone5, zone6)
+  const allItemIds = new Set([
+    ...letterIds,
+    ...syllableIds,
+    ...wordIds,
+    ...sentenceIds,
+    ...storyIds,
+  ]);
   const lessonFiles = [
     'lessons/zone1-lessons.json',
     'lessons/zone2-lessons.json',
     'lessons/zone3-lessons.json',
+    'lessons/zone4-lessons.json',
+    'lessons/zone5-lessons.json',
+    'lessons/zone6-lessons.json',
   ];
 
   for (const lf of lessonFiles) {
@@ -202,6 +311,15 @@ function validateContent() {
               if (invalid.length > 0) {
                 console.error(
                   `❌ Pelajaran ${ls.id} memiliki aktivitas listen_tap tetapi merujuk item yang tidak didukung: ${invalid.join(', ')}`,
+                );
+                hasErrors = true;
+              }
+            }
+            if (act.type === 'story_reader') {
+              const invalid = ls.itemIds.filter((id) => !storyIds.has(id));
+              if (invalid.length > 0) {
+                console.error(
+                  `❌ Pelajaran ${ls.id} memiliki aktivitas story_reader tetapi merujuk item non-cerita: ${invalid.join(', ')}`,
                 );
                 hasErrors = true;
               }

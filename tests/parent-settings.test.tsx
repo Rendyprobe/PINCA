@@ -95,5 +95,37 @@ describe('ParentSettingsModal Component', () => {
     expect(saved?.unlockedAllLessons).toBe(true);
     expect(saved?.settings?.micEnabled).toBe(true);
   });
+
+  it('allows navigating to Stats and Backup tabs when unlocked', async () => {
+    const user = userEvent.setup();
+    render(
+      <ParentSettingsModal
+        profile={mockProfile}
+        onSave={vi.fn()}
+        onClose={vi.fn()}
+      />,
+    );
+
+    const questionEl = document.querySelector('[class*="gateQuestion"]');
+    const match = questionEl?.textContent?.match(/(\d+)\s*\+\s*(\d+)/);
+    const sum =
+      parseInt(match?.[1] ?? '0', 10) + parseInt(match?.[2] ?? '0', 10);
+
+    const input = screen.getByLabelText(/Jawaban pertanyaan keamanan orang tua/i);
+    await user.type(input, String(sum));
+    await user.click(screen.getByRole('button', { name: /Buka Pengaturan/i }));
+
+    // Switch to Stats tab
+    const statsTab = screen.getByRole('tab', { name: /Kemajuan Belajar/i });
+    await user.click(statsTab);
+    expect(screen.getByText(/Tips Mendampingi Anak Membaca/i)).toBeInTheDocument();
+    expect(screen.getByText(/Bintang Terkumpul/i)).toBeInTheDocument();
+
+    // Switch to Backup tab
+    const backupTab = screen.getByRole('tab', { name: /Cadangan Data/i });
+    await user.click(backupTab);
+    expect(screen.getByText(/Ekspor Cadangan Data/i)).toBeInTheDocument();
+    expect(screen.getByText(/Pulihkan Cadangan Data/i)).toBeInTheDocument();
+  });
 });
 

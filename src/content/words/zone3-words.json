@@ -6,7 +6,7 @@
     "syllables": ["i", "bu"],
     "difficulty": 1,
     "tags": ["keluarga"],
-    "image": { "type": "emoji", "value": "👩", "alt": "ibu tercinta" },
+    "image": { "type": "svg", "value": "/illustrations/ibu.svg", "alt": "Ibu tersenyum manis" },
     "imageRequired": true,
     "acceptedAliases": ["ibu"]
   },
@@ -17,7 +17,7 @@
     "syllables": ["ba", "pa"],
     "difficulty": 1,
     "tags": ["keluarga"],
-    "image": { "type": "emoji", "value": "👨", "alt": "bapa tersenyum" },
+    "image": { "type": "svg", "value": "/illustrations/bapa.svg", "alt": "Bapak tersenyum ramah" },
     "imageRequired": true,
     "acceptedAliases": ["bapa", "bapak"]
   },
@@ -28,7 +28,7 @@
     "syllables": ["ma", "ma"],
     "difficulty": 1,
     "tags": ["keluarga"],
-    "image": { "type": "emoji", "value": "👩‍🦰", "alt": "mama manis" },
+    "image": { "type": "svg", "value": "/illustrations/ibu.svg", "alt": "Mama manis" },
     "imageRequired": true,
     "acceptedAliases": ["mama"]
   },
@@ -39,7 +39,7 @@
     "syllables": ["pa", "pa"],
     "difficulty": 1,
     "tags": ["keluarga"],
-    "image": { "type": "emoji", "value": "👨‍🦰", "alt": "papa ceria" },
+    "image": { "type": "svg", "value": "/illustrations/bapa.svg", "alt": "Papa ceria" },
     "imageRequired": true,
     "acceptedAliases": ["papa"]
   },
@@ -50,7 +50,7 @@
     "syllables": ["bi", "bi"],
     "difficulty": 1,
     "tags": ["keluarga"],
-    "image": { "type": "emoji", "value": "🧕", "alt": "bibi ramah" },
+    "image": { "type": "svg", "value": "/illustrations/bibi.svg", "alt": "Bibi ramah" },
     "imageRequired": true,
     "acceptedAliases": ["bibi"]
   },
@@ -62,7 +62,7 @@
     "syllables": ["da", "du"],
     "difficulty": 1,
     "tags": ["mainan"],
-    "image": { "type": "emoji", "value": "🎲", "alt": "dadu angka" },
+    "image": { "type": "svg", "value": "/illustrations/dadu.svg", "alt": "Dadu merah bersudut lembut" },
     "imageRequired": true,
     "acceptedAliases": ["dadu"]
   },
@@ -73,7 +73,7 @@
     "syllables": ["ka", "ki"],
     "difficulty": 1,
     "tags": ["tubuh"],
-    "image": { "type": "emoji", "value": "🦶", "alt": "kaki berjalan" },
+    "image": { "type": "svg", "value": "/illustrations/kaki.svg", "alt": "Kaki memakai sepatu biru" },
     "imageRequired": true,
     "acceptedAliases": ["kaki"]
   },
@@ -84,7 +84,7 @@
     "syllables": ["gi", "gi"],
     "difficulty": 1,
     "tags": ["tubuh"],
-    "image": { "type": "emoji", "value": "🦷", "alt": "gigi putih bersih" },
+    "image": { "type": "svg", "value": "/illustrations/gigi.svg", "alt": "Gigi putih bersih tersenyum" },
     "imageRequired": true,
     "acceptedAliases": ["gigi"]
   },
@@ -95,7 +95,7 @@
     "syllables": ["pi", "pi"],
     "difficulty": 1,
     "tags": ["tubuh"],
-    "image": { "type": "emoji", "value": "😊", "alt": "pipi tersenyum" },
+    "image": { "type": "svg", "value": "/illustrations/pipi.svg", "alt": "Pipi merona tersenyum ceria" },
     "imageRequired": true,
     "acceptedAliases": ["pipi"]
   },
@@ -151,7 +151,7 @@
     "syllables": ["bu", "ku"],
     "difficulty": 1,
     "tags": ["benda"],
-    "image": { "type": "emoji", "value": "📘", "alt": "buku cerita" },
+    "image": { "type": "svg", "value": "/illustrations/buku.svg", "alt": "Buku cerita bergambar" },
     "imageRequired": true,
     "acceptedAliases": ["buku"]
   },
@@ -173,7 +173,7 @@
     "syllables": ["ba", "ju"],
     "difficulty": 1,
     "tags": ["pakaian"],
-    "image": { "type": "emoji", "value": "👚", "alt": "baju bersih" },
+    "image": { "type": "svg", "value": "/illustrations/baju.svg", "alt": "Baju kaus bintang ceria" },
     "imageRequired": true,
     "acceptedAliases": ["baju"]
   },
@@ -184,7 +184,7 @@
     "syllables": ["me", "ja"],
     "difficulty": 1,
     "tags": ["benda"],
-    "image": { "type": "emoji", "value": "🪵", "alt": "meja belajar" },
+    "image": { "type": "svg", "value": "/illustrations/meja.svg", "alt": "Meja belajar kayu rapi" },
     "imageRequired": true,
     "acceptedAliases": ["meja"]
   },
@@ -195,7 +195,7 @@
     "syllables": ["sa", "pu"],
     "difficulty": 1,
     "tags": ["benda"],
-    "image": { "type": "emoji", "value": "🧹", "alt": "sapu lantai" },
+    "image": { "type": "svg", "value": "/illustrations/sapu.svg", "alt": "Sapu bersih berbingkai pita" },
     "imageRequired": true,
     "acceptedAliases": ["sapu"]
   },
@@ -250,7 +250,7 @@
     "syllables": ["ka", "do"],
     "difficulty": 1,
     "tags": ["benda"],
-    "image": { "type": "emoji", "value": "🎁", "alt": "kotak kado" },
+    "image": { "type": "svg", "value": "/illustrations/kado.svg", "alt": "Kotak kado berpita emas" },
     "imageRequired": true,
     "acceptedAliases": ["kado"]
   },
@@ -261,7 +261,7 @@
     "syllables": ["ro", "da"],
     "difficulty": 1,
     "tags": ["benda"],
-    "image": { "type": "emoji", "value": "🛞", "alt": "roda berputar" },
+    "image": { "type": "svg", "value": "/illustrations/roda.svg", "alt": "Roda berputar ceria" },
     "imageRequired": true,
     "acceptedAliases": ["roda"]
   },
@@ -328,7 +328,7 @@
     "syllables": ["ro", "ti"],
     "difficulty": 1,
     "tags": ["makanan"],
-    "image": { "type": "emoji", "value": "🍞", "alt": "roti tawar" },
+    "image": { "type": "svg", "value": "/illustrations/roti.svg", "alt": "Roti tawar selai stroberi" },
     "imageRequired": true,
     "acceptedAliases": ["roti"]
   },
@@ -339,7 +339,7 @@
     "syllables": ["su", "su"],
     "difficulty": 1,
     "tags": ["makanan"],
-    "image": { "type": "emoji", "value": "🥛", "alt": "segelas susu" },
+    "image": { "type": "svg", "value": "/illustrations/susu.svg", "alt": "Kotak susu sapi segar" },
     "imageRequired": true,
     "acceptedAliases": ["susu"]
   },
@@ -361,7 +361,7 @@
     "syllables": ["ma", "du"],
     "difficulty": 1,
     "tags": ["makanan"],
-    "image": { "type": "emoji", "value": "🍯", "alt": "madu manis" },
+    "image": { "type": "svg", "value": "/illustrations/madu.svg", "alt": "Toples madu manis lebah" },
     "imageRequired": true,
     "acceptedAliases": ["madu"]
   },
@@ -383,7 +383,7 @@
     "syllables": ["ko", "pi"],
     "difficulty": 1,
     "tags": ["makanan"],
-    "image": { "type": "emoji", "value": "☕", "alt": "cangkir kopi" },
+    "image": { "type": "svg", "value": "/illustrations/kopi.svg", "alt": "Cangkir kopi hangat" },
     "imageRequired": true,
     "acceptedAliases": ["kopi"]
   },
@@ -394,7 +394,7 @@
     "syllables": ["ce", "ri"],
     "difficulty": 1,
     "tags": ["makanan"],
-    "image": { "type": "emoji", "value": "🍒", "alt": "buah ceri" },
+    "image": { "type": "svg", "value": "/illustrations/ceri.svg", "alt": "Sepasang buah ceri merah ceria" },
     "imageRequired": true,
     "acceptedAliases": ["ceri"]
   },
@@ -439,7 +439,7 @@
     "syllables": ["ku", "ra"],
     "difficulty": 1,
     "tags": ["hewan"],
-    "image": { "type": "emoji", "value": "🐢", "alt": "kura-kura" },
+    "image": { "type": "svg", "value": "/illustrations/kura.svg", "alt": "Kura-kura hijau lucu" },
     "imageRequired": true,
     "acceptedAliases": ["kura"]
   },

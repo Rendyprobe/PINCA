@@ -1,0 +1,32 @@
+[
+  {
+    "id": "l6_1",
+    "zoneId": "zone_6",
+    "title": "Kelinci & Sahabat Baru",
+    "itemIds": ["story_kelinci_sahabat"],
+    "activities": [
+      { "type": "story_reader" }
+    ]
+  },
+  {
+    "id": "l6_2",
+    "zoneId": "zone_6",
+    "title": "Hari Ceria Bermain Bola",
+    "itemIds": ["story_bermain_bola"],
+    "activities": [
+      { "type": "story_reader" }
+    ],
+    "unlockAfter": ["l6_1"]
+  },
+  {
+    "id": "l6_3",
+    "zoneId": "zone_6",
+    "title": "Kue Spesial Buatan Ibu",
+    "itemIds": ["story_dapur_ibu"],
+    "activities": [
+      { "type": "story_reader" }
+    ],
+    "unlockAfter": ["l6_2"]
+  }
+]
+
