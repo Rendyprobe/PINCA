@@ -2,23 +2,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 28px;
+  gap: 20px;
   width: 100%;
+}
+
+.activityHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 580px;
+  padding: 0 4px;
+}
+
+.eyebrow {
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.itemCount {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
 }
 
 .card {
   background-color: var(--color-surface);
   border: 4px solid var(--color-primary);
   border-radius: var(--radius-lg);
-  padding: 32px 40px;
+  padding: 28px 32px;
   box-shadow: var(--shadow-md);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   width: 100%;
-  max-width: 520px;
+  max-width: 580px;
 }
 
 .wordImage {
@@ -30,15 +53,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin: 12px 0;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 8px 0;
+  max-width: 100%;
 }
 
 .syllableBlock {
   font-family: var(--font-display);
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.1;
   padding: 8px 18px;
   border-radius: var(--radius-md);
   color: var(--color-text);
@@ -48,34 +73,135 @@
   user-select: none;
 }
 
-.syllableActive {
-  background-color: var(--color-progress-light);
-  border-color: var(--color-progress);
+.sentenceBlock {
+  font-size: 2.3rem;
+  padding: 8px 14px;
+  border-radius: 18px;
+}
+
+.sentencePunctuation {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
   color: var(--color-text);
-  transform: scale(1.12);
+  margin-left: -4px;
+  align-self: center;
+  user-select: none;
+}
+
+.syllableActive {
+  background-color: var(--color-progress-light, #fff9db);
+  border-color: var(--color-progress, #ffd43b);
+  color: var(--color-text);
+  transform: scale(1.08);
   box-shadow: 0 6px 18px rgba(255, 212, 59, 0.4);
 }
 
 .syllableDone {
-  background-color: var(--color-success-light);
-  border-color: var(--color-success);
-  border-bottom: 5px solid var(--color-success);
-  color: var(--color-success);
+  background-color: var(--color-success-light, #ebfbee);
+  border-color: var(--color-success, #40c057);
+  border-bottom: 5px solid var(--color-success, #40c057);
+  color: var(--color-success, #40c057);
   transform: scale(1.04);
+}
+
+.feedbackText {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.micSuccessNotice {
+  color: var(--color-success);
+  font-size: var(--font-size-base);
+  font-weight: 800;
+  background-color: var(--color-success-light, #ebfbee);
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--color-success);
 }
 
 .controls {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
   align-items: center;
   justify-content: center;
+  margin-top: 4px;
+}
+
+.micCheckBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 12px 22px;
+  border-radius: 24px;
+  border: 2px solid #e03131;
+  background-color: #fff5f5;
+  color: #c92a2a;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 0 #ffc9c9;
+}
+
+.micCheckBtn:hover:not(:disabled) {
+  background-color: #ffe3e3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #ffc9c9;
+}
+
+.micCheckBtn:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #ffc9c9;
+}
+
+.micCheckBtn.listening {
+  background-color: #e03131;
+  color: #ffffff;
+  border-color: #c92a2a;
+  animation: pulseMic 1.2s infinite alternate ease-in-out;
+  box-shadow: 0 4px 14px rgba(224, 49, 49, 0.4);
+}
+
+@keyframes pulseMic {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(224, 49, 49, 0.6);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(224, 49, 49, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 20px 16px;
+  }
+  .syllableBlock {
+    font-size: 2.6rem;
+    padding: 6px 14px;
+  }
+  .sentenceBlock {
+    font-size: 1.8rem;
+    padding: 6px 12px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .syllableBlock,
   .syllableActive,
-  .syllableDone {
+  .syllableDone,
+  .micCheckBtn.listening {
     transition: none;
     transform: none;
+    animation: none;
   }
 }

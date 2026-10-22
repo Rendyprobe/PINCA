@@ -1,10 +1,10 @@
 {
-  "voice": "Supertonic3-F3",
+  "voice": "Gemini-Kore (Bu Delia)",
   "language": "id",
   "speed": 0.95,
   "steps": 8,
   "seed": 42,
-  "model": "supertone-oss-archive/supertonic-3",
+  "model": "gemini-2.5-flash-tts",
   "revision": "aafc6e32416a594460b32413efc49d7fe4ce6d46",
   "sample_rate": 44100,
   "entries": {
@@ -24,17 +24,9 @@
       "text": "apel",
       "src": "audio/delia-kore/326757f7d6be83f33d38.wav"
     },
-    "ayo baca aa": {
-      "text": "Ayo baca aa",
-      "src": "audio/delia-f3/70c3458b2acd3490f026.mp3"
-    },
     "ayo baca apel": {
       "text": "Ayo baca apel",
       "src": "audio/delia-kore/3b6ce0d801aca1f19cfe.wav"
-    },
-    "ayo baca baa": {
-      "text": "Ayo baca baa",
-      "src": "audio/delia-f3/5ded53808efea62a2e03.mp3"
     },
     "ayo baca bahu": {
       "text": "Ayo baca bahu",
@@ -52,25 +44,9 @@
       "text": "Ayo baca batu",
       "src": "audio/delia-kore/92dffd18c0ff2c45494f.wav"
     },
-    "ayo baca bee": {
-      "text": "Ayo baca bee",
-      "src": "audio/delia-f3/28354debcdce6dd6b680.mp3"
-    },
-    "ayo baca beh": {
-      "text": "Ayo baca beh",
-      "src": "audio/delia-f3/4813ae8767900de5cdc7.mp3"
-    },
-    "ayo baca bersama": {
-      "text": "Ayo baca bersama!",
-      "src": "audio/delia-f3/8820b5c4b3ed2de62d02.mp3"
-    },
     "ayo baca bibi": {
       "text": "Ayo baca bibi",
       "src": "audio/delia-kore/3f56d6676da98b6b584c.wav"
-    },
-    "ayo baca bii": {
-      "text": "Ayo baca bii",
-      "src": "audio/delia-f3/3554242258ec2c5d05c2.mp3"
     },
     "ayo baca biji": {
       "text": "Ayo baca biji",
@@ -80,57 +56,17 @@
       "text": "Ayo baca bola",
       "src": "audio/delia-kore/dca08eaabe2987324c33.wav"
     },
-    "ayo baca boo": {
-      "text": "Ayo baca boo",
-      "src": "audio/delia-f3/b8d4bc5c4d711413b439.mp3"
-    },
     "ayo baca buku": {
       "text": "Ayo baca buku",
       "src": "audio/delia-kore/23a1b600c7782c6a535b.wav"
-    },
-    "ayo baca buu": {
-      "text": "Ayo baca buu",
-      "src": "audio/delia-f3/6b5f26a039daf58cd378.mp3"
-    },
-    "ayo baca caa": {
-      "text": "Ayo baca caa",
-      "src": "audio/delia-f3/bc3abbb5d98e82ecbb0e.mp3"
     },
     "ayo baca cacing": {
       "text": "Ayo baca cacing",
       "src": "audio/delia-kore/f5011975f90735129ac3.wav"
     },
-    "ayo baca cee": {
-      "text": "Ayo baca cee",
-      "src": "audio/delia-f3/baa06e8c0bef079d0f6a.mp3"
-    },
-    "ayo baca ceh": {
-      "text": "Ayo baca ceh",
-      "src": "audio/delia-f3/8056e198ef66a27cf3ea.mp3"
-    },
-    "ayo baca ceri": {
-      "text": "Ayo baca ceri",
-      "src": "audio/delia-f3/2dcf848a9b342439d9e3.mp3"
-    },
-    "ayo baca cii": {
-      "text": "Ayo baca cii",
-      "src": "audio/delia-f3/e88b5c6b1115423c5e0e.mp3"
-    },
-    "ayo baca coo": {
-      "text": "Ayo baca coo",
-      "src": "audio/delia-f3/3d58ac5348135d70ce93.mp3"
-    },
     "ayo baca cumi": {
       "text": "Ayo baca cumi",
       "src": "audio/delia-kore/e62870d5d4e5c8f0f623.wav"
-    },
-    "ayo baca cuu": {
-      "text": "Ayo baca cuu",
-      "src": "audio/delia-f3/1dcaf9ae984677a734ca.mp3"
-    },
-    "ayo baca daa": {
-      "text": "Ayo baca daa",
-      "src": "audio/delia-f3/3a7400355a8c8ad07544.mp3"
     },
     "ayo baca dada": {
       "text": "Ayo baca dada",
@@ -144,185 +80,33 @@
       "text": "Ayo baca daun",
       "src": "audio/delia-kore/32cfa99a45d564bd7166.wav"
     },
-    "ayo baca dee": {
-      "text": "Ayo baca dee",
-      "src": "audio/delia-f3/87213b63da369de076ef.mp3"
-    },
-    "ayo baca deh": {
-      "text": "Ayo baca deh",
-      "src": "audio/delia-f3/3da0c65d4d98376bf70f.mp3"
-    },
-    "ayo baca dii": {
-      "text": "Ayo baca dii",
-      "src": "audio/delia-f3/e36dd7424881afe8438e.mp3"
-    },
-    "ayo baca doo": {
-      "text": "Ayo baca doo",
-      "src": "audio/delia-f3/be3f9633bc73d48d07e9.mp3"
-    },
     "ayo baca duri": {
       "text": "Ayo baca duri",
       "src": "audio/delia-kore/6677078363e4fb87c1a8.wav"
-    },
-    "ayo baca duu": {
-      "text": "Ayo baca duu",
-      "src": "audio/delia-f3/da455bef133ba2375503.mp3"
-    },
-    "ayo baca ee": {
-      "text": "Ayo baca ee",
-      "src": "audio/delia-f3/ec4583618b96630ed6f3.mp3"
-    },
-    "ayo baca ef": {
-      "text": "Ayo baca ef",
-      "src": "audio/delia-f3/fab78839684de6dd84b0.mp3"
-    },
-    "ayo baca eks": {
-      "text": "Ayo baca eks",
-      "src": "audio/delia-f3/fbfa8dcfc6accaac973e.mp3"
-    },
-    "ayo baca el": {
-      "text": "Ayo baca el",
-      "src": "audio/delia-f3/a3356235a4bf7e11765c.mp3"
     },
     "ayo baca elang": {
       "text": "Ayo baca elang",
       "src": "audio/delia-kore/65f7feea6a9e7d277ccb.wav"
     },
-    "ayo baca em": {
-      "text": "Ayo baca em",
-      "src": "audio/delia-f3/da1d0c419d481c62d075.mp3"
-    },
-    "ayo baca en": {
-      "text": "Ayo baca en",
-      "src": "audio/delia-f3/1344b9e9e9992d1a11d6.mp3"
-    },
-    "ayo baca er": {
-      "text": "Ayo baca er",
-      "src": "audio/delia-f3/2067fb1f0a967828eaf8.mp3"
-    },
-    "ayo baca es": {
-      "text": "Ayo baca es",
-      "src": "audio/delia-f3/3b0c84d7bbfb44ab17ca.mp3"
-    },
-    "ayo baca fe": {
-      "text": "Ayo baca fe",
-      "src": "audio/delia-f3/b3fca22ab5a194358be1.mp3"
-    },
-    "ayo baca foto": {
-      "text": "Ayo baca foto",
-      "src": "audio/delia-f3/1c641b0159a4ee171279.mp3"
-    },
-    "ayo baca gaa": {
-      "text": "Ayo baca gaa",
-      "src": "audio/delia-f3/d00ab9cec6fd26a4ce73.mp3"
-    },
     "ayo baca gajah": {
       "text": "Ayo baca gajah",
       "src": "audio/delia-kore/14170d64a65d39a67cdf.wav"
-    },
-    "ayo baca gee": {
-      "text": "Ayo baca gee",
-      "src": "audio/delia-f3/60564adf9ac6cf612441.mp3"
-    },
-    "ayo baca geh": {
-      "text": "Ayo baca geh",
-      "src": "audio/delia-f3/2785c1ce23e5c2c9723e.mp3"
     },
     "ayo baca gigi": {
       "text": "Ayo baca gigi",
       "src": "audio/delia-kore/005062efa87edbd70d31.wav"
     },
-    "ayo baca gii": {
-      "text": "Ayo baca gii",
-      "src": "audio/delia-f3/9025101345d3f978d3b5.mp3"
-    },
-    "ayo baca goo": {
-      "text": "Ayo baca goo",
-      "src": "audio/delia-f3/c8c6069c0a679f4493a1.mp3"
-    },
-    "ayo baca guu": {
-      "text": "Ayo baca guu",
-      "src": "audio/delia-f3/8de08b524384c36c0792.mp3"
-    },
-    "ayo baca ha": {
-      "text": "Ayo baca ha",
-      "src": "audio/delia-f3/1cd56b20f4ca56fe264d.mp3"
-    },
-    "ayo baca haa": {
-      "text": "Ayo baca haa",
-      "src": "audio/delia-f3/f8112fde0edc6f4a4c6a.mp3"
-    },
-    "ayo baca harimau": {
-      "text": "Ayo baca harimau",
-      "src": "audio/delia-f3/9e6c193f3605fae5dd81.mp3"
-    },
-    "ayo baca hee": {
-      "text": "Ayo baca hee",
-      "src": "audio/delia-f3/b0082bb2dfcdef76aaf6.mp3"
-    },
-    "ayo baca hii": {
-      "text": "Ayo baca hii",
-      "src": "audio/delia-f3/7ca458cd797084d4c5ce.mp3"
-    },
-    "ayo baca hoo": {
-      "text": "Ayo baca hoo",
-      "src": "audio/delia-f3/233353e25ed0729179da.mp3"
-    },
-    "ayo baca huu": {
-      "text": "Ayo baca huu",
-      "src": "audio/delia-f3/900267206f6c3213a6a4.mp3"
-    },
     "ayo baca ibu": {
       "text": "Ayo baca ibu",
       "src": "audio/delia-kore/8523fc87dcdf08e18a5c.wav"
-    },
-    "ayo baca ii": {
-      "text": "Ayo baca ii",
-      "src": "audio/delia-f3/dcdb0d54069b4f05c687.mp3"
     },
     "ayo baca ikan": {
       "text": "Ayo baca ikan",
       "src": "audio/delia-kore/73bd1e6824cc287d7850.wav"
     },
-    "ayo baca jaa": {
-      "text": "Ayo baca jaa",
-      "src": "audio/delia-f3/87ccefaf516111445a84.mp3"
-    },
-    "ayo baca jee": {
-      "text": "Ayo baca jee",
-      "src": "audio/delia-f3/5d6c721a825309802555.mp3"
-    },
-    "ayo baca jeh": {
-      "text": "Ayo baca jeh",
-      "src": "audio/delia-f3/7b62fccb485ee5dca8c6.mp3"
-    },
     "ayo baca jeruk": {
       "text": "Ayo baca jeruk",
       "src": "audio/delia-kore/f631a4b7fdab6a9bb1a8.wav"
-    },
-    "ayo baca jii": {
-      "text": "Ayo baca jii",
-      "src": "audio/delia-f3/a794377f6386e2166ba4.mp3"
-    },
-    "ayo baca joo": {
-      "text": "Ayo baca joo",
-      "src": "audio/delia-f3/b393dbe8323a20ad3413.mp3"
-    },
-    "ayo baca juu": {
-      "text": "Ayo baca juu",
-      "src": "audio/delia-f3/b989c05d66298ef94210.mp3"
-    },
-    "ayo baca ka": {
-      "text": "Ayo baca ka",
-      "src": "audio/delia-f3/c86d50035f5159e2a3f1.mp3"
-    },
-    "ayo baca kaa": {
-      "text": "Ayo baca kaa",
-      "src": "audio/delia-f3/422c75f4cefc91ac6d93.mp3"
-    },
-    "ayo baca kado": {
-      "text": "Ayo baca kado",
-      "src": "audio/delia-f3/45a43e66f78f32247c2d.mp3"
     },
     "ayo baca kaki": {
       "text": "Ayo baca kaki",
@@ -332,29 +116,13 @@
       "text": "Ayo baca kayu",
       "src": "audio/delia-kore/b14fb149b9f269bc80d3.wav"
     },
-    "ayo baca kee": {
-      "text": "Ayo baca kee",
-      "src": "audio/delia-f3/54980b094981af3763db.mp3"
-    },
     "ayo baca kera": {
       "text": "Ayo baca kera",
       "src": "audio/delia-kore/33a1b2b6ce2e326ab68f.wav"
     },
-    "ayo baca ki": {
-      "text": "Ayo baca ki",
-      "src": "audio/delia-f3/e987a1c5944b5dc5ef92.mp3"
-    },
-    "ayo baca kii": {
-      "text": "Ayo baca kii",
-      "src": "audio/delia-f3/223ff964e7b73d4ef926.mp3"
-    },
     "ayo baca koki": {
       "text": "Ayo baca koki",
       "src": "audio/delia-kore/f8452f5eb847305aed8d.wav"
-    },
-    "ayo baca koo": {
-      "text": "Ayo baca koo",
-      "src": "audio/delia-f3/498a2f960d7eecf0950a.mp3"
     },
     "ayo baca kopi": {
       "text": "Ayo baca kopi",
@@ -376,45 +144,9 @@
       "text": "Ayo baca kutu",
       "src": "audio/delia-kore/295e484ef12d1ef837c1.wav"
     },
-    "ayo baca kuu": {
-      "text": "Ayo baca kuu",
-      "src": "audio/delia-f3/7b19590b53813cf6f706.mp3"
-    },
-    "ayo baca laa": {
-      "text": "Ayo baca laa",
-      "src": "audio/delia-f3/3bfbccf19ab984d4f119.mp3"
-    },
     "ayo baca labu": {
       "text": "Ayo baca labu",
       "src": "audio/delia-kore/ac050fb784e3da444148.wav"
-    },
-    "ayo baca lebah": {
-      "text": "Ayo baca lebah",
-      "src": "audio/delia-f3/86e653a4f0a6a1b09279.mp3"
-    },
-    "ayo baca lee": {
-      "text": "Ayo baca lee",
-      "src": "audio/delia-f3/1415cb7e9252b4327d0b.mp3"
-    },
-    "ayo baca lele": {
-      "text": "Ayo baca lele",
-      "src": "audio/delia-f3/13fa23380a0a176e3a5e.mp3"
-    },
-    "ayo baca lii": {
-      "text": "Ayo baca lii",
-      "src": "audio/delia-f3/7b7c3176142bd69c0160.mp3"
-    },
-    "ayo baca loo": {
-      "text": "Ayo baca loo",
-      "src": "audio/delia-f3/d461a0eccb637496e891.mp3"
-    },
-    "ayo baca luu": {
-      "text": "Ayo baca luu",
-      "src": "audio/delia-f3/8945d37ad4f7d5a79853.mp3"
-    },
-    "ayo baca maa": {
-      "text": "Ayo baca maa",
-      "src": "audio/delia-f3/ef86fdf7220f98db0e5d.mp3"
     },
     "ayo baca madu": {
       "text": "Ayo baca madu",
@@ -428,141 +160,21 @@
       "text": "Ayo baca mata",
       "src": "audio/delia-kore/a44096279940790c9c96.wav"
     },
-    "ayo baca mee": {
-      "text": "Ayo baca mee",
-      "src": "audio/delia-f3/34af89b4a537b54b376a.mp3"
-    },
     "ayo baca meja": {
       "text": "Ayo baca meja",
       "src": "audio/delia-kore/90f2cba738f702b91d76.wav"
-    },
-    "ayo baca mii": {
-      "text": "Ayo baca mii",
-      "src": "audio/delia-f3/a973106dbf69f6520768.mp3"
-    },
-    "ayo baca moo": {
-      "text": "Ayo baca moo",
-      "src": "audio/delia-f3/658962ecadd8d178d781.mp3"
-    },
-    "ayo baca muu": {
-      "text": "Ayo baca muu",
-      "src": "audio/delia-f3/114aa21b276efdf29d4d.mp3"
-    },
-    "ayo baca naa": {
-      "text": "Ayo baca naa",
-      "src": "audio/delia-f3/5f168d462c7fe93e140e.mp3"
     },
     "ayo baca nasi": {
       "text": "Ayo baca nasi",
       "src": "audio/delia-kore/e8a6660f7370be6ba94e.wav"
     },
-    "ayo baca nee": {
-      "text": "Ayo baca nee",
-      "src": "audio/delia-f3/742603bd351dc7722425.mp3"
-    },
-    "ayo baca nii": {
-      "text": "Ayo baca nii",
-      "src": "audio/delia-f3/8e6ae863d0a787eade88.mp3"
-    },
-    "ayo baca noo": {
-      "text": "Ayo baca noo",
-      "src": "audio/delia-f3/e6811f071352ae0ada3e.mp3"
-    },
-    "ayo baca nuu": {
-      "text": "Ayo baca nuu",
-      "src": "audio/delia-f3/ac754be7f8892cb93b78.mp3"
-    },
-    "ayo baca onta": {
-      "text": "Ayo baca onta",
-      "src": "audio/delia-f3/4bb3aec1acaf341744ad.mp3"
-    },
-    "ayo baca oo": {
-      "text": "Ayo baca oo",
-      "src": "audio/delia-f3/b29899d6da95a94bc07d.mp3"
-    },
-    "ayo baca paa": {
-      "text": "Ayo baca paa",
-      "src": "audio/delia-f3/0e68d56ece877b723034.mp3"
-    },
-    "ayo baca paku": {
-      "text": "Ayo baca paku",
-      "src": "audio/delia-f3/5ef642783e43aaf611ad.mp3"
-    },
-    "ayo baca palu": {
-      "text": "Ayo baca palu",
-      "src": "audio/delia-f3/b96f95b60c00e5bd84b4.mp3"
-    },
     "ayo baca papa": {
       "text": "Ayo baca papa",
       "src": "audio/delia-kore/6e44e4450ea25aa69959.wav"
     },
-    "ayo baca pari": {
-      "text": "Ayo baca pari",
-      "src": "audio/delia-f3/b89826a24edefc3b42a9.mp3"
-    },
-    "ayo baca pee": {
-      "text": "Ayo baca pee",
-      "src": "audio/delia-f3/3203b44e6096ca76e9b0.mp3"
-    },
-    "ayo baca peh": {
-      "text": "Ayo baca peh",
-      "src": "audio/delia-f3/2d7ec342fd925372e0cb.mp3"
-    },
-    "ayo baca pena": {
-      "text": "Ayo baca pena",
-      "src": "audio/delia-f3/717a48a050845d1325e5.mp3"
-    },
-    "ayo baca peta": {
-      "text": "Ayo baca peta",
-      "src": "audio/delia-f3/7855c94e75760209d880.mp3"
-    },
-    "ayo baca pii": {
-      "text": "Ayo baca pii",
-      "src": "audio/delia-f3/d41be175a7c1a2c96159.mp3"
-    },
-    "ayo baca pipi": {
-      "text": "Ayo baca pipi",
-      "src": "audio/delia-f3/9999b06207c12931a20f.mp3"
-    },
-    "ayo baca pisang": {
-      "text": "Ayo baca pisang",
-      "src": "audio/delia-f3/1bf546efc1499e3db97d.mp3"
-    },
-    "ayo baca pita": {
-      "text": "Ayo baca pita",
-      "src": "audio/delia-f3/475d3d71261ab371c35f.mp3"
-    },
-    "ayo baca poo": {
-      "text": "Ayo baca poo",
-      "src": "audio/delia-f3/09cdf6983e6863952909.mp3"
-    },
-    "ayo baca puu": {
-      "text": "Ayo baca puu",
-      "src": "audio/delia-f3/4557f94ca7040ebab257.mp3"
-    },
-    "ayo baca quran": {
-      "text": "Ayo baca quran",
-      "src": "audio/delia-f3/e5463f2938bb57e56443.mp3"
-    },
-    "ayo baca raa": {
-      "text": "Ayo baca raa",
-      "src": "audio/delia-f3/4681b0dbc5a517b01d7f.mp3"
-    },
-    "ayo baca ree": {
-      "text": "Ayo baca ree",
-      "src": "audio/delia-f3/13b75a1f697d70f37979.mp3"
-    },
-    "ayo baca rii": {
-      "text": "Ayo baca rii",
-      "src": "audio/delia-f3/c7916af0b6ee2761b1f8.mp3"
-    },
     "ayo baca roda": {
       "text": "Ayo baca roda",
       "src": "audio/delia-kore/08cb91427dd5fc74565a.wav"
-    },
-    "ayo baca roo": {
-      "text": "Ayo baca roo",
-      "src": "audio/delia-f3/b9fe9c6784f5426927b3.mp3"
     },
     "ayo baca roti": {
       "text": "Ayo baca roti",
@@ -572,14 +184,6 @@
       "text": "Ayo baca rusa",
       "src": "audio/delia-kore/e40537bd8daa9320887d.wav"
     },
-    "ayo baca ruu": {
-      "text": "Ayo baca ruu",
-      "src": "audio/delia-f3/8e954e8f886480c3c4c4.mp3"
-    },
-    "ayo baca saa": {
-      "text": "Ayo baca saa",
-      "src": "audio/delia-f3/b6763d54b81d0eba776d.mp3"
-    },
     "ayo baca sapi": {
       "text": "Ayo baca sapi",
       "src": "audio/delia-kore/9f3e7610b459fecd12cd.wav"
@@ -588,149 +192,17 @@
       "text": "Ayo baca sapu",
       "src": "audio/delia-kore/75d12ac18d19b1343406.wav"
     },
-    "ayo baca sawi": {
-      "text": "Ayo baca sawi",
-      "src": "audio/delia-f3/5a4d514a295c4e4a9c69.mp3"
-    },
-    "ayo baca see": {
-      "text": "Ayo baca see",
-      "src": "audio/delia-f3/dec009dbdebfa7c873bd.mp3"
-    },
-    "ayo baca sii": {
-      "text": "Ayo baca sii",
-      "src": "audio/delia-f3/0ba554a2caae9318d958.mp3"
-    },
-    "ayo baca soo": {
-      "text": "Ayo baca soo",
-      "src": "audio/delia-f3/7ced1205c39c443f5fd5.mp3"
-    },
-    "ayo baca susu": {
-      "text": "Ayo baca susu",
-      "src": "audio/delia-f3/db6df7d727e8916202b3.mp3"
-    },
-    "ayo baca suu": {
-      "text": "Ayo baca suu",
-      "src": "audio/delia-f3/2fdbb79e8cafa3e17fea.mp3"
-    },
-    "ayo baca taa": {
-      "text": "Ayo baca taa",
-      "src": "audio/delia-f3/69fc645677bc3b62595a.mp3"
-    },
     "ayo baca tali": {
       "text": "Ayo baca tali",
       "src": "audio/delia-kore/3b31eaef67b240033ea9.wav"
-    },
-    "ayo baca tebu": {
-      "text": "Ayo baca tebu",
-      "src": "audio/delia-f3/5537b6956b3b689eedb8.mp3"
-    },
-    "ayo baca tee": {
-      "text": "Ayo baca tee",
-      "src": "audio/delia-f3/6022e606e3d2cd66ad29.mp3"
-    },
-    "ayo baca teh": {
-      "text": "Ayo baca teh",
-      "src": "audio/delia-f3/c02ccf1126136ee39ad3.mp3"
-    },
-    "ayo baca tii": {
-      "text": "Ayo baca tii",
-      "src": "audio/delia-f3/7e4384e7759ab41dd9c2.mp3"
     },
     "ayo baca toko": {
       "text": "Ayo baca toko",
       "src": "audio/delia-kore/59d00c371a51e9dbe759.wav"
     },
-    "ayo baca too": {
-      "text": "Ayo baca too",
-      "src": "audio/delia-f3/dbbee660ce4718873068.mp3"
-    },
     "ayo baca topi": {
       "text": "Ayo baca topi",
       "src": "audio/delia-kore/f7f98ab183f4ac40e419.wav"
-    },
-    "ayo baca tuu": {
-      "text": "Ayo baca tuu",
-      "src": "audio/delia-f3/40ba93c6714b0a6f6659.mp3"
-    },
-    "ayo baca udang": {
-      "text": "Ayo baca udang",
-      "src": "audio/delia-f3/47b697cdf811113d24c4.mp3"
-    },
-    "ayo baca uu": {
-      "text": "Ayo baca uu",
-      "src": "audio/delia-f3/cde32bf2119a22d0b62c.mp3"
-    },
-    "ayo baca vas": {
-      "text": "Ayo baca vas",
-      "src": "audio/delia-f3/734d71ff4e6ab23295db.mp3"
-    },
-    "ayo baca waa": {
-      "text": "Ayo baca waa",
-      "src": "audio/delia-f3/5b9b6737ac0e1665e2fa.mp3"
-    },
-    "ayo baca we": {
-      "text": "Ayo baca we",
-      "src": "audio/delia-f3/85160b301141b7b9e3b9.mp3"
-    },
-    "ayo baca wee": {
-      "text": "Ayo baca wee",
-      "src": "audio/delia-f3/d12ca53ad055092bd9b1.mp3"
-    },
-    "ayo baca wii": {
-      "text": "Ayo baca wii",
-      "src": "audio/delia-f3/a7c8a5cf51bcf65b9345.mp3"
-    },
-    "ayo baca woo": {
-      "text": "Ayo baca woo",
-      "src": "audio/delia-f3/420d7b81a24961daac8b.mp3"
-    },
-    "ayo baca wortel": {
-      "text": "Ayo baca wortel",
-      "src": "audio/delia-f3/50de4d7d457b32cfe60b.mp3"
-    },
-    "ayo baca wuu": {
-      "text": "Ayo baca wuu",
-      "src": "audio/delia-f3/a88c24fdc7e74966f62f.mp3"
-    },
-    "ayo baca xilofon": {
-      "text": "Ayo baca xilofon",
-      "src": "audio/delia-f3/60151a3f80532e438f30.mp3"
-    },
-    "ayo baca yaa": {
-      "text": "Ayo baca yaa",
-      "src": "audio/delia-f3/7e76e3481f776edddf65.mp3"
-    },
-    "ayo baca ye": {
-      "text": "Ayo baca ye",
-      "src": "audio/delia-f3/8574a21c467ae065129c.mp3"
-    },
-    "ayo baca yee": {
-      "text": "Ayo baca yee",
-      "src": "audio/delia-f3/e5e98332da079de85a80.mp3"
-    },
-    "ayo baca yii": {
-      "text": "Ayo baca yii",
-      "src": "audio/delia-f3/d9d9c1d48fa595fe758f.mp3"
-    },
-    "ayo baca yoo": {
-      "text": "Ayo baca yoo",
-      "src": "audio/delia-f3/14eb2d3c4f7ca5947a37.mp3"
-    },
-    "ayo baca yoyo": {
-      "text": "Ayo baca yoyo",
-      "src": "audio/delia-f3/d2b07d716907bca2fd5e.mp3"
-    },
-    "ayo baca yuu": {
-      "text": "Ayo baca yuu",
-      "src": "audio/delia-f3/61307eff808fcde85a26.mp3"
-    },
-    "ayo baca zebra": {
-      "text": "Ayo baca zebra",
-      "src": "audio/delia-f3/f358c1f5e4b7954abce2.mp3"
-    },
-    "ayo baca zet": {
-      "text": "Ayo baca zet",
-      "src": "audio/delia-f3/21fb56c6ee55b427b824.mp3"
     },
     "ayo coba lagi": {
       "text": "Ayo coba lagi!",
@@ -756,10 +228,6 @@
       "text": "Bagus sekali!",
       "src": "audio/delia-kore/ddc988e9ce05ada3c9be.wav"
     },
-    "bah": {
-      "text": "bah",
-      "src": "audio/delia-f3/801e11d744fc26410d6d.mp3"
-    },
     "bahu": {
       "text": "bahu",
       "src": "audio/delia-kore/881129d1c0359a2d65ed.wav"
@@ -779,10 +247,6 @@
     "bee": {
       "text": "bee",
       "src": "audio/delia-kore/b963bd6317401d9fa274.wav"
-    },
-    "beh": {
-      "text": "beh",
-      "src": "audio/delia-f3/7d5ca24c497831e0cc21.mp3"
     },
     "bi": {
       "text": "bi",
@@ -848,10 +312,6 @@
       "text": "cee",
       "src": "audio/delia-kore/ab27bc28ed74f097a504.wav"
     },
-    "ceh": {
-      "text": "ceh",
-      "src": "audio/delia-f3/b8d24dc64970df4a19d5.mp3"
-    },
     "ceri": {
       "text": "ceri",
       "src": "audio/delia-kore/89afe000625503a2c916.wav"
@@ -859,10 +319,6 @@
     "cii": {
       "text": "cii",
       "src": "audio/delia-kore/6cb2caae5ac149ec092e.wav"
-    },
-    "cing": {
-      "text": "cing",
-      "src": "audio/delia-f3/2487db55da1dbb8a8804.mp3"
     },
     "coba lagi ya": {
       "text": "Coba lagi ya!",
@@ -900,10 +356,6 @@
       "text": "dadu",
       "src": "audio/delia-kore/bc596eb7790d52ac1d04.wav"
     },
-    "dang": {
-      "text": "dang",
-      "src": "audio/delia-f3/15f31bd7422d02e452cd.mp3"
-    },
     "daun": {
       "text": "daun",
       "src": "audio/delia-kore/7949e4f5dbb85977e384.wav"
@@ -912,10 +364,6 @@
       "text": "dee",
       "src": "audio/delia-kore/78f16be0a8bfa4a0b30a.wav"
     },
-    "deh": {
-      "text": "deh",
-      "src": "audio/delia-f3/8fbf22a7554ebd394e40.mp3"
-    },
     "dengarkan": {
       "text": "Dengarkan",
       "src": "audio/delia-kore/26eb9bea39b05d2a6362.wav"
@@ -923,114 +371,6 @@
     "dengarkan bunyinya baik-baik ya": {
       "text": "Dengarkan bunyinya baik-baik ya",
       "src": "audio/delia-kore/2a270dd66acd96e0cf68.wav"
-    },
-    "dengarkan dulu ya": {
-      "text": "Dengarkan dulu ya",
-      "src": "audio/delia-f3/b589341a6809e507eb13.mp3"
-    },
-    "dengarkan ya mana huruf aa": {
-      "text": "Dengarkan ya... Mana huruf aa?",
-      "src": "audio/delia-f3/f475067a1c0204303d3b.mp3"
-    },
-    "dengarkan ya mana huruf beh": {
-      "text": "Dengarkan ya... Mana huruf beh?",
-      "src": "audio/delia-f3/0e7a35ce71494f3baa29.mp3"
-    },
-    "dengarkan ya mana huruf ceh": {
-      "text": "Dengarkan ya... Mana huruf ceh?",
-      "src": "audio/delia-f3/45cd31f52ad4ef577c39.mp3"
-    },
-    "dengarkan ya mana huruf deh": {
-      "text": "Dengarkan ya... Mana huruf deh?",
-      "src": "audio/delia-f3/8c06d3c814ca90678aab.mp3"
-    },
-    "dengarkan ya mana huruf ee": {
-      "text": "Dengarkan ya... Mana huruf ee?",
-      "src": "audio/delia-f3/ad23c5fe8b3afe75296d.mp3"
-    },
-    "dengarkan ya mana huruf ef": {
-      "text": "Dengarkan ya... Mana huruf ef?",
-      "src": "audio/delia-f3/fee1eb4c34b859f621dc.mp3"
-    },
-    "dengarkan ya mana huruf eks": {
-      "text": "Dengarkan ya... Mana huruf eks?",
-      "src": "audio/delia-f3/0084dcfceffc7967dfa0.mp3"
-    },
-    "dengarkan ya mana huruf el": {
-      "text": "Dengarkan ya... Mana huruf el?",
-      "src": "audio/delia-f3/4536d20242e1ee4aa84e.mp3"
-    },
-    "dengarkan ya mana huruf em": {
-      "text": "Dengarkan ya... Mana huruf em?",
-      "src": "audio/delia-f3/d9a344b846acd5721fd5.mp3"
-    },
-    "dengarkan ya mana huruf en": {
-      "text": "Dengarkan ya... Mana huruf en?",
-      "src": "audio/delia-f3/445973026a4872eff9c2.mp3"
-    },
-    "dengarkan ya mana huruf er": {
-      "text": "Dengarkan ya... Mana huruf er?",
-      "src": "audio/delia-f3/d9904444f1985bf32303.mp3"
-    },
-    "dengarkan ya mana huruf es": {
-      "text": "Dengarkan ya... Mana huruf es?",
-      "src": "audio/delia-f3/25043f75d150183e405d.mp3"
-    },
-    "dengarkan ya mana huruf fe": {
-      "text": "Dengarkan ya... Mana huruf fe?",
-      "src": "audio/delia-f3/3d17f4add9e03f28a506.mp3"
-    },
-    "dengarkan ya mana huruf geh": {
-      "text": "Dengarkan ya... Mana huruf geh?",
-      "src": "audio/delia-f3/c3cf0b8c70a9eb8ca52f.mp3"
-    },
-    "dengarkan ya mana huruf ha": {
-      "text": "Dengarkan ya... Mana huruf ha?",
-      "src": "audio/delia-f3/a9c4be52b0f75c95f798.mp3"
-    },
-    "dengarkan ya mana huruf ii": {
-      "text": "Dengarkan ya... Mana huruf ii?",
-      "src": "audio/delia-f3/6c99f2fbf78574cea9c6.mp3"
-    },
-    "dengarkan ya mana huruf jeh": {
-      "text": "Dengarkan ya... Mana huruf jeh?",
-      "src": "audio/delia-f3/84b19c3681f207b00638.mp3"
-    },
-    "dengarkan ya mana huruf ka": {
-      "text": "Dengarkan ya... Mana huruf ka?",
-      "src": "audio/delia-f3/4781502f64ff8f87c9b9.mp3"
-    },
-    "dengarkan ya mana huruf ki": {
-      "text": "Dengarkan ya... Mana huruf ki?",
-      "src": "audio/delia-f3/05dce23a3692cd18af8d.mp3"
-    },
-    "dengarkan ya mana huruf oo": {
-      "text": "Dengarkan ya... Mana huruf oo?",
-      "src": "audio/delia-f3/c2529ce8b2c10dffadbc.mp3"
-    },
-    "dengarkan ya mana huruf peh": {
-      "text": "Dengarkan ya... Mana huruf peh?",
-      "src": "audio/delia-f3/d3f7df9945b8b33e8bd9.mp3"
-    },
-    "dengarkan ya mana huruf teh": {
-      "text": "Dengarkan ya... Mana huruf teh?",
-      "src": "audio/delia-f3/0c30b24a58261a9cbd52.mp3"
-    },
-    "dengarkan ya mana huruf uu": {
-      "text": "Dengarkan ya... Mana huruf uu?",
-      "src": "audio/delia-f3/391ceb040d41221b101e.mp3"
-    },
-    "dengarkan ya mana huruf we": {
-      "text": "Dengarkan ya... Mana huruf we?",
-      "src": "audio/delia-f3/98da184ebe6d3021755f.mp3"
-    },
-    "dengarkan ya mana huruf ye": {
-      "text": "Dengarkan ya... Mana huruf ye?",
-      "src": "audio/delia-f3/a245074f1ea905c237c6.mp3"
-    },
-    "dengarkan ya mana huruf zet": {
-      "text": "Dengarkan ya... Mana huruf zet?",
-      "src": "audio/delia-f3/6458024f43aa2016c46a.mp3"
     },
     "dii": {
       "text": "dii",
@@ -1064,49 +404,9 @@
       "text": "ee",
       "src": "audio/delia-kore/403e331159e9499f1187.wav"
     },
-    "ef": {
-      "text": "ef",
-      "src": "audio/delia-f3/c253bd4f464d133895a2.mp3"
-    },
-    "eks": {
-      "text": "eks",
-      "src": "audio/delia-f3/5cc8596c9b20a6f7ffa2.mp3"
-    },
-    "el": {
-      "text": "el",
-      "src": "audio/delia-f3/9ddba9494f717996a5f7.mp3"
-    },
     "elang": {
       "text": "elang",
       "src": "audio/delia-kore/328d6fb73e8d208eb20f.wav"
-    },
-    "em": {
-      "text": "em",
-      "src": "audio/delia-f3/ebefa000f9e9706d79ad.mp3"
-    },
-    "en": {
-      "text": "en",
-      "src": "audio/delia-f3/6d9d8e300c95eb216eeb.mp3"
-    },
-    "er": {
-      "text": "er",
-      "src": "audio/delia-f3/c049f9a6e4979d70786b.mp3"
-    },
-    "es": {
-      "text": "es",
-      "src": "audio/delia-f3/1043b544c46ac2b19cf2.mp3"
-    },
-    "fe": {
-      "text": "fe",
-      "src": "audio/delia-f3/36c735991a37131536c2.mp3"
-    },
-    "fo": {
-      "text": "fo",
-      "src": "audio/delia-f3/4e321f940cd78be24bbe.mp3"
-    },
-    "fon": {
-      "text": "fon",
-      "src": "audio/delia-f3/a0513560be78acf00b4a.mp3"
     },
     "foto": {
       "text": "foto",
@@ -1127,10 +427,6 @@
     "gee": {
       "text": "gee",
       "src": "audio/delia-kore/22bc18f87002ff82e627.wav"
-    },
-    "geh": {
-      "text": "geh",
-      "src": "audio/delia-f3/b20dbc60c892242b9dfd.mp3"
     },
     "gi": {
       "text": "gi",
@@ -1156,161 +452,17 @@
       "text": "ha",
       "src": "audio/delia-kore/f4d475eaa3e771cb8e47.wav"
     },
-    "haa": {
-      "text": "haa",
-      "src": "audio/delia-f3/3b386b34580665b17750.mp3"
-    },
-    "halo ayo belajar membaca bersama bu delia": {
-      "text": "Halo! Ayo belajar membaca bersama Bu Delia!",
-      "src": "audio/delia-f3/eacd049e3d0abb977e97.mp3"
-    },
-    "halo sayang yuk kita belajar membaca bersama pelan-pelan saja ya": {
-      "text": "Halo, sayang. Yuk, kita belajar membaca bersama. Pelan-pelan saja, ya.",
-      "src": "audio/delia-f3/d3bbfc5b7bb85778eb2e.mp3"
-    },
     "halo teman ayo kita lanjutkan petualangan membaca": {
       "text": "Halo, Teman! Ayo kita lanjutkan petualangan membaca.",
       "src": "audio/delia-kore/69b9692af3ae8084680a.wav"
-    },
-    "hampir": {
-      "text": "Hampir!",
-      "src": "audio/delia-f3/6f60df290f40e5e836aa.mp3"
-    },
-    "harimau": {
-      "text": "harimau",
-      "src": "audio/delia-f3/2adce9fc77e916329f55.mp3"
     },
     "hebat sekali": {
       "text": "Hebat sekali!",
       "src": "audio/delia-kore/9374d1e6be8542109987.wav"
     },
-    "hee": {
-      "text": "hee",
-      "src": "audio/delia-f3/0f7a67a404bd06d69442.mp3"
-    },
-    "hii": {
-      "text": "hii",
-      "src": "audio/delia-f3/125beff055d77a5166f7.mp3"
-    },
-    "hoo": {
-      "text": "hoo",
-      "src": "audio/delia-f3/7e06575d6fa5da190e37.mp3"
-    },
-    "hore kamu hebat sekali": {
-      "text": "Hore! Kamu hebat sekali!",
-      "src": "audio/delia-f3/dcda176fe05c2db7863c.mp3"
-    },
     "hu": {
       "text": "hu",
       "src": "audio/delia-kore/2ab4b5a8d6a19186d312.wav"
-    },
-    "huruf aa": {
-      "text": "Huruf aa",
-      "src": "audio/delia-f3/8b1fc3de1f0c458c4b71.mp3"
-    },
-    "huruf beh": {
-      "text": "Huruf beh",
-      "src": "audio/delia-f3/c8675e947955da186a68.mp3"
-    },
-    "huruf ceh": {
-      "text": "Huruf ceh",
-      "src": "audio/delia-f3/88fe36b98612810fbd42.mp3"
-    },
-    "huruf deh": {
-      "text": "Huruf deh",
-      "src": "audio/delia-f3/9a6b329671f75195e92a.mp3"
-    },
-    "huruf ee": {
-      "text": "Huruf ee",
-      "src": "audio/delia-f3/c87b67bcb07caa97c473.mp3"
-    },
-    "huruf ef": {
-      "text": "Huruf ef",
-      "src": "audio/delia-f3/a60a2bb9bae54487c63b.mp3"
-    },
-    "huruf eks": {
-      "text": "Huruf eks",
-      "src": "audio/delia-f3/0950439204b7308408c6.mp3"
-    },
-    "huruf el": {
-      "text": "Huruf el",
-      "src": "audio/delia-f3/2c85a77cb26d963e29e2.mp3"
-    },
-    "huruf em": {
-      "text": "Huruf em",
-      "src": "audio/delia-f3/5e598ccfda37abdadda8.mp3"
-    },
-    "huruf en": {
-      "text": "Huruf en",
-      "src": "audio/delia-f3/3a779e74f18c9635eb0f.mp3"
-    },
-    "huruf er": {
-      "text": "Huruf er",
-      "src": "audio/delia-f3/400d5c4ad3f9e3474fb2.mp3"
-    },
-    "huruf es": {
-      "text": "Huruf es",
-      "src": "audio/delia-f3/48b1c75a4eb778e2829b.mp3"
-    },
-    "huruf fe": {
-      "text": "Huruf fe",
-      "src": "audio/delia-f3/41e4c272d41989670650.mp3"
-    },
-    "huruf geh": {
-      "text": "Huruf geh",
-      "src": "audio/delia-f3/8edf5f7ae93b28181e0a.mp3"
-    },
-    "huruf ha": {
-      "text": "Huruf ha",
-      "src": "audio/delia-f3/7cee710b67eb4596f946.mp3"
-    },
-    "huruf ii": {
-      "text": "Huruf ii",
-      "src": "audio/delia-f3/2210cb34dbd22f626781.mp3"
-    },
-    "huruf jeh": {
-      "text": "Huruf jeh",
-      "src": "audio/delia-f3/39b748b40141ff51e7ff.mp3"
-    },
-    "huruf ka": {
-      "text": "Huruf ka",
-      "src": "audio/delia-f3/5c1d8f27830e8c044cf0.mp3"
-    },
-    "huruf ki": {
-      "text": "Huruf ki",
-      "src": "audio/delia-f3/25936e83c7c37c4178b5.mp3"
-    },
-    "huruf oo": {
-      "text": "Huruf oo",
-      "src": "audio/delia-f3/e1afb58c6bad84cdab92.mp3"
-    },
-    "huruf peh": {
-      "text": "Huruf peh",
-      "src": "audio/delia-f3/4a74a2df8013e2dfbbc5.mp3"
-    },
-    "huruf teh": {
-      "text": "Huruf teh",
-      "src": "audio/delia-f3/bf1809a84057de663eaa.mp3"
-    },
-    "huruf uu": {
-      "text": "Huruf uu",
-      "src": "audio/delia-f3/4295a3a5450b975d8e59.mp3"
-    },
-    "huruf we": {
-      "text": "Huruf we",
-      "src": "audio/delia-f3/fd6e296953675c769a13.mp3"
-    },
-    "huruf ye": {
-      "text": "Huruf ye",
-      "src": "audio/delia-f3/7311195e1f838c916921.mp3"
-    },
-    "huruf zet": {
-      "text": "Huruf zet",
-      "src": "audio/delia-f3/80fde7080027dbf3a4ce.mp3"
-    },
-    "huu": {
-      "text": "huu",
-      "src": "audio/delia-f3/480630cfbc536c39abdf.mp3"
     },
     "i": {
       "text": "i",
@@ -1332,625 +484,13 @@
       "text": "Ikuti suaranya pelan-pelan ya",
       "src": "audio/delia-kore/10abb0fc18875f91eb88.wav"
     },
-    "ini gambar apel huruf awal kata apel adalah": {
-      "text": "Ini gambar apel. Huruf awal kata apel adalah...?",
-      "src": "audio/delia-f3/ecc24a5ee4c78353e615.mp3"
-    },
-    "ini gambar apel mana tulisannya": {
-      "text": "Ini gambar apel. Mana tulisannya?",
-      "src": "audio/delia-f3/89fd5048de29821988a8.mp3"
-    },
-    "ini gambar bahu mana tulisannya": {
-      "text": "Ini gambar bahu. Mana tulisannya?",
-      "src": "audio/delia-f3/8171430260c8e555ef15.mp3"
-    },
-    "ini gambar baju mana tulisannya": {
-      "text": "Ini gambar baju. Mana tulisannya?",
-      "src": "audio/delia-f3/39a483d2e461958f94e0.mp3"
-    },
-    "ini gambar bapa mana tulisannya": {
-      "text": "Ini gambar bapa. Mana tulisannya?",
-      "src": "audio/delia-f3/8ce6377443fdf590760a.mp3"
-    },
-    "ini gambar batu mana tulisannya": {
-      "text": "Ini gambar batu. Mana tulisannya?",
-      "src": "audio/delia-f3/1af933b9204f236d77cd.mp3"
-    },
-    "ini gambar bibi mana tulisannya": {
-      "text": "Ini gambar bibi. Mana tulisannya?",
-      "src": "audio/delia-f3/28bda38ef35e83989ffd.mp3"
-    },
-    "ini gambar biji mana tulisannya": {
-      "text": "Ini gambar biji. Mana tulisannya?",
-      "src": "audio/delia-f3/1f04bc6e88222f3b99f4.mp3"
-    },
-    "ini gambar bola huruf awal kata bola adalah": {
-      "text": "Ini gambar bola. Huruf awal kata bola adalah...?",
-      "src": "audio/delia-f3/943bc9c88ea986572a73.mp3"
-    },
-    "ini gambar bola mana tulisannya": {
-      "text": "Ini gambar bola. Mana tulisannya?",
-      "src": "audio/delia-f3/422febbdbee6077288ba.mp3"
-    },
-    "ini gambar buku mana tulisannya": {
-      "text": "Ini gambar buku. Mana tulisannya?",
-      "src": "audio/delia-f3/bdabb795740dae76dd57.mp3"
-    },
-    "ini gambar cacing huruf awal kata cacing adalah": {
-      "text": "Ini gambar cacing. Huruf awal kata cacing adalah...?",
-      "src": "audio/delia-f3/9d9dc05825ea3a8d822e.mp3"
-    },
-    "ini gambar cacing mana tulisannya": {
-      "text": "Ini gambar cacing. Mana tulisannya?",
-      "src": "audio/delia-f3/7c61760b27a50b668163.mp3"
-    },
-    "ini gambar ceri mana tulisannya": {
-      "text": "Ini gambar ceri. Mana tulisannya?",
-      "src": "audio/delia-f3/8e3446c64d84e3971050.mp3"
-    },
-    "ini gambar cumi mana tulisannya": {
-      "text": "Ini gambar cumi. Mana tulisannya?",
-      "src": "audio/delia-f3/56e701566e024a7c35cc.mp3"
-    },
-    "ini gambar dada mana tulisannya": {
-      "text": "Ini gambar dada. Mana tulisannya?",
-      "src": "audio/delia-f3/d4af4479e7dce5e9a199.mp3"
-    },
-    "ini gambar dadu mana tulisannya": {
-      "text": "Ini gambar dadu. Mana tulisannya?",
-      "src": "audio/delia-f3/4be0ca22ed1c1d0bd059.mp3"
-    },
-    "ini gambar daun huruf awal kata daun adalah": {
-      "text": "Ini gambar daun. Huruf awal kata daun adalah...?",
-      "src": "audio/delia-f3/0be0cd014ec1932b94fa.mp3"
-    },
-    "ini gambar daun mana tulisannya": {
-      "text": "Ini gambar daun. Mana tulisannya?",
-      "src": "audio/delia-f3/0aee4aade09faa496652.mp3"
-    },
-    "ini gambar duri mana tulisannya": {
-      "text": "Ini gambar duri. Mana tulisannya?",
-      "src": "audio/delia-f3/413ea1dd8d2b02cd7b19.mp3"
-    },
-    "ini gambar elang huruf awal kata elang adalah": {
-      "text": "Ini gambar elang. Huruf awal kata elang adalah...?",
-      "src": "audio/delia-f3/835e6a9e6cfe5047552e.mp3"
-    },
-    "ini gambar elang mana tulisannya": {
-      "text": "Ini gambar elang. Mana tulisannya?",
-      "src": "audio/delia-f3/cd7a292e8ec41dbb75d1.mp3"
-    },
-    "ini gambar foto huruf awal kata foto adalah": {
-      "text": "Ini gambar foto. Huruf awal kata foto adalah...?",
-      "src": "audio/delia-f3/7ba68760af4ea18648e9.mp3"
-    },
-    "ini gambar foto mana tulisannya": {
-      "text": "Ini gambar foto. Mana tulisannya?",
-      "src": "audio/delia-f3/f198e4e4b1c551a75191.mp3"
-    },
-    "ini gambar gajah huruf awal kata gajah adalah": {
-      "text": "Ini gambar gajah. Huruf awal kata gajah adalah...?",
-      "src": "audio/delia-f3/9bf14d2b9401225e8eb8.mp3"
-    },
-    "ini gambar gajah mana tulisannya": {
-      "text": "Ini gambar gajah. Mana tulisannya?",
-      "src": "audio/delia-f3/0454b3771283716b59c7.mp3"
-    },
-    "ini gambar gigi mana tulisannya": {
-      "text": "Ini gambar gigi. Mana tulisannya?",
-      "src": "audio/delia-f3/2fb645d899403e3b1bc1.mp3"
-    },
-    "ini gambar harimau huruf awal kata harimau adalah": {
-      "text": "Ini gambar harimau. Huruf awal kata harimau adalah...?",
-      "src": "audio/delia-f3/9ba4a7fd01da681819bd.mp3"
-    },
-    "ini gambar harimau mana tulisannya": {
-      "text": "Ini gambar harimau. Mana tulisannya?",
-      "src": "audio/delia-f3/9ea51b488d4f7ea10f93.mp3"
-    },
-    "ini gambar ibu mana tulisannya": {
-      "text": "Ini gambar ibu. Mana tulisannya?",
-      "src": "audio/delia-f3/8c2a4c5a7e7b282b9e24.mp3"
-    },
-    "ini gambar ikan huruf awal kata ikan adalah": {
-      "text": "Ini gambar ikan. Huruf awal kata ikan adalah...?",
-      "src": "audio/delia-f3/d3dd9e363501f4807878.mp3"
-    },
-    "ini gambar ikan mana tulisannya": {
-      "text": "Ini gambar ikan. Mana tulisannya?",
-      "src": "audio/delia-f3/362a4252ed7ada45e9fa.mp3"
-    },
-    "ini gambar jeruk huruf awal kata jeruk adalah": {
-      "text": "Ini gambar jeruk. Huruf awal kata jeruk adalah...?",
-      "src": "audio/delia-f3/32977ec08e2b69120735.mp3"
-    },
-    "ini gambar jeruk mana tulisannya": {
-      "text": "Ini gambar jeruk. Mana tulisannya?",
-      "src": "audio/delia-f3/71857109710b3064aef1.mp3"
-    },
-    "ini gambar kado mana tulisannya": {
-      "text": "Ini gambar kado. Mana tulisannya?",
-      "src": "audio/delia-f3/81f078c57d724a88e87f.mp3"
-    },
-    "ini gambar kaki mana tulisannya": {
-      "text": "Ini gambar kaki. Mana tulisannya?",
-      "src": "audio/delia-f3/746666d57ff4e2903d25.mp3"
-    },
-    "ini gambar kayu mana tulisannya": {
-      "text": "Ini gambar kayu. Mana tulisannya?",
-      "src": "audio/delia-f3/85c851ca13ce414d2ca7.mp3"
-    },
-    "ini gambar kera mana tulisannya": {
-      "text": "Ini gambar kera. Mana tulisannya?",
-      "src": "audio/delia-f3/a94cf3726c9b851468cf.mp3"
-    },
-    "ini gambar koki mana tulisannya": {
-      "text": "Ini gambar koki. Mana tulisannya?",
-      "src": "audio/delia-f3/1f027c06938f1dcbb7a5.mp3"
-    },
-    "ini gambar kopi mana tulisannya": {
-      "text": "Ini gambar kopi. Mana tulisannya?",
-      "src": "audio/delia-f3/c78ed5c4116798538b1d.mp3"
-    },
-    "ini gambar kuda huruf awal kata kuda adalah": {
-      "text": "Ini gambar kuda. Huruf awal kata kuda adalah...?",
-      "src": "audio/delia-f3/67442bb3f69805564b77.mp3"
-    },
-    "ini gambar kuda mana tulisannya": {
-      "text": "Ini gambar kuda. Mana tulisannya?",
-      "src": "audio/delia-f3/59c2d348a977193e0f4a.mp3"
-    },
-    "ini gambar kuku mana tulisannya": {
-      "text": "Ini gambar kuku. Mana tulisannya?",
-      "src": "audio/delia-f3/112437b43406b0065cad.mp3"
-    },
-    "ini gambar kura mana tulisannya": {
-      "text": "Ini gambar kura. Mana tulisannya?",
-      "src": "audio/delia-f3/a747e0d58a699a3832bb.mp3"
-    },
-    "ini gambar kutu mana tulisannya": {
-      "text": "Ini gambar kutu. Mana tulisannya?",
-      "src": "audio/delia-f3/8eed643740d6da1ca21d.mp3"
-    },
-    "ini gambar labu mana tulisannya": {
-      "text": "Ini gambar labu. Mana tulisannya?",
-      "src": "audio/delia-f3/ae29601381cc99a98bcd.mp3"
-    },
-    "ini gambar lebah huruf awal kata lebah adalah": {
-      "text": "Ini gambar lebah. Huruf awal kata lebah adalah...?",
-      "src": "audio/delia-f3/9d3a55d553148518e10a.mp3"
-    },
-    "ini gambar lebah mana tulisannya": {
-      "text": "Ini gambar lebah. Mana tulisannya?",
-      "src": "audio/delia-f3/31e355479bd9e893d81f.mp3"
-    },
-    "ini gambar lele mana tulisannya": {
-      "text": "Ini gambar lele. Mana tulisannya?",
-      "src": "audio/delia-f3/85f8c2e78b110e0a46e3.mp3"
-    },
-    "ini gambar madu mana tulisannya": {
-      "text": "Ini gambar madu. Mana tulisannya?",
-      "src": "audio/delia-f3/2d2f160b6a69b62782cf.mp3"
-    },
-    "ini gambar mama mana tulisannya": {
-      "text": "Ini gambar mama. Mana tulisannya?",
-      "src": "audio/delia-f3/45d66bf805e4ac3844aa.mp3"
-    },
-    "ini gambar mata huruf awal kata mata adalah": {
-      "text": "Ini gambar mata. Huruf awal kata mata adalah...?",
-      "src": "audio/delia-f3/f95aefa9b290be504015.mp3"
-    },
-    "ini gambar mata mana tulisannya": {
-      "text": "Ini gambar mata. Mana tulisannya?",
-      "src": "audio/delia-f3/254c8ec59fc94b2578ac.mp3"
-    },
-    "ini gambar meja mana tulisannya": {
-      "text": "Ini gambar meja. Mana tulisannya?",
-      "src": "audio/delia-f3/f1af161d4a3d8aca0387.mp3"
-    },
-    "ini gambar nasi huruf awal kata nasi adalah": {
-      "text": "Ini gambar nasi. Huruf awal kata nasi adalah...?",
-      "src": "audio/delia-f3/3d5dab6e4de98cd09825.mp3"
-    },
-    "ini gambar nasi mana tulisannya": {
-      "text": "Ini gambar nasi. Mana tulisannya?",
-      "src": "audio/delia-f3/8631a7985b3d33749d7b.mp3"
-    },
-    "ini gambar onta huruf awal kata onta adalah": {
-      "text": "Ini gambar onta. Huruf awal kata onta adalah...?",
-      "src": "audio/delia-f3/90a27211957392026811.mp3"
-    },
-    "ini gambar onta mana tulisannya": {
-      "text": "Ini gambar onta. Mana tulisannya?",
-      "src": "audio/delia-f3/dc265e2fc028a740b7b8.mp3"
-    },
-    "ini gambar paku mana tulisannya": {
-      "text": "Ini gambar paku. Mana tulisannya?",
-      "src": "audio/delia-f3/e9476edadf3ca0f8a5e3.mp3"
-    },
-    "ini gambar palu mana tulisannya": {
-      "text": "Ini gambar palu. Mana tulisannya?",
-      "src": "audio/delia-f3/0dcff1f07be5ad9add66.mp3"
-    },
-    "ini gambar papa mana tulisannya": {
-      "text": "Ini gambar papa. Mana tulisannya?",
-      "src": "audio/delia-f3/a3b65b2e7e02bee8a40f.mp3"
-    },
-    "ini gambar pari mana tulisannya": {
-      "text": "Ini gambar pari. Mana tulisannya?",
-      "src": "audio/delia-f3/7faf876e3d30139a1cde.mp3"
-    },
-    "ini gambar pena mana tulisannya": {
-      "text": "Ini gambar pena. Mana tulisannya?",
-      "src": "audio/delia-f3/c61e4f65e2cc096d8d9e.mp3"
-    },
-    "ini gambar peta mana tulisannya": {
-      "text": "Ini gambar peta. Mana tulisannya?",
-      "src": "audio/delia-f3/64c7e6b59a87ff50ea76.mp3"
-    },
-    "ini gambar pipi mana tulisannya": {
-      "text": "Ini gambar pipi. Mana tulisannya?",
-      "src": "audio/delia-f3/70310541d0f416b9cd8d.mp3"
-    },
-    "ini gambar pisang huruf awal kata pisang adalah": {
-      "text": "Ini gambar pisang. Huruf awal kata pisang adalah...?",
-      "src": "audio/delia-f3/b2281181c0c02a5713ce.mp3"
-    },
-    "ini gambar pisang mana tulisannya": {
-      "text": "Ini gambar pisang. Mana tulisannya?",
-      "src": "audio/delia-f3/29c0eccc1341d223e87d.mp3"
-    },
-    "ini gambar pita mana tulisannya": {
-      "text": "Ini gambar pita. Mana tulisannya?",
-      "src": "audio/delia-f3/cb9b6ebc13d401c8debb.mp3"
-    },
-    "ini gambar quran huruf awal kata quran adalah": {
-      "text": "Ini gambar quran. Huruf awal kata quran adalah...?",
-      "src": "audio/delia-f3/44bcda4b9782d7e18922.mp3"
-    },
-    "ini gambar quran mana tulisannya": {
-      "text": "Ini gambar quran. Mana tulisannya?",
-      "src": "audio/delia-f3/7215c784f81cc052beda.mp3"
-    },
-    "ini gambar roda mana tulisannya": {
-      "text": "Ini gambar roda. Mana tulisannya?",
-      "src": "audio/delia-f3/8535cc26d0fb690f236f.mp3"
-    },
-    "ini gambar roti mana tulisannya": {
-      "text": "Ini gambar roti. Mana tulisannya?",
-      "src": "audio/delia-f3/a88f6d8c32c12a32893a.mp3"
-    },
-    "ini gambar rusa huruf awal kata rusa adalah": {
-      "text": "Ini gambar rusa. Huruf awal kata rusa adalah...?",
-      "src": "audio/delia-f3/09f03951b3ab66ef2e53.mp3"
-    },
-    "ini gambar rusa mana tulisannya": {
-      "text": "Ini gambar rusa. Mana tulisannya?",
-      "src": "audio/delia-f3/173ec764d4ec9abf9444.mp3"
-    },
-    "ini gambar sapi huruf awal kata sapi adalah": {
-      "text": "Ini gambar sapi. Huruf awal kata sapi adalah...?",
-      "src": "audio/delia-f3/3229b7a2ba59d365d725.mp3"
-    },
-    "ini gambar sapi mana tulisannya": {
-      "text": "Ini gambar sapi. Mana tulisannya?",
-      "src": "audio/delia-f3/3e148e6c0203b21b2196.mp3"
-    },
-    "ini gambar sapu mana tulisannya": {
-      "text": "Ini gambar sapu. Mana tulisannya?",
-      "src": "audio/delia-f3/15c211a1013108e70f64.mp3"
-    },
-    "ini gambar sawi mana tulisannya": {
-      "text": "Ini gambar sawi. Mana tulisannya?",
-      "src": "audio/delia-f3/e73ba45131c2f9babf69.mp3"
-    },
-    "ini gambar susu mana tulisannya": {
-      "text": "Ini gambar susu. Mana tulisannya?",
-      "src": "audio/delia-f3/d638a7683cffbed67ab7.mp3"
-    },
-    "ini gambar tali mana tulisannya": {
-      "text": "Ini gambar tali. Mana tulisannya?",
-      "src": "audio/delia-f3/b71f7f8854f755202bc6.mp3"
-    },
-    "ini gambar tebu mana tulisannya": {
-      "text": "Ini gambar tebu. Mana tulisannya?",
-      "src": "audio/delia-f3/52f067892ca94c2b7764.mp3"
-    },
-    "ini gambar toko mana tulisannya": {
-      "text": "Ini gambar toko. Mana tulisannya?",
-      "src": "audio/delia-f3/0b8ade9dfe30ca6c31fa.mp3"
-    },
-    "ini gambar topi huruf awal kata topi adalah": {
-      "text": "Ini gambar topi. Huruf awal kata topi adalah...?",
-      "src": "audio/delia-f3/bfd7cdde8ef4aa39df9c.mp3"
-    },
-    "ini gambar topi mana tulisannya": {
-      "text": "Ini gambar topi. Mana tulisannya?",
-      "src": "audio/delia-f3/e6ef50c4f48baa31e43f.mp3"
-    },
-    "ini gambar udang huruf awal kata udang adalah": {
-      "text": "Ini gambar udang. Huruf awal kata udang adalah...?",
-      "src": "audio/delia-f3/02e6040a7186780dfca0.mp3"
-    },
-    "ini gambar udang mana tulisannya": {
-      "text": "Ini gambar udang. Mana tulisannya?",
-      "src": "audio/delia-f3/458718a54f35092dd9ec.mp3"
-    },
-    "ini gambar vas huruf awal kata vas adalah": {
-      "text": "Ini gambar vas. Huruf awal kata vas adalah...?",
-      "src": "audio/delia-f3/0036a0907659742a9c1d.mp3"
-    },
-    "ini gambar vas mana tulisannya": {
-      "text": "Ini gambar vas. Mana tulisannya?",
-      "src": "audio/delia-f3/f08b7d4c8be0e595a053.mp3"
-    },
-    "ini gambar wortel huruf awal kata wortel adalah": {
-      "text": "Ini gambar wortel. Huruf awal kata wortel adalah...?",
-      "src": "audio/delia-f3/ad6652364f0c914bbc35.mp3"
-    },
-    "ini gambar wortel mana tulisannya": {
-      "text": "Ini gambar wortel. Mana tulisannya?",
-      "src": "audio/delia-f3/37bde2d2759bf5074eed.mp3"
-    },
-    "ini gambar xilofon huruf awal kata xilofon adalah": {
-      "text": "Ini gambar xilofon. Huruf awal kata xilofon adalah...?",
-      "src": "audio/delia-f3/03b307550e366cb6127b.mp3"
-    },
-    "ini gambar xilofon mana tulisannya": {
-      "text": "Ini gambar xilofon. Mana tulisannya?",
-      "src": "audio/delia-f3/5d1b898fdba521c54994.mp3"
-    },
-    "ini gambar yoyo huruf awal kata yoyo adalah": {
-      "text": "Ini gambar yoyo. Huruf awal kata yoyo adalah...?",
-      "src": "audio/delia-f3/393a72ecb77ce37baf33.mp3"
-    },
-    "ini gambar yoyo mana tulisannya": {
-      "text": "Ini gambar yoyo. Mana tulisannya?",
-      "src": "audio/delia-f3/7fba0dadc70c4baa61fe.mp3"
-    },
-    "ini gambar zebra huruf awal kata zebra adalah": {
-      "text": "Ini gambar zebra. Huruf awal kata zebra adalah...?",
-      "src": "audio/delia-f3/d1271312ddb6505c621c.mp3"
-    },
-    "ini gambar zebra mana tulisannya": {
-      "text": "Ini gambar zebra. Mana tulisannya?",
-      "src": "audio/delia-f3/fef1842a9036404acde3.mp3"
-    },
-    "ini huruf a": {
-      "text": "Ini huruf A!",
-      "src": "audio/delia-f3/2ccce160a45c675c17b0.mp3"
-    },
-    "ini huruf b": {
-      "text": "Ini huruf B!",
-      "src": "audio/delia-f3/1c36ba33a585c245666a.mp3"
-    },
-    "ini huruf besar a mana huruf kecilnya": {
-      "text": "Ini huruf besar A. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/bbea0949bc6f7803c959.mp3"
-    },
-    "ini huruf besar b mana huruf kecilnya": {
-      "text": "Ini huruf besar B. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/2b9013159aa90a165ef3.mp3"
-    },
-    "ini huruf besar c mana huruf kecilnya": {
-      "text": "Ini huruf besar C. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/f9298396a667a0bf9671.mp3"
-    },
-    "ini huruf besar d mana huruf kecilnya": {
-      "text": "Ini huruf besar D. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/858b219e8e24c565e435.mp3"
-    },
-    "ini huruf besar e mana huruf kecilnya": {
-      "text": "Ini huruf besar E. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/5bfc622eaf3cc7ed1b04.mp3"
-    },
-    "ini huruf besar f mana huruf kecilnya": {
-      "text": "Ini huruf besar F. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/d4037cc094817897f40a.mp3"
-    },
-    "ini huruf besar g mana huruf kecilnya": {
-      "text": "Ini huruf besar G. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/b5123c24f8d5cd2a82a8.mp3"
-    },
-    "ini huruf besar h mana huruf kecilnya": {
-      "text": "Ini huruf besar H. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/a3f7a25112477b793678.mp3"
-    },
-    "ini huruf besar i mana huruf kecilnya": {
-      "text": "Ini huruf besar I. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/11b09ac5d1e5473cbfc6.mp3"
-    },
-    "ini huruf besar j mana huruf kecilnya": {
-      "text": "Ini huruf besar J. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/cfc492b08c46696beb6d.mp3"
-    },
-    "ini huruf besar k mana huruf kecilnya": {
-      "text": "Ini huruf besar K. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/6756961379ff26fc4274.mp3"
-    },
-    "ini huruf besar l mana huruf kecilnya": {
-      "text": "Ini huruf besar L. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/e0dc902ce4cf20bdb719.mp3"
-    },
-    "ini huruf besar m mana huruf kecilnya": {
-      "text": "Ini huruf besar M. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/1ad52adb94222768e7f5.mp3"
-    },
-    "ini huruf besar n mana huruf kecilnya": {
-      "text": "Ini huruf besar N. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/605adbfe73f0f12ec8a7.mp3"
-    },
-    "ini huruf besar o mana huruf kecilnya": {
-      "text": "Ini huruf besar O. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/fd148b87724f11cc5900.mp3"
-    },
-    "ini huruf besar p mana huruf kecilnya": {
-      "text": "Ini huruf besar P. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/12a629833981553cda9f.mp3"
-    },
-    "ini huruf besar q mana huruf kecilnya": {
-      "text": "Ini huruf besar Q. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/3b1bd0524dc51f80b0c0.mp3"
-    },
-    "ini huruf besar r mana huruf kecilnya": {
-      "text": "Ini huruf besar R. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/b8ae4f2b6b0263c8a834.mp3"
-    },
-    "ini huruf besar s mana huruf kecilnya": {
-      "text": "Ini huruf besar S. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/df8bf1c055abac33ada6.mp3"
-    },
-    "ini huruf besar t mana huruf kecilnya": {
-      "text": "Ini huruf besar T. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/d474e61b3db032331b8d.mp3"
-    },
-    "ini huruf besar u mana huruf kecilnya": {
-      "text": "Ini huruf besar U. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/1195d0f00c909d1057ff.mp3"
-    },
-    "ini huruf besar v mana huruf kecilnya": {
-      "text": "Ini huruf besar V. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/c6f96627a355fb6e651c.mp3"
-    },
-    "ini huruf besar w mana huruf kecilnya": {
-      "text": "Ini huruf besar W. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/d398e61d54be534c97d0.mp3"
-    },
-    "ini huruf besar x mana huruf kecilnya": {
-      "text": "Ini huruf besar X. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/7d8e32bea3bf8a1ccb7e.mp3"
-    },
-    "ini huruf besar y mana huruf kecilnya": {
-      "text": "Ini huruf besar Y. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/2b388319b620c25094b7.mp3"
-    },
-    "ini huruf besar z mana huruf kecilnya": {
-      "text": "Ini huruf besar Z. Mana huruf kecilnya?",
-      "src": "audio/delia-f3/42a59680685067a56ba4.mp3"
-    },
-    "ini huruf c": {
-      "text": "Ini huruf C!",
-      "src": "audio/delia-f3/541d96d890a20040f9b2.mp3"
-    },
-    "ini huruf d": {
-      "text": "Ini huruf D!",
-      "src": "audio/delia-f3/720ed1989926c275cff7.mp3"
-    },
-    "ini huruf e": {
-      "text": "Ini huruf E!",
-      "src": "audio/delia-f3/19683b2746f0808fdaef.mp3"
-    },
-    "ini huruf f": {
-      "text": "Ini huruf F!",
-      "src": "audio/delia-f3/3f4ecf28499a16fb674d.mp3"
-    },
-    "ini huruf g": {
-      "text": "Ini huruf G!",
-      "src": "audio/delia-f3/6ef9421a30f87ce9418a.mp3"
-    },
-    "ini huruf h": {
-      "text": "Ini huruf H!",
-      "src": "audio/delia-f3/8bc5f8c58c52ef2a6b20.mp3"
-    },
-    "ini huruf i": {
-      "text": "Ini huruf I!",
-      "src": "audio/delia-f3/5a4c8ac72e0af9889045.mp3"
-    },
-    "ini huruf j": {
-      "text": "Ini huruf J!",
-      "src": "audio/delia-f3/01780e54a40700ebbb97.mp3"
-    },
-    "ini huruf k": {
-      "text": "Ini huruf K!",
-      "src": "audio/delia-f3/f1f4d1728d6b0485e7bc.mp3"
-    },
-    "ini huruf l": {
-      "text": "Ini huruf L!",
-      "src": "audio/delia-f3/f07ddb263880b195dd27.mp3"
-    },
-    "ini huruf m": {
-      "text": "Ini huruf M!",
-      "src": "audio/delia-f3/7f8bb088a182084e023e.mp3"
-    },
-    "ini huruf n": {
-      "text": "Ini huruf N!",
-      "src": "audio/delia-f3/6163052d8f7aa36ef112.mp3"
-    },
-    "ini huruf o": {
-      "text": "Ini huruf O!",
-      "src": "audio/delia-f3/2c043903227f2d8a283b.mp3"
-    },
-    "ini huruf p": {
-      "text": "Ini huruf P!",
-      "src": "audio/delia-f3/c54e295a41a0a33427be.mp3"
-    },
-    "ini huruf q": {
-      "text": "Ini huruf Q!",
-      "src": "audio/delia-f3/cf90ee83e906f7b6f47a.mp3"
-    },
-    "ini huruf r": {
-      "text": "Ini huruf R!",
-      "src": "audio/delia-f3/22650899e1b2fb9cdcfe.mp3"
-    },
-    "ini huruf s": {
-      "text": "Ini huruf S!",
-      "src": "audio/delia-f3/ef7e7bf6ad1525f9b2a9.mp3"
-    },
-    "ini huruf t": {
-      "text": "Ini huruf T!",
-      "src": "audio/delia-f3/80098484dbd95a255c02.mp3"
-    },
-    "ini huruf u": {
-      "text": "Ini huruf U!",
-      "src": "audio/delia-f3/87674bbc7ce3761156a3.mp3"
-    },
-    "ini huruf v": {
-      "text": "Ini huruf V!",
-      "src": "audio/delia-f3/f119a9d3485ac1a4d15c.mp3"
-    },
-    "ini huruf w": {
-      "text": "Ini huruf W!",
-      "src": "audio/delia-f3/1148601f54b0da6a4b44.mp3"
-    },
-    "ini huruf x": {
-      "text": "Ini huruf X!",
-      "src": "audio/delia-f3/374000e85dab097c04e9.mp3"
-    },
-    "ini huruf y": {
-      "text": "Ini huruf Y!",
-      "src": "audio/delia-f3/7326cfcb193a13940ed6.mp3"
-    },
-    "ini huruf z": {
-      "text": "Ini huruf Z!",
-      "src": "audio/delia-f3/9969d1d4114164c128f0.mp3"
-    },
-    "ini kata apel": {
-      "text": "Ini kata apel!",
-      "src": "audio/delia-f3/bcf76b54f73ae4a4ea47.mp3"
-    },
-    "ini kata bahu": {
-      "text": "Ini kata bahu!",
-      "src": "audio/delia-f3/d3869a116af57ca3698f.mp3"
-    },
-    "ini kata baju": {
-      "text": "Ini kata baju!",
-      "src": "audio/delia-f3/679a09c42f22d0548026.mp3"
-    },
     "ini kata bapa": {
       "text": "Ini kata bapa",
       "src": "audio/delia-kore/7df3151e57526a553dc1.wav"
     },
-    "ini kata batu": {
-      "text": "Ini kata batu!",
-      "src": "audio/delia-f3/f301514545711050eacd.mp3"
-    },
     "ini kata bibi": {
       "text": "Ini kata bibi",
       "src": "audio/delia-kore/b0b9f66a738cd306dc47.wav"
-    },
-    "ini kata biji": {
-      "text": "Ini kata biji!",
-      "src": "audio/delia-f3/2b24e3559356fdf15884.mp3"
     },
     "ini kata bola": {
       "text": "Ini kata bola",
@@ -1960,277 +500,25 @@
       "text": "Ini kata buku",
       "src": "audio/delia-kore/98f303e08c187bcc9928.wav"
     },
-    "ini kata cacing": {
-      "text": "Ini kata cacing!",
-      "src": "audio/delia-f3/351e2919bcb55125a952.mp3"
-    },
-    "ini kata ceri": {
-      "text": "Ini kata ceri!",
-      "src": "audio/delia-f3/73c3cf24a6955ea54853.mp3"
-    },
-    "ini kata cumi": {
-      "text": "Ini kata cumi!",
-      "src": "audio/delia-f3/80756a1900869efa8c09.mp3"
-    },
-    "ini kata dada": {
-      "text": "Ini kata dada!",
-      "src": "audio/delia-f3/57cb9a08ab5806b8999b.mp3"
-    },
-    "ini kata dadu": {
-      "text": "Ini kata dadu!",
-      "src": "audio/delia-f3/acb7dfbd9318b9927ee5.mp3"
-    },
-    "ini kata daun": {
-      "text": "Ini kata daun!",
-      "src": "audio/delia-f3/d85a69d0fff379158a68.mp3"
-    },
-    "ini kata duri": {
-      "text": "Ini kata duri!",
-      "src": "audio/delia-f3/1b5eaa88879e6672a799.mp3"
-    },
-    "ini kata elang": {
-      "text": "Ini kata elang!",
-      "src": "audio/delia-f3/4ff4bfab9998f14c1af0.mp3"
-    },
-    "ini kata foto": {
-      "text": "Ini kata foto!",
-      "src": "audio/delia-f3/cee05a85c86cb8725a7d.mp3"
-    },
-    "ini kata gajah": {
-      "text": "Ini kata gajah!",
-      "src": "audio/delia-f3/b0752b715f3a2951c488.mp3"
-    },
-    "ini kata gigi": {
-      "text": "Ini kata gigi!",
-      "src": "audio/delia-f3/1cea90a367e4706126d6.mp3"
-    },
-    "ini kata harimau": {
-      "text": "Ini kata harimau!",
-      "src": "audio/delia-f3/da0f39d8ac7d123a0748.mp3"
-    },
     "ini kata ibu": {
       "text": "Ini kata ibu!",
       "src": "audio/delia-kore/a0f6ee3afd0292726023.wav"
-    },
-    "ini kata ikan": {
-      "text": "Ini kata ikan!",
-      "src": "audio/delia-f3/7c744f1c8d7cec09c944.mp3"
-    },
-    "ini kata jeruk": {
-      "text": "Ini kata jeruk!",
-      "src": "audio/delia-f3/d9b4102c1a12685d78a0.mp3"
-    },
-    "ini kata kado": {
-      "text": "Ini kata kado!",
-      "src": "audio/delia-f3/3d97fbd6bf9ea24268ab.mp3"
-    },
-    "ini kata kaki": {
-      "text": "Ini kata kaki!",
-      "src": "audio/delia-f3/5fa14449d7db93dfa2ee.mp3"
-    },
-    "ini kata kayu": {
-      "text": "Ini kata kayu!",
-      "src": "audio/delia-f3/c692603771d96539e583.mp3"
-    },
-    "ini kata kera": {
-      "text": "Ini kata kera!",
-      "src": "audio/delia-f3/c4bb2d082d4ac815a9dc.mp3"
-    },
-    "ini kata koki": {
-      "text": "Ini kata koki!",
-      "src": "audio/delia-f3/b624630e4a69deee64ca.mp3"
-    },
-    "ini kata kopi": {
-      "text": "Ini kata kopi!",
-      "src": "audio/delia-f3/1c492b87aed7a22b977f.mp3"
     },
     "ini kata kuda": {
       "text": "Ini kata kuda",
       "src": "audio/delia-kore/c4fb70c5e79809474bff.wav"
     },
-    "ini kata kuku": {
-      "text": "Ini kata kuku!",
-      "src": "audio/delia-f3/6168445572e826518327.mp3"
-    },
-    "ini kata kura": {
-      "text": "Ini kata kura!",
-      "src": "audio/delia-f3/70c3a0ed6be7d58eb61f.mp3"
-    },
-    "ini kata kutu": {
-      "text": "Ini kata kutu!",
-      "src": "audio/delia-f3/8538e52f893ca26262e3.mp3"
-    },
-    "ini kata labu": {
-      "text": "Ini kata labu!",
-      "src": "audio/delia-f3/8ad5f09c61994ee792ef.mp3"
-    },
-    "ini kata lebah": {
-      "text": "Ini kata lebah!",
-      "src": "audio/delia-f3/d5fb3021bb8797e778be.mp3"
-    },
-    "ini kata lele": {
-      "text": "Ini kata lele!",
-      "src": "audio/delia-f3/aa2bc43cfc843dc5386c.mp3"
-    },
-    "ini kata madu": {
-      "text": "Ini kata madu!",
-      "src": "audio/delia-f3/62df13b630d0e588f979.mp3"
-    },
-    "ini kata mama": {
-      "text": "Ini kata mama!",
-      "src": "audio/delia-f3/9d4d80225527ad230762.mp3"
-    },
-    "ini kata mata": {
-      "text": "Ini kata mata!",
-      "src": "audio/delia-f3/2063f9439650a2ef316a.mp3"
-    },
-    "ini kata meja": {
-      "text": "Ini kata meja!",
-      "src": "audio/delia-f3/b1385fc081715056be23.mp3"
-    },
-    "ini kata nasi": {
-      "text": "Ini kata nasi!",
-      "src": "audio/delia-f3/25cbacac3a0cd14d57a4.mp3"
-    },
-    "ini kata onta": {
-      "text": "Ini kata onta!",
-      "src": "audio/delia-f3/be662524219c49ae8906.mp3"
-    },
-    "ini kata paku": {
-      "text": "Ini kata paku!",
-      "src": "audio/delia-f3/d56356bac98036c68ce1.mp3"
-    },
-    "ini kata palu": {
-      "text": "Ini kata palu!",
-      "src": "audio/delia-f3/0ce72cd3e9c1bc2883a6.mp3"
-    },
-    "ini kata papa": {
-      "text": "Ini kata papa!",
-      "src": "audio/delia-f3/a06096226e740bde3d40.mp3"
-    },
-    "ini kata pari": {
-      "text": "Ini kata pari!",
-      "src": "audio/delia-f3/ecd1d726234b8fa9994c.mp3"
-    },
-    "ini kata pena": {
-      "text": "Ini kata pena!",
-      "src": "audio/delia-f3/c25865ff149babe06808.mp3"
-    },
-    "ini kata peta": {
-      "text": "Ini kata peta!",
-      "src": "audio/delia-f3/9f63e29797c8e8ac2151.mp3"
-    },
-    "ini kata pipi": {
-      "text": "Ini kata pipi!",
-      "src": "audio/delia-f3/c6aec5dd0a7b4c8b1693.mp3"
-    },
-    "ini kata pisang": {
-      "text": "Ini kata pisang!",
-      "src": "audio/delia-f3/111ae3b58fd4d3fd340d.mp3"
-    },
-    "ini kata pita": {
-      "text": "Ini kata pita!",
-      "src": "audio/delia-f3/fcdce14be8a3cdeeab08.mp3"
-    },
-    "ini kata quran": {
-      "text": "Ini kata quran!",
-      "src": "audio/delia-f3/fe1c99f7a81ae8de35bb.mp3"
-    },
-    "ini kata roda": {
-      "text": "Ini kata roda!",
-      "src": "audio/delia-f3/ebd74fc6a9b9f7d30dd5.mp3"
-    },
-    "ini kata roti": {
-      "text": "Ini kata roti!",
-      "src": "audio/delia-f3/5f745330c268f09a0022.mp3"
-    },
-    "ini kata rusa": {
-      "text": "Ini kata rusa!",
-      "src": "audio/delia-f3/bbf6d1ae2618c4bd0fcd.mp3"
-    },
     "ini kata sapi": {
       "text": "Ini kata sapi",
       "src": "audio/delia-kore/6be932ec47ea7816e93a.wav"
-    },
-    "ini kata sapu": {
-      "text": "Ini kata sapu!",
-      "src": "audio/delia-f3/671be9c1fc74d5d6bb8f.mp3"
-    },
-    "ini kata sawi": {
-      "text": "Ini kata sawi!",
-      "src": "audio/delia-f3/5835395e5d0fe3b18ce9.mp3"
-    },
-    "ini kata susu": {
-      "text": "Ini kata susu!",
-      "src": "audio/delia-f3/63abe2b8737abef77b76.mp3"
-    },
-    "ini kata tali": {
-      "text": "Ini kata tali!",
-      "src": "audio/delia-f3/acc6e3f2dc635e3ff090.mp3"
-    },
-    "ini kata tebu": {
-      "text": "Ini kata tebu!",
-      "src": "audio/delia-f3/7b376b72c0d17b93af8a.mp3"
-    },
-    "ini kata toko": {
-      "text": "Ini kata toko!",
-      "src": "audio/delia-f3/78ea6b751a1b7ad79f86.mp3"
-    },
-    "ini kata topi": {
-      "text": "Ini kata topi!",
-      "src": "audio/delia-f3/077495f345a99b0c6d90.mp3"
-    },
-    "ini kata udang": {
-      "text": "Ini kata udang!",
-      "src": "audio/delia-f3/9b5e245277988a4b6105.mp3"
-    },
-    "ini kata vas": {
-      "text": "Ini kata vas!",
-      "src": "audio/delia-f3/10ec907c81e01675d0ca.mp3"
-    },
-    "ini kata wortel": {
-      "text": "Ini kata wortel!",
-      "src": "audio/delia-f3/0eeee1078d64ae61a568.mp3"
-    },
-    "ini kata xilofon": {
-      "text": "Ini kata xilofon!",
-      "src": "audio/delia-f3/079064961ea580cccce9.mp3"
-    },
-    "ini kata yoyo": {
-      "text": "Ini kata yoyo!",
-      "src": "audio/delia-f3/d4aa96ee02eb3756b3db.mp3"
-    },
-    "ini kata zebra": {
-      "text": "Ini kata zebra!",
-      "src": "audio/delia-f3/2944421c129b99af23dd.mp3"
     },
     "ja": {
       "text": "ja",
       "src": "audio/delia-kore/e00c3731c4cbd59c754e.wav"
     },
-    "jaa": {
-      "text": "jaa",
-      "src": "audio/delia-f3/1fd69a2bd863dcf61b96.mp3"
-    },
-    "jagoan hebat": {
-      "text": "Jagoan hebat!",
-      "src": "audio/delia-f3/3e0d0dd7393f11dd67a3.mp3"
-    },
-    "jah": {
-      "text": "jah",
-      "src": "audio/delia-f3/311dd653046dbceb709f.mp3"
-    },
     "je": {
       "text": "je",
       "src": "audio/delia-kore/7678a91595eb43856ae1.wav"
-    },
-    "jee": {
-      "text": "jee",
-      "src": "audio/delia-f3/0da7ef92cb3a18f16747.mp3"
-    },
-    "jeh": {
-      "text": "jeh",
-      "src": "audio/delia-f3/72e990de69c91a71241c.mp3"
     },
     "jeruk": {
       "text": "jeruk",
@@ -2240,21 +528,9 @@
       "text": "ji",
       "src": "audio/delia-kore/84d8bff40ac0ebf33bff.wav"
     },
-    "jii": {
-      "text": "jii",
-      "src": "audio/delia-f3/6673be0149ca017ba568.mp3"
-    },
-    "joo": {
-      "text": "joo",
-      "src": "audio/delia-f3/0a2348e493725d504d01.mp3"
-    },
     "ju": {
       "text": "ju",
       "src": "audio/delia-kore/f4736a8b09c830e8883c.wav"
-    },
-    "juu": {
-      "text": "juu",
-      "src": "audio/delia-f3/e113acad7863f376a43c.mp3"
     },
     "ka": {
       "text": "ka",
@@ -2272,409 +548,9 @@
       "text": "kaki",
       "src": "audio/delia-kore/d2af47d4a9ae7f1c185b.wav"
     },
-    "kamu mendapat dua bintang": {
-      "text": "Kamu mendapat dua bintang!",
-      "src": "audio/delia-f3/47a914d542e7779a03c0.mp3"
-    },
-    "kamu mendapat satu bintang": {
-      "text": "Kamu mendapat satu bintang!",
-      "src": "audio/delia-f3/aaac739096b553f99a1d.mp3"
-    },
-    "kamu mendapat tiga bintang": {
-      "text": "Kamu mendapat tiga bintang!",
-      "src": "audio/delia-f3/3ff4e7e963ae66353d32.mp3"
-    },
     "kamu pintar": {
       "text": "Kamu pintar!",
       "src": "audio/delia-kore/144d539be41469ecb8a7.wav"
-    },
-    "kan": {
-      "text": "kan",
-      "src": "audio/delia-f3/1d538dde18eb36a99dd3.mp3"
-    },
-    "kata apel a pel": {
-      "text": "Kata apel: a... pel",
-      "src": "audio/delia-f3/516c32efed765ac3b718.mp3"
-    },
-    "kata apel huruf awalnya apa ya": {
-      "text": "Kata apel. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/e08cd5bcdd1c202e3d4e.mp3"
-    },
-    "kata bahu ba hu": {
-      "text": "Kata bahu: ba... hu",
-      "src": "audio/delia-f3/ef22037180094ddbb164.mp3"
-    },
-    "kata baju ba ju": {
-      "text": "Kata baju: ba... ju",
-      "src": "audio/delia-f3/8db6e2de6bb022f09beb.mp3"
-    },
-    "kata bapa ba pa": {
-      "text": "Kata bapa: ba... pa",
-      "src": "audio/delia-f3/7126580eeae044193ec0.mp3"
-    },
-    "kata batu ba tu": {
-      "text": "Kata batu: ba... tu",
-      "src": "audio/delia-f3/b819f5960c59f82b55aa.mp3"
-    },
-    "kata bibi bi bi": {
-      "text": "Kata bibi: bi... bi",
-      "src": "audio/delia-f3/0774bf0ce49463bbe47d.mp3"
-    },
-    "kata biji bi ji": {
-      "text": "Kata biji: bi... ji",
-      "src": "audio/delia-f3/10b4fb5c4d86da6a9b75.mp3"
-    },
-    "kata bola bo la": {
-      "text": "Kata bola: bo... la",
-      "src": "audio/delia-f3/73d3e08f8eeacdcf1c3b.mp3"
-    },
-    "kata bola huruf awalnya apa ya": {
-      "text": "Kata bola. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/22e5a38d492dc8f37686.mp3"
-    },
-    "kata buku bu ku": {
-      "text": "Kata buku: bu... ku",
-      "src": "audio/delia-f3/71873c31db9aad4d82e2.mp3"
-    },
-    "kata cacing ca cing": {
-      "text": "Kata cacing: ca... cing",
-      "src": "audio/delia-f3/78974957650e4767340f.mp3"
-    },
-    "kata cacing huruf awalnya apa ya": {
-      "text": "Kata cacing. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/ae1eec297dbda37538a8.mp3"
-    },
-    "kata ceri ce ri": {
-      "text": "Kata ceri: ce... ri",
-      "src": "audio/delia-f3/b69cc3bf07cb9c71cf92.mp3"
-    },
-    "kata cumi cu mi": {
-      "text": "Kata cumi: cu... mi",
-      "src": "audio/delia-f3/9fb5eeb64e41d256d7b0.mp3"
-    },
-    "kata dada da da": {
-      "text": "Kata dada: da... da",
-      "src": "audio/delia-f3/68d57fd1c34abdd01492.mp3"
-    },
-    "kata dadu da du": {
-      "text": "Kata dadu: da... du",
-      "src": "audio/delia-f3/287b1ce430ac8ce1b205.mp3"
-    },
-    "kata daun da un": {
-      "text": "Kata daun: da... un",
-      "src": "audio/delia-f3/c03d004c16545a75ce3f.mp3"
-    },
-    "kata daun huruf awalnya apa ya": {
-      "text": "Kata daun. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/17ea71f6e08fb5769836.mp3"
-    },
-    "kata duri du ri": {
-      "text": "Kata duri: du... ri",
-      "src": "audio/delia-f3/a894585d3ebff5f547c7.mp3"
-    },
-    "kata elang e lang": {
-      "text": "Kata elang: e... lang",
-      "src": "audio/delia-f3/146adddc0e5d4df91394.mp3"
-    },
-    "kata elang huruf awalnya apa ya": {
-      "text": "Kata elang. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/b2de8a4a5c7353cbbc7b.mp3"
-    },
-    "kata foto fo to": {
-      "text": "Kata foto: fo... to",
-      "src": "audio/delia-f3/d268db8c543bee41a690.mp3"
-    },
-    "kata foto huruf awalnya apa ya": {
-      "text": "Kata foto. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/6ca2dfbe6b844f138c71.mp3"
-    },
-    "kata gajah ga jah": {
-      "text": "Kata gajah: ga... jah",
-      "src": "audio/delia-f3/f0a5c62db63eb7a38b88.mp3"
-    },
-    "kata gajah huruf awalnya apa ya": {
-      "text": "Kata gajah. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/edf9c640b3bd952b0e75.mp3"
-    },
-    "kata gigi gi gi": {
-      "text": "Kata gigi: gi... gi",
-      "src": "audio/delia-f3/25fa10ed7c89c31fb9cc.mp3"
-    },
-    "kata harimau ha ri mau": {
-      "text": "Kata harimau: ha... ri... mau",
-      "src": "audio/delia-f3/1302741c7d86cd3de818.mp3"
-    },
-    "kata harimau huruf awalnya apa ya": {
-      "text": "Kata harimau. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/7b94997aa38d17debfd9.mp3"
-    },
-    "kata ibu i bu": {
-      "text": "Kata ibu: i... bu",
-      "src": "audio/delia-f3/10c8e49cba061b76c00b.mp3"
-    },
-    "kata ikan huruf awalnya apa ya": {
-      "text": "Kata ikan. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/e09c73f4a5fe88e3d336.mp3"
-    },
-    "kata ikan i kan": {
-      "text": "Kata ikan: i... kan",
-      "src": "audio/delia-f3/f2ff64a83307ee40718e.mp3"
-    },
-    "kata jeruk huruf awalnya apa ya": {
-      "text": "Kata jeruk. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/49bd86ec6a09e537b80b.mp3"
-    },
-    "kata jeruk je ruk": {
-      "text": "Kata jeruk: je... ruk",
-      "src": "audio/delia-f3/2aedcf12645d17a9c105.mp3"
-    },
-    "kata kado ka do": {
-      "text": "Kata kado: ka... do",
-      "src": "audio/delia-f3/0296f795f74d25cb8090.mp3"
-    },
-    "kata kaki ka ki": {
-      "text": "Kata kaki: ka... ki",
-      "src": "audio/delia-f3/862fdf6db8a9edb1ed85.mp3"
-    },
-    "kata kayu ka yu": {
-      "text": "Kata kayu: ka... yu",
-      "src": "audio/delia-f3/d551aabf1477079a5eae.mp3"
-    },
-    "kata kera ke ra": {
-      "text": "Kata kera: ke... ra",
-      "src": "audio/delia-f3/32a4f68de81327ec8fb9.mp3"
-    },
-    "kata koki ko ki": {
-      "text": "Kata koki: ko... ki",
-      "src": "audio/delia-f3/2ffde1db327221bdcfe0.mp3"
-    },
-    "kata kopi ko pi": {
-      "text": "Kata kopi: ko... pi",
-      "src": "audio/delia-f3/e7f014267c98546b3109.mp3"
-    },
-    "kata kuda huruf awalnya apa ya": {
-      "text": "Kata kuda. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/819d51bdaedcb0d216c6.mp3"
-    },
-    "kata kuda ku da": {
-      "text": "Kata kuda: ku... da",
-      "src": "audio/delia-f3/8b0067d1af7cbb9bf3e3.mp3"
-    },
-    "kata kuku ku ku": {
-      "text": "Kata kuku: ku... ku",
-      "src": "audio/delia-f3/dc00e0aeef78bd81c562.mp3"
-    },
-    "kata kura ku ra": {
-      "text": "Kata kura: ku... ra",
-      "src": "audio/delia-f3/d667340647f739bfa3b6.mp3"
-    },
-    "kata kutu ku tu": {
-      "text": "Kata kutu: ku... tu",
-      "src": "audio/delia-f3/568ea6164fb8a8b1fd0c.mp3"
-    },
-    "kata labu la bu": {
-      "text": "Kata labu: la... bu",
-      "src": "audio/delia-f3/87764b972132effe4891.mp3"
-    },
-    "kata lebah huruf awalnya apa ya": {
-      "text": "Kata lebah. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/585785e9d6aad9509181.mp3"
-    },
-    "kata lebah le bah": {
-      "text": "Kata lebah: le... bah",
-      "src": "audio/delia-f3/bd1b7a7602924c0006bf.mp3"
-    },
-    "kata lele le le": {
-      "text": "Kata lele: le... le",
-      "src": "audio/delia-f3/95b099b034ca60bd7a1f.mp3"
-    },
-    "kata madu ma du": {
-      "text": "Kata madu: ma... du",
-      "src": "audio/delia-f3/09a9ae821039b516f68c.mp3"
-    },
-    "kata mama ma ma": {
-      "text": "Kata mama: ma... ma",
-      "src": "audio/delia-f3/c2cf0633d593640fb110.mp3"
-    },
-    "kata mata huruf awalnya apa ya": {
-      "text": "Kata mata. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/cd11a28ef64438914f03.mp3"
-    },
-    "kata mata ma ta": {
-      "text": "Kata mata: ma... ta",
-      "src": "audio/delia-f3/7f750c1a9e02b84b17a1.mp3"
-    },
-    "kata meja me ja": {
-      "text": "Kata meja: me... ja",
-      "src": "audio/delia-f3/364a9f8c01380d599406.mp3"
-    },
-    "kata nasi huruf awalnya apa ya": {
-      "text": "Kata nasi. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/d2809950b535735010b5.mp3"
-    },
-    "kata nasi na si": {
-      "text": "Kata nasi: na... si",
-      "src": "audio/delia-f3/5d2cfc5a87cc014cbec8.mp3"
-    },
-    "kata onta huruf awalnya apa ya": {
-      "text": "Kata onta. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/5157081ca2a3ffc597d4.mp3"
-    },
-    "kata onta on ta": {
-      "text": "Kata onta: on... ta",
-      "src": "audio/delia-f3/3a046bf82866b9c46f9e.mp3"
-    },
-    "kata paku pa ku": {
-      "text": "Kata paku: pa... ku",
-      "src": "audio/delia-f3/df6fbe17e41a444779be.mp3"
-    },
-    "kata palu pa lu": {
-      "text": "Kata palu: pa... lu",
-      "src": "audio/delia-f3/1fc6b6d04b8c99ade0f3.mp3"
-    },
-    "kata papa pa pa": {
-      "text": "Kata papa: pa... pa",
-      "src": "audio/delia-f3/cc2a4a11187873147bb9.mp3"
-    },
-    "kata pari pa ri": {
-      "text": "Kata pari: pa... ri",
-      "src": "audio/delia-f3/672b33f20743bbf3a2f5.mp3"
-    },
-    "kata pena pe na": {
-      "text": "Kata pena: pe... na",
-      "src": "audio/delia-f3/fef96cfa3aa4378eb019.mp3"
-    },
-    "kata peta pe ta": {
-      "text": "Kata peta: pe... ta",
-      "src": "audio/delia-f3/d8966ebf75bd1f1515f8.mp3"
-    },
-    "kata pipi pi pi": {
-      "text": "Kata pipi: pi... pi",
-      "src": "audio/delia-f3/bb038a7c2f3941fa0a0f.mp3"
-    },
-    "kata pisang huruf awalnya apa ya": {
-      "text": "Kata pisang. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/911cd16cff6d71b25ab7.mp3"
-    },
-    "kata pisang pi sang": {
-      "text": "Kata pisang: pi... sang",
-      "src": "audio/delia-f3/17a22c1265fec23d96f5.mp3"
-    },
-    "kata pita pi ta": {
-      "text": "Kata pita: pi... ta",
-      "src": "audio/delia-f3/b60ade1d83c5ce3d7f98.mp3"
-    },
-    "kata quran huruf awalnya apa ya": {
-      "text": "Kata quran. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/950e02313f2b1b165e76.mp3"
-    },
-    "kata quran qu ran": {
-      "text": "Kata quran: qu... ran",
-      "src": "audio/delia-f3/ed8967b6d70fed136632.mp3"
-    },
-    "kata roda ro da": {
-      "text": "Kata roda: ro... da",
-      "src": "audio/delia-f3/10103894479a555e1458.mp3"
-    },
-    "kata roti ro ti": {
-      "text": "Kata roti: ro... ti",
-      "src": "audio/delia-f3/9979a8bb51e0960eecd3.mp3"
-    },
-    "kata rusa huruf awalnya apa ya": {
-      "text": "Kata rusa. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/783ef59c1f68bed60447.mp3"
-    },
-    "kata rusa ru sa": {
-      "text": "Kata rusa: ru... sa",
-      "src": "audio/delia-f3/0e48cca32d12c1431066.mp3"
-    },
-    "kata sapi huruf awalnya apa ya": {
-      "text": "Kata sapi. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/ff6ea2f1c896aaaad90b.mp3"
-    },
-    "kata sapi sa pi": {
-      "text": "Kata sapi: sa... pi",
-      "src": "audio/delia-f3/b1203c00772f629104e0.mp3"
-    },
-    "kata sapu sa pu": {
-      "text": "Kata sapu: sa... pu",
-      "src": "audio/delia-f3/a8ebb0755cfc635db75f.mp3"
-    },
-    "kata sawi sa wi": {
-      "text": "Kata sawi: sa... wi",
-      "src": "audio/delia-f3/71b355d7dd9b7c594d53.mp3"
-    },
-    "kata susu su su": {
-      "text": "Kata susu: su... su",
-      "src": "audio/delia-f3/011afe02fd51a66a5879.mp3"
-    },
-    "kata tali ta li": {
-      "text": "Kata tali: ta... li",
-      "src": "audio/delia-f3/5074e0193398de45c697.mp3"
-    },
-    "kata tebu te bu": {
-      "text": "Kata tebu: te... bu",
-      "src": "audio/delia-f3/5b571448d66ab62341b2.mp3"
-    },
-    "kata toko to ko": {
-      "text": "Kata toko: to... ko",
-      "src": "audio/delia-f3/ece5cfb7d013ad9eca52.mp3"
-    },
-    "kata topi huruf awalnya apa ya": {
-      "text": "Kata topi. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/ae24df28bbb9fdb4c812.mp3"
-    },
-    "kata topi to pi": {
-      "text": "Kata topi: to... pi",
-      "src": "audio/delia-f3/d5f9f4f4304c682e0a74.mp3"
-    },
-    "kata udang huruf awalnya apa ya": {
-      "text": "Kata udang. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/059b028ed6cdd95e4b4d.mp3"
-    },
-    "kata udang u dang": {
-      "text": "Kata udang: u... dang",
-      "src": "audio/delia-f3/c3f7f87067ddf9340534.mp3"
-    },
-    "kata vas huruf awalnya apa ya": {
-      "text": "Kata vas. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/7752614ac1b96168d55e.mp3"
-    },
-    "kata vas vas": {
-      "text": "Kata vas: vas",
-      "src": "audio/delia-f3/06fbd5cc8d60f112a3fa.mp3"
-    },
-    "kata wortel huruf awalnya apa ya": {
-      "text": "Kata wortel. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/b2819f8d8ee1f39d9f39.mp3"
-    },
-    "kata wortel wor tel": {
-      "text": "Kata wortel: wor... tel",
-      "src": "audio/delia-f3/4114f59c0672c09e1137.mp3"
-    },
-    "kata xilofon huruf awalnya apa ya": {
-      "text": "Kata xilofon. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/619b500d577a94b00ca1.mp3"
-    },
-    "kata xilofon xi lo fon": {
-      "text": "Kata xilofon: xi... lo... fon",
-      "src": "audio/delia-f3/d975eec8ee58da01058e.mp3"
-    },
-    "kata yoyo huruf awalnya apa ya": {
-      "text": "Kata yoyo. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/bef2c2042f6559992ac6.mp3"
-    },
-    "kata yoyo yo yo": {
-      "text": "Kata yoyo: yo... yo",
-      "src": "audio/delia-f3/16d9a7e617ea264fda6b.mp3"
-    },
-    "kata zebra huruf awalnya apa ya": {
-      "text": "Kata zebra. Huruf awalnya apa ya?",
-      "src": "audio/delia-f3/239fbb4a3e3d9b4f2de0.mp3"
-    },
-    "kata zebra zeb ra": {
-      "text": "Kata zebra: zeb... ra",
-      "src": "audio/delia-f3/2d34a02db5b01f3a09ad.mp3"
     },
     "kayu": {
       "text": "kayu",
@@ -2691,10 +567,6 @@
     "kera": {
       "text": "kera",
       "src": "audio/delia-kore/524b147ce2bbcf100fbd.wav"
-    },
-    "keren coba sekali lagi": {
-      "text": "Keren, coba sekali lagi!",
-      "src": "audio/delia-f3/eb205df9872e9e3789df.mp3"
     },
     "keren sekali": {
       "text": "Keren sekali!",
@@ -2760,305 +632,13 @@
       "text": "labu",
       "src": "audio/delia-kore/bb483c92cab9233bf9c6.wav"
     },
-    "lang": {
-      "text": "lang",
-      "src": "audio/delia-f3/5d7a71dea8b6e6819b7e.mp3"
-    },
     "le": {
       "text": "le",
       "src": "audio/delia-kore/2bed637062dd64543b30.wav"
     },
-    "lebah": {
-      "text": "lebah",
-      "src": "audio/delia-f3/6a64971fde4d075ca371.mp3"
-    },
     "lee": {
       "text": "lee",
       "src": "audio/delia-kore/2bed637062dd64543b30.wav"
-    },
-    "lele": {
-      "text": "lele",
-      "src": "audio/delia-f3/ed9dbef7c3e8859245bd.mp3"
-    },
-    "lengkapi kata apel suku kata apa yang hilang": {
-      "text": "Lengkapi kata apel! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/60831bebb43539e28857.mp3"
-    },
-    "lengkapi kata bahu suku kata apa yang hilang": {
-      "text": "Lengkapi kata bahu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/6d0e3895969b2bbf9787.mp3"
-    },
-    "lengkapi kata baju suku kata apa yang hilang": {
-      "text": "Lengkapi kata baju! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/1ca68e9363bbef130925.mp3"
-    },
-    "lengkapi kata bapa suku kata apa yang hilang": {
-      "text": "Lengkapi kata bapa! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/97a562acfc4e207e2f34.mp3"
-    },
-    "lengkapi kata batu suku kata apa yang hilang": {
-      "text": "Lengkapi kata batu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/d7ccf6b4c0662c07cbc4.mp3"
-    },
-    "lengkapi kata bibi suku kata apa yang hilang": {
-      "text": "Lengkapi kata bibi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/f2f9d6e2b03bb70b894f.mp3"
-    },
-    "lengkapi kata biji suku kata apa yang hilang": {
-      "text": "Lengkapi kata biji! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/913dd6dda5d8720a8698.mp3"
-    },
-    "lengkapi kata bola suku kata apa yang hilang": {
-      "text": "Lengkapi kata bola! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/50e00d030af2c196c053.mp3"
-    },
-    "lengkapi kata buku suku kata apa yang hilang": {
-      "text": "Lengkapi kata buku! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/d9ea26337f3700073db0.mp3"
-    },
-    "lengkapi kata cacing suku kata apa yang hilang": {
-      "text": "Lengkapi kata cacing! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/e36c18c3795a52fe0f51.mp3"
-    },
-    "lengkapi kata ceri suku kata apa yang hilang": {
-      "text": "Lengkapi kata ceri! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/d20fa1466bfe8684be3e.mp3"
-    },
-    "lengkapi kata cumi suku kata apa yang hilang": {
-      "text": "Lengkapi kata cumi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/0912e38a1d26357ffb6f.mp3"
-    },
-    "lengkapi kata dada suku kata apa yang hilang": {
-      "text": "Lengkapi kata dada! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/40b7fcd1011dfd503602.mp3"
-    },
-    "lengkapi kata dadu suku kata apa yang hilang": {
-      "text": "Lengkapi kata dadu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/cf6391e032186d9014b6.mp3"
-    },
-    "lengkapi kata daun suku kata apa yang hilang": {
-      "text": "Lengkapi kata daun! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/92aac7e9ce6a73d9509a.mp3"
-    },
-    "lengkapi kata duri suku kata apa yang hilang": {
-      "text": "Lengkapi kata duri! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/b5d4dd212113ebcb784d.mp3"
-    },
-    "lengkapi kata elang suku kata apa yang hilang": {
-      "text": "Lengkapi kata elang! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/9cf900380d33263b8642.mp3"
-    },
-    "lengkapi kata foto suku kata apa yang hilang": {
-      "text": "Lengkapi kata foto! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/f06c8069663a5b2e37b1.mp3"
-    },
-    "lengkapi kata gajah suku kata apa yang hilang": {
-      "text": "Lengkapi kata gajah! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/5b4a3ca1be7b51ac104b.mp3"
-    },
-    "lengkapi kata gigi suku kata apa yang hilang": {
-      "text": "Lengkapi kata gigi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/149cb5db99810d0d0e5b.mp3"
-    },
-    "lengkapi kata harimau suku kata apa yang hilang": {
-      "text": "Lengkapi kata harimau! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/a1ea4ab87603f861e0d2.mp3"
-    },
-    "lengkapi kata ibu suku kata apa yang hilang": {
-      "text": "Lengkapi kata ibu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/f01b9a813706948316a6.mp3"
-    },
-    "lengkapi kata ikan suku kata apa yang hilang": {
-      "text": "Lengkapi kata ikan! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/a3e7879b274df1ad6d9b.mp3"
-    },
-    "lengkapi kata jeruk suku kata apa yang hilang": {
-      "text": "Lengkapi kata jeruk! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/5789383c9d50894f4810.mp3"
-    },
-    "lengkapi kata kado suku kata apa yang hilang": {
-      "text": "Lengkapi kata kado! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/2b3822a712d84c870c32.mp3"
-    },
-    "lengkapi kata kaki suku kata apa yang hilang": {
-      "text": "Lengkapi kata kaki! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/b53e52031e48fd6d93b8.mp3"
-    },
-    "lengkapi kata kayu suku kata apa yang hilang": {
-      "text": "Lengkapi kata kayu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/3ca05cb7d1b56d388f16.mp3"
-    },
-    "lengkapi kata kera suku kata apa yang hilang": {
-      "text": "Lengkapi kata kera! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/efe17a50ffdc1640c04f.mp3"
-    },
-    "lengkapi kata koki suku kata apa yang hilang": {
-      "text": "Lengkapi kata koki! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/d013e60cc2b71a181bcf.mp3"
-    },
-    "lengkapi kata kopi suku kata apa yang hilang": {
-      "text": "Lengkapi kata kopi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/93e588f1cef81e3e33ae.mp3"
-    },
-    "lengkapi kata kuda suku kata apa yang hilang": {
-      "text": "Lengkapi kata kuda! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/6695d18525836626a5da.mp3"
-    },
-    "lengkapi kata kuku suku kata apa yang hilang": {
-      "text": "Lengkapi kata kuku! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/7ccde5f8aa92e6750376.mp3"
-    },
-    "lengkapi kata kura suku kata apa yang hilang": {
-      "text": "Lengkapi kata kura! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/119ed167e0b60bae1346.mp3"
-    },
-    "lengkapi kata kutu suku kata apa yang hilang": {
-      "text": "Lengkapi kata kutu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/ac4b5778cea2076679cd.mp3"
-    },
-    "lengkapi kata labu suku kata apa yang hilang": {
-      "text": "Lengkapi kata labu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/bf48564d95bc1d51fe4a.mp3"
-    },
-    "lengkapi kata lebah suku kata apa yang hilang": {
-      "text": "Lengkapi kata lebah! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/5920e90221da08360ecb.mp3"
-    },
-    "lengkapi kata lele suku kata apa yang hilang": {
-      "text": "Lengkapi kata lele! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/11596c2621fd7cab22f8.mp3"
-    },
-    "lengkapi kata madu suku kata apa yang hilang": {
-      "text": "Lengkapi kata madu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/1b3e5574de6cb47c8bcb.mp3"
-    },
-    "lengkapi kata mama suku kata apa yang hilang": {
-      "text": "Lengkapi kata mama! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/e8275b5e6e8647843ae9.mp3"
-    },
-    "lengkapi kata mata suku kata apa yang hilang": {
-      "text": "Lengkapi kata mata! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/b54b6d7735463c03aba5.mp3"
-    },
-    "lengkapi kata meja suku kata apa yang hilang": {
-      "text": "Lengkapi kata meja! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/c6d6362e5be6e467708e.mp3"
-    },
-    "lengkapi kata nasi suku kata apa yang hilang": {
-      "text": "Lengkapi kata nasi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/a952baf6f6d5cab44ffc.mp3"
-    },
-    "lengkapi kata onta suku kata apa yang hilang": {
-      "text": "Lengkapi kata onta! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/62326d683e5809e76e79.mp3"
-    },
-    "lengkapi kata paku suku kata apa yang hilang": {
-      "text": "Lengkapi kata paku! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/4b810ae35cb5b0c7a07a.mp3"
-    },
-    "lengkapi kata palu suku kata apa yang hilang": {
-      "text": "Lengkapi kata palu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/05ab432477e7c55dde74.mp3"
-    },
-    "lengkapi kata papa suku kata apa yang hilang": {
-      "text": "Lengkapi kata papa! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/b702f01c057c86e7ac88.mp3"
-    },
-    "lengkapi kata pari suku kata apa yang hilang": {
-      "text": "Lengkapi kata pari! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/d4460c99964bdf3c9a68.mp3"
-    },
-    "lengkapi kata pena suku kata apa yang hilang": {
-      "text": "Lengkapi kata pena! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/a9ff05d76e6cbaf1ef1c.mp3"
-    },
-    "lengkapi kata peta suku kata apa yang hilang": {
-      "text": "Lengkapi kata peta! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/6549ce26de5620db5e58.mp3"
-    },
-    "lengkapi kata pipi suku kata apa yang hilang": {
-      "text": "Lengkapi kata pipi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/2d945d47523985d17c40.mp3"
-    },
-    "lengkapi kata pisang suku kata apa yang hilang": {
-      "text": "Lengkapi kata pisang! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/3f8bf642cabbb2cc251e.mp3"
-    },
-    "lengkapi kata pita suku kata apa yang hilang": {
-      "text": "Lengkapi kata pita! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/627b5e06b5d6ece0f933.mp3"
-    },
-    "lengkapi kata quran suku kata apa yang hilang": {
-      "text": "Lengkapi kata quran! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/1891943fc8378fb1289b.mp3"
-    },
-    "lengkapi kata roda suku kata apa yang hilang": {
-      "text": "Lengkapi kata roda! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/133afafef5bbea3bed28.mp3"
-    },
-    "lengkapi kata roti suku kata apa yang hilang": {
-      "text": "Lengkapi kata roti! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/36fc0476ae2841843e9a.mp3"
-    },
-    "lengkapi kata rusa suku kata apa yang hilang": {
-      "text": "Lengkapi kata rusa! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/e3891ed68158be5f94b6.mp3"
-    },
-    "lengkapi kata sapi suku kata apa yang hilang": {
-      "text": "Lengkapi kata sapi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/3eefb516140aca040ffc.mp3"
-    },
-    "lengkapi kata sapu suku kata apa yang hilang": {
-      "text": "Lengkapi kata sapu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/51d920fb16c6a9f97882.mp3"
-    },
-    "lengkapi kata sawi suku kata apa yang hilang": {
-      "text": "Lengkapi kata sawi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/a329de78b3ac4d6b3458.mp3"
-    },
-    "lengkapi kata susu suku kata apa yang hilang": {
-      "text": "Lengkapi kata susu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/be16b6ae7bd2fa3bf7c1.mp3"
-    },
-    "lengkapi kata tali suku kata apa yang hilang": {
-      "text": "Lengkapi kata tali! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/c2c92e9a5df460c1b448.mp3"
-    },
-    "lengkapi kata tebu suku kata apa yang hilang": {
-      "text": "Lengkapi kata tebu! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/8a027f73f4bc5ac172b1.mp3"
-    },
-    "lengkapi kata toko suku kata apa yang hilang": {
-      "text": "Lengkapi kata toko! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/5e6c9e4a71c06b9169e0.mp3"
-    },
-    "lengkapi kata topi suku kata apa yang hilang": {
-      "text": "Lengkapi kata topi! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/ab3b2a26b539eb36964d.mp3"
-    },
-    "lengkapi kata udang suku kata apa yang hilang": {
-      "text": "Lengkapi kata udang! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/4ad226658bac5b8b6d29.mp3"
-    },
-    "lengkapi kata vas suku kata apa yang hilang": {
-      "text": "Lengkapi kata vas! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/a455493d8bc45628a946.mp3"
-    },
-    "lengkapi kata wortel suku kata apa yang hilang": {
-      "text": "Lengkapi kata wortel! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/148bfdc605fa4dec08cc.mp3"
-    },
-    "lengkapi kata xilofon suku kata apa yang hilang": {
-      "text": "Lengkapi kata xilofon! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/ab8ad859a7dd2984ab21.mp3"
-    },
-    "lengkapi kata yoyo suku kata apa yang hilang": {
-      "text": "Lengkapi kata yoyo! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/4ba13897500b4db19a58.mp3"
-    },
-    "lengkapi kata zebra suku kata apa yang hilang": {
-      "text": "Lengkapi kata zebra! Suku kata apa yang hilang?",
-      "src": "audio/delia-f3/11ec04e58c0747202162.mp3"
     },
     "li": {
       "text": "li",
@@ -3107,10 +687,6 @@
     "mata": {
       "text": "mata",
       "src": "audio/delia-kore/0187042fc5c5938f6262.wav"
-    },
-    "mau": {
-      "text": "mau",
-      "src": "audio/delia-f3/3642fb49dda67aa1d77c.mp3"
     },
     "me": {
       "text": "me",
@@ -3168,14 +744,6 @@
       "text": "nuu",
       "src": "audio/delia-kore/38304e64fbce6b2f7993.wav"
     },
-    "on": {
-      "text": "on",
-      "src": "audio/delia-f3/84a1b3f9506ff62d787f.mp3"
-    },
-    "onta": {
-      "text": "onta",
-      "src": "audio/delia-f3/8ccdcd0c891cf04d42de.mp3"
-    },
     "oo": {
       "text": "oo",
       "src": "audio/delia-kore/e8b6d7ef9a7d2071d522.wav"
@@ -3188,21 +756,9 @@
       "text": "paa",
       "src": "audio/delia-kore/aef589d339e3cd3f4b48.wav"
     },
-    "paku": {
-      "text": "paku",
-      "src": "audio/delia-f3/cdb1f120673961613d67.mp3"
-    },
-    "palu": {
-      "text": "palu",
-      "src": "audio/delia-f3/263d482730c6010cba92.mp3"
-    },
     "papa": {
       "text": "papa",
       "src": "audio/delia-kore/53aef1b4527f5539121c.wav"
-    },
-    "pari": {
-      "text": "pari",
-      "src": "audio/delia-f3/18d97435308bbd3e199a.mp3"
     },
     "pe": {
       "text": "pe",
@@ -3212,33 +768,13 @@
       "text": "pee",
       "src": "audio/delia-kore/d3f8a52af083c4e98d3c.wav"
     },
-    "peh": {
-      "text": "peh",
-      "src": "audio/delia-f3/8750aa2bcad4a1bc2257.mp3"
-    },
-    "pel": {
-      "text": "pel",
-      "src": "audio/delia-f3/61f3fe487b935d05d5f4.mp3"
-    },
-    "pelajaran tidak ditemukan": {
-      "text": "Pelajaran tidak ditemukan!",
-      "src": "audio/delia-f3/fde0682509bae50301de.mp3"
-    },
     "pelan-pelan saja ya": {
       "text": "Pelan-pelan saja ya",
       "src": "audio/delia-kore/a76093619aea98c0850d.wav"
     },
-    "pena": {
-      "text": "pena",
-      "src": "audio/delia-f3/bae192b56b2f2e28daf2.mp3"
-    },
     "perhatikan bentuk hurufnya ya": {
       "text": "Perhatikan bentuk hurufnya ya",
       "src": "audio/delia-kore/f96f7948eb3ad50960b4.wav"
-    },
-    "peta": {
-      "text": "peta",
-      "src": "audio/delia-f3/e06d8480eabceebe6e7b.mp3"
     },
     "pi": {
       "text": "pi",
@@ -3256,18 +792,6 @@
       "text": "Pilih kata yang cocok dengan gambar ini ya!",
       "src": "audio/delia-kore/c35181c3f1d502e48e1f.wav"
     },
-    "pintar membaca": {
-      "text": "Pintar membaca!",
-      "src": "audio/delia-f3/49551e0107ac0bf9cd84.mp3"
-    },
-    "pipi": {
-      "text": "pipi",
-      "src": "audio/delia-f3/7c4ec9219d918d407e79.mp3"
-    },
-    "pisang": {
-      "text": "pisang",
-      "src": "audio/delia-f3/ea616cdda4c6bb2f4348.mp3"
-    },
     "pita": {
       "text": "pita",
       "src": "audio/delia-kore/889a0d08772b08f3cfcd.wav"
@@ -3284,14 +808,6 @@
       "text": "puu",
       "src": "audio/delia-kore/a1a086ceb9d3985d5e4a.wav"
     },
-    "qu": {
-      "text": "qu",
-      "src": "audio/delia-f3/24dfdc2c1e1e140be546.mp3"
-    },
-    "quran": {
-      "text": "quran",
-      "src": "audio/delia-f3/befbe253cef56b26245f.mp3"
-    },
     "ra": {
       "text": "ra",
       "src": "audio/delia-kore/3783e96933a12d53a151.wav"
@@ -3299,10 +815,6 @@
     "raa": {
       "text": "raa",
       "src": "audio/delia-kore/3783e96933a12d53a151.wav"
-    },
-    "ran": {
-      "text": "ran",
-      "src": "audio/delia-f3/38d5a07c4c7b29acdeeb.mp3"
     },
     "ree": {
       "text": "ree",
@@ -3336,10 +848,6 @@
       "text": "ru",
       "src": "audio/delia-kore/b36cc9a33ce452b6a5df.wav"
     },
-    "ruk": {
-      "text": "ruk",
-      "src": "audio/delia-f3/156d19a68b7189164638.mp3"
-    },
     "rusa": {
       "text": "rusa",
       "src": "audio/delia-kore/22f5a308ae3ed70aaa68.wav"
@@ -3356,10 +864,6 @@
       "text": "saa",
       "src": "audio/delia-kore/c6bdd041dd74f3bb7c29.wav"
     },
-    "sang": {
-      "text": "sang",
-      "src": "audio/delia-f3/6590fdf1b2e789cc5d26.mp3"
-    },
     "sapi": {
       "text": "sapi",
       "src": "audio/delia-kore/288532879de3c808ea9d.wav"
@@ -3367,18 +871,6 @@
     "sapu": {
       "text": "sapu",
       "src": "audio/delia-kore/c8dba170506998433cf8.wav"
-    },
-    "satu jempol untukmu": {
-      "text": "Satu jempol untukmu!",
-      "src": "audio/delia-f3/414b8d6fcf6c32b28732.mp3"
-    },
-    "satu lagi ya": {
-      "text": "Satu lagi ya!",
-      "src": "audio/delia-f3/074ad1d8b9415b177660.mp3"
-    },
-    "sawi": {
-      "text": "sawi",
-      "src": "audio/delia-f3/6b7510a581876569d2ae.mp3"
     },
     "sedikit lagi pasti bisa": {
       "text": "Sedikit lagi, pasti bisa!",
@@ -3388,33 +880,9 @@
       "text": "see",
       "src": "audio/delia-kore/6eec22e92c6bc855d578.wav"
     },
-    "sekarang giliranmu ya": {
-      "text": "Sekarang giliranmu, ya.",
-      "src": "audio/delia-f3/98e7d0a31c09ff155a2d.mp3"
-    },
-    "selamat datang di cerita mini": {
-      "text": "Selamat datang di Cerita Mini!",
-      "src": "audio/delia-f3/059db863a9974e4ebafd.mp3"
-    },
-    "selamat datang di kalimat pendek": {
-      "text": "Selamat datang di Kalimat Pendek!",
-      "src": "audio/delia-f3/dfa399739680d12e1b0c.mp3"
-    },
-    "selamat datang di kata lebih panjang": {
-      "text": "Selamat datang di Kata Lebih Panjang!",
-      "src": "audio/delia-f3/926422494c75ed414126.mp3"
-    },
     "selamat datang di kata pertama": {
       "text": "Selamat datang di Kata Pertama!",
       "src": "audio/delia-kore/54a48f1467ea5117a456.wav"
-    },
-    "selamat datang di kenal huruf": {
-      "text": "Selamat datang di Kenal Huruf!",
-      "src": "audio/delia-f3/a181fc48f6dbef9ba264.mp3"
-    },
-    "selamat datang di suku kata": {
-      "text": "Selamat datang di Suku Kata!",
-      "src": "audio/delia-f3/4ded0565f78b1a967981.mp3"
     },
     "si": {
       "text": "si",
@@ -3431,294 +899,6 @@
     "su": {
       "text": "su",
       "src": "audio/delia-kore/80a4756d3d1f018eb9d8.wav"
-    },
-    "sudah cocok hebat sekali": {
-      "text": "Sudah cocok. Hebat sekali!",
-      "src": "audio/delia-f3/bc8ed0b5175d5451c98b.mp3"
-    },
-    "susu": {
-      "text": "susu",
-      "src": "audio/delia-f3/9fd8698e52fb573ee344.mp3"
-    },
-    "susun suku kata untuk kata apel": {
-      "text": "Susun suku kata untuk kata: apel!",
-      "src": "audio/delia-f3/bb5fed1b05ca1ab22652.mp3"
-    },
-    "susun suku kata untuk kata bahu": {
-      "text": "Susun suku kata untuk kata: bahu!",
-      "src": "audio/delia-f3/d092e31e7bdad5335799.mp3"
-    },
-    "susun suku kata untuk kata baju": {
-      "text": "Susun suku kata untuk kata: baju!",
-      "src": "audio/delia-f3/c17119b180a71052c99b.mp3"
-    },
-    "susun suku kata untuk kata bapa": {
-      "text": "Susun suku kata untuk kata: bapa!",
-      "src": "audio/delia-f3/6228877e95a156dc9885.mp3"
-    },
-    "susun suku kata untuk kata batu": {
-      "text": "Susun suku kata untuk kata: batu!",
-      "src": "audio/delia-f3/12996d88d9c31c013a48.mp3"
-    },
-    "susun suku kata untuk kata bibi": {
-      "text": "Susun suku kata untuk kata: bibi!",
-      "src": "audio/delia-f3/3f6bc4c9f8eb15e5ea4c.mp3"
-    },
-    "susun suku kata untuk kata biji": {
-      "text": "Susun suku kata untuk kata: biji!",
-      "src": "audio/delia-f3/8df3578e51f87dbed8e9.mp3"
-    },
-    "susun suku kata untuk kata bola": {
-      "text": "Susun suku kata untuk kata: bola!",
-      "src": "audio/delia-f3/6591504de4696b131265.mp3"
-    },
-    "susun suku kata untuk kata buku": {
-      "text": "Susun suku kata untuk kata: buku!",
-      "src": "audio/delia-f3/dd408ed3dfee0cc8eb9e.mp3"
-    },
-    "susun suku kata untuk kata cacing": {
-      "text": "Susun suku kata untuk kata: cacing!",
-      "src": "audio/delia-f3/0846e477896a5e9a0940.mp3"
-    },
-    "susun suku kata untuk kata ceri": {
-      "text": "Susun suku kata untuk kata: ceri!",
-      "src": "audio/delia-f3/8423fbc679dbe57ddc78.mp3"
-    },
-    "susun suku kata untuk kata cumi": {
-      "text": "Susun suku kata untuk kata: cumi!",
-      "src": "audio/delia-f3/3e4ffc60349f6041f9b2.mp3"
-    },
-    "susun suku kata untuk kata dada": {
-      "text": "Susun suku kata untuk kata: dada!",
-      "src": "audio/delia-f3/a36be79f100d64267e73.mp3"
-    },
-    "susun suku kata untuk kata dadu": {
-      "text": "Susun suku kata untuk kata: dadu!",
-      "src": "audio/delia-f3/4b4332a31bbe8ca9b392.mp3"
-    },
-    "susun suku kata untuk kata daun": {
-      "text": "Susun suku kata untuk kata: daun!",
-      "src": "audio/delia-f3/311425da5ead62979261.mp3"
-    },
-    "susun suku kata untuk kata duri": {
-      "text": "Susun suku kata untuk kata: duri!",
-      "src": "audio/delia-f3/9bf60a07b349f6a82bf2.mp3"
-    },
-    "susun suku kata untuk kata elang": {
-      "text": "Susun suku kata untuk kata: elang!",
-      "src": "audio/delia-f3/cb5e11d74c0f6bcc6458.mp3"
-    },
-    "susun suku kata untuk kata foto": {
-      "text": "Susun suku kata untuk kata: foto!",
-      "src": "audio/delia-f3/8a456fd2439e56f25f91.mp3"
-    },
-    "susun suku kata untuk kata gajah": {
-      "text": "Susun suku kata untuk kata: gajah!",
-      "src": "audio/delia-f3/5ed6b096b5c1ead651b6.mp3"
-    },
-    "susun suku kata untuk kata gigi": {
-      "text": "Susun suku kata untuk kata: gigi!",
-      "src": "audio/delia-f3/36efafaf1d635a3cb3c4.mp3"
-    },
-    "susun suku kata untuk kata harimau": {
-      "text": "Susun suku kata untuk kata: harimau!",
-      "src": "audio/delia-f3/0d3929c9a5c471230305.mp3"
-    },
-    "susun suku kata untuk kata ibu": {
-      "text": "Susun suku kata untuk kata: ibu!",
-      "src": "audio/delia-f3/185d5c3ab1337f9b3962.mp3"
-    },
-    "susun suku kata untuk kata ikan": {
-      "text": "Susun suku kata untuk kata: ikan!",
-      "src": "audio/delia-f3/428bfdf62ee395a48fb9.mp3"
-    },
-    "susun suku kata untuk kata jeruk": {
-      "text": "Susun suku kata untuk kata: jeruk!",
-      "src": "audio/delia-f3/e15280b0c29969e17ad9.mp3"
-    },
-    "susun suku kata untuk kata kado": {
-      "text": "Susun suku kata untuk kata: kado!",
-      "src": "audio/delia-f3/bb52630b71004636cf3b.mp3"
-    },
-    "susun suku kata untuk kata kaki": {
-      "text": "Susun suku kata untuk kata: kaki!",
-      "src": "audio/delia-f3/b52cda82c5b9a6b2a5b9.mp3"
-    },
-    "susun suku kata untuk kata kayu": {
-      "text": "Susun suku kata untuk kata: kayu!",
-      "src": "audio/delia-f3/3241cf6ead1f391add32.mp3"
-    },
-    "susun suku kata untuk kata kera": {
-      "text": "Susun suku kata untuk kata: kera!",
-      "src": "audio/delia-f3/3a57882c368ab11736c1.mp3"
-    },
-    "susun suku kata untuk kata koki": {
-      "text": "Susun suku kata untuk kata: koki!",
-      "src": "audio/delia-f3/0af43f4a4facd06817b4.mp3"
-    },
-    "susun suku kata untuk kata kopi": {
-      "text": "Susun suku kata untuk kata: kopi!",
-      "src": "audio/delia-f3/641ddab99be4a3e09182.mp3"
-    },
-    "susun suku kata untuk kata kuda": {
-      "text": "Susun suku kata untuk kata: kuda!",
-      "src": "audio/delia-f3/ea18e8d7b1935a9431ab.mp3"
-    },
-    "susun suku kata untuk kata kuku": {
-      "text": "Susun suku kata untuk kata: kuku!",
-      "src": "audio/delia-f3/d08891d80f59f27dd5ea.mp3"
-    },
-    "susun suku kata untuk kata kura": {
-      "text": "Susun suku kata untuk kata: kura!",
-      "src": "audio/delia-f3/f45560125ccc367074a1.mp3"
-    },
-    "susun suku kata untuk kata kutu": {
-      "text": "Susun suku kata untuk kata: kutu!",
-      "src": "audio/delia-f3/56c4c65f745a6422fb14.mp3"
-    },
-    "susun suku kata untuk kata labu": {
-      "text": "Susun suku kata untuk kata: labu!",
-      "src": "audio/delia-f3/5f9a6c6c968fff31bd05.mp3"
-    },
-    "susun suku kata untuk kata lebah": {
-      "text": "Susun suku kata untuk kata: lebah!",
-      "src": "audio/delia-f3/92ffc3e20b7c77f886b5.mp3"
-    },
-    "susun suku kata untuk kata lele": {
-      "text": "Susun suku kata untuk kata: lele!",
-      "src": "audio/delia-f3/e5accafb83e32023c193.mp3"
-    },
-    "susun suku kata untuk kata madu": {
-      "text": "Susun suku kata untuk kata: madu!",
-      "src": "audio/delia-f3/79f649f2ee3d27446587.mp3"
-    },
-    "susun suku kata untuk kata mama": {
-      "text": "Susun suku kata untuk kata: mama!",
-      "src": "audio/delia-f3/6e1ddd17fa5d0ef91654.mp3"
-    },
-    "susun suku kata untuk kata mata": {
-      "text": "Susun suku kata untuk kata: mata!",
-      "src": "audio/delia-f3/85b8301dac43bd1c5f74.mp3"
-    },
-    "susun suku kata untuk kata meja": {
-      "text": "Susun suku kata untuk kata: meja!",
-      "src": "audio/delia-f3/f1625db2ed0085571129.mp3"
-    },
-    "susun suku kata untuk kata nasi": {
-      "text": "Susun suku kata untuk kata: nasi!",
-      "src": "audio/delia-f3/98502ed194b795b74f69.mp3"
-    },
-    "susun suku kata untuk kata onta": {
-      "text": "Susun suku kata untuk kata: onta!",
-      "src": "audio/delia-f3/ea94a696288765372515.mp3"
-    },
-    "susun suku kata untuk kata paku": {
-      "text": "Susun suku kata untuk kata: paku!",
-      "src": "audio/delia-f3/e7dab8269a2cd49fe661.mp3"
-    },
-    "susun suku kata untuk kata palu": {
-      "text": "Susun suku kata untuk kata: palu!",
-      "src": "audio/delia-f3/d7f17fb490290fd98149.mp3"
-    },
-    "susun suku kata untuk kata papa": {
-      "text": "Susun suku kata untuk kata: papa!",
-      "src": "audio/delia-f3/250a3dad819efbdad0a7.mp3"
-    },
-    "susun suku kata untuk kata pari": {
-      "text": "Susun suku kata untuk kata: pari!",
-      "src": "audio/delia-f3/65596fa7aff7b3f60ea3.mp3"
-    },
-    "susun suku kata untuk kata pena": {
-      "text": "Susun suku kata untuk kata: pena!",
-      "src": "audio/delia-f3/6780f17803356f2073da.mp3"
-    },
-    "susun suku kata untuk kata peta": {
-      "text": "Susun suku kata untuk kata: peta!",
-      "src": "audio/delia-f3/4075e8a5bb9be01b8db1.mp3"
-    },
-    "susun suku kata untuk kata pipi": {
-      "text": "Susun suku kata untuk kata: pipi!",
-      "src": "audio/delia-f3/c862e0f4160aa21d1e22.mp3"
-    },
-    "susun suku kata untuk kata pisang": {
-      "text": "Susun suku kata untuk kata: pisang!",
-      "src": "audio/delia-f3/011ba00ed759675e8298.mp3"
-    },
-    "susun suku kata untuk kata pita": {
-      "text": "Susun suku kata untuk kata: pita!",
-      "src": "audio/delia-f3/e36dc942b457948c82e6.mp3"
-    },
-    "susun suku kata untuk kata quran": {
-      "text": "Susun suku kata untuk kata: quran!",
-      "src": "audio/delia-f3/dba8139bd86b2baebec9.mp3"
-    },
-    "susun suku kata untuk kata roda": {
-      "text": "Susun suku kata untuk kata: roda!",
-      "src": "audio/delia-f3/721c955d2a2187db4c10.mp3"
-    },
-    "susun suku kata untuk kata roti": {
-      "text": "Susun suku kata untuk kata: roti!",
-      "src": "audio/delia-f3/539b822a5878d6ba70e0.mp3"
-    },
-    "susun suku kata untuk kata rusa": {
-      "text": "Susun suku kata untuk kata: rusa!",
-      "src": "audio/delia-f3/d06e59a324f90715de3e.mp3"
-    },
-    "susun suku kata untuk kata sapi": {
-      "text": "Susun suku kata untuk kata: sapi!",
-      "src": "audio/delia-f3/9f5c291b1bcedfa79f5f.mp3"
-    },
-    "susun suku kata untuk kata sapu": {
-      "text": "Susun suku kata untuk kata: sapu!",
-      "src": "audio/delia-f3/8649d687787f1aa6e78a.mp3"
-    },
-    "susun suku kata untuk kata sawi": {
-      "text": "Susun suku kata untuk kata: sawi!",
-      "src": "audio/delia-f3/dc058c5350f408282955.mp3"
-    },
-    "susun suku kata untuk kata susu": {
-      "text": "Susun suku kata untuk kata: susu!",
-      "src": "audio/delia-f3/6bc851eba3a3b4297166.mp3"
-    },
-    "susun suku kata untuk kata tali": {
-      "text": "Susun suku kata untuk kata: tali!",
-      "src": "audio/delia-f3/f2673cba58add99d1f3d.mp3"
-    },
-    "susun suku kata untuk kata tebu": {
-      "text": "Susun suku kata untuk kata: tebu!",
-      "src": "audio/delia-f3/56edf29a617415433658.mp3"
-    },
-    "susun suku kata untuk kata toko": {
-      "text": "Susun suku kata untuk kata: toko!",
-      "src": "audio/delia-f3/62661fda7cee04f56f2a.mp3"
-    },
-    "susun suku kata untuk kata topi": {
-      "text": "Susun suku kata untuk kata: topi!",
-      "src": "audio/delia-f3/0c75ca010fd21c329ef0.mp3"
-    },
-    "susun suku kata untuk kata udang": {
-      "text": "Susun suku kata untuk kata: udang!",
-      "src": "audio/delia-f3/511d772688e43683fd31.mp3"
-    },
-    "susun suku kata untuk kata vas": {
-      "text": "Susun suku kata untuk kata: vas!",
-      "src": "audio/delia-f3/9ee6eead2769869c63ff.mp3"
-    },
-    "susun suku kata untuk kata wortel": {
-      "text": "Susun suku kata untuk kata: wortel!",
-      "src": "audio/delia-f3/607fd2f4cc302d2a4196.mp3"
-    },
-    "susun suku kata untuk kata xilofon": {
-      "text": "Susun suku kata untuk kata: xilofon!",
-      "src": "audio/delia-f3/ef8050e21a9b7008e4e9.mp3"
-    },
-    "susun suku kata untuk kata yoyo": {
-      "text": "Susun suku kata untuk kata: yoyo!",
-      "src": "audio/delia-f3/eb7d0c6a901981d2fad2.mp3"
-    },
-    "susun suku kata untuk kata zebra": {
-      "text": "Susun suku kata untuk kata: zebra!",
-      "src": "audio/delia-f3/c3635e9c90fd3947e82c.mp3"
     },
     "suu": {
       "text": "suu",
@@ -3740,21 +920,9 @@
       "text": "te",
       "src": "audio/delia-kore/d9ceb899ba1ecb67c333.wav"
     },
-    "tebu": {
-      "text": "tebu",
-      "src": "audio/delia-f3/2ee652a2530292bc8635.mp3"
-    },
     "tee": {
       "text": "tee",
       "src": "audio/delia-kore/d9ceb899ba1ecb67c333.wav"
-    },
-    "teh": {
-      "text": "teh",
-      "src": "audio/delia-f3/3fe66efffd1ee5a237cf.mp3"
-    },
-    "tel": {
-      "text": "tel",
-      "src": "audio/delia-f3/446d76131416a9e5f1fe.mp3"
     },
     "ti": {
       "text": "ti",
@@ -3792,133 +960,21 @@
       "text": "u",
       "src": "audio/delia-kore/af0bbfec911bd476da49.wav"
     },
-    "udang": {
-      "text": "udang",
-      "src": "audio/delia-f3/c9908544c4da17aa0ae6.mp3"
-    },
-    "un": {
-      "text": "un",
-      "src": "audio/delia-f3/6de75210b094b314c05f.mp3"
-    },
     "uu": {
       "text": "uu",
       "src": "audio/delia-kore/af0bbfec911bd476da49.wav"
-    },
-    "vas": {
-      "text": "vas",
-      "src": "audio/delia-f3/362a74b4664b226be423.mp3"
-    },
-    "waa": {
-      "text": "waa",
-      "src": "audio/delia-f3/bb403aa6592e2eedcd9a.mp3"
     },
     "wah luar biasa": {
       "text": "Wah luar biasa!",
       "src": "audio/delia-kore/bf1f656313a204414cf5.wav"
     },
-    "we": {
-      "text": "we",
-      "src": "audio/delia-f3/812d8569ad107fe54ae0.mp3"
-    },
-    "wee": {
-      "text": "wee",
-      "src": "audio/delia-f3/3028d20896bce7b70127.mp3"
-    },
     "wi": {
       "text": "wi",
       "src": "audio/delia-kore/97c3b2bfe9406cc0ce85.wav"
     },
-    "wii": {
-      "text": "wii",
-      "src": "audio/delia-f3/5927d4d1011bcbc06f10.mp3"
-    },
-    "woo": {
-      "text": "woo",
-      "src": "audio/delia-f3/81b2f7764135bac7db89.mp3"
-    },
-    "wor": {
-      "text": "wor",
-      "src": "audio/delia-f3/79b4862bc0a088578b7f.mp3"
-    },
-    "wortel": {
-      "text": "wortel",
-      "src": "audio/delia-f3/1f819dcaeccf369070bf.mp3"
-    },
-    "wuu": {
-      "text": "wuu",
-      "src": "audio/delia-f3/dc29722cbd4001e8236f.mp3"
-    },
-    "xi": {
-      "text": "xi",
-      "src": "audio/delia-f3/1a618b063cc551ab2a79.mp3"
-    },
-    "xilofon": {
-      "text": "xilofon",
-      "src": "audio/delia-f3/39d58bcbbc9243e7d348.mp3"
-    },
-    "yaa": {
-      "text": "yaa",
-      "src": "audio/delia-f3/a9d343374abdd3cef536.mp3"
-    },
-    "ye": {
-      "text": "ye",
-      "src": "audio/delia-f3/a18b47a5b1ba1de01616.mp3"
-    },
-    "yee": {
-      "text": "yee",
-      "src": "audio/delia-f3/c6d1f68f66906ca3f18e.mp3"
-    },
-    "yii": {
-      "text": "yii",
-      "src": "audio/delia-f3/bb7a1e9e0f990988eca3.mp3"
-    },
-    "yo": {
-      "text": "yo",
-      "src": "audio/delia-f3/0238783407a10c2878fa.mp3"
-    },
-    "yoo": {
-      "text": "yoo",
-      "src": "audio/delia-f3/41f527fe71076f44b671.mp3"
-    },
-    "yoyo": {
-      "text": "yoyo",
-      "src": "audio/delia-f3/6f5a8c901c9bf5dd1c74.mp3"
-    },
-    "yu": {
-      "text": "yu",
-      "src": "audio/delia-f3/9c9ce1e0a395c47068ef.mp3"
-    },
     "yuk dengarkan bu delia dulu": {
       "text": "Yuk, dengarkan Bu Delia dulu",
       "src": "audio/delia-kore/ad556e805f6eba188cc2.wav"
-    },
-    "yuk kita baca bareng": {
-      "text": "Yuk kita baca bareng!",
-      "src": "audio/delia-f3/8b0a550ec29cf29de535.mp3"
-    },
-    "yuk kita belajar membaca bersama bu delia": {
-      "text": "Yuk, kita belajar membaca bersama Bu Delia.",
-      "src": "audio/delia-f3/14e54e02e0c648c3527f.mp3"
-    },
-    "yuk ulang bagian ini pelan-pelan": {
-      "text": "Yuk, ulang bagian ini pelan-pelan.",
-      "src": "audio/delia-f3/bc8207eeb60bd1d1273f.mp3"
-    },
-    "yuu": {
-      "text": "yuu",
-      "src": "audio/delia-f3/c7e0b42c6847e35cdaf9.mp3"
-    },
-    "zeb": {
-      "text": "zeb",
-      "src": "audio/delia-f3/2beb0c60b083d2164fe0.mp3"
-    },
-    "zebra": {
-      "text": "zebra",
-      "src": "audio/delia-f3/37e72aa90d452103b9be.mp3"
-    },
-    "zet": {
-      "text": "zet",
-      "src": "audio/delia-f3/595312312aab02043b99.mp3"
     },
     "kamu pintar sekali": {
       "text": "Kamu pintar sekali!",
@@ -4083,6 +1139,78 @@
     "wu": {
       "text": "wu",
       "src": "audio/delia-kore/05418f72ac462b394b5b.wav"
+    },
+    "beh": {
+      "text": "beh",
+      "src": "audio/delia-kore/b963bd6317401d9fa274.wav"
+    },
+    "b": {
+      "text": "b",
+      "src": "audio/delia-kore/b963bd6317401d9fa274.wav"
+    },
+    "ceh": {
+      "text": "ceh",
+      "src": "audio/delia-kore/9bddd3ed41bc420e0e40.wav"
+    },
+    "c": {
+      "text": "c",
+      "src": "audio/delia-kore/ab27bc28ed74f097a504.wav"
+    },
+    "deh": {
+      "text": "deh",
+      "src": "audio/delia-kore/a67699fa881626c41372.wav"
+    },
+    "d": {
+      "text": "d",
+      "src": "audio/delia-kore/78f16be0a8bfa4a0b30a.wav"
+    },
+    "geh": {
+      "text": "geh",
+      "src": "audio/delia-kore/22bc18f87002ff82e627.wav"
+    },
+    "g": {
+      "text": "g",
+      "src": "audio/delia-kore/22bc18f87002ff82e627.wav"
+    },
+    "jeh": {
+      "text": "jeh",
+      "src": "audio/delia-kore/7678a91595eb43856ae1.wav"
+    },
+    "j": {
+      "text": "j",
+      "src": "audio/delia-kore/7678a91595eb43856ae1.wav"
+    },
+    "peh": {
+      "text": "peh",
+      "src": "audio/delia-kore/d3f8a52af083c4e98d3c.wav"
+    },
+    "p": {
+      "text": "p",
+      "src": "audio/delia-kore/d3f8a52af083c4e98d3c.wav"
+    },
+    "teh": {
+      "text": "teh",
+      "src": "audio/delia-kore/d9ceb899ba1ecb67c333.wav"
+    },
+    "t": {
+      "text": "t",
+      "src": "audio/delia-kore/d9ceb899ba1ecb67c333.wav"
+    },
+    "luar biasa kamu pintar sekali": {
+      "text": "luar biasa kamu pintar sekali",
+      "src": "audio/delia-kore/b01717cc228fdb657b14.wav"
+    },
+    "hore kamu hebat sekali": {
+      "text": "hore kamu hebat sekali",
+      "src": "audio/delia-kore/3cdcd12602e0d2c84b74.wav"
+    },
+    "pelan pelan saja ya": {
+      "text": "pelan pelan saja ya",
+      "src": "audio/delia-kore/a76093619aea98c0850d.wav"
+    },
+    "ef": {
+      "text": "ef",
+      "src": "audio/delia-kore/ceb1865270f7b0a3770a.wav"
     }
   }
 }

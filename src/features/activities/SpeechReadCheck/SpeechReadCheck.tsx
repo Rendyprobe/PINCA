@@ -56,12 +56,18 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
   const [checkingMic, setCheckingMic] = useState(false);
   const [assistedSpeaking, setAssistedSpeaking] = useState(false);
 
-  // Mode membaca dari settings atau props
-  const effectiveReadingMode: ReadingMode =
-    customReadingMode ??
-    (settings?.readingMode === 'syllables'
-      ? 'syllable-by-syllable'
-      : 'whole-word');
+  const isSentence = currentItem?.level === 'sentence';
+  const punctuation = isSentence
+    ? (currentItem as SentenceItem).punctuation
+    : '';
+
+  // Mode membaca dari settings atau props (kalimat selalu whole-word)
+  const effectiveReadingMode: ReadingMode = isSentence
+    ? 'whole-word'
+    : customReadingMode ??
+      (settings?.readingMode === 'syllables'
+        ? 'syllable-by-syllable'
+        : 'whole-word');
 
   // Ekstrak data sesuai level item
   const syllables = currentItem
@@ -257,11 +263,15 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
 
   // Hitung ekspresi Maskot berdasarkan state
   let mascotMood: MascotMood = 'senang';
-  let mascotMessage = 'Ayo baca bersama!';
+  let mascotMessage = isSentence
+    ? 'Ayo baca kalimat ini bersama!'
+    : 'Ayo baca bersama!';
 
   if (isListening) {
     mascotMood = 'mendengar';
-    mascotMessage = 'Sekarang giliranmu, ya.';
+    mascotMessage = isSentence
+      ? 'Ayo baca kalimat ini dengan lantang ya!'
+      : 'Sekarang giliranmu, ya.';
   } else if (state === 'evaluating') {
     mascotMood = 'berpikir';
     mascotMessage = 'Mengecek bacaanmu...';
@@ -269,11 +279,15 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
     mascotMood = 'merayakan';
     mascotMessage =
       completionMode === 'verified'
-        ? 'Sudah cocok. Hebat sekali!'
+        ? isSentence
+          ? 'Wah, hebat sekali! Kalimatmu terbaca lancar!'
+          : 'Sudah cocok. Hebat sekali!'
         : 'Hebat! Kita sudah berlatih bersama.';
   } else if (state === 'almost') {
     mascotMood = 'semangat';
-    mascotMessage = 'Hampir! Ayo coba lagi!';
+    mascotMessage = isSentence
+      ? 'Hampir tepat! Ayo kita coba lagi ya.'
+      : 'Hampir! Ayo coba lagi!';
   } else if (state === 'noSpeech') {
     mascotMood = 'semangat';
     mascotMessage =
@@ -288,7 +302,9 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
     mascotMessage =
       issue === 'no-speech'
         ? 'Aku belum mendengar dengan jelas.'
-        : 'Yuk, ulang bagian ini pelan-pelan.';
+        : isSentence
+          ? 'Yuk, baca lagi kalimat ini pelan-pelan.'
+          : 'Yuk, ulang bagian ini pelan-pelan.';
   } else if (isAssisted) {
     mascotMood = 'semangat';
     mascotMessage = 'Yuk kita baca bareng!';
@@ -301,9 +317,13 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
     <div className={styles.container}>
       <div className={styles.activityHeading}>
         <span className={styles.eyebrow}>
-          {isFallbackTap
-            ? 'LATIHAN BERSAMA BU DELIA'
-            : 'CEK BACAAN BERSAMA BU DELIA'}
+          {isSentence
+            ? isFallbackTap
+              ? 'LATIHAN BACA KALIMAT'
+              : 'CEK BACAAN KALIMAT BERSAMA BU DELIA'
+            : isFallbackTap
+              ? 'LATIHAN BERSAMA BU DELIA'
+              : 'CEK BACAAN BERSAMA BU DELIA'}
         </span>
         <span className={styles.itemCount}>
           {currentIndex + 1} / {items.length}
@@ -347,11 +367,13 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
         )}
 
         {/* Kartu Unit Kata / Suku Kata */}
-        <div className={styles.unitsContainer}>
+        <div
+          className={`${styles.unitsContainer} ${isSentence ? styles.sentenceContainer : ''}`}
+        >
           {units.map((u, idx) => (
             <div
               key={u.id}
-              className={`${styles.unitCard} ${styles[u.status]} ${
+              className={`${styles.unitCard} ${isSentence ? styles.sentenceWordCard : ''} ${styles[u.status]} ${
                 isFallbackTap ? styles.interactive : ''
               }`}
               onClick={() => {
@@ -401,6 +423,11 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
               </span>
             </div>
           ))}
+          {isSentence && punctuation && (
+            <span className={styles.sentencePunctuation} aria-hidden="true">
+              {punctuation}
+            </span>
+          )}
         </div>
 
         {/* Transkrip interim atau feedback */}
@@ -508,19 +535,31 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
         ) : (
           <div className={styles.micControls}>
             <p className={styles.readingTarget}>
-              Baca: <strong>{activeReadingTarget}</strong>
-              {effectiveReadingMode === 'syllable-by-syllable' && (
-                <small>Boleh juga membaca kata lengkap: {targetText}.</small>
+              {isSentence ? (
+                <>
+                  Baca kalimat: <strong>&ldquo;{targetText}&rdquo;</strong>
+                </>
+              ) : (
+                <>
+                  Baca: <strong>{activeReadingTarget}</strong>
+                  {effectiveReadingMode === 'syllable-by-syllable' && (
+                    <small>Boleh juga membaca kata lengkap: {targetText}.</small>
+                  )}
+                </>
               )}
             </p>
             <div
               className={`${styles.micPromptText} ${isListening ? styles.active : ''}`}
             >
               {isListening
-                ? 'Aku mendengarkan... Bacalah, ya!'
+                ? isSentence
+                  ? 'Aku mendengarkan... Baca kalimatnya ya!'
+                  : 'Aku mendengarkan... Bacalah, ya!'
                 : isRequesting
                   ? 'Tunggu sebentar, ya...'
-                  : 'Ketuk mikrofon untuk mulai'}
+                  : isSentence
+                    ? 'Ketuk mikrofon & baca kalimat di atas'
+                    : 'Ketuk mikrofon untuk mulai'}
             </div>
             <button
               type="button"
@@ -537,7 +576,9 @@ export const SpeechReadCheck: React.FC<SpeechReadCheckProps> = ({
               aria-label={
                 isListening || isRequesting
                   ? 'Hentikan mikrofon'
-                  : 'Mulai bicara'
+                  : isSentence
+                    ? 'Mulai membaca kalimat'
+                    : 'Mulai bicara'
               }
               title={isListening ? 'Mendengarkan...' : 'Ketuk untuk bicara'}
             >

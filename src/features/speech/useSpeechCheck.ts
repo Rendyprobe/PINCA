@@ -95,6 +95,12 @@ export function useSpeechCheck({
   }, [difficultyMode]);
 
   // Siapkan unit suku kata atau kata utuh
+  const isSyllableMode =
+    readingMode === 'syllable-by-syllable' &&
+    level !== 'sentence' &&
+    level !== 'story' &&
+    Boolean(syllables && syllables.length > 0);
+
   const units: UnitItem[] = useMemo(() => {
     const norm = targetText.toLowerCase().trim();
     if (syllables && syllables.length > 0) {
@@ -107,7 +113,7 @@ export function useSpeechCheck({
         let status: UnitStatus = 'pending';
         if (state === 'success') {
           status = 'done';
-        } else if (readingMode === 'syllable-by-syllable') {
+        } else if (isSyllableMode) {
           if (idx < activeSyllableIndex) {
             status = 'done';
           } else if (idx === activeSyllableIndex) {
@@ -116,7 +122,7 @@ export function useSpeechCheck({
             status = 'pending';
           }
         } else {
-          // Whole word mode: berbasis maxMatchedPrefix
+          // Whole word / sentence mode: berbasis maxMatchedPrefix
           if (matchedPrefix >= cumulativeChars) {
             status = 'done';
           } else if (
@@ -158,7 +164,7 @@ export function useSpeechCheck({
     targetText,
     syllables,
     state,
-    readingMode,
+    isSyllableMode,
     activeSyllableIndex,
     matchedPrefix,
   ]);
@@ -225,12 +231,8 @@ export function useSpeechCheck({
       setLastTranscript(nonempty[0] ?? '');
 
       // Tentukan target yang sedang diuji (apakah suku kata aktif atau kata utuh)
-      const isSyllableMode =
-        readingMode === 'syllable-by-syllable' &&
-        syllables &&
-        syllables.length > 0;
       const currentTarget = isSyllableMode
-        ? (syllables[activeSyllableIndex] ?? targetText)
+        ? (syllables?.[activeSyllableIndex] ?? targetText)
         : targetText;
       const currentLevel: Level = isSyllableMode ? 'syllable' : level;
 
@@ -254,7 +256,11 @@ export function useSpeechCheck({
         : null;
       const readWholeWord = Boolean(
         wholeWord?.outcome === 'ok' &&
-        (wholeWord.matchedVia === 'exact' || wholeWord.matchedVia === 'alias'),
+        (wholeWord.matchedVia === 'exact' ||
+          wholeWord.matchedVia === 'alias' ||
+          level === 'sentence' ||
+          level === 'story' ||
+          wholeWord.score >= 0.75),
       );
       if (wholeWord && readWholeWord) result = wholeWord;
 
@@ -287,7 +293,7 @@ export function useSpeechCheck({
       }
     },
     [
-      readingMode,
+      isSyllableMode,
       syllables,
       activeSyllableIndex,
       targetText,
@@ -334,12 +340,8 @@ export function useSpeechCheck({
       }
       pendingStart.current = setTimeout(() => {
         if (attempt !== attemptRef.current) return;
-        const isSyllableMode =
-          readingMode === 'syllable-by-syllable' &&
-          syllables &&
-          syllables.length > 0;
         const currentTarget = isSyllableMode
-          ? (syllables[activeSyllableIndex] ?? targetText)
+          ? (syllables?.[activeSyllableIndex] ?? targetText)
           : targetText;
 
         // Timeout durasi bicara (detik)
@@ -426,7 +428,7 @@ export function useSpeechCheck({
     micEnabled,
     state,
     releaseCapture,
-    readingMode,
+    isSyllableMode,
     syllables,
     activeSyllableIndex,
     targetText,

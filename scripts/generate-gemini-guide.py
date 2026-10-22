@@ -26,7 +26,7 @@ def hash_text(text: str) -> str:
     return hashlib.sha256(f"gemini-{VOICE_NAME}:{text.strip().lower()}".encode("utf-8")).hexdigest()[:20]
 
 
-def generate_speech(text: str, api_key: str, max_retries: int = 5):
+def generate_speech(text: str, api_key: str, max_retries: int = 5) -> bytes:
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent?key={api_key}"
     payload = {
         "contents": [{"parts": [{"text": text}]}],
@@ -44,36 +44,27 @@ def generate_speech(text: str, api_key: str, max_retries: int = 5):
     data = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
 
+    delay = 4
     for attempt in range(max_retries):
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
                 res = json.loads(resp.read().decode("utf-8"))
-                candidates = res.get("candidates", [])
-                if not candidates:
-                    print(f" [No candidates returned for '{text}']")
-                    return None
-                parts = candidates[0].get("content", {}).get("parts", [])
-                for p in parts:
-                    if "inlineData" in p:
-                        b64 = p["inlineData"]["data"]
-                        return base64.b64decode(b64)
-                print(f" [No audio part in candidate for '{text}']")
-                return None
+                b64 = res["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
+                return base64.b64decode(b64)
         except urllib.error.HTTPError as e:
             if e.code == 429:
-                wait_time = 20 * (attempt + 1)
-                print(f" [Rate limit 429 on '{text}'] Waiting {wait_time}s before retry...")
+                wait_time = delay * (attempt + 1)
+                print(f" [Rate limit 429] Waiting {wait_time}s before retry...")
                 time.sleep(wait_time)
             else:
                 body = e.read().decode("utf-8", errors="ignore")
                 print(f" [HTTPError {e.code}] {body}")
-                time.sleep(5)
+                raise
         except Exception as e:
-            print(f" [Error] {e}. Retrying in 5s...")
-            time.sleep(5)
+            print(f" [Error] {e}. Retrying in {delay}s...")
+            time.sleep(delay)
 
-    print(f" [Failed after {max_retries} attempts: '{text}']")
-    return None
+    raise RuntimeError(f"Failed to generate speech for text '{text}' after {max_retries} retries.")
 
 
 def save_wav(pcm_data: bytes, dest_path: Path):
@@ -136,19 +127,18 @@ def main():
 
         print(f"[{idx}/{len(sorted_entries)}] Generating '{text}'...")
         pcm = generate_speech(text, args.key)
-        if pcm:
-            save_wav(pcm, dest_path)
-            generated_count += 1
+        save_wav(pcm, dest_path)
+        generated_count += 1
 
-            if args.activate:
-                entries[k]["src"] = rel_src
-                # Save manifest periodically
-                if generated_count % 5 == 0:
-                    with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
-                        json.dump(manifest, f, ensure_ascii=False, indent=2)
+        if args.activate:
+            entries[k]["src"] = rel_src
+            # Save manifest periodically
+            if generated_count % 5 == 0:
+                with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
+                    json.dump(manifest, f, ensure_ascii=False, indent=2)
 
         # Gentle delay between requests to stay within RPM limits
-        time.sleep(5.0)
+        time.sleep(3.5)
 
     if args.activate:
         manifest["voice"] = f"Gemini-{VOICE_NAME}"
@@ -163,4 +153,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

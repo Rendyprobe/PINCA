@@ -131,7 +131,7 @@ function matchSentence(
       row[j] = Math.max(
         at(i - 1, j),
         at(i, j - 1),
-        at(i - 1, j - 1) + (wordScore >= 0.7 ? wordScore : 0),
+        at(i - 1, j - 1) + (wordScore >= 0.65 ? wordScore : 0),
       );
     }
   }
@@ -256,7 +256,7 @@ export function matchSpeech(
         if (sentenceMatch.score > bestScore) {
           bestScore = sentenceMatch.score;
           bestHeardText = rawHeard;
-          bestMatchedVia = 'fuzzy';
+          bestMatchedVia = sentenceMatch.score >= 0.95 ? 'exact' : 'fuzzy';
         }
       } else {
         // 2c. Kata / Suku Kata / Huruf: similarity edit distance

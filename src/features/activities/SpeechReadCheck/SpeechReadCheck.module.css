@@ -91,6 +91,14 @@
   justify-content: center;
   gap: 12px;
 }
+.sentenceContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 640px;
+}
 .unitCard {
   max-width: 100%;
   min-width: 72px;
@@ -108,6 +116,24 @@
   transition:
     border-color 0.2s,
     background 0.2s;
+}
+.sentenceWordCard {
+  min-width: unset;
+  min-height: 80px;
+  padding: 8px 18px;
+  border-radius: 20px;
+}
+.sentenceWordCard .unitText {
+  font-size: 38px;
+}
+.sentencePunctuation {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-left: 2px;
+  align-self: center;
+  user-select: none;
 }
 .unitText {
   font-family: var(--font-display);

@@ -28,19 +28,18 @@ describe('Local motherly guide voice', () => {
     expect(getGuideAudio('  AYO BACA BOLA! ')).toBe(
       getGuideAudio('Ayo baca bola'),
     );
-    expect(getGuideAudio('Ayo baca bola')).toMatch(/^\/audio\/delia-(?:f3|kore)\/.+\.(?:mp3|wav)$/);
+    expect(getGuideAudio('Ayo baca bola')).toMatch(
+      /^\/audio\/delia-kore\/.+\.wav$/,
+    );
   });
 
-  it('ships a local audio asset for every manifest entry', () => {
-    const mp3Files = import.meta.glob('/public/audio/delia-f3/*.mp3');
+  it('ships a local audio asset for every manifest entry with pure Bu Delia voice', () => {
     const wavFiles = import.meta.glob('/public/audio/delia-kore/*.wav');
-    expect(Object.keys(guideAudio.entries).length).toBeGreaterThan(800);
+    expect(Object.keys(guideAudio.entries).length).toBeGreaterThanOrEqual(250);
     for (const [key, entry] of Object.entries(guideAudio.entries)) {
       expect(guideAudioKey(entry.text)).toBe(key);
-      expect(entry.src).toMatch(/^audio\/delia-(?:f3|kore)\/[a-f0-9]{20}\.(?:mp3|wav)$/);
-      const isAvailable =
-        mp3Files[`/public/${entry.src}`] !== undefined ||
-        wavFiles[`/public/${entry.src}`] !== undefined;
+      expect(entry.src).toMatch(/^audio\/delia-kore\/[a-f0-9]{20}\.wav$/);
+      const isAvailable = wavFiles[`/public/${entry.src}`] !== undefined;
       expect(isAvailable).toBe(true);
     }
   });
